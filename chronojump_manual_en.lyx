@@ -83,6 +83,12 @@
 Chronojump
 \size default
  Manual
+\begin_inset Newline newline
+\end_inset
+
+
+\size large
+(Updated on 03-02-15)
 \end_layout
 
 \begin_layout Author
@@ -5099,7 +5105,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename encoder-manual-images/capture.png
+	filename encoder-manual-images/capture_en.png
 	lyxscale 20
 	scale 50
 
@@ -5496,7 +5502,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Poweb bars
+Power bars
 \end_layout
 
 \end_inset
@@ -5561,7 +5567,7 @@ Regarding the data, two things can be analysed: current set
 \lang spanish
 
 \begin_inset Graphics
-	filename /home/xpadulles/chronojump/manual/encoder-manual-images/set_button.png
+	filename encoder-manual-images/set_button.png
 
 \end_inset
 
@@ -5571,7 +5577,7 @@ Regarding the data, two things can be analysed: current set
 \lang spanish
 
 \begin_inset Graphics
-	filename /home/xpadulles/chronojump/manual/encoder-manual-images/repetition_button.png
+	filename encoder-manual-images/repetition_button.png
 
 \end_inset
 
@@ -5752,7 +5758,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/xpadulles/chronojump/manual/encoder-manual-images/select.png
+	filename encoder-manual-images/select.png
 
 \end_inset
 
@@ -5798,7 +5804,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/xpadulles/chronojump/manual/encoder-manual-images/encoder_type.png
+	filename encoder-manual-images/encoder_type.png
 
 \end_inset
 
@@ -5839,7 +5845,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/xpadulles/chronojump/manual/encoder-manual-images/calculus.png
+	filename encoder-manual-images/calculus.png
 
 \end_inset
 
@@ -5880,7 +5886,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/xpadulles/chronojump/manual/encoder-manual-images/oscilation.png
+	filename encoder-manual-images/oscilation.png
 	lyxscale 66
 	scale 66
 
@@ -6566,7 +6572,7 @@ Some of these tests require a synchronization to intend that the various
 \lang spanish
 n
 \begin_inset Graphics
-	filename /home/xpadulles/chronojump/manual/test_button.png
+	filename test_button.png
 	scale 3
 
 \end_inset
