@@ -5789,7 +5789,7 @@ Choose type of encoder you will use, and select the Inertial machine option.
 \begin_layout Enumerate
 In this windows you will be asked for the diameter where the rope is wrapped
  and the IM of the machine.
- Note that in conich machines this diameter changes continuously as the
+ Note that in conical machines this diameter changes continuously as the
  disk is spinning.
  We recommend you to use the mean diameter of the part of the cone where
  the rope is wrapping at.
@@ -5846,6 +5846,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename encoder-manual-images/calculus.png
+	lyxscale 75
+	scale 50
 
 \end_inset
 
@@ -5888,7 +5890,7 @@ status open
 \begin_inset Graphics
 	filename encoder-manual-images/oscilation.png
 	lyxscale 66
-	scale 66
+	scale 50
 
 \end_inset
 
@@ -5914,11 +5916,53 @@ Inertia momentum of the disk with attached weights.
 \end_layout
 
 \begin_layout Standard
-After calculating the IM of the disk, you will be asked to enter the number
- of additional weights and the mass of them.
- Chronojump will give you the inertia momentum added by each additional
- weight and the total inertia momentum (disk + weights).
- Chronojump uses the following formulae.
+In the encoder configuration you should enter the distance from the center
+ of the extra loads to the axis of the disk as well as the weight of the
+ extra weights.
+ This way in the exercise capture windows you will be asked for the extra
+ weights that are attached to the disk as shown in the figure below.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename encoder-manual-images/capture_inertial.png
+	lyxscale 66
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Exercise capturing with inertial configuration
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Below the extra loads selection box the total inertial momentum is shown
+ in Kg*cm²
+\end_layout
+
+\begin_layout Standard
+Chronojump uses the next formulae:
 \end_layout
 
 \begin_layout Standard
