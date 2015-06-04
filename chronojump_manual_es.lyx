@@ -6119,6 +6119,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/encoder-manual-images/encoder_type.png
+	scale 50
 
 \end_inset
 
@@ -6164,6 +6165,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/encoder-manual-images/calculus.png
+	scale 50
 
 \end_inset
 
@@ -6210,7 +6212,7 @@ status open
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/encoder-manual-images/oscilation.png
 	lyxscale 66
-	scale 66
+	scale 33
 
 \end_inset
 
