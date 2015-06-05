@@ -586,7 +586,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename chronopic3.png
+	filename images/chronopic3.png
 	width 250pt
 	height 188pt
 
@@ -632,14 +632,14 @@ Chronopic 3 is a USB powered hardware.
 Chronopic will be connected to the contact platform or photocell barrier
  through the RCA connection
 \begin_inset Graphics
-	filename RCA_connector.png
+	filename images/RCA_connector.png
 	scale 3
 
 \end_inset
 
  , the terminal block 
 \begin_inset Graphics
-	filename screw_connector.png
+	filename images/screw_connector.png
 	scale 3
 
 \end_inset
@@ -673,7 +673,7 @@ Chronopic detect changes in the contact platform and sends it to the computer
  by USB cable, USB-serial or serials.
  You can also use the test button 
 \begin_inset Graphics
-	filename test_button.png
+	filename images/test_button.png
 	scale 3
 
 \end_inset
@@ -1014,7 +1014,7 @@ Power Problem: The red light will turn on when you connect the USB cable
  connected platform and someone stepping on it, or pushing the test button
  
 \begin_inset Graphics
-	filename test_button.png
+	filename images/test_button.png
 	scale 3
 
 \end_inset
@@ -1180,7 +1180,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename chronojump_main_window_english.png
+	filename images/chronojump_main_window_english.png
 	lyxscale 70
 	width 100col%
 
@@ -1275,7 +1275,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename menu_session.png
+	filename images/menu_session.png
 	lyxscale 50
 	scale 60
 
@@ -1314,7 +1314,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename menu_mode.png
+	filename images/menu_mode.png
 
 \end_inset
 
@@ -1351,7 +1351,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename menu_help.png
+	filename images/menu_help.png
 	lyxscale 50
 	scale 60
 
@@ -1442,7 +1442,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename chronopic-connection.png
+	filename images/chronopic-connection.png
 	lyxscale 50
 	scale 60
 
@@ -1555,7 +1555,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename nueva_sesion_colegio.png
+	filename images/nueva_sesion_colegio.png
 	lyxscale 50
 	scale 60
 
@@ -1598,7 +1598,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename nueva_sesion_artistica_competicion.png
+	filename images/nueva_sesion_artistica_competicion.png
 	lyxscale 50
 	scale 60
 
@@ -1723,7 +1723,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename Captura-Nuevo saltador.png
+	filename images/Captura-Nuevo saltador.png
 	lyxscale 50
 	scale 60
 
@@ -1815,7 +1815,7 @@ In the first case you will need a coma separated value file (.csv) previously
  diferent fields.
  The format of the file can be specified with headers 
 \begin_inset Graphics
-	filename import_headers.png
+	filename images/import_headers.png
 	lyxscale 75
 	scale 75
 
@@ -1823,7 +1823,7 @@ In the first case you will need a coma separated value file (.csv) previously
 
  or without it 
 \begin_inset Graphics
-	filename import_no_headers.png
+	filename images/import_no_headers.png
 	lyxscale 75
 	scale 75
 
@@ -1833,7 +1833,7 @@ In the first case you will need a coma separated value file (.csv) previously
  Additionally you can have a file with a single column for the full name
  
 \begin_inset Graphics
-	filename import_1_field.png
+	filename images/import_1_field.png
 	lyxscale 75
 	scale 75
 
@@ -1841,7 +1841,7 @@ In the first case you will need a coma separated value file (.csv) previously
 
  or two columns for the name and surname 
 \begin_inset Graphics
-	filename import_2_fields.png
+	filename images/import_2_fields.png
 	lyxscale 75
 	scale 75
 
@@ -1879,7 +1879,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename Captura-Cargar atletas.png
+	filename images/Captura-Cargar atletas.png
 	lyxscale 50
 	scale 50
 
@@ -1966,7 +1966,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename Captura-Cargar atletas.png
+	filename images/Captura-Cargar atletas.png
 	lyxscale 50
 	scale 50
 
@@ -2009,7 +2009,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename Captura-Cargar_atletas_otra_sesion.png
+	filename images/Captura-Cargar_atletas_otra_sesion.png
 	lyxscale 50
 	scale 50
 
@@ -2455,7 +2455,7 @@ See order
 \emph default
  button
 \begin_inset Graphics
-	filename automatic_list.png
+	filename images/automatic_list.png
 
 \end_inset
 
@@ -2470,7 +2470,7 @@ Skip
 \emph default
  
 \begin_inset Graphics
-	filename automatic_skip.png
+	filename images/automatic_skip.png
 
 \end_inset
 
@@ -2484,7 +2484,7 @@ Remove
 \emph default
  button 
 \begin_inset Graphics
-	filename automatic_delete.png
+	filename images/automatic_delete.png
 
 \end_inset
 
@@ -2612,7 +2612,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename campanas_es.png
+	filename images/campanas_es.png
 	lyxscale 50
 	scale 60
 
@@ -2851,7 +2851,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Captura-Crear un tipo de salto nuevo.png
+	filename images/Captura-Crear un tipo de salto nuevo.png
 	lyxscale 50
 	scale 60
 
@@ -3425,7 +3425,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename chronojump_esquema_two_platforms.png
+	filename images/chronojump_esquema_two_platforms.png
 	width 100col%
 
 \end_inset
@@ -3579,7 +3579,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename chronojump-505.png
+	filename images/chronojump-505.png
 	lyxscale 50
 	scale 55
 
@@ -3995,7 +3995,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename run_type_add.png
+	filename images/run_type_add.png
 	scale 55
 
 \end_inset
@@ -4040,7 +4040,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename run_type_add-variable.png
+	filename images/run_type_add-variable.png
 	scale 55
 
 \end_inset
@@ -4654,7 +4654,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename encoder-manual-images/magnets.jpeg
+	filename images/encoder-manual-images/magnets.jpeg
 
 \end_inset
 
@@ -4697,7 +4697,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename encoder-manual-images/handle.jpeg
+	filename images/images/ encoder-manual-images/handle.jpeg
 
 \end_inset
 
@@ -4743,7 +4743,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename encoder-manual-images/never_fingers.jpeg
+	filename images/images/ encoder-manual-images/never_fingers.jpeg
 
 \end_inset
 
@@ -4789,7 +4789,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename encoder-manual-images/measure.png
+	filename images/images/ encoder-manual-images/measure.png
 
 \end_inset
 
@@ -4951,7 +4951,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename encoder-manual-images/main.png
+	filename images/encoder-manual-images/main.png
 	lyxscale 50
 	scale 60
 
@@ -5105,7 +5105,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename encoder-manual-images/capture_en.png
+	filename images/encoder-manual-images/capture_en.png
 	lyxscale 20
 	scale 50
 
@@ -5164,7 +5164,7 @@ The exercise area includes also the contraction type (eccentric-concentric
  or concentric), the laterality, the recording time selected, the minimal
  height, the feedback bell 
 \begin_inset Graphics
-	filename bell_button.png
+	filename images/bell_button.png
 	lyxscale 75
 	scale 75
 
@@ -5180,7 +5180,7 @@ Aquire
 \begin_layout Standard
 In the acquire area a new set can be captured 
 \begin_inset Graphics
-	filename capture_button.png
+	filename images/capture_button.png
 	lyxscale 75
 	scale 75
 
@@ -5188,7 +5188,7 @@ In the acquire area a new set can be captured
 
  or a previusly captured one can be loaded 
 \begin_inset Graphics
-	filename load_signal_button.png
+	filename images/load_signal_button.png
 	lyxscale 75
 	scale 75
 
@@ -5200,7 +5200,7 @@ In the acquire area a new set can be captured
 \begin_layout Standard
 With the Options button 
 \begin_inset Graphics
-	filename signal_settings_button.png
+	filename images/signal_settings_button.png
 	lyxscale 75
 	scale 75
 
@@ -5220,7 +5220,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename encoder-manual-images/capture_options.png
+	filename images/encoder-manual-images/capture_options.png
 	scale 70
 
 \end_inset
@@ -5320,7 +5320,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename encoder-manual-images/bells.png
+	filename images/encoder-manual-images/bells.png
 	scale 70
 
 \end_inset
@@ -5348,7 +5348,7 @@ Sound feedback options
 \begin_layout Standard
 The load button 
 \begin_inset Graphics
-	filename load_signal_button.png
+	filename images/load_signal_button.png
 	lyxscale 75
 	scale 75
 
@@ -5367,7 +5367,7 @@ Recalculate can be used after capturing or loading.
  to perform calculations of the set again, user can change the selector
  and press “recalculate” 
 \begin_inset Graphics
-	filename recalculate.png
+	filename images/recalculate.png
 	lyxscale 75
 	scale 75
 
@@ -5427,7 +5427,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename encoder-manual-images/save_curve.png
+	filename images/encoder-manual-images/save_curve.png
 	scale 70
 
 \end_inset
@@ -5490,7 +5490,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename encoder-manual-images/power_bars.png
+	filename images/encoder-manual-images/power_bars.png
 	scale 70
 
 \end_inset
@@ -5537,7 +5537,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename encoder-manual-images/analyze_es.png
+	filename images/encoder-manual-images/analyze_es.png
 	scale 50
 
 \end_inset
@@ -5567,7 +5567,7 @@ Regarding the data, two things can be analysed: current set
 \lang spanish
 
 \begin_inset Graphics
-	filename encoder-manual-images/set_button.png
+	filename images/encoder-manual-images/set_button.png
 
 \end_inset
 
@@ -5577,7 +5577,7 @@ Regarding the data, two things can be analysed: current set
 \lang spanish
 
 \begin_inset Graphics
-	filename encoder-manual-images/repetition_button.png
+	filename images/encoder-manual-images/repetition_button.png
 
 \end_inset
 
@@ -5602,7 +5602,7 @@ There are five modes of analysis:
 \begin_layout Itemize
 Power bars 
 \begin_inset Graphics
-	filename analyze_power_button.png
+	filename images/analyze_power_button.png
 	lyxscale 75
 	scale 75
 
@@ -5615,7 +5615,7 @@ Power bars
 \begin_layout Itemize
 Cross variables 
 \begin_inset Graphics
-	filename analyze_cross_button.png
+	filename images/analyze_cross_button.png
 	lyxscale 75
 	scale 75
 
@@ -5629,7 +5629,7 @@ Cross variables
 \begin_layout Itemize
 Side compare 
 \begin_inset Graphics
-	filename analyze_sidecompare_button.png
+	filename images/analyze_sidecompare_button.png
 	lyxscale 75
 	scale 75
 
@@ -5642,7 +5642,7 @@ Side compare
 \begin_layout Itemize
 Single repetition 
 \begin_inset Graphics
-	filename analyze_singlecurve_button.png
+	filename images/analyze_singlecurve_button.png
 	lyxscale 75
 	scale 75
 
@@ -5654,7 +5654,7 @@ Single repetition
 \begin_layout Itemize
 Neuromuscular profile 
 \begin_inset Graphics
-	filename analyze_nmp.png
+	filename images/analyze_nmp.png
 	lyxscale 75
 	scale 75
 
@@ -5723,7 +5723,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename encoder-manual-images/Disk.png
+	filename images/encoder-manual-images/Disk.png
 	lyxscale 12
 	scale 12
 
@@ -5758,7 +5758,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename encoder-manual-images/select.png
+	filename images/encoder-manual-images/select.png
 
 \end_inset
 
@@ -5804,7 +5804,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename encoder-manual-images/encoder_type.png
+	filename images/encoder-manual-images/encoder_type.png
 
 \end_inset
 
@@ -5845,7 +5845,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename encoder-manual-images/calculus.png
+	filename images/encoder-manual-images/calculus.png
 	lyxscale 75
 	scale 50
 
@@ -5888,7 +5888,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename encoder-manual-images/oscilation.png
+	filename images/encoder-manual-images/oscilation.png
 	lyxscale 66
 	scale 33
 
@@ -5934,7 +5934,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename encoder-manual-images/capture_inertial.png
+	filename images/encoder-manual-images/capture_inertial.png
 	lyxscale 66
 
 \end_inset
@@ -6209,7 +6209,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename encoder-manual-images/example.png
+	filename images/encoder-manual-images/example.png
 	scale 50
 
 \end_inset
@@ -6616,7 +6616,7 @@ Some of these tests require a synchronization to intend that the various
 \lang spanish
 n
 \begin_inset Graphics
-	filename test_button.png
+	filename images/test_button.png
 	scale 3
 
 \end_inset
@@ -6690,7 +6690,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename multiChronopic_mc.png
+	filename images/multiChronopic_mc.png
 	lyxscale 50
 	scale 60
 
@@ -6922,7 +6922,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename multiChronopic_ra.png
+	filename images/multiChronopic_ra.png
 	lyxscale 50
 	width 100col%
 
@@ -6985,7 +6985,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename chronojump_stats_window.png
+	filename images/chronojump_stats_window.png
 	lyxscale 50
 	width 100col%
 
@@ -7211,7 +7211,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename chronojump_estadisticas_saltos_simples.png
+	filename images/chronojump_estadisticas_saltos_simples.png
 	lyxscale 50
 	scale 70
 
@@ -7694,7 +7694,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename grafico_stats1.png
+	filename images/grafico_stats1.png
 	lyxscale 50
 	scale 60
 
@@ -7735,7 +7735,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename grafico_stats2.png
+	filename images/grafico_stats2.png
 	lyxscale 50
 	scale 60
 
@@ -7776,7 +7776,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename grafico_stats3.png
+	filename images/grafico_stats3.png
 	lyxscale 50
 	scale 60
 
@@ -7817,7 +7817,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename grafico_stats4.png
+	filename images/grafico_stats4.png
 	lyxscale 50
 	scale 60
 
@@ -7917,7 +7917,7 @@ Clicking on
 \emph on
 Make Report
 \emph default
-, you can choose the filename to save the HTML document.
+, you can choose the filename images/to save the HTML document.
  Also, you can generate a folder that will include all necessary images
  and styles to display the page properly.
 \end_layout
@@ -7944,7 +7944,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename grafico-informe.png
+	filename images/grafico-informe.png
 	lyxscale 50
 	scale 60
 
@@ -7985,7 +7985,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename report1.png
+	filename images/report1.png
 	lyxscale 50
 	scale 70
 
@@ -8270,7 +8270,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename evaluator1.png
+	filename images/evaluator1.png
 	lyxscale 50
 	scale 50
 
@@ -8311,7 +8311,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename evaluator2.png
+	filename images/evaluator2.png
 	lyxscale 50
 	scale 50
 
@@ -8352,7 +8352,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename evaluator3.png
+	filename images/evaluator3.png
 	lyxscale 50
 	scale 50
 
@@ -8438,7 +8438,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Captura-Incluir-Descartar_atletas.png
+	filename images/Captura-Incluir-Descartar_atletas.png
 	lyxscale 50
 	scale 70
 
@@ -8682,7 +8682,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Captura-Query-server.png
+	filename images/Captura-Query-server.png
 	lyxscale 50
 	scale 70
 
@@ -8794,7 +8794,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename server_persons.png
+	filename images/server_persons.png
 	lyxscale 50
 	scale 70
 
@@ -8836,7 +8836,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename server_heights_by_jumps_boxplot.png
+	filename images/server_heights_by_jumps_boxplot.png
 	lyxscale 50
 	scale 60
 
@@ -8876,7 +8876,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename server_tv_by_level_sex_jumptype.png
+	filename images/server_tv_by_level_sex_jumptype.png
 	lyxscale 50
 	scale 60
 
@@ -9104,7 +9104,7 @@ status open
 
 \lang spanish
 \begin_inset Graphics
-	filename Preferencias-1.png
+	filename images/Preferencias-1.png
 	scale 60
 
 \end_inset
@@ -9122,7 +9122,7 @@ status open
 
 \lang spanish
 \begin_inset Graphics
-	filename Preferencias-2.png
+	filename images/Preferencias-2.png
 	scale 60
 
 \end_inset
@@ -9142,7 +9142,7 @@ status open
 
 \lang spanish
 \begin_inset Graphics
-	filename Preferencias-3.png
+	filename images/Preferencias-3.png
 	scale 60
 
 \end_inset
@@ -9598,7 +9598,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename chronopic_2_0_usb_front_mini.jpg
+	filename images/chronopic_2_0_usb_front_mini.jpg
 	width 250pt
 	height 159pt
 
@@ -9640,7 +9640,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename chronopic_2_0_serial_front_mini.jpg
+	filename images/chronopic_2_0_serial_front_mini.jpg
 	width 250pt
 	height 213pt
 
@@ -9683,7 +9683,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename chronopic_foto.jpg
+	filename images/chronopic_foto.jpg
 	width 250pt
 
 \end_inset
@@ -10090,7 +10090,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename chronopic_box_mount.png
+	filename images/chronopic_box_mount.png
 	lyxscale 50
 	scale 50
 
