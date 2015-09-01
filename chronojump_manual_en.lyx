@@ -4697,7 +4697,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/images/ encoder-manual-images/handle.jpeg
+	filename images/encoder-manual-images/handle.jpeg
 
 \end_inset
 
@@ -4743,7 +4743,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/images/ encoder-manual-images/never_fingers.jpeg
+	filename images/encoder-manual-images/never_fingers.jpeg
 
 \end_inset
 
@@ -4789,7 +4789,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/images/ encoder-manual-images/measure.png
+	filename images/encoder-manual-images/measure.png
 
 \end_inset
 
@@ -5198,6 +5198,111 @@ In the acquire area a new set can be captured
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Important!: When using inertial machiens, remember always start with the
+ rope fully unwrapped when you press the capture button.
+ I you don't do that, you will see that half of the repetitions have a much
+ smaller range of movement than the other half.
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang spanish
+Right execution
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang spanish
+Wrong execution
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Graphics
+	filename images/encoder-manual-images/inertial_right.png
+	lyxscale 50
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Graphics
+	filename images/encoder-manual-images/inertial_wrong.png
+	lyxscale 50
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 With the Options button 
 \begin_inset Graphics
 	filename images/signal_settings_button.png
@@ -5307,7 +5412,7 @@ Show star and duration of each repetition.
 
 \begin_layout Standard
 Feedback.
- This button opens the sound feedback options.
+ This button opens the sound and colour feedback options.
 \end_layout
 
 \begin_layout Standard

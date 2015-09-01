@@ -1394,7 +1394,7 @@ status open
 \begin_inset Graphics
 	filename images/chronojump_main_window_spanish.png
 	lyxscale 70
-	scale 60
+	width 100col%
 
 \end_inset
 
@@ -5499,6 +5499,101 @@ En el área de captura se puede adquirir nuevos datos
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Importante!: En el uso de máquinas inerciales, asegúrese, antes de presionar
+ el botón de Capturar, que la cuerda está totalmente desenrollada.
+ Si no es así verá que la mitad de repeticiones tienen un rango de movimiento
+ muy inferior a la otra mitdad.
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ejecución correcta
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ejecución incorrecta
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/inertial_right.png
+	lyxscale 50
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/inertial_wrong.png
+	lyxscale 50
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Mediante el botón de Opciones 
 \begin_inset Graphics
 	filename images/signal_settings_button.png
@@ -5598,8 +5693,8 @@ Mostrar el inicio y duración de cada repetición.
 
 \begin_layout Standard
 Campanas.
- Este botón le permite configurar los mensajes sonoros en función de diferentes
- variable.
+ Este botón le permite configurar los mensajes sonoros y de color en función
+ de diferentes variables.
 \end_layout
 
 \begin_layout Standard
