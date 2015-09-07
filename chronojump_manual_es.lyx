@@ -5357,6 +5357,38 @@ Configuración del encoder
 El siguiente paso consiste en seleccionar el tipo de encoder que se ha conectado
 , tipo de máquina al que se ha acoplado y el ejercicio que se realizará
  con la misma.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/select_es.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Selección de encoder
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5388,16 +5420,121 @@ Rotatorio de eje
 \end_layout
 
 \begin_layout Standard
-Algunas configuraciones necesitan parámetros adicionales como ángulos, diámetros
- o momentos de inercia.
+Dentro de cada tipo de encoder se podrá escojer entre máquinas inerciales
+ y máquinas gravitatorias.
 \end_layout
 
 \begin_layout Standard
-Chronojump implementa un sistema para calcular el momento de inercia que
+Algunas configuraciones necesitan parámetros adicionales como ángulos, diámetros
+ o momentos de inercia, etc...
+\end_layout
+
+\begin_layout Paragraph
+Configuración de máquinas inerciales
+\end_layout
+
+\begin_layout Standard
+Por las características de las máquinas inerciales, estas requerirán la
+ introducción de una serie de parámetros adicionales que a continuación
+ pasamos a describir.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/inertial_conf_es.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Parámetros de las máquinas inerciales
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hay tres tipos de configuraciones de máquinas inerciales:
+\end_layout
+
+\begin_layout Enumerate
+Máquinas en que el sujeto trabaja contra la gravedad, es decir en un movimiento
+ vertical, como por ejemplo en una sentadilla.
+\end_layout
+
+\begin_layout Enumerate
+Máquinas en el que el sujeto trabaja en un movimiento horizontal, como por
+ ejemplo en un desplazamiento lateral.
+\end_layout
+
+\begin_layout Enumerate
+Máquinas que tienen un juego de poleas que permite que el movimiento de
+ la máquina sea el doble del del sujeto para aumentar la resistencia que
+ se ofrece.
+\end_layout
+
+\begin_layout Standard
+En el caso en que el peso desplazado del sujeto sea despreciable la configuració
+n 1 y 2 serán equivalentes ya que se diferencian en la inclusión o no de
+ la fuerza de la gravedad en los cálculos de fuerza y potencia.
+\end_layout
+
+\begin_layout Standard
+A continuación pasamos a describir los parámetros necesarios
+\end_layout
+
+\begin_layout Itemize
+Número de anclajes: Algunos modelos de máquinas inerciales tienen varios
+ anclajes, lo cual permite que el diámetro medio sobre el que se enrolla
+ la cuerda varie.
+ Seleccionando el número de anclajes aparecerán o desaparecerán las opciones
+ para introducir el diámetro correcto para cada uno.
+\end_layout
+
+\begin_layout Itemize
+Momento de inercia: Es un parámetro que depende de cada máquina y se refiere
+ a la máquina sin ningú peso adicional.
+ Chronojump implementa un sistema para calcular el momento de inercia que
  le permite configurar prácticamente todos los tipos de máquinas inerciales
  de rotación.
  Siga las instrucciones de la sección 5.3.4 para hacer los cálculos del momento
  de inercia.
+\end_layout
+
+\begin_layout Itemize
+Masa de cada carga adicional: Si la máquina inercial permite añadir cargas
+ para aumentar el momento de inercia, Chronojump lo calculará a partir de
+ la masa de estas cargas.
+ De este modo, sólo hay que introducir el peso de una carga.
+\end_layout
+
+\begin_layout Itemize
+Distancia centro-carga: Es la distancia que hay entre el centro de las masas
+ adicionales y el eje de la máquina.
 \end_layout
 
 \begin_layout Subsubsection
@@ -5515,7 +5652,7 @@ status open
 \begin_layout Plain Layout
 Importante!: En el uso de máquinas inerciales, asegúrese, antes de presionar
  el botón de Capturar, que la cuerda está totalmente desenrollada.
- Si no es así verá que la mitad de repeticiones tienen un rango de movimiento
+ Si no es así, verá que la mitad de repeticiones tienen un rango de movimiento
  muy inferior a la otra mitdad.
 \end_layout
 
@@ -6160,7 +6297,7 @@ Seleccionar codificador
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -6213,7 +6350,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/encoder_type.png
+	filename images/encoder-manual-images/inertial_conf_es.png
 	scale 50
 
 \end_inset
