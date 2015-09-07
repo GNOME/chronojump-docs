@@ -5441,15 +5441,17 @@ Por las características de las máquinas inerciales, estas requerirán la
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
 
-\begin_layout Plain Layout
+\begin_layout Itemize
 \noindent
-\align center
 \begin_inset Graphics
 	filename images/encoder-manual-images/inertial_conf_es.png
+	lyxscale 50
+	scale 50
 
 \end_inset
 
@@ -5521,8 +5523,17 @@ Momento de inercia: Es un parámetro que depende de cada máquina y se refiere
  Chronojump implementa un sistema para calcular el momento de inercia que
  le permite configurar prácticamente todos los tipos de máquinas inerciales
  de rotación.
- Siga las instrucciones de la sección 5.3.4 para hacer los cálculos del momento
- de inercia.
+ Siga las instrucciones de la sección 5.3.3.2.4
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+5.3.3.2.4
+\end_layout
+
+\end_inset
+
+ para hacer los cálculos del momento de inercia.
 \end_layout
 
 \begin_layout Itemize
@@ -5535,6 +5546,391 @@ Masa de cada carga adicional: Si la máquina inercial permite añadir cargas
 \begin_layout Itemize
 Distancia centro-carga: Es la distancia que hay entre el centro de las masas
  adicionales y el eje de la máquina.
+\end_layout
+
+\begin_layout Paragraph
+Cálculo del momento de inercia
+\end_layout
+
+\begin_layout Standard
+La primera parte de esta sección mostrará cómo calcular el momento de inercia
+ (MI) del disco de una máquina inercial.
+\end_layout
+
+\begin_layout Standard
+En el siguiente enlace puede ver un vídeo del proceso de cálculo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "Calculing inertia momentum video"
+target "http://youtu.be/HK1ilOyg5Vs"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+Momento de inercia del disco
+\end_layout
+
+\begin_layout Standard
+Para calcular el MI del disco sin pesos extras usaremos un peso de referencia.
+ Recuerde que aunque usaremos un peso acoplado al disco, los resultados
+ que Chronojump nos devolverá en esta parte del proceso se refieren únicamente
+ al disco sin ningún peso.
+\end_layout
+
+\begin_layout Enumerate
+Ponga la máquina en una posición tal que el disco esté en un plano vertical
+\end_layout
+
+\begin_layout Enumerate
+Acople un peso conocido a una distancia conocida del eje de giro.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/Disk.png
+	lyxscale 12
+	scale 12
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Peso de referencia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\noindent
+En Chronojump, con el encoder conectado, vaya a 
+\emph on
+Seleccionar codificador
+\emph default
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/select_es.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Selección de encoder
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Escoja el tipo de encoder que va a usar y seleccione la opción 
+\emph on
+máquina inercial
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+En esta ventana se le preguntará por el diámetro donde la cuerda es enrollada
+ y el momento de inercia de la máquina.
+ Tenga en cuenta que en las máquinas cónicas este diámetro no es fijo.
+ Le recomendamos introducir la media del diámetro donde se enrolla la cuerda.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/inertial_conf_es.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang british
+Parameters of the inertial machine
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Haga clic en 
+\emph on
+Calcular MI.
+\end_layout
+
+\begin_layout Enumerate
+Introduzca el peso (en gramos) del peso de referencia y la distancia (en
+ centímetros) hasta el centro del disco.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/calculus.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Parámetros para el cálculo del IM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Tire del peso hasta aproximadamente 90 grados y suéltelo.
+ El disco debería empezar a oscilar.
+\end_layout
+
+\begin_layout Enumerate
+Rápidamente haga clic en el botón 
+\emph on
+Capturar
+\emph default
+.
+ Se le mostrará la señal enviada por el encoder.
+ Chronojump detectará cuando la máquina deja de moverse y devolverá el momento
+ de inercia calculado.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/oscilation.png
+	lyxscale 66
+	scale 33
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Captura de la oscilación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+Momento de inercia del disco con pesos acoplados.
+\end_layout
+
+\begin_layout Standard
+En lal configuración del encoder debe introducir la distancia del centro
+ de la carga extra hasta el eje del disco así como el peso del mismo disco.
+ De este modo en la ventana de captura del ejercicio se le preguntará los
+ pesos extras que se han añadido al disco.
+\lang british
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang british
+\begin_inset Graphics
+	filename images/encoder-manual-images/capture_inertial.png
+	lyxscale 66
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang british
+Configuración de la serie en inerciales
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Debajo de el selector de pesos extra se le indicará el momento de inercia
+ total.
+\end_layout
+
+\begin_layout Standard
+Chronojump usa las siguientes fórmulas
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{w}=M*d^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $I_{w}$
+\end_inset
+
+ es el momento de inercia que añade cada peso al sistema.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $M$
+\end_inset
+
+ es la masa del peso.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $d^{2}$
+\end_inset
+
+ es el cuadrado de la distancia desde el centro del disco hasta el centro
+ del peso.
+\end_layout
+
+\begin_layout Standard
+Y el momento de inercia del disco con los pesos extras
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I=I_{d}+n*I_{w}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I$
+\end_inset
+
+ es el momento de inercia total.
+ Éste es el valor que debe entrar Chronojump.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{d}$
+\end_inset
+
+ Es el momento de inercia del disco(calculado en primera parte de esta sección).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n$
+\end_inset
+
+ es el número de pesos añadidos al disco.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{w}$
+\end_inset
+
+ es el momento de inercia de cada peso, calculado anteriormente.
 \end_layout
 
 \begin_layout Subsubsection
@@ -6211,391 +6607,6 @@ Guardar gráfica
 Guardar tabla
 \emph default
 .
-\end_layout
-
-\begin_layout Subsection
-Cálculo del momento de inercia
-\end_layout
-
-\begin_layout Standard
-La primera parte de esta sección mostrará cómo calcular el momento de inercia
- (MI) del disco de una máquina inercial.
-\end_layout
-
-\begin_layout Standard
-En el siguiente enlace puede ver un vídeo del proceso de cálculo.
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset href
-LatexCommand href
-name "Calculing inertia momentum video"
-target "http://youtu.be/HK1ilOyg5Vs"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Momento de inercia del disco
-\end_layout
-
-\begin_layout Standard
-Para calcular el MI del disco sin pesos extras usaremos un peso de referencia.
- Recuerde que aunque usaremos un peso acoplado al disco, los resultados
- que Chronojump nos devolverá en esta parte del proceso se refieren únicamente
- al disco sin ningún peso.
-\end_layout
-
-\begin_layout Enumerate
-Ponga la máquina en una posición tal que el disco esté en un plano vertical
-\end_layout
-
-\begin_layout Enumerate
-Acople un peso conocido a una distancia conocida del eje de giro.
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/encoder-manual-images/Disk.png
-	lyxscale 12
-	scale 12
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Peso de referencia
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\noindent
-En Chronojump, con el encoder conectado, vaya a 
-\emph on
-Seleccionar codificador
-\emph default
-
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/encoder-manual-images/select_es.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Selección de encoder
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Escoja el tipo de encoder que va a usar y seleccione la opción 
-\emph on
-máquina inercial
-\emph default
-.
-\end_layout
-
-\begin_layout Enumerate
-En esta ventana se le preguntará por el diámetro donde la cuerda es enrollada
- y el momento de inercia de la máquina.
- Tenga en cuenta que en las máquinas cónicas este diámetro no es fijo.
- Le recomendamos introducir la media del diámetro donde se enrolla la cuerda.
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/encoder-manual-images/inertial_conf_es.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\lang british
-Parameters of the inertial machine
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Haga clic en 
-\emph on
-Calcular MI.
-\end_layout
-
-\begin_layout Enumerate
-Introduzca el peso (en gramos) del peso de referencia y la distancia (en
- centímetros) hasta el centro del disco.
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/encoder-manual-images/calculus.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Parámetros para el cálculo del IM
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Tire del peso hasta aproximadamente 90 grados y suéltelo.
- El disco debería empezar a oscilar.
-\end_layout
-
-\begin_layout Enumerate
-Rápidamente haga clic en el botón 
-\emph on
-Capturar
-\emph default
-.
- Se le mostrará la señal enviada por el encoder.
- Chronojump detectará cuando la máquina deja de moverse y devolverá el momento
- de inercia calculado.
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/encoder-manual-images/oscilation.png
-	lyxscale 66
-	scale 33
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Captura de la oscilación
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Momento de inercia del disco con pesos acoplados.
-\end_layout
-
-\begin_layout Standard
-En lal configuración del encoder debe introducir la distancia del centro
- de la carga extra hasta el eje del disco así como el peso del mismo disco.
- De este modo en la ventana de captura del ejercicio se le preguntará los
- pesos extras que se han añadido al disco.
-\lang british
-
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-
-\lang british
-\begin_inset Graphics
-	filename images/encoder-manual-images/capture_inertial.png
-	lyxscale 66
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\lang british
-Configuración de la serie en inerciales
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Debajo de el selector de pesos extra se le indicará el momento de inercia
- total.
-\end_layout
-
-\begin_layout Standard
-Chronojump usa las siguientes fórmulas
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $I_{w}=M*d^{2}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Donde:
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $I_{w}$
-\end_inset
-
- es el momento de inercia que añade cada peso al sistema.
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $M$
-\end_inset
-
- es la masa del peso.
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $d^{2}$
-\end_inset
-
- es el cuadrado de la distancia desde el centro del disco hasta el centro
- del peso.
-\end_layout
-
-\begin_layout Standard
-Y el momento de inercia del disco con los pesos extras
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $I=I_{d}+n*I_{w}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Donde:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $I$
-\end_inset
-
- es el momento de inercia total.
- Éste es el valor que debe entrar Chronojump.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $I_{d}$
-\end_inset
-
- Es el momento de inercia del disco(calculado en primera parte de esta sección).
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $n$
-\end_inset
-
- es el número de pesos añadidos al disco.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $I_{w}$
-\end_inset
-
- es el momento de inercia de cada peso, calculado anteriormente.
 \end_layout
 
 \begin_layout Subsection

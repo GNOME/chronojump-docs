@@ -4625,7 +4625,7 @@ Encoder tests
 \end_layout
 
 \begin_layout Subsection
-Safety instruccions
+Safety instruccions for linear encoders
 \end_layout
 
 \begin_layout Standard
@@ -5029,6 +5029,46 @@ Encoder configuration
 \begin_layout Standard
 The next step is the selection of the type of encoder, how it is atached
  to the machine and the type of machine used in the exercise.
+\lang spanish
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/select.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang spanish
+Encoder selection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5070,20 +5110,491 @@ Some configurations need additional parameters as angle, diameter or inertia
  momentum.
 \end_layout
 
+\begin_layout Paragraph
+Inertial machines configuration
+\end_layout
+
 \begin_layout Standard
-Chronojump implements a system to calculate the inertia momentum that allows
+The characteristics of the inertial machines make necessary to enter a set
+ of extra parameters that are being descrived below:
+\lang spanish
+
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/inertial_conf.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang spanish
+Inertial machines parameters
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There's three types of inertial configuration
+\end_layout
+
+\begin_layout Enumerate
+Machines where the subject works against gravity, or in a vertical movement.
+ Example: squat.
+\end_layout
+
+\begin_layout Enumerate
+Machines where the subject works in a horizontal movement.
+ Example: lateral displacement.
+\end_layout
+
+\begin_layout Enumerate
+Machines that hay a set of pulleys thet makes that the movement of the machine
+ is twice the movement of the subject with the objective of doubling the
+ resistance offered by the machine.
+\end_layout
+
+\begin_layout Standard
+In the case of the displaced body weight being insignificant the configuration
+ 1 and 2 are equivalents because the only difference is the inclusion or
+ not of the gravity in the calculus of the force and power.
+\end_layout
+
+\begin_layout Standard
+Below are descrived the needed parameters:
+\end_layout
+
+\begin_layout Itemize
+Number of anchorages: Some models of inertial machines have more than one
+ anchorage allowing to change the mean diameter where the rope is wrapped.
+ Selecting the number of anchorages will add or supress the options to enter
+ the diameter of each one.
+\end_layout
+
+\begin_layout Itemize
+Inertia momentum: This is a parameter that depends on each machine and is
+ reffered to the machine without any extra load.
+ Chronojump implements a system to calculate the inertia momentum that allows
  to config an encoder in almost all type of inertial machines.
  Follow the instructions in section 
 \begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
-6.4
+5.3.3.2.4
 \end_layout
 
 \end_inset
 
- to calcuate the inertia momentum of your machine configuration
+ to calcuate the inertia momentum of your machine configuration.
+\end_layout
+
+\begin_layout Itemize
+Mass of each extra load: If the inertial machine allows to add extra loads
+ to augment the inertia momentum, Chronojump will calcule it from the mass
+ of eache one of this loads.
+ This way, you have to enter the mass o only one load.
+\end_layout
+
+\begin_layout Itemize
+Distance center-load: It is the distance between the center of the extra
+ load and the axis of the inertial machine.
+\end_layout
+
+\begin_layout Paragraph
+Calculation of the inertia momentum
+\end_layout
+
+\begin_layout Standard
+The firs part of this section will explain how to calculate the inertia
+ momentum (IM) of the disk in an inertial machine.
+ The calculus of the IM of a disk with attached weights will be discussed
+ in the second part.
+ In the following link you can see a video of the process.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "Calculing inertia momentum video"
+target "http://youtu.be/HK1ilOyg5Vs"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+Inertia momentum of the disk
+\end_layout
+
+\begin_layout Standard
+To calculate the IM of the bare disk without weights we will use a reference
+ weight.
+ Remember, although we will use an attached to the disk weight, the results
+ given by Chronojump in this part of the process refers only to the disk
+ without any weight.
+\end_layout
+
+\begin_layout Enumerate
+Put the machine in a any position that makes the disk rests in a vertical
+ plane.
+\end_layout
+
+\begin_layout Enumerate
+Attach a known weight to known distance from the center of the disk.
+ This way the disk will be unbalanced and after lifting and living the weight
+ it will start to oscilate like a pendulus.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/Disk.png
+	lyxscale 12
+	scale 12
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Reference weight
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+In chrono jump software, with the encoder connected go to Select encoder.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/select.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Select encoder button
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Choose type of encoder you will use, and select the Inertial machine option.
+\end_layout
+
+\begin_layout Enumerate
+In this windows you will be asked for the diameter where the rope is wrapped
+ and the IM of the machine.
+ Note that in conical machines this diameter changes continuously as the
+ disk is spinning.
+ We recommend you to use the mean diameter of the part of the cone where
+ the rope is wrapping at.
+ 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/inertial_conf.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Parameters of the inertial machine
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+As you want to know the IM, click on “Calculate IM”
+\end_layout
+
+\begin_layout Enumerate
+Enter the weight (in grams) of the reference load and the distance (in centimete
+rs) to the center of the disk.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/calculus.png
+	lyxscale 75
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Parameters for calculating the IM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Pull the weight to approximately 90 degrees position and leave it.
+ The disk should start oscil ating.
+\end_layout
+
+\begin_layout Enumerate
+Quickly, click on the capture button.
+ You will see the signal sent by the encoder.
+ Chrnonojump will detect when the machine stops moving and will return the
+ calculated IM.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/oscilation.png
+	lyxscale 66
+	scale 33
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Capturing the oscilation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+Inertia momentum of the disk with attached weights.
+\end_layout
+
+\begin_layout Standard
+In the encoder configuration you should enter the distance from the center
+ of the extra loads to the axis of the disk as well as the weight of the
+ extra weights.
+ This way in the exercise capture windows you will be asked for the extra
+ weights that are attached to the disk as shown in the figure below.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/capture_inertial.png
+	lyxscale 66
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Exercise capturing with inertial configuration
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Below the extra loads selection box the total inertial momentum is shown
+ in Kg*cm²
+\end_layout
+
+\begin_layout Standard
+Chronojump uses the next formulae:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{w}=M*d^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $I_{w}$
+\end_inset
+
+ is the Inertia momentum that each weigth will add to the system.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $M$
+\end_inset
+
+ is the mass of the weight.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $d^{2}$
+\end_inset
+
+ is the square of the distance from the center of the disk to the center
+ of the weight.
+\end_layout
+
+\begin_layout Standard
+And the inertia momentum of the disk with the attatched weights
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I=I_{d}+n*I_{w}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I$
+\end_inset
+
+ is the total inertia momentum.
+ This is the value you must enter in the chronojump software.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{d}$
+\end_inset
+
+ is the inertia momentum of the disk calculated in the first part of this
+ section.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n$
+\end_inset
+
+ is the number of weights added to the disk.
+ - is the inertia momentum of each weight calculated above
 \end_layout
 
 \begin_layout Subsubsection
@@ -5773,373 +6284,6 @@ Neuromuscular profile
 The analysis starts when user click in “Analyse”.
  After a while, a graph and a table will appear, both can be saved using
  each save button in the lower right.
-\end_layout
-
-\begin_layout Subsection
-Calculation of the inertia momentum
-\end_layout
-
-\begin_layout Standard
-The firs part of this section will explain how to calculate the inertia
- momentum (IM) of the disk in an inertial machine.
- The calculus of the IM of a disk with attached weights will be discussed
- in the second part.
- In the following link you can see a video of the process.
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset href
-LatexCommand href
-name "Calculing inertia momentum video"
-target "http://youtu.be/HK1ilOyg5Vs"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Inertia momentum of the disk
-\end_layout
-
-\begin_layout Standard
-To calculate the IM of the bare disk without weights we will use a reference
- weight.
- Remember, although we will use an attached to the disk weight, the results
- given by Chronojump in this part of the process refers only to the disk
- without any weight.
-\end_layout
-
-\begin_layout Enumerate
-Put the machine in a any position that makes the disk rests in a vertical
- plane.
-\end_layout
-
-\begin_layout Enumerate
-Attach a known weight to known distance from the center of the disk.
- This way the disk will be unbalanced and after lifting and living the weight
- it will start to oscilate like a pendulus.
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/encoder-manual-images/Disk.png
-	lyxscale 12
-	scale 12
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Reference weight
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-In chrono jump software, with the encoder connected go to Select encoder.
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/encoder-manual-images/select.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Select encoder button
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Choose type of encoder you will use, and select the Inertial machine option.
-\end_layout
-
-\begin_layout Enumerate
-In this windows you will be asked for the diameter where the rope is wrapped
- and the IM of the machine.
- Note that in conical machines this diameter changes continuously as the
- disk is spinning.
- We recommend you to use the mean diameter of the part of the cone where
- the rope is wrapping at.
- 
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/encoder-manual-images/encoder_type.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Parameters of the inertial machine
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-As you want to know the IM, click on “Calculate IM”
-\end_layout
-
-\begin_layout Enumerate
-Enter the weight (in grams) of the reference load and the distance (in centimete
-rs) to the center of the disk.
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/encoder-manual-images/calculus.png
-	lyxscale 75
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Parameters for calculating the IM
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Pull the weight to approximately 90 degrees position and leave it.
- The disk should start oscil ating.
-\end_layout
-
-\begin_layout Enumerate
-Quickly, click on the capture button.
- You will see the signal sent by the encoder.
- Chrnonojump will detect when the machine stops moving and will return the
- calculated IM.
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/encoder-manual-images/oscilation.png
-	lyxscale 66
-	scale 33
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Capturing the oscilation
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Inertia momentum of the disk with attached weights.
-\end_layout
-
-\begin_layout Standard
-In the encoder configuration you should enter the distance from the center
- of the extra loads to the axis of the disk as well as the weight of the
- extra weights.
- This way in the exercise capture windows you will be asked for the extra
- weights that are attached to the disk as shown in the figure below.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/encoder-manual-images/capture_inertial.png
-	lyxscale 66
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Exercise capturing with inertial configuration
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Below the extra loads selection box the total inertial momentum is shown
- in Kg*cm²
-\end_layout
-
-\begin_layout Standard
-Chronojump uses the next formulae:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $I_{w}=M*d^{2}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Where:
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $I_{w}$
-\end_inset
-
- is the Inertia momentum that each weigth will add to the system.
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $M$
-\end_inset
-
- is the mass of the weight.
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $d^{2}$
-\end_inset
-
- is the square of the distance from the center of the disk to the center
- of the weight.
-\end_layout
-
-\begin_layout Standard
-And the inertia momentum of the disk with the attatched weights
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $I=I_{d}+n*I_{w}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Where:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $I$
-\end_inset
-
- is the total inertia momentum.
- This is the value you must enter in the chronojump software.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $I_{d}$
-\end_inset
-
- is the inertia momentum of the disk calculated in the first part of this
- section.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $n$
-\end_inset
-
- is the number of weights added to the disk.
- - is the inertia momentum of each weight calculated above
 \end_layout
 
 \begin_layout Subsection
