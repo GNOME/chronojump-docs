@@ -89,7 +89,7 @@ Manual de Chronojump
 
 
 \size large
-(Actualizado el 02-03-15)
+(Actualizado el 21/09/15)
 \end_layout
 
 \begin_layout Author
@@ -1267,6 +1267,62 @@ Uso de Chronojump
 
 \begin_layout Chapter
 Uso de Chronojump
+\end_layout
+
+\begin_layout Standard
+Al abrir Chronojump aparecerá una ventana que le permitira sleccionar el
+ tipo de test con el que se trabajará.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/splash_es.png
+	lyxscale 70
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:splash"
+
+\end_inset
+
+Ventana de inicio.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una vez seleccionado si quiere volver a esta ventana puede ir a 
+\emph on
+Menú -> Modo -> Menú principal
+\end_layout
+
+\begin_layout Standard
+Además también podrá configurar algunos parámetros que afectan a la detección
+ automática del Chronopic.
+ Si tiene problemas al inicio o en la captura pruebe las diferentes opciones.
 \end_layout
 
 \begin_layout Section
@@ -9644,7 +9700,27 @@ Además, tampoco subirán al servidor los comentarios que el evaluador haya
 \end_layout
 
 \begin_layout Chapter
-Preferencias y uso de Chronojump en más de un ordenador
+Preferencias de Chronojump
+\end_layout
+
+\begin_layout Standard
+La ventana de preferencias 
+\emph on
+Sesión / Preferencias
+\emph default
+, se divide en siete pestañas: 
+\emph on
+Base de datos
+\emph default
+, 
+\emph on
+Saltos, Carreras, Codificador, Cámara, Idioma y otros
+\emph default
+.
+\end_layout
+
+\begin_layout Section
+Uso de Chronojump en más de un ordenador
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Preferencias"
@@ -9655,31 +9731,45 @@ name "sec:Preferencias"
 \end_layout
 
 \begin_layout Standard
-La ventana de preferencias 
-\emph on
-Sesión / Preferencias
-\emph default
-, se divide en tres pestañas: 
-\emph on
-Base de datos
-\emph default
-, 
-\emph on
-Mostrar
-\emph default
- y 
-\emph on
-Otros
-\emph default
-.
- La figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Preferencias"
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/preferences_database_es.png
+	lyxscale 50
+	scale 50
 
 \end_inset
 
- muestra las tres pestañas.
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:preferences_database"
+
+\end_inset
+
+Preferencias, pestaña de la base de datos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -9687,9 +9777,10 @@ La pestaña
 \emph on
 Base de datos
 \emph default
- muestra donde se encuentra, permite abrir la carpeta, y también permite
- realizar una copia de la misma en algún directorio de elección del usuario.
- Es posible que se muestren dos ubicaciones de la base de datos pues algunas
+ muestra donde se encuentran los datos de Chronojump, permite abrir la carpeta,
+ y también permite realizar una copia de la misma en algún directorio a
+ elección del usuario.
+ Es posible que se muestren dos ubicaciones de la base de datos, pues algunas
  versiones de Windows ofrecen un lugar donde guardar los datos mientras
  el programa se ejecuta, y otro cuando éste se ha cerrado.
  
@@ -9705,8 +9796,6 @@ A parte de permitir la copia de la base de datos para no perder información
 \begin_layout Standard
 Hasta la fecha, Chronojump no dispone de un sistema de sincronización de
  los datos entre varias instalaciones de Chronojump en distintos ordenadores.
- En enero de 2012 se prevé publicar un método para unir dos bases de datos
- distintas.
  De momento, la única manera que existe para trabajar en varios sistemas
  es copiar la base de datos de un lado a otro.
  Como ejemplo, si desea copiar la base de datos desde el ordenador A al
@@ -9721,15 +9810,51 @@ En el ordenador A:
 \begin_layout Enumerate
 Ir a 
 \emph on
-Sesión / preferencias / base de datos / copiar base de datos
+Sesión / preferencias / base de datos 
 \end_layout
 
 \begin_layout Enumerate
-Seleccionar la carpeta en la que desee copiarla.
+Seleccione los elementos de los que quiere hacer una copia.
+\end_layout
+
+\begin_layout Enumerate
+Haga clic sobre 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+copiar base de datos
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Según se haya seleccionado o no la opción de guardar 
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+Multimedia y encoder
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+, se exportará una carpeta con sus respectivas subcarpetas y archivos o
+ un simple archivo de base de datos.
+ Seleccionar la carpeta en la que desee guardar la copia de seguridad.
  Por ejemplo: un lápiz USB (pendrive).
- El archivo se denominará 
+ Tendremos un archivo llamado 
 \emph on
 chronojump.db
+\emph default
+ en el caso de no exportar los archivos multimedia y los tests de encoder,
+ o una carpeta llamada Chronojump en caso contrario.
+ 
 \end_layout
 
 \end_deeper
@@ -9748,6 +9873,7 @@ Ir a
 Sesión / preferencias / base de datos / abrir la carpeta de la base de datos
 \emph default
 .
+ Se abrirá una ventana con un explorador de archivos.
 \end_layout
 
 \begin_layout Enumerate
@@ -9756,15 +9882,20 @@ Si en la base de datos del ordenador B tiene datos que no quiere perder,
 \emph on
 chronojump.db
 \emph default
- que se encuentra en dicha carpeta.
+ o de la carpeta Chronojump entera que se encuentra dos niveles por encima
+ en la estructura de directorios.
 \end_layout
 
 \begin_layout Enumerate
-Copie el archivo 
+Si no ha copiado los archivos multimedia y de encoder, copie el archivo
+ 
 \emph on
 chronojump.db
 \emph default
- del ordenador A a la carpeta de la base de datos del ordenador B.
+ del ordenador A a la carpeta de la base de datos del ordenador B y sustituya
+ en que se encuntre en esta.
+ En caso contrario, sustituya la carpeta Chronojump del ordenador B por
+ la nueva proviniente del ordenador A.
 \end_layout
 
 \begin_layout Enumerate
@@ -9779,6 +9910,10 @@ Reinicie Chronojump en el ordenador B.
 
 \end_layout
 
+\begin_layout Section
+Saltos
+\end_layout
+
 \begin_layout Standard
 La pestaña 
 \emph on
@@ -9786,6 +9921,292 @@ Mostrar
 \emph default
  permite establecer las columnas de información que se desea mostrar en
  las ventanas de datos y la ventana de estadísticas.
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/preferences_jumps_es.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:preferences_jumps"
+
+\end_inset
+
+Preferencias, pestaña de saltos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Carreras
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/preferences_runs_es.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:preferences_runs"
+
+\end_inset
+
+Preferencias, pestaña de carreras
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta pestaña permite configurar el comportamiento de Chronojump en los tests
+ de carreras.
+\end_layout
+
+\begin_layout Standard
+La primera opción se refiere al comportamiento de Chronojump en el primer
+ contacto de una carrera.
+ Permite definir si el tiempo empieza a contar cuando hay el primer contacto
+ (pisar una plataforma o cortar una barrera fotoeléctrica) o cuando se deja
+ de hacer contacto (dejar de pisar una plataforma o dejar de cortar la barrera
+ fotoeléctrica)
+\end_layout
+
+\begin_layout Standard
+La segunda opción le permite configurar el comportamiento de Chronojump
+ ante contactos/cortes que se producen en un periodo de tiempo corto.
+\end_layout
+
+\begin_layout Standard
+Ejemplo: En una carrera con un par de fotocélulas separadas 10m, un atleta
+ al llegar a una barrera fotoeléctrica corta con el brazo, antes de cortar
+ con el cuerpo, la barrera fotoeléctrica.
+ De este modo se producen dos cortes el del brazo y luego el del cuerpo
+ con una diferencia de 20ms.
+ Aquí podrímos especificar que cortes separados menos de 500ms se consideren
+ como un solo corte.
+\end_layout
+
+\begin_layout Section
+Encoder
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/preferences_encoder_es.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:preferences_encoder"
+
+\end_inset
+
+Preferencias, pestaña de encoder
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta pestaña permite configurar el comportamiento de Chronojump en los tests
+ de encoder.
+\end_layout
+
+\begin_layout Standard
+La opción de propulsivo se utilizará en los cálculos para tener en cuenta
+ sólo la parte del movimiento en que la aceleración es superior a la de
+ la gravedad, es decir, cuando se está aplicando una fuerza.
+\end_layout
+
+\begin_layout Standard
+También se permite seleccionar las opciones de guardado automático de repeticion
+es, así como el suavizado utilizado en los cálculos.
+\end_layout
+
+\begin_layout Standard
+Respecto a la predicción 1RM las opciones permiten seleccionar como se deben
+ ponderar las repeticiones según la carga empleada.
+\end_layout
+
+\begin_layout Section
+Camara
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/preferences_camera_es.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:preferences_camera"
+
+\end_inset
+
+Preferencias, pestaña de cámara
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta pestaña le permitirá elegir la cámara que Chronojump usará para hacer
+ vídeos y fotos con Chronojump.
+\end_layout
+
+\begin_layout Section
+Idioma
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/preferences_language_es.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:preferences_language"
+
+\end_inset
+
+Preferencias, pestaña de idioma
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Mediante esta pestaña se podrán elegir las opciones de idioma y traducción.
+\end_layout
+
+\begin_layout Section
+Otros
 \end_layout
 
 \begin_layout Standard
@@ -9813,75 +10234,11 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="6cm">
-<column alignment="center" valignment="top" width="6cm">
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/Preferencias-1.png
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/Preferencias-2.png
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row topspace="0.5cm">
-<cell multicolumn="1" alignment="center" valignment="top" usebox="none" width="12cm">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/Preferencias-3.png
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
+	filename images/preferences_other_es.png
+	lyxscale 50
+	scale 50
 
 \end_inset
 
@@ -9894,11 +10251,11 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Preferencias"
+name "fig:preferences_other"
 
 \end_inset
 
-Pestañas de la ventana de preferencias.
+Preferencias, pestaña de otros
 \end_layout
 
 \end_inset
@@ -10275,7 +10632,7 @@ status open
 
 \begin_layout Plain Layout
 
-http://www.chronojump.org/hardware_store_es.html
+http://chronojump.org/pricing.html
 \end_layout
 
 \end_inset

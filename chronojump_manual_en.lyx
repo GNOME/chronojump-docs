@@ -88,7 +88,7 @@ Chronojump
 
 
 \size large
-(Updated on 03-02-15)
+(Updated on 07-09-15)
 \end_layout
 
 \begin_layout Author
@@ -1075,6 +1075,67 @@ Using Chronojump
 Using Chronojump
 \end_layout
 
+\begin_layout Standard
+When Chronojump is opened, a window will allow you to select the type of
+ tests you are gone to work with.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/splash.png
+	lyxscale 70
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:splash"
+
+\end_inset
+
+Chronojump splash screen.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Once you have selected, if you want to go back to this windows you can go
+ to 
+\emph on
+Menu -> Mode: -> Main window
+\end_layout
+
+\begin_layout Standard
+You can also configure some parameters related to the automatic hardware
+ detection.
+ If you experience problems at start or while capturing try the different
+ options.
+\end_layout
+
 \begin_layout Section
 Chronojump main window
 \end_layout
@@ -1175,7 +1236,7 @@ tests shows different selectors for viewing and editing the jumps and runs.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -9174,7 +9235,28 @@ The names and dates of birth of the athletes and the evaluators will never
 \end_layout
 
 \begin_layout Chapter
-Preferences and using Chronojump on more than one computer
+Preferences of Chronojump
+\end_layout
+
+\begin_layout Standard
+The preferences window 
+\emph on
+Session / Preferences
+\emph default
+, is divided into seven tabs 
+\emph on
+Database
+\emph default
+, 
+\emph on
+Jumps, Runs, Encoder, Camera, Language and Other.
+
+\emph default
+ 
+\end_layout
+
+\begin_layout Section
+Using Chronojump on more than one computer
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Preferencias"
@@ -9185,40 +9267,51 @@ name "sec:Preferencias"
 \end_layout
 
 \begin_layout Standard
-The preferences window 
-\emph on
-Session / Preferences
-\emph default
-, is divided into three tabs 
-\emph on
-Database
-\emph default
-, 
-\emph on
-Contacts, encoder
-\emph default
- and 
-\emph on
-Camera.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
 
-\emph default
- Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Preferencias"
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/preferences_database.png
+	lyxscale 50
+	scale 60
 
 \end_inset
 
- show this tabs.
+
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:preferences_database"
+
+\end_inset
+
+Preferences.
+ Database tab.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 
 \emph on
 Database
 \emph default
- tab shows where you are, to open the folder, and make one copy of it in
- a directory of choice for the users.
+ tab shows where Chronojump data are, allows to open the folder, and make
+ one copy of it in a directory of choice for the users.
  Maybe it shows two possible locations for the database because some Windows
  systems offer a place to store data while the program runs, and another
  when it’s closed.
@@ -9229,6 +9322,11 @@ Use this tab to have a copy of your data in order to avoid loosing your
  sessions, subjects and tests on a hard disk problem or if operating system
  is reinstalled.
  Also you can use this tab to have Cronojump database in more than one computer.
+\end_layout
+
+\begin_layout Standard
+If you want to copy the data stored in the computer A to the computer B,
+ follow this steps:
 \end_layout
 
 \begin_layout Enumerate
@@ -9247,8 +9345,29 @@ Select the items you want to backup
 \end_layout
 
 \begin_layout Enumerate
-Select where to copy it (eg: your Desktop folder or a pendrive).
- A directory called chronojump will be created with all the selected data.
+Click in 
+\emph on
+Backup database.
+\end_layout
+
+\begin_layout Enumerate
+Depending on what you have selected to copy, a file or a folder with its
+ corresponding subfolders will be exported.
+ A directory called chronojump will be created with all the selected data
+ if you selected to backup the 
+\emph on
+Multimedia and encoder tests.
+
+\emph default
+ If you didn't selected to backup the 
+\emph on
+Multimedia and encoder tests, 
+\emph default
+a file called 
+\emph on
+chronojump.db
+\emph default
+ will be copied.
 \end_layout
 
 \end_deeper
@@ -9266,19 +9385,14 @@ Go to
 \emph on
 Session / preferences / database / open database folder
 \emph default
- 
+ .
+ A file explorer window will be opened.
 \end_layout
 
 \begin_layout Enumerate
-In the file explorer go up two levels in the directory hierachy.
-\end_layout
-
-\begin_layout Enumerate
-If you have valuable data on B, then you should rename 
-\emph on
-chronojump
-\emph default
- directory in this folder or copy to any place.
+If you have valuable data on B, then you should make a copy of the chronojump.db
+ or the Chronojump whole folder that is located two levels above in the
+ folders hierarchy.
 \end_layout
 
 \begin_layout Enumerate
@@ -9286,7 +9400,15 @@ Copy the
 \emph on
 chronojump folder
 \emph default
- from A to B.
+ or the 
+\emph on
+chronojump.db
+\emph default
+ file
+\emph on
+ 
+\emph default
+from A to B.
 \end_layout
 
 \begin_layout Enumerate
@@ -9294,20 +9416,345 @@ Close chronojump, open again, and it's done.
 \end_layout
 
 \end_deeper
+\begin_layout Section
+Jumps
+\end_layout
+
 \begin_layout Standard
-\begin_inset Newpage pagebreak
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/preferences_jumps.png
+	lyxscale 50
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:preferences_jumps"
+
+\end_inset
+
+Preferences.
+ Jumps tab.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+Jumps tab allows to select the information columns that you want to show
+ in the data windows and statistics window.
+\end_layout
 
-\emph on
-Show
-\emph default
- tab, shows the options related to information you want to display in the
- windows of data and statistics.
+\begin_layout Section
+Runs
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/preferences_runs.png
+	lyxscale 50
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:preferences_database-1"
+
+\end_inset
+
+Preferences.
+ Runs tab.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This tab allows to configure the behavior of Chronojump in the running tests.
+\end_layout
+
+\begin_layout Standard
+The first option refers to the behavior of Chronojump in the firs contact
+ of a race.
+ It allows to define if the time starts to count when the first contact
+ occurs (stepping on a platform or a photocell gate) or at the moment that
+ the contact is over (step off on a platformm or a photocell gate).
+\end_layout
+
+\begin_layout Standard
+The second option allows you to manage the contacts that are produced in
+ a short time period.
+\end_layout
+
+\begin_layout Standard
+Example: In a race with a couple of photocell gates separated by 10m, an
+ athlete, arriving to one of the gates cross it with the hand and after
+ that with the body with a difference of 20ms.
+ In this case you could set that contacts separated in the time less than
+ 500ms are considered as only one.
+\end_layout
+
+\begin_layout Section
+Encoder
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/preferences_encoder.png
+	lyxscale 50
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:preferences_encoder"
+
+\end_inset
+
+Preferences.
+ Encoder tab.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This tab allows to config the behavior of Chronojump in the encoder tests.
+\end_layout
+
+\begin_layout Standard
+The propulsive option is used for calculating for only using only the part
+ of the movement where the acceleration is superior to gravity, in other
+ words, when some force is applied.
+\end_layout
+
+\begin_layout Standard
+You can also select the options of automatic repetition save, as well as
+ the options of the smoothing used in the calculus.
+\end_layout
+
+\begin_layout Standard
+About the 1RM prediction you can select whe method used to weight the statistica
+l data depending on the load used.
+\end_layout
+
+\begin_layout Section
+Camera
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/preferences_camera.png
+	lyxscale 50
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:preferences_camera"
+
+\end_inset
+
+Preferences.
+ Camera tab.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This tab allow to select the camera that will be used to take photos or
+ videos with Chronojump
+\end_layout
+
+\begin_layout Section
+Language
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/preferences_language.png
+	lyxscale 50
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:preferences_language"
+
+\end_inset
+
+Preferences.
+ Database tab.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With this tab you can select the language and translation options.
+\end_layout
+
+\begin_layout Section
+Other
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/preferences_other.png
+	lyxscale 50
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:preferences_other"
+
+\end_inset
+
+Preferences.
+ Database tab.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -9326,120 +9773,6 @@ Other
 \end_layout
 
 \begin_layout Standard
-
-\lang spanish
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-
-\lang spanish
-\begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="6cm">
-<column alignment="center" valignment="top" width="6cm">
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\align center
-
-\lang spanish
-\begin_inset Graphics
-	filename images/Preferencias-1.png
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\align center
-
-\lang spanish
-\begin_inset Graphics
-	filename images/Preferencias-2.png
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row topspace="0.5cm">
-<cell multicolumn="1" alignment="center" valignment="top" usebox="none" width="12cm">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\align center
-
-\lang spanish
-\begin_inset Graphics
-	filename images/Preferencias-3.png
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\lang spanish
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Preferencias"
-
-\end_inset
-
-Preferences window.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
@@ -9806,7 +10139,7 @@ status open
 
 \begin_layout Plain Layout
 
-http://www.chronojump.org/hardware_store.html
+http://chronojump.org/pricing.html
 \end_layout
 
 \end_inset
