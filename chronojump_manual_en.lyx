@@ -88,7 +88,7 @@ Chronojump
 
 
 \size large
-(Updated on 07-09-15)
+(Updated on 14/10/15)
 \end_layout
 
 \begin_layout Author
@@ -7265,7 +7265,7 @@ Multi Chronopic screenshot with Run Analysis results.
 \end_layout
 
 \begin_layout Chapter
-Statistics and graphics
+Statistics and graphics of jumps and races
 \end_layout
 
 \begin_layout Standard
@@ -8160,7 +8160,7 @@ Graph dotchart a subset of the above values.
 \end_layout
 
 \begin_layout Chapter
-Report and export
+Report and export in jumps and races
 \end_layout
 
 \begin_layout Standard
@@ -8200,8 +8200,15 @@ Reporting on the program Chronojump is the best way to collect information,
 \begin_layout Standard
 Clicking on 
 \emph on
-Tools / Report
+View report window
 \emph default
+ 
+\begin_inset Graphics
+	filename images/report_button.png
+	scale 75
+
+\end_inset
+
 , the figure shown is Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -8216,37 +8223,23 @@ reference "sec:Generación-de-Informes"
 \emph on
 Add to report
 \emph default
- button is allowed to prepare each of the statistics displayed.
+ button 
+\begin_inset Graphics
+	filename images/report_add.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+is allowed to prepare each of the statistics displayed.
  Do the apparition in the report generated and the customization that was
  chosen by the user in the statistical window.
  The user can also organize each of the statistics to do the final report.
 \end_layout
 
 \begin_layout Standard
-Clicking on 
-\emph on
-Make Report
-\emph default
-, you can choose the filename images/to save the HTML document.
- Also, you can generate a folder that will include all necessary images
- and styles to display the page properly.
-\end_layout
-
-\begin_layout Standard
-To print the report, we strongly recommend using the free browser Mozilla
- Firefox.
- In Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Ejemplo-de-informe-2"
-
-\end_inset
-
- you can see a photo of a report.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -8284,6 +8277,16 @@ Example of report window preparation.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Clicking on 
+\emph on
+Make Report
+\emph default
+, you can choose the filename images/to save the HTML document.
+ Also, you can generate a folder that will include all necessary images
+ and styles to display the page properly.
 \end_layout
 
 \begin_layout Standard
@@ -8325,6 +8328,19 @@ Example of a website report.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+To print the report, we strongly recommend using the free browser Mozilla
+ Firefox.
+ In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Ejemplo-de-informe-2"
+
+\end_inset
+
+ you can see a photo of a report.
 \end_layout
 
 \begin_layout Section

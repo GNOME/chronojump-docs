@@ -89,7 +89,7 @@ Manual de Chronojump
 
 
 \size large
-(Actualizado el 21/09/15)
+(Actualizado el 14/10/15)
 \end_layout
 
 \begin_layout Author
@@ -7653,7 +7653,7 @@ Análisis de carrera
 \end_layout
 
 \begin_layout Chapter
-Estadísticas y gráficas
+Estadísticas y gráficas de carreras y saltos
 \end_layout
 
 \begin_layout Standard
@@ -8616,9 +8616,25 @@ La generación de informes en el programa Chronojump se concreta como la
 \end_layout
 
 \begin_layout Standard
-Haciendo clic en 
+Dentro de la pestaña 
 \emph on
-Herramientas / Informes
+Analizar
+\emph default
+ y haciendo clic en 
+\emph on
+Ver ventana de informes
+\emph default
+ 
+\emph on
+
+\begin_inset Graphics
+	filename images/report_button.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+
 \emph default
 , aparece la figura que se muestra en la figura 
 \begin_inset CommandInset ref
@@ -8635,7 +8651,15 @@ reference "sec:Generación-de-Informes"
 \emph on
 Añadir a Informe
 \emph default
- que aparece en la ventana de estadísticas, se permite preparar cada uno
+ 
+\begin_inset Graphics
+	filename images/report_add.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+que aparece en la ventana de estadísticas, se permite preparar cada uno
  de los estadísticos visualizados para que estos aparezcan en el informe
  generado, y que lo hagan con la personalización que había sido elegida
  por el usuario en la ventana de estadísticos.
@@ -8644,32 +8668,8 @@ Añadir a Informe
 \end_layout
 
 \begin_layout Standard
-Haciendo clic en 
-\emph on
-Crear informe
-\emph default
-, se presentará una ventana que permitirá elegir el nombre de fichero con
- el que será guardado el documento HTML, además se generará una carpeta
- en la que se incluirán todas las imágenes y estilos necesarios para que
- se visualice la página correctamente.
-\end_layout
-
-\begin_layout Standard
-Para la impresión de dicho informe -así como de cualquier página web- se
- recomienda encarecidamente el navegador libre Mozilla Firefox, pues la
- impresión en Internet Explorer es poco respetuosa con el original.
- En la figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Ejemplo-de-informe-2"
-
-\end_inset
-
- puede ver una fotocomposición de un informe generado.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -8707,6 +8707,31 @@ Ejemplo de ventana de preparación de informe.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Haciendo clic en 
+\emph on
+Crear informe
+\emph default
+, se presentará una ventana que permitirá elegir el nombre de fichero con
+ el que será guardado el documento HTML, además se generará una carpeta
+ en la que se incluirán todas las imágenes y estilos necesarios para que
+ se visualice la página correctamente.
+\end_layout
+
+\begin_layout Standard
+Para la impresión de dicho informe -así como de cualquier página web- se
+ recomienda encarecidamente el navegador libre Mozilla Firefox, pues la
+ impresión en Internet Explorer es poco respetuosa con el original.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Ejemplo-de-informe-2"
+
+\end_inset
+
+ puede ver una fotocomposición de un informe generado.
 \end_layout
 
 \begin_layout Standard
