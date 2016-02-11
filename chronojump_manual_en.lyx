@@ -88,7 +88,7 @@ Chronojump
 
 
 \size large
-(Updated on 14/10/15)
+(Updated on 11/02/16)
 \end_layout
 
 \begin_layout Author
@@ -4990,7 +4990,18 @@ When set is analysed, a number of repetitions are found.
  duration, speed, force, power.
  The repetitions are detected by the software automatically following user
  criteria.
- 
+ Videotutorial: Saving Repetitions 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://youtu.be/MoFKMGGLbdw
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -5169,6 +5180,18 @@ Rotary axis.
 \begin_layout Standard
 Some configurations need additional parameters as angle, diameter or inertia
  momentum.
+ Videotutorial: Capturing on an inclined plane machine 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://youtu.be/s-8Zel1RtGs
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph
@@ -6036,6 +6059,18 @@ The load button
  The load set window is used also to manage all the sets of current person.
  Right click on it to change the person who performed the exercise, add
  a comment or delete any set of a given person.
+ Videoturotial: Edit set 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://youtu.be/UiZJKbU4OSg
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6301,6 +6336,43 @@ Cross variables
 : to show relationships between variables like “Power / Load”.
  Includes the 1RM calculation.
  Cross variables is the only analysis that can be done on “compare” mode.
+ Videotutorial: Power vs Load curve 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://youtu.be/mynNxYELja4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+1RM 
+\begin_inset Graphics
+	filename images/1RM_button.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+: It allows to make different calculations of the maximum repetitions that
+ can be performed with different loads.
+ Videotutorial: Chronojump tutorials: Estimate nRM indirectly 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://youtu.be/sd40bI2UQ9c
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize

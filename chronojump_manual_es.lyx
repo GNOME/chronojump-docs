@@ -89,7 +89,7 @@ Manual de Chronojump
 
 
 \size large
-(Actualizado el 14/10/15)
+(Actualizado el 11/02/16)
 \end_layout
 
 \begin_layout Author
@@ -5306,6 +5306,18 @@ Cuando se analiza la serie, se encuentran n repeticiones.
  inicio, duración, velocidad, fuerza y potencia.
  Las curvas son detectadas automáticamente por el software siguiendo criterios
  definidos por el usuario.
+ Videotutorial: Guardar repeticiones 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://youtu.be/MoFKMGGLbdw
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -5483,6 +5495,18 @@ Dentro de cada tipo de encoder se podrá escojer entre máquinas inerciales
 \begin_layout Standard
 Algunas configuraciones necesitan parámetros adicionales como ángulos, diámetros
  o momentos de inercia, etc...
+ Videotutorial: Captura en una màquina en plano inclinado 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://youtu.be/s-8Zel1RtGs
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph
@@ -6336,6 +6360,17 @@ El botón de cargar
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "Videotutorial: Edición de una serie"
+target "https://youtu.be/UiZJKbU4OSg"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \emph on
 Recalcular
@@ -6619,6 +6654,43 @@ Comparar lateral
 
 : Permite ver las gráficas de las variables mecánicas de diferentes repeticiones
  con los mismos ejes.
+ Videotutorial: Gráfico Carga vs Potencia 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://youtu.be/mynNxYELja4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+1RM 
+\begin_inset Graphics
+	filename images/1RM_button.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+: Permite hacer diferentes cálculos de las máximas repeticiones que se pueden
+ hacer con distintas cargas.
+ Videotutorial: Cálculos de nRM 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://youtu.be/sd40bI2UQ9c
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
