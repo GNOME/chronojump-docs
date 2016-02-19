@@ -7478,7 +7478,7 @@ Simple jumps
 \end_layout
 
 \begin_layout Standard
-The simple statistical hop show various ways to analyze simple jumps without
+The simple hop statistical show various ways to analyze simple jumps without
  contact time, which can be classified into several subtypes:
 \end_layout
 
@@ -7580,6 +7580,25 @@ Statistical simple jump that shows the rate of the use of arms from the
 
 \begin_layout Standard
 between CMJ and ABK jumps.
+\end_layout
+
+\begin_layout Subsubsection
+Substraction between tests
+\end_layout
+
+\begin_layout Standard
+Statistical tha shows the relative difference between two tests.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Formula $\%dif=\frac{(test1-test2)}{test2}*100$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection

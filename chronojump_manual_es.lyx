@@ -7893,6 +7893,10 @@ Fuerza-velocidad
 \end_layout
 
 \begin_layout Itemize
+Diferencia entre tests
+\end_layout
+
+\begin_layout Itemize
 Picos de potencia de Lewis, Harman, Sayers (2), Shetty, Cannavan, Lara(5)
 \end_layout
 
@@ -7975,6 +7979,23 @@ Estadístico de salto simple en que se muestra el índice de utilización de
 
 \begin_layout Standard
 entre los saltos CMJ y ABK.
+\end_layout
+
+\begin_layout Subsubsection
+Diferencia entre tests
+\end_layout
+
+\begin_layout Standard
+Estadístico que permite ver la diferencia relativa entre dos tests cualesquiera.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Formula $\%dif=\frac{(test1-test2)}{test2}*100$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
