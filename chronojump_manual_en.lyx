@@ -5275,15 +5275,9 @@ Machines where the subject works in a horizontal movement.
 \end_layout
 
 \begin_layout Enumerate
-Machines that hay a set of pulleys thet makes that the movement of the machine
- is twice the movement of the subject with the objective of doubling the
- resistance offered by the machine.
-\end_layout
-
-\begin_layout Standard
-In the case of the displaced body weight being insignificant the configuration
- 1 and 2 are equivalents because the only difference is the inclusion or
- not of the gravity in the calculus of the force and power.
+Machines that have a set of pulleys thet makes the movement of the machine
+ to be a multiple or a fraction of the movement of the subject with the
+ objective of doubling the resistance offered by the machine.
 \end_layout
 
 \begin_layout Standard
@@ -5325,6 +5319,13 @@ Mass of each extra load: If the inertial machine allows to add extra loads
 \begin_layout Itemize
 Distance center-load: It is the distance between the center of the extra
  load and the axis of the inertial machine.
+\end_layout
+
+\begin_layout Itemize
+Force multiplier factor: This parameter especifies the configuration of
+ the pulleys set that allows the resistance of the machine to be a multiple
+ or a fraction of the force that the machine would offer without the pulleys
+ set.
 \end_layout
 
 \begin_layout Paragraph
