@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass book
@@ -19,13 +19,13 @@
 \font_roman ae
 \font_sans cmss
 \font_typewriter default
+\font_math auto
 \font_default_family sfdefault
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -46,15 +46,24 @@
 \pdf_pdfusetitle true
 \papersize default
 \use_geometry false
-\use_amsmath 1
-\use_esint 0
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 0
 \boxbgcolor #ffffff
 \index Índice
@@ -601,7 +610,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -723,9 +732,9 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="4">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="5cm">
 <column alignment="center" valignment="top" width="4cm">
 <row>
@@ -855,7 +864,7 @@ USB
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -1291,7 +1300,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -1458,7 +1467,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -1555,7 +1564,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -1597,7 +1606,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -1643,7 +1652,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -1733,7 +1742,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -1848,7 +1857,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -1891,7 +1900,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -2022,7 +2031,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -2196,7 +2205,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -2284,7 +2293,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -2326,7 +2335,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -3012,7 +3021,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -3260,7 +3269,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -3395,13 +3404,13 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="6">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -3746,7 +3755,7 @@ Sí
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -3832,7 +3841,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -3875,35 +3884,16 @@ carreras simples
 :
 \end_layout
 
-\begin_layout Description
-Carrera
-\begin_inset space ~
-\end_inset
-
-desde
-\begin_inset space ~
-\end_inset
-
-parado Las que se inician en contacto con un dispositivo y terminan con
- el contacto en el mismo u otro.
-\end_layout
-
-\begin_layout Description
-Carrera
-\begin_inset space ~
-\end_inset
-
-lanzada Las que se inician fuera antes del contacto con el dispositivo,
- seguidamente en algún momento se entra en contacto (iniciándose el cronómetro)
- para después de una fase de carrera que será registrada, volver a estar
- en contacto con el mismo u otro dispositivo.
- El objetivo de esta modalidad suele ser registrar al deportista que ya
- lleva una velocidad determinada.
+\begin_layout Standard
+En ambos casos se registra el tiempo que transcurre entre un evento (pisar
+ una plataforma, cortar una barrera, accionar un pulsador, etc) y el siguiente,
+ que será expresado también como velocidad.
 \end_layout
 
 \begin_layout Standard
-En ambos casos se registra el tiempo que transcurre entre un y otro dispositivo,
- que será expresado también como velocidad.
+En el caso en que el atleta llegue a la primera barrera con cierta velocidad,
+ el tiempo empezará a contarse según la configuración establecida en Menú
+ -> Sesión -> Preferencias -> Carreras
 \end_layout
 
 \begin_layout Standard
@@ -3922,6 +3912,72 @@ Carrera de dos o más tramos delimitados por dispositivos de detección a
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsection
+Corrección de contactos múltiples
+\end_layout
+
+\begin_layout Standard
+Chronojump permite corregir las situaciones en que el sujeto activa el dispositi
+vo de contacto más de una vez debido a que distintas partes del cuerpo chacen
+ contactos en instantes distintos.
+ (ejemplo: un atleta al llegar a una fotocélula, corta con la mano primero,
+ deja de hacer contacto y posteriormente corta con el cuerpo).
+\end_layout
+
+\begin_layout Standard
+Para prevenir este tipo de situaciones en Menú -> Preferencias -> Carreras
+ encontrará la opción de 
+\emph on
+Evitar contactos dobles.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/preferences_double_contact_es.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Doble-contacto"
+
+\end_inset
+
+Configuración de dobles contactos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el cuadro de diálogo permite establecer el tiempo mínimo que deben transcurri
+r entre dos contactos para que sean considerados como correctos.
+ Si el tiempo entre dos contactos es inferior al estipulado en el cuadro
+ de diálogo Chronojump actuará según la opción seleccionada (primero, media
+ o último).
 \end_layout
 
 \begin_layout Subsection
@@ -3980,7 +4036,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -4045,7 +4101,7 @@ Para ejecutar una carrera con tramos haga clic en los siguientes botones
 \emph on
 Carreras con tramo
 \emph default
-:
+s:
 \end_layout
 
 \begin_layout Itemize
@@ -4388,7 +4444,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -4433,7 +4489,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -4582,7 +4638,7 @@ SprintCortoVariable
 
 \emph default
  Carrera de agilidad de 3 tramos que se repiten durante 2' -el primero tiene
- 20m, el 2o tiene 10m y el 3o 7m.
+ 20m, el segundo tiene 10m y el tercero 7m.
 \end_layout
 
 \begin_layout Standard
@@ -4596,12 +4652,12 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="8" columns="5">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -4986,7 +5042,7 @@ Variable(20,10,7)
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -5054,7 +5110,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Imanes en superficie metálica
@@ -5096,7 +5152,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Mosquetón
@@ -5132,6 +5188,7 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
+3o
 \begin_inset Graphics
 	filename images/encoder-manual-images/never_fingers.jpeg
 
@@ -5141,7 +5198,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Uso indebido
@@ -5187,7 +5244,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Medida
@@ -5244,6 +5301,10 @@ sujetos
 
 \begin_layout Itemize
 ejercicios
+\end_layout
+
+\begin_layout Itemize
+repeticiones
 \end_layout
 
 \begin_layout Standard
@@ -5364,7 +5425,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Ventana principal
@@ -5458,7 +5519,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Selección de encoder
@@ -5552,7 +5613,7 @@ status open
 \end_inset
 
 
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Parámetros de las máquinas inerciales
@@ -5694,7 +5755,7 @@ status open
 \end_inset
 
 
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Peso de referencia
@@ -5735,7 +5796,7 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Selección de encoder
@@ -5783,7 +5844,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 
@@ -5826,7 +5887,7 @@ status open
 \end_inset
 
 
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Parámetros para el cálculo del IM
@@ -5873,7 +5934,7 @@ status open
 \end_inset
 
 
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Captura de la oscilación
@@ -5918,7 +5979,7 @@ status open
 \end_inset
 
 
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 
@@ -6051,7 +6112,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Área de captura
@@ -6146,9 +6207,9 @@ Importante!: En el uso de máquinas inerciales, asegúrese, antes de presionar
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -6245,7 +6306,7 @@ status open
 \end_inset
 
 
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Opciones de captura
@@ -6338,7 +6399,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Alertas sonoras
@@ -6463,7 +6524,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Guardado y borrado de repeticiones
@@ -6518,7 +6579,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Barras de potencia
@@ -6556,8 +6617,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/encoder-manual-images/analyze.png
-	scale 50
+	filename images/encoder-manual-images/analyze_es.png
 
 \end_inset
 
@@ -6565,7 +6625,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 
@@ -6616,7 +6676,56 @@ Seleccionar
 \end_layout
 
 \begin_layout Standard
-Hay cinco modos de análisis:
+Hay cuatro modos de análisis:
+\end_layout
+
+\begin_layout Itemize
+Individual / Serie actual 
+\begin_inset Graphics
+	filename images/encoder-manual-images/analyze_individual_current_set.png
+	scale 80
+
+\end_inset
+
+: Análisis de todas las repeticiones de la serie actual.
+\end_layout
+
+\begin_layout Itemize
+Individual / Sesión actual 
+\begin_inset Graphics
+	filename images/encoder-manual-images/analyze_individual_intrasession.png
+	scale 80
+
+\end_inset
+
+: Análisis de las repeticiones guardadas y seleccionadas de la sesión actual.
+\end_layout
+
+\begin_layout Itemize
+Individual / Todas las sesiones 
+\begin_inset Graphics
+	filename images/encoder-manual-images/analyze_individual_intersession.png
+	scale 80
+
+\end_inset
+
+: Análisis de todas las repeticiones guardades en las sesiones seleccionadas.
+\end_layout
+
+\begin_layout Itemize
+Grupal / Serie actual 
+\begin_inset Graphics
+	filename images/encoder-manual-images/analyze_groupal_current_session.png
+	scale 80
+
+\end_inset
+
+: Análisis de las repeticiones guardadas durante la sesión actual y de los
+ sujetos seleccionados.
+\end_layout
+
+\begin_layout Standard
+Dentro de cada modo hay varios tipos de análisis
 \end_layout
 
 \begin_layout Itemize
@@ -6934,7 +7043,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Ejemplo de uso del encoder
@@ -7431,7 +7540,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -7707,7 +7816,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -7773,7 +7882,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -8029,7 +8138,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -8533,7 +8642,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -8574,7 +8683,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -8615,7 +8724,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -8656,7 +8765,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -8789,7 +8898,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -8855,7 +8964,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -9150,7 +9259,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -9191,7 +9300,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -9232,7 +9341,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -9319,7 +9428,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -9589,7 +9698,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -9703,7 +9812,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -9745,7 +9854,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -9784,7 +9893,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -9877,7 +9986,7 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -10067,7 +10176,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -10113,7 +10222,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -10188,7 +10297,7 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -10255,7 +10364,7 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -10306,7 +10415,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -10373,7 +10482,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -10420,8 +10529,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="5">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="2cm">
 <column alignment="center" valignment="top" width="2cm">
 <column alignment="center" valignment="top" width="2.5cm">
@@ -10768,7 +10877,7 @@ http://chronojump.org/pricing.html
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -10810,7 +10919,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -10852,7 +10961,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -10901,7 +11010,7 @@ name "fig:chronopic1"
 \end_inset
 
 
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -11026,9 +11135,9 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="5cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
@@ -11196,7 +11305,7 @@ USB
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -11295,7 +11404,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
