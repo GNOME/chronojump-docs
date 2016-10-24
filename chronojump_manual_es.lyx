@@ -98,7 +98,7 @@ Manual de Chronojump
 
 
 \size large
-(Actualizado el 11/02/16)
+(Actualizado el 20/07/16)
 \end_layout
 
 \begin_layout Author
@@ -2319,7 +2319,7 @@ Cargar sujetos.
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -3031,6 +3031,147 @@ name "fig:Campanas---feedback"
 \end_inset
 
 Campanas - feedback auditivo y visual.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Perfil Chronojump
+\end_layout
+
+\begin_layout Standard
+Chronojump incorpora un método rápido para generar un perfil del atleta
+ en el que se pueden ver las distintas variables:
+\end_layout
+
+\begin_layout Itemize
+Fuerza maxima: Capacidad de movilizar una resistencia externa igual al doble
+ del peso corporal
+\end_layout
+
+\begin_layout Itemize
+Fuerza explosiva:Capacidad movilizar una resistencia externa igual al peso
+ corporal
+\end_layout
+
+\begin_layout Itemize
+Elasticidad: Aumento de la fuerza debido a la energía elástica acumulada
+ durante el ciclo de estiramiento-acortamiento.
+\end_layout
+
+\begin_layout Itemize
+Uso de brazos: Aumento de la fuerza por el movimiento de brazos.
+\end_layout
+
+\begin_layout Itemize
+Reflejo reactivo: aumento de la fuerza debido a la caída previa desde cierta
+ altura (activación de mecanismos reflejos)
+\end_layout
+
+\begin_layout Standard
+Para poder tener el perfil completo es necesario, por lo menos, haber realizado
+ los siguentes saltos:
+\end_layout
+
+\begin_layout Itemize
+SJl con un peso extra igual a la masa corporal.
+\end_layout
+
+\begin_layout Itemize
+SJ
+\end_layout
+
+\begin_layout Itemize
+CMJ
+\end_layout
+
+\begin_layout Itemize
+Abalakov
+\end_layout
+
+\begin_layout Itemize
+DJ desde una altura de caída próxima a la altura desde la cual se consigue
+ el máximo salto
+\end_layout
+
+\begin_layout Standard
+Si desea ver el perfil de un atleta haga clic en la pestaña de 
+\emph on
+Perfil de saltos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/chronojump_profile_tab.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pestaña de perfil de saltos Chronojump 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una vez en el la pestaña de perfil de saltos, y si previamente ha ejecutado
+ todos los saltos necesarios le aparecerá un gráfico similar al de la siguiente
+ figura.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/chronojump_profile.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Perfil de saltos Chronojump 
 \end_layout
 
 \end_inset
