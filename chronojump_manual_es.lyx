@@ -41,9 +41,10 @@
 \pdf_bookmarksopenlevel 1
 \pdf_breaklinks false
 \pdf_pdfborder true
-\pdf_colorlinks false
+\pdf_colorlinks true
 \pdf_backref false
 \pdf_pdfusetitle true
+\pdf_quoted_options "urlcolor=blue"
 \papersize default
 \use_geometry false
 \use_package amsmath 1
@@ -10685,6 +10686,326 @@ Preferencias, pestaña de otros
 
 \end_layout
 
+\begin_layout Part
+Solución de problemas
+\end_layout
+
+\begin_layout Chapter
+Chronopic
+\end_layout
+
+\begin_layout Section
+El Chronopic no envia ninguna información a Chronojump
+\end_layout
+
+\begin_layout Standard
+Lo primero que se debe comprobar es que las luces del Chronopic estén encendidas.
+ Sin ningún dispositivo conectado al Chronopic, el LED rojo a la derecha
+ del conector USB debería estar encendido.
+ En caso contrario compruebe que el cable USB esta conectado y funciona
+ correctamte.
+\end_layout
+
+\begin_layout Standard
+El led verde a la derecha del conector USB indica el estado del dispositivo
+ conectado al Chronopic.
+ Si no hay ningún dispositivo conectado este debería estar encendido.
+\end_layout
+
+\begin_layout Itemize
+Si el led verde está encendido:
+\end_layout
+
+\begin_layout Standard
+Compruebe la comunicación entre el Chronopic y Chronojump abriendo el último
+ y, con el Chronopic conectado, realizar algún test.
+ No es necesario que conecte ningún dispositivo al Chronopic ya que puede
+ utilizar el botón de test para simular cualquier dispositivo interruptor
+ como una plataforma o una fotocélula.
+ Al presionar el botón de test el led verde debería apagarse y Chronojump
+ debería detectar el contacto.
+ Si noes el caso diríjase al siguiente capítulo.
+\end_layout
+
+\begin_layout Chapter
+General
+\end_layout
+
+\begin_layout Standard
+Asegúrese de tener siempre la versión más reciente de Chronojump.
+ De este modo se asegurará que errores ya corregidos no sean la causa de
+ errores.
+\end_layout
+
+\begin_layout Section
+En OSX al ejecutar Chronojump aparece un mensaje diciendo 
+\begin_inset Quotes eld
+\end_inset
+
+Puede que R no esté instalado
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Asegúrese de que ha instalado el programa estadístico R.
+ En el siguiente enlace encontrará información de cómo instalarlo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://chronojump.org/es/software/#MacOSX
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Saltos
+\end_layout
+
+\begin_layout Section
+La plataforma de saltos no detecta ningún salto
+\end_layout
+
+\begin_layout Standard
+Conecte primero el cable RCA, sin la plataforma, al Chronopic previamente
+ conectado al ordenador.
+ Si la luz led verde a la derecha del conector USB se apaga significa que
+ el cable está en mal estado.
+ Sustitúyalo por cualquier otro cable RCA.
+\end_layout
+
+\begin_layout Standard
+Si el cable no presenta los síntomas anteriores, conecte la plataforma al
+ cable RCA ya conectado al Chronopic.
+ Si la luz led verde a la derecha del conector USB se apagara significaría
+ o que las dos placas de la plataforma se tocan o que el cable RCA de la
+ misma plataforma está en mal estado.
+\end_layout
+
+\begin_layout Standard
+En el primero de los casos compruebe que en las esquinas no hay algún golpe
+ que haga que las esquinas de las dos placas se toquen entre ellas.
+ Si fuera así puede utilizar un destornillador de punta plana para separa
+ las dos placa e introducir algún trozo de cartón o material aislante donde
+ se haya producido el golpe.
+\end_layout
+
+\begin_layout Standard
+En el segundo de los casos se requerirá de una sustitución o reparación
+ de ese cable.
+\end_layout
+
+\begin_layout Section
+La altura de los saltos es aleatoria y independiente de la altura real.
+\end_layout
+
+\begin_layout Standard
+Compruebe que el salto que ha realizado no sea un salto simulado.
+ En versiones anteriores a la 1.6.2, en caso de no tener un Chronpic conectado,
+ Chronojump hacía un salto 
+\begin_inset Quotes eld
+\end_inset
+
+simulado
+\begin_inset Quotes erd
+\end_inset
+
+ con unos valores aleatorios.
+ Esto se puede comprobar porque en las barras de las alturas del salto aparece
+ la palabra 
+\begin_inset Quotes eld
+\end_inset
+
+Simulado
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Para conectar el Chronopic diríjase a 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Conexión-de-Chronopic/s"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A partir de la versión 1.6.2 este comportamiento solo se da en el caso en
+ que se haya cargado la sesión 
+\begin_inset Quotes eld
+\end_inset
+
+Simulated
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+Carreras
+\end_layout
+
+\begin_layout Section
+Las barreras fotoeléctricas no funcionan cuando se pasa a alta velocidad.
+\end_layout
+
+\begin_layout Standard
+Compruebe que el tiempo transcurrido entre el contacto con una barrera y
+ la siguiente es mayor que el tiempo mínimo establecido para evitar los
+ dobles contactos.
+ Puede ver esta configuración en Menú -> Sesión -> Preferencias -> Carreras
+\end_layout
+
+\begin_layout Section
+La fotocélula no se enciende
+\end_layout
+
+\begin_layout Standard
+Las fotocélulas necesitan ser alimentadas mediante corriente alterna o continua.
+ Asegúrese que además del conector RCA que une fotocélulas y Chronopic también
+ estén conectadas a la corriente.
+ Para ver que la fotocélula está encendida hay un LED en la parte frontal
+ de la misma que se enciende al conectarla a la corriente.
+ Si la fotocélula está alineada con el reflector, oirá un clic cada vez
+ que, con la mano, interrumpa el haz de luz infraroja que va del emisor/receptor
+ al reflector.
+\end_layout
+
+\begin_layout Section
+El contador de tiempo no se inicia cuando un atleta pasa por la fotocélula
+\end_layout
+
+\begin_layout Standard
+Si con las fotocélulas conectadas y encendidas el contador de tiempo no
+ se iniciara podría ser debido a que alguna de las fotocélulas está desalineada
+ y, en consecuencia, se interpreta como si continuamente hubiera un atleta
+ en contacto con la barrera.
+ Asegúrese de que todas las fotocélulas estan alineadas con su respectivo
+ reflector.
+\end_layout
+
+\begin_layout Standard
+Para saber si una fotocélula está alineada puede interrumpir el haz infrarojo
+ y si escucha un 
+\begin_inset Quotes eld
+\end_inset
+
+clic
+\begin_inset Quotes erd
+\end_inset
+
+ es porqué que está alineada.
+ En caso de que no se escuche, reoriéntela de hasta escuchar el clic y vuelva
+ a hacer la comprobación con la mano.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/emissor-reflector-ull.png
+	lyxscale 50
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Alineación-de-la"
+
+\end_inset
+
+Alineación de la fotocélula
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si tiene la fotocélula fijada a un trípode con los soportes de Chronojump,
+ puede ayudarse de las mirillas alineándolas hacia el reflector como se
+ muestra en la figura.
+\end_layout
+
+\begin_layout Chapter
+Encoder
+\end_layout
+
+\begin_layout Section
+Al analizar un test de cargas progresivas aparecen todas las repeticiones
+ con la misma carga
+\end_layout
+
+\begin_layout Standard
+Compruebe que tiene seleccionado el modo Individual / Sesión actual 
+\begin_inset Graphics
+	filename images/encoder-manual-images/analyze_individual_intrasession.png
+
+\end_inset
+
+ y que ha seleccionado las repeticiones cada serie con diferentes cargas
+ previamente guardadas.
+\end_layout
+
+\begin_layout Section
+En el análisis del 1RM, Chronojump no da ningún valor del 1RM
+\end_layout
+
+\begin_layout Standard
+Para poder dar el valor del 1RM después de un test de cargas progresivas
+ se necesitan tres condiciones:
+\end_layout
+
+\begin_layout Enumerate
+Que el ejercicio tenga definida la velocidad a la que se produce el 1RM.
+\end_layout
+
+\begin_layout Enumerate
+Haber realizado un test de cargas progresivas con un mínimo de tres cargas.
+\end_layout
+
+\begin_layout Enumerate
+Que las cargas sean resistencias gravitacionales.
+ Con máquinas inerciales no existe el concepto de 1RM.
+\end_layout
+
 \begin_layout Chapter
 \start_of_appendix
 Chronopics anteriores a Chronopic 3
@@ -10698,386 +11019,6 @@ Nota: Este apéndice es únicamente de interés para los que disponen de una
 
 \begin_layout Section
 Versiones de Chronopic
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="5">
-<features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Versión
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Lanzamiento
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Conexión
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Disponible en*
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Precio*
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-\size small
-Chronopic3
-\series default
- (fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Chronopic3"
-
-\end_inset
-
-)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none" width="4cm">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-marzo 2008
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none" width="2cm">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-USB
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none" width="3cm">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Se envía a todo el mundo
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" width="3cm">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-37€
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Chronopic2-USB (fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Chronopic2-USB"
-
-\end_inset
-
-)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-septiembre 2007
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-USB
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Argentina
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-150$ argentinos
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Chronopic2-Serie (fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Chronopic2-Serie"
-
-\end_inset
-
-)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-septiembre 2007
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Serie
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Argentina
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-150$ argentinos
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Chronopic1 (fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Chronopic1"
-
-\end_inset
-
-)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-2005
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Serie
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-España
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-70 €
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size small
-* Actualmente sólo se comercializa el Chronopic3.
- Para conseguirla, consulte la tienda web de Chronojump 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-http://chronojump.org/pricing.html
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Versiones-de-Chronopic"
-
-\end_inset
-
-Versiones de Chronopic.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -11543,68 +11484,6 @@ USB-serial driver
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Section
-Montaje de Chronopic3 (tirada inicial)
-\end_layout
-
-\begin_layout Standard
-Chronopic3 se distribuyó inicialmente con el circuito por un lado y los
- elementos que conforman la caja: metacrilatos, tornillos y arandelas por
- otro.
- La figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Montaje-del-Chronopic3."
-
-\end_inset
-
- muestra el montaje del mismo.
- Nota: estas instrucciones son necesarias sólo para la tirada inicial, puesto
- que los Chronopics siguientes ya vienen montadas de fábrica.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/chronopic_box_mount.png
-	lyxscale 50
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Montaje-del-Chronopic3."
-
-\end_inset
-
-Montaje del Chronopic3 (tirada inicial).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_body
