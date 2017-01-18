@@ -99,7 +99,7 @@ Manual de Chronojump
 
 
 \size large
-(Actualizado el 20/07/16)
+(Actualizado el 17/01/17)
 \end_layout
 
 \begin_layout Author
@@ -732,7 +732,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="4">
+<lyxtabular version="3" rows="4" columns="4">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -816,11 +816,53 @@ Requiere un driver
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 GNU/Linux
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+USB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+/dev/ttyUSB0
+\series default
+, /dev/ttyUSB1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mac OSX
 \end_layout
 
 \end_inset
@@ -838,11 +880,7 @@ USB
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
-/dev/ttyUSB0
-\series default
-, /dev/ttyUSB1
+/dev/tty.usbserial-[número de serie]
 \end_layout
 
 \end_inset
@@ -851,7 +889,7 @@ USB
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Requiere un driver
 \end_layout
 
 \end_inset
@@ -1696,12 +1734,6 @@ reference "fig:Chronopic-connection"
 \end_inset
 
  se muestran dos Chronopics conectados.
- Se destaca que se muestra una ventana de ayuda sobre puertos haciendo clic
- en el botón de 
-\emph on
-Ayuda
-\emph default
-.
  La conexión con el cronómetro Chronopic se trata específicamente en el
  apartado 
 \begin_inset CommandInset ref
@@ -1714,13 +1746,11 @@ reference "par:Chronopic:-concepto-y-configuracion"
 \end_layout
 
 \begin_layout Standard
-Si el primer Chronopic se encuentra activado, el primer círculo será de
- color verde.
- Usted puede conectar más de un Chronopic para poder realizar tests Multichronop
-ic.
- Cuando haya seleccionado el puerto, deberá hacer clic en el botón de la
- derecha para realizar la conexión.
- En cada activación exitosa uno de los círculos rojos se convertirá en verde.
+La primera vez que conecte un Chronopic a un equipo deberá especificar el
+ tipo de Chronopic (Saltos/Carreras o Encoder).
+ Esta configuración se recordará para futuros usos de Chronojump.
+ Además, Chronojump detectará automáticamente la conexión de los Chronopics
+ ya configurados.
 \end_layout
 
 \begin_layout Standard
@@ -1763,8 +1793,8 @@ Conexión a Chronopic.
 \begin_layout Plain Layout
 \noindent
 \align center
-La figura corresponde al programa Chronojump -en versión para el sistema
- operativo Linux-, en el que se han conectado dos Chronopics.
+La figura corresponde al programa Chronojump en el que se han conectado
+ dos Chronopics.
 \end_layout
 
 \end_inset
@@ -5247,7 +5277,7 @@ Ejemplos de tipos de carreras creados por el usuario.
 \end_layout
 
 \begin_layout Section
-Potencia
+Tests de encoder
 \end_layout
 
 \begin_layout Subsection
@@ -5730,6 +5760,45 @@ aparecerá una nueva ventana con imágenes de las diferentes combinaciones
 \end_layout
 
 \begin_layout Standard
+Desde la versión 1.7.0 y superiores Chronojump puede administrar múltiples
+ configuraciones de encoder.
+ De este modo se puede Crear, borrar, importar y exportar diferentes configuraci
+ones de encoder.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/encoder_admin_es.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Encoder configuration admin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Hay tres tipos de encoder:
 \end_layout
 
@@ -5743,11 +5812,6 @@ Rotatorio de fricción
 
 \begin_layout Itemize
 Rotatorio de eje
-\end_layout
-
-\begin_layout Standard
-Dentro de cada tipo de encoder se podrá escojer entre máquinas inerciales
- y máquinas gravitatorias.
 \end_layout
 
 \begin_layout Standard
@@ -9205,919 +9269,6 @@ punto y coma
 \end_layout
 
 \begin_layout Chapter
-Servidor para compartir datos
-\end_layout
-
-\begin_layout Standard
-Chronojump dispone de un servidor en Internet para compartir datos entre
- los usuarios.
- El servidor permitirá obtener datos valiosos a partir del cruce de muchas
- variables, pero para ello es necesario que exista predisposición por parte
- de los usuarios de Chronojump para compartir los datos.
- Creemos que las características técnicas del servidor y su usabilidad son
- óptimas.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Comment
-status collapsed
-
-\begin_layout Plain Layout
-Creemos que el servidor de Chronojump es óptimo en cuanto a facilidad de
- uso-conexión, tiempo en línea, capacidad, funcionalidad, seguridad y privacidad.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Compartición y uso de los datos
-\end_layout
-
-\begin_layout Standard
-Los datos que se compartirán son los tests, sujetos y sesiones de cada evaluador
- que lo desee.
- El evaluador cuando lo desee podrá 
-\emph on
-subir una sesión al servidor
-\emph default
-, descartando los deportistas que desee y los tests de los mismos.
- Antes de que los datos puedan transferirse al servidor se harán comprobaciones
- para determinar si se han completado los datos necesarios de cada uno de
- los deportistas, así como los datos del evaluador.
-\end_layout
-
-\begin_layout Section
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Calidad-de-los-datos"
-
-\end_inset
-
-Calidad de los datos.
- Evaluadores acreditados y datos confiables
-\end_layout
-
-\begin_layout Standard
-Con la finalidad de obtener muchos datos, pero que no por ello se sacrifique
- la calidad, se ha creído conveniente que existan dos tipos de datos en
- cuanto a su confiabilidad:
-\end_layout
-
-\begin_layout Description
-Datos
-\begin_inset space ~
-\end_inset
-
-generales Los puede subir cualquiera que disponga de la tecnología Chronojump.
- Se cree que se podrá disponer en breve de muchos datos que pertenezcan
- a esta categoría.
-\end_layout
-
-\begin_layout Description
-Datos
-\begin_inset space ~
-\end_inset
-
-confiables Además del requisito anterior, se requiere una acreditación del
- evaluador que los ha tomado, y una justificación de los datos de la sesión.
- Se contemplan tres perfiles de evaluadores:
-\end_layout
-
-\begin_deeper
-\begin_layout Description
-Perfil
-\begin_inset space ~
-\end_inset
-
-evaluador-entrenador persona vinculada al ámbito del entrenamiento.
-\end_layout
-
-\begin_layout Description
-Perfil
-\begin_inset space ~
-\end_inset
-
-evaluador-investigador persona vinculada al ámbito académico.
-\end_layout
-
-\begin_layout Description
-Perfil
-\begin_inset space ~
-\end_inset
-
-mixto persona vinculada a los dos ámbitos.
-\end_layout
-
-\begin_layout Standard
-Aún no se ha iniciado el proceso de acreditación de los evaluadores, así
- que todos los evaluadores de momento estarán sin acreditar y sus datos
- compartidos corresponderán a 
-\emph on
-datos generales
-\emph default
-.
- En un futuro, los evaluadores que lo deseen podrán solicitar acreditarse
- para poder subir sus datos al grupo de confiables aunque dichos datos hayan
- sido subidos anteriormente al otro grupo.
-\end_layout
-
-\begin_layout Standard
-La acreditación será a cargo del Grupo de Investigación: Salut, Activitat
- Física i Esport de la Facultat Blanquerna perteneciente a la Universitat
- Ramon Llull.
-\end_layout
-
-\end_deeper
-\begin_layout Section
-Funcionalidad del servidor
-\end_layout
-
-\begin_layout Standard
-Las funciones del programa para conectarse con el servidor se encuentran
- en el menú principal, 
-\emph on
-Herramientas / Servidor
-\emph default
-.
- A continuación se detalla cada una de ellas.
-\end_layout
-
-\begin_layout Subsection
-Comprobar conexión
-\end_layout
-
-\begin_layout Standard
-Permite saber si es posible establecer conexión con el servidor.
- Si no es posible puede que el servidor esté inoperativo temporalmente,
- que su computador no esté conectado a Internet, o que su conexión a Internet
- limite algunos tipos de conexión.
-\end_layout
-
-\begin_layout Subsection
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Datos-del-evaluador"
-
-\end_inset
-
-Datos del evaluador
-\end_layout
-
-\begin_layout Standard
-Esta funcionalidad le permite rellenar una ficha de evaluador que irá vinculada
- a los tests, sujetos y sesiones que usted comparta.
- Sus datos personales estarán ocultos.
- Es necesario facilitar los datos de evaluador por los siguientes motivos:
-\end_layout
-
-\begin_layout Itemize
-Es imprescindible para poder subir datos.
-\end_layout
-
-\begin_layout Itemize
-Permite saber las nacionalidades, edades, equipamiento, ...
- de los evaluadores.
-\end_layout
-
-\begin_layout Itemize
-Permitiría actuar en caso de que existieran problemas con algunos datos,
- pues los administradores del servidor conocerán el correo electrónico del
- evaluador.
-\end_layout
-
-\begin_layout Standard
-Tal y como se comenta en la sección 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Calidad-de-los-datos"
-
-\end_inset
-
-, de momento los evaluadores no podrán acreditarse, así que no se piden
- muchos datos a rellenar.
- Puede ver la ventana de datos de evaluador en la figuras 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:server_evaluador1"
-
-\end_inset
-
-, 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:server_evaluador2"
-
-\end_inset
-
- y 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:server_evaluador3"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/evaluator1.png
-	lyxscale 50
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:server_evaluador1"
-
-\end_inset
-
-Datos del evaluador, pestaña 1.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/evaluator2.png
-	lyxscale 50
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:server_evaluador2"
-
-\end_inset
-
-Datos del evaluador, pestaña 2.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/evaluator3.png
-	lyxscale 50
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:server_evaluador3"
-
-\end_inset
-
-Datos del evaluador, pestaña 3.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Subir (o actualizar) sesión en el servidor
-\end_layout
-
-\begin_layout Standard
-Esta es la función más importante para que se puedan compartir datos.
- Cuando el evaluador haga click en 
-\emph on
-Herramientas / Servidor / Subir (o actualizar) sesión en el servidor 
-\emph default
-deberá seguir los siguientes pasos:
-\end_layout
-
-\begin_layout Enumerate
-En primer lugar se pedirá al evaluador que verifique sus datos tal y como
- se describía en el apartado 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:Datos-del-evaluador"
-
-\end_inset
-
-,
-\end_layout
-
-\begin_layout Enumerate
-a continuación se pedirá al evaluador si quiere descartar alguno de los
- sujetos de la sesión (ver figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:server_include-discard"
-
-\end_inset
-
-),
-\end_layout
-
-\begin_layout Enumerate
-después se pedirá confirmación del evaluador, y
-\end_layout
-
-\begin_layout Enumerate
-finalmente se mostrará una ventana de progreso de los datos que son incorporados
- al servidor.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/Captura-Incluir-Descartar_atletas.png
-	lyxscale 50
-	scale 70
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:server_include-discard"
-
-\end_inset
-
-Incluir/Descartar sujetos al subir sesión al servidor.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-En cualquier momento el evaluador puede volver a subir la sesión al servidor
- (actualizar).
- Los datos que ya fueron subidos no serán incluídos otra vez, pero sí los
- que se hayan creado des de la última vez que se subió la misma.
-\end_layout
-
-\begin_layout Standard
-Los tests que hayan sido simulados (no obtenidos a partir de Chronopic)
- no subirán al servidor.
-\end_layout
-
-\begin_layout Subsection
-Realizar una consulta al servidor
-\end_layout
-
-\begin_layout Standard
-Se ha programado una ventana que permite obtener promedios de saltos simples,
- saltos reactivos y carreras simples.
- Para acceder a ella haga clic en 
-\emph on
-Herramientas / Servidor / Realizar consulta
-\emph default
-.
- La consulta se realiza activando selectores relativos al test y los selectores
- relativos a los sujetos.
-\end_layout
-
-\begin_layout Standard
-A continuación se muestran los selectores de la consulta.
- Algunos de los ellos serán obligatorios, mientras que en la mayoría se
- podrá seleccionar 
-\emph on
-Any
-\emph default
- o 
-\emph on
-Cualquiera
-\emph default
- para indicar que aquella variable no debe afectar al resultado.
-\end_layout
-
-\begin_layout Subsubsection
-Selectores relativos al tests
-\end_layout
-
-\begin_layout Standard
-A continuación se indican los tres selectores existentes y sus posibles
- valores:
-\end_layout
-
-\begin_layout Description
-Tipo
-\begin_inset space ~
-\end_inset
-
-de
-\begin_inset space ~
-\end_inset
-
-test Salto simple, salto reactivo y carrera simple.
-\end_layout
-
-\begin_layout Description
-Test Tests presentes en la base de datos del usuario que correspondan al
- tipo de test indicado anteriormente.
-\end_layout
-
-\begin_layout Description
-Variable La variable de la que se obtendrá el promedio será distinta dependiendo
- del test seleccionado.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Para un test de salto simple sin tiempo de contacto la única variable es
- el 
-\emph on
-tiempo de vuelo
-\emph default
-.
-\end_layout
-
-\begin_layout Itemize
-Para un salto simple con tiempo de contacto, las variables serán: 
-\emph on
-tiempo de vuelo
-\emph default
-, 
-\emph on
-tiempo de contacto
-\emph default
-, 
-\emph on
-Índice DJ
-\emph default
- (ver 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:Índice-Dj"
-
-\end_inset
-
-), 
-\emph on
-Índice Q
-\emph default
- (ver 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:Índice-Q"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Itemize
-Para un salto reactivo las variables posibles son: 
-\emph on
-Índice medio
-\emph default
- (ver 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:Índice-medio"
-
-\end_inset
-
-) y
-\emph on
- Po
-\emph default
-tencia
-\emph on
- de Bosco
-\emph default
- (ver 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:Potencia-(Bosco)"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Itemize
-Para una carrera simple la única variable es el 
-\emph on
-tiempo
-\emph default
-.
-\end_layout
-
-\end_deeper
-\begin_layout Subsubsection
-Selectores relativos a los sujetos
-\end_layout
-
-\begin_layout Standard
-Los selectores disponibles son:
-\end_layout
-
-\begin_layout Description
-Sexo
-\end_layout
-
-\begin_layout Description
-Edad definible por intérvalos.
- Esta edad se refiere a la que tiene el sujeto en el momento en que realizó
- el test (fecha de la sesión a la que pertenezca dicho test).
- Para el cálculo de edad se utiliza la fecha de nacimiento del sujeto.
-\end_layout
-
-\begin_layout Description
-País
-\end_layout
-
-\begin_layout Description
-Deporte que en ocasiones se subdivide en 
-\emph on
-Especialidad.
-\end_layout
-
-\begin_layout Description
-Nivel que se subdivide en: [0] sedentario o practicante ocasional; [1] practica
- regular; [2] competición; [3] élite.
-\end_layout
-
-\begin_layout Subsubsection
-Selector relativo al evaluador
-\end_layout
-
-\begin_layout Standard
-Se podrá elegir si se desea los datos de algún evaluador en concreto.
- Esta opción puede ser interesante incluso para uno mismo de manera que
- pueda recoger información de forma rápida de todos los saltos que ha evaluado.
-\end_layout
-
-\begin_layout Subsubsection
-Resultados de la consulta
-\end_layout
-
-\begin_layout Standard
-Cuando se haga clic en el botón de busqueda, pasados unos segundos el servidor
- indicará cuantos resultados ha encontrado y cuál es el promedio.
-\end_layout
-
-\begin_layout Standard
-Se recomienda realizar búsquedas generales pues el servidor se ha creado
- recientemente.
- Como ejemplo de búsqueda puede probar saltos libres (Free) con la mayoría
- de indicadores en 
-\emph on
-Cualquiera.
-\end_layout
-
-\begin_layout Standard
-En la gráfica 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:server_query"
-
-\end_inset
-
- puede ver un ejemplo de consulta.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/Captura-Query-server.png
-	lyxscale 50
-	scale 70
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:server_query"
-
-\end_inset
-
-Realizar una consulta al servidor.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Estadísticas generales del servidor
-\end_layout
-
-\begin_layout Standard
-Se ha programado una ventana que permite obtener una 
-\emph on
-radiografía
-\emph default
- de los datos existentes en el servidor.
- En ella se muestran el número de evaluadores, así como de sujetos y tests
- de los distintos tipos.
- Además se indica qué datos han sido subidos por el usuario que maneja el
- programa.
-\end_layout
-
-\begin_layout Standard
-Se accede a dicha ventana haciendo click en 
-\emph on
-Herramientas / Servidor / Estadísticas
-\emph default
-.
-\end_layout
-
-\begin_layout Section
-Estadísticas en la web
-\end_layout
-
-\begin_layout Standard
-En la página web 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-http://www.chronojump.org/server_es.html
-\end_layout
-
-\end_inset
-
- se muestran resultados del cruce de variables con los datos del servidor.
- Dichas gráficas se actualizan cada vez que aparecen nuevos datos (normalmente
- de forma automática por la noche).
- Se pretende crear y actualizar constantemente un conjunto de gráficos que
- aporten información relevante a cualquier interesado aunque éste no disponga
- de la tecnología Chronojump.
-\end_layout
-
-\begin_layout Standard
-En las figuras 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:server_graph1"
-
-\end_inset
-
-, 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:server_graph2"
-
-\end_inset
-
-, y 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:server_graph3"
-
-\end_inset
-
- puede ver ejemplos de los gráficos que se obtienen en la web del servidor.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/server_persons.png
-	lyxscale 50
-	scale 70
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:server_graph1"
-
-\end_inset
-
-Estadísticas del servidor en la web.
- Gráfico descriptivo sobre la población.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/server_heights_by_jumps_boxplot.png
-	lyxscale 50
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:server_graph2"
-
-\end_inset
-
-Estadísticas del servidor en la web.
- Diagrama de caja de tiempos de vuelo en función de tipo de salto y género.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/server_tv_by_level_sex_jumptype.png
-	lyxscale 50
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:server_graph3"
-
-\end_inset
-
-Estadísticas del servidor en la web.
- Gráfico que relaciona tiempo de vuelo con nivel de práctica, tipo de salto
- y género.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Privacidad y confidencialidad de los datos
-\end_layout
-
-\begin_layout Standard
-Los nombres y fechas de nacimiento de los deportistas así como de los evaluadore
-s nunca serán mostrados.
- Incluso al subir los datos, los nombres de los saltadores no son enviados
- (pues tampoco son necesarios), su fecha de nacimiento será necesaria para
- el cálculo de su edad el día de la sesión, pero jamás será mostrada.
- 
-\end_layout
-
-\begin_layout Standard
-Además, tampoco subirán al servidor los comentarios que el evaluador haya
- escrito sobre la sesión, sujetos o tests.
-\end_layout
-
-\begin_layout Chapter
 Preferencias de Chronojump
 \end_layout
 
@@ -10153,7 +9304,7 @@ name "sec:Preferencias"
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -10201,48 +9352,71 @@ Base de datos
  Es posible que se muestren dos ubicaciones de la base de datos, pues algunas
  versiones de Windows ofrecen un lugar donde guardar los datos mientras
  el programa se ejecuta, y otro cuando éste se ha cerrado.
- 
 \end_layout
 
 \begin_layout Standard
-A parte de permitir la copia de la base de datos para no perder información
- ante un problema de hardware o una reinstalación del sistema operativo,
- la pestaña de base de datos también se usa para facilitar el trabajo en
- más de un ordenador.
+Desde la versión 1.7.0 Chronojump permite importar sesiones entre distintos
+ ordenadores.
+ La exportación se deberá hacer de toda la base de datos mediante los siguientes
+ pasos:
 \end_layout
 
 \begin_layout Standard
-Hasta la fecha, Chronojump no dispone de un sistema de sincronización de
- los datos entre varias instalaciones de Chronojump en distintos ordenadores.
- De momento, la única manera que existe para trabajar en varios sistemas
- es copiar la base de datos de un lado a otro.
- Como ejemplo, si desea copiar la base de datos desde el ordenador A al
- B, haga lo siguiente:
+En el ordenador de origen
 \end_layout
 
 \begin_layout Enumerate
-En el ordenador A:
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Ir a 
-\emph on
-Sesión / preferencias / base de datos 
+Menú -> Sesión -> Preferencias -> Respaldar la base de datos.
 \end_layout
 
 \begin_layout Enumerate
-Seleccione los elementos de los que quiere hacer una copia.
+Especificar la ubicación donde se creará una carpeta con el nombre de Chronojump.
+ Dicha carpeta contiene toda la información necesaria para exportar los
+ datos a otro ordenador o, simplemente, mantener una copia de las sesiones
+ almacenadas en Chronojump
+\end_layout
+
+\begin_layout Standard
+En el ordenador destino:
 \end_layout
 
 \begin_layout Enumerate
-Haga clic sobre 
-\emph on
+Copiar la carpeta Chronojump al ordenador destino.
+ Puede copiarla, por ejemplo en el Escritorio o cualquier otra ubicación.
+\end_layout
 
+\begin_layout Enumerate
+Ir a Menú -> Sesión -> Importar sesión desde otra base de datos Chronojump.
+\end_layout
+
+\begin_layout Enumerate
+Seleccionar si se quiere importar la sesión en la sesión acualmente cargada
+ o en una nueva sesión.
+\end_layout
+
+\begin_layout Enumerate
+Haga clic en el botón 
 \begin_inset Quotes eld
 \end_inset
 
-copiar base de datos
+Abrir
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Se le pedirá que seleccione el archivo 
+\begin_inset Quotes eld
+\end_inset
+
+chronojump.db
+\begin_inset Quotes erd
+\end_inset
+
+ que se encuentra dentro de la carpeta 
+\begin_inset Quotes eld
+\end_inset
+
+Chronojump/database
 \begin_inset Quotes erd
 \end_inset
 
@@ -10250,77 +9424,60 @@ copiar base de datos
 \end_layout
 
 \begin_layout Enumerate
-Según se haya seleccionado o no la opción de guardar 
+Aparecerá un lista de sesiones disponibles para importar.
+ Seleccione la sesión que desee y haga clic en 
 \begin_inset Quotes eld
 \end_inset
 
-
-\emph on
-Multimedia y encoder
-\emph default
-
+Aceptar
 \begin_inset Quotes erd
 \end_inset
 
-, se exportará una carpeta con sus respectivas subcarpetas y archivos o
- un simple archivo de base de datos.
- Seleccionar la carpeta en la que desee guardar la copia de seguridad.
- Por ejemplo: un lápiz USB (pendrive).
- Tendremos un archivo llamado 
-\emph on
-chronojump.db
-\emph default
- en el caso de no exportar los archivos multimedia y los tests de encoder,
- o una carpeta llamada Chronojump en caso contrario.
- 
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-En el ordenador B :
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Si Chronojump no está instalado, deberá instalarlo.
-\end_layout
-
-\begin_layout Enumerate
-Ir a 
-\emph on
-Sesión / preferencias / base de datos / abrir la carpeta de la base de datos
-\emph default
 .
- Se abrirá una ventana con un explorador de archivos.
 \end_layout
 
-\begin_layout Enumerate
-Si en la base de datos del ordenador B tiene datos que no quiere perder,
- entonces realice una copia del archivo 
-\emph on
-chronojump.db
-\emph default
- o de la carpeta Chronojump entera que se encuentra dos niveles por encima
- en la estructura de directorios.
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/import_es.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:import"
+
+\end_inset
+
+Importación de una base de datos Chronojump
 \end_layout
 
-\begin_layout Enumerate
-Si no ha copiado los archivos multimedia y de encoder, copie el archivo
- 
-\emph on
-chronojump.db
-\emph default
- del ordenador A a la carpeta de la base de datos del ordenador B y sustituya
- en que se encuntre en esta.
- En caso contrario, sustituya la carpeta Chronojump del ordenador B por
- la nueva proviniente del ordenador A.
+\end_inset
+
+
 \end_layout
 
-\begin_layout Enumerate
-Reinicie Chronojump en el ordenador B.
+\begin_layout Plain Layout
+
 \end_layout
 
-\end_deeper
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
@@ -10691,6 +9848,45 @@ Solución de problemas
 \end_layout
 
 \begin_layout Chapter
+General
+\end_layout
+
+\begin_layout Standard
+Asegúrese de tener siempre la versión más reciente de Chronojump.
+ De este modo se asegurará que errores ya corregidos no sean la causa de
+ problemas.
+\end_layout
+
+\begin_layout Section
+En Mac OSX al ejecutar Chronojump aparece un mensaje diciendo 
+\begin_inset Quotes eld
+\end_inset
+
+Puede que R no esté instalado
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En Mac OSX es necesario instalar el programa R de manera independiente.
+ Asegúrese de que ha instalado el programa estadístico R.
+ En el siguiente enlace encontrará información de cómo instalarlo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "http://chronojump.org/en/software/#MacOSX"
+target "http://chronojump.org/en/software/#MacOSX"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
 Chronopic
 \end_layout
 
@@ -10699,7 +9895,8 @@ El Chronopic no envia ninguna información a Chronojump
 \end_layout
 
 \begin_layout Standard
-Lo primero que se debe comprobar es que las luces del Chronopic estén encendidas.
+Lo primero que se debe comprobar es que las luces del Chronopic estén encendidas
+ una vez se conecta mediante el cable USB al ordenador.
  Sin ningún dispositivo conectado al Chronopic, el LED rojo a la derecha
  del conector USB debería estar encendido.
  En caso contrario compruebe que el cable USB esta conectado y funciona
@@ -10713,7 +9910,7 @@ El led verde a la derecha del conector USB indica el estado del dispositivo
 \end_layout
 
 \begin_layout Itemize
-Si el led verde está encendido:
+Si el LED verde está encendido:
 \end_layout
 
 \begin_layout Standard
@@ -10724,48 +9921,16 @@ Compruebe la comunicación entre el Chronopic y Chronojump abriendo el último
  como una plataforma o una fotocélula.
  Al presionar el botón de test el led verde debería apagarse y Chronojump
  debería detectar el contacto.
- Si noes el caso diríjase al siguiente capítulo.
+ Si no es el caso diríjase al siguiente capítulo.
 \end_layout
 
-\begin_layout Chapter
-General
-\end_layout
-
-\begin_layout Standard
-Asegúrese de tener siempre la versión más reciente de Chronojump.
- De este modo se asegurará que errores ya corregidos no sean la causa de
- errores.
-\end_layout
-
-\begin_layout Section
-En OSX al ejecutar Chronojump aparece un mensaje diciendo 
-\begin_inset Quotes eld
-\end_inset
-
-Puede que R no esté instalado
-\begin_inset Quotes erd
-\end_inset
-
-
+\begin_layout Itemize
+Si LED verde está apagado:
 \end_layout
 
 \begin_layout Standard
-Asegúrese de que ha instalado el programa estadístico R.
- En el siguiente enlace encontrará información de cómo instalarlo.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-http://chronojump.org/es/software/#MacOSX
-\end_layout
-
-\end_inset
-
-
+Posiblemente sea un problema de hardware y se necesite una sustitución del
+ Chronopic.
 \end_layout
 
 \begin_layout Chapter
@@ -10788,8 +9953,8 @@ Conecte primero el cable RCA, sin la plataforma, al Chronopic previamente
 Si el cable no presenta los síntomas anteriores, conecte la plataforma al
  cable RCA ya conectado al Chronopic.
  Si la luz led verde a la derecha del conector USB se apagara significaría
- o que las dos placas de la plataforma se tocan o que el cable RCA de la
- misma plataforma está en mal estado.
+ o que las dos placas de la plataforma se tocan o que el conector RCA de
+ la misma plataforma está en mal estado.
 \end_layout
 
 \begin_layout Standard
@@ -10834,14 +9999,14 @@ Simulado
 \end_layout
 
 \begin_layout Standard
-Para conectar el Chronopic diríjase a 
+Para conectar el Chronopic diríjase a la sección
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Conexión-de-Chronopic/s"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -10879,7 +10044,7 @@ La fotocélula no se enciende
 \begin_layout Standard
 Las fotocélulas necesitan ser alimentadas mediante corriente alterna o continua.
  Asegúrese que además del conector RCA que une fotocélulas y Chronopic también
- estén conectadas a la corriente.
+ estén conectadas a la corriente mediente el cable de alimentación.
  Para ver que la fotocélula está encendida hay un LED en la parte frontal
  de la misma que se enciende al conectarla a la corriente.
  Si la fotocélula está alineada con el reflector, oirá un clic cada vez
@@ -10911,7 +10076,7 @@ clic
 \end_inset
 
  es porqué que está alineada.
- En caso de que no se escuche, reoriéntela de hasta escuchar el clic y vuelva
+ En caso de que no se escuche, reoriéntela hasta escuchar el clic y vuelva
  a hacer la comprobación con la mano.
 \end_layout
 
@@ -11004,6 +10169,10 @@ Haber realizado un test de cargas progresivas con un mínimo de tres cargas.
 \begin_layout Enumerate
 Que las cargas sean resistencias gravitacionales.
  Con máquinas inerciales no existe el concepto de 1RM.
+\end_layout
+
+\begin_layout Part
+Apéndices
 \end_layout
 
 \begin_layout Chapter

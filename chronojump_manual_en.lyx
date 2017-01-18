@@ -97,7 +97,7 @@ Chronojump
 
 
 \size large
-(Updated on 20/07/16)
+(Updated on 17/02/17)
 \end_layout
 
 \begin_layout Author
@@ -726,7 +726,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="4">
+<lyxtabular version="3" rows="4" columns="4">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -810,11 +810,53 @@ Driver required
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 GNU/Linux
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+USB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+/dev/ttyUSB0
+\series default
+, /dev/ttyUSB1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mac OSX
 \end_layout
 
 \end_inset
@@ -833,10 +875,8 @@ USB
 
 \begin_layout Plain Layout
 
-\series bold
-/dev/ttyUSB0
-\series default
-, /dev/ttyUSB1
+\lang spanish
+/dev/tty.usbserial-[serial number]
 \end_layout
 
 \end_inset
@@ -845,7 +885,7 @@ USB
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Driver required
 \end_layout
 
 \end_inset
@@ -1478,11 +1518,6 @@ reference "fig:Chronopic-connection"
 \end_inset
 
  two Chronopics connected are shown.
- There is a help button for the ports by clicking on the 
-\emph on
-Help
-\emph default
- button window.
  The connection to the Chronopic timer is specifically addressed in section
  
 \begin_inset CommandInset ref
@@ -1495,11 +1530,10 @@ reference "par:Chronopic:-concepto-y-configuracion"
 \end_layout
 
 \begin_layout Standard
-If the first Chronopic is activated, the first circle will be green.
- You can connect more than one to perform tests in Multi Chronopic.
- When you select the port, you must click on the right button to make the
- connection.
- In each successful activation the red circles will become green.
+The first time a Chronopic is connected to a computer, the typ of Chronopic
+ (Jumps/Races or Encoder) must be configured.
+ This configuration will be stored for future Chronojump use.
+ Chronojump will detect automatically all the Chronojump previously configured.
 \end_layout
 
 \begin_layout Standard
@@ -1542,8 +1576,7 @@ Chronopic connection.
 \begin_layout Plain Layout
 \noindent
 \align center
-The figure corresponds to the program Chronojump-in version for Linux operating
- system, which are connected with two Chronopics.
+The figure corresponds to the program Chronojump whith two connected Chronopics.
 \end_layout
 
 \end_inset
@@ -5306,9 +5339,58 @@ Select encoder
 \end_layout
 
 \begin_layout Standard
+In 1.7.0 and newer versiona Chronojump can manage multiple encoder config.
+ This way you can Create, delete, import and export diferent encoder configurati
+on.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename images/encoder-manual-images/encoder_admin.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Encoder configuration admin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Each type of encoder has a diferent set of configurations.
  Clicking on the arrow buttons will change the configuration for this type
- of encoder
+ of encoder.
 \end_layout
 
 \begin_layout Standard
@@ -8662,885 +8744,6 @@ To export to CSV we chose the semicolon character (instead of comma character)
 \end_layout
 
 \begin_layout Chapter
-Share Data Server 
-\end_layout
-
-\begin_layout Standard
-Chronojump has a server to share data between users on Internet.
- The server will obtain valuable data from the cross of many variables.
- For this, the users may share the data Chronojump.
- We believe in the good quality and usability of the technical characteristics
- of the server.
-\end_layout
-
-\begin_layout Standard
-Chronojump dispone de un servidor en Internet para compartir datos entre
- los usuarios.
- El servidor permitirá obtener datos valiosos a partir del cruce de muchas
- variables, pero para ello es necesario que exista predisposición por parte
- de los usuarios de Chronojump para compartir los datos.
- Creemos que las características técnicas del servidor y su usabilidad son
- óptimas.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-Creemos que el servidor de Chronojump es óptimo en cuanto a facilidad de
- uso-conexión, tiempo en línea, capacidad, funcionalidad, seguridad y privacidad.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Share and use the data
-\end_layout
-
-\begin_layout Standard
-The data that can be shared are the tests, subjects and sessions of each
- evaluator at any time.
- The evaluator may upload to the server any session, dismissing those athletes
- and tests that he doesn’t want to share.
- Before upload the data to the server, check if they have completed the
- necessary data from each of the athletes as well as the data required from
- the evaluator.
- 
-\end_layout
-
-\begin_layout Section
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Calidad-de-los-datos"
-
-\end_inset
-
-Data quality.
- Accredited assessors and reliable data
-\end_layout
-
-\begin_layout Standard
-In order to get a lot of data, without sacrificing the quality, there are
- two types of data in terms of reliability:
-\end_layout
-
-\begin_layout Description
-The
-\begin_inset space ~
-\end_inset
-
-general
-\begin_inset space ~
-\end_inset
-
-data that can be upload from anyone with the Chronojump technology.
- This will soon be available for many data that belongs to this category.
-\end_layout
-
-\begin_layout Description
-The
-\begin_inset space ~
-\end_inset
-
-reliable
-\begin_inset space ~
-\end_inset
-
-data requires the accreditation of the evaluator and the justification of
- the session data.
- This deals with three different profiles of the evaluator: 
-\end_layout
-
-\begin_deeper
-\begin_layout Description
-Evaluator-trainer profile: person related to the field of training.
-\end_layout
-
-\begin_layout Description
-Evaluator-researcher profile: person related to the academic field.
-\end_layout
-
-\begin_layout Description
-Mixed
-\begin_inset space ~
-\end_inset
-
-profile: person involved in the two areas mentioned above.
-\end_layout
-
-\begin_layout Standard
-The process of accreditation of the assessors has not yet begun, so all
- assessors are currently uncredited and the data shared corresponds to general
- data.
- In the future, the new credited evaluators may wish to upload their data
- to the reliable data, even if this data has been uploaded without the accredita
-tion.
-\end_layout
-
-\begin_layout Standard
-The accreditation is in charge of the Research Group: Salut, Activitat Física
- i Esport at the Blanquerna Faculty (Universitat Ramon Llull).
- 
-\end_layout
-
-\end_deeper
-\begin_layout Section
-Server functions
-\end_layout
-
-\begin_layout Standard
-Server functions can be located in the main menu, 
-\emph on
-Tools / Server
-\emph default
-.
- Below its described each of them.
-\end_layout
-
-\begin_layout Subsection
-Check connection
-\end_layout
-
-\begin_layout Standard
-Allows connecting to the server.
- If not possible, it may be because the server is temporarily inoperative,
- your computer is not connected to Internet, or your Internet connection
- has limit on some types of connection.
-\end_layout
-
-\begin_layout Subsection
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Datos-del-evaluador"
-
-\end_inset
-
-Evaluators data
-\end_layout
-
-\begin_layout Standard
-This feature allows the evaluator to fill in a sheet which will be linked
- to the tests, subjects and sessions that will be shared.
- The personal information will be hidden.
- It’s necessary to provide evaluation data for the following reasons:
-\end_layout
-
-\begin_layout Itemize
-It’s essential for uploading data.
-\end_layout
-
-\begin_layout Itemize
-Allows knowing the nationalities, ages, equipment, evaluators…
-\end_layout
-
-\begin_layout Itemize
-If problems occur with some data, the administrators can contact via mail
- to the server of the evaluator.
-\end_layout
-
-\begin_layout Standard
-As discussed in Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Calidad-de-los-datos"
-
-\end_inset
-
-, currently the accreditation is not required, so the sheet that has to
- be filled is very short.
- See Figures 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:server_evaluador1"
-
-\end_inset
-
-, 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:server_evaluador2"
-
-\end_inset
-
- and 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:server_evaluador3"
-
-\end_inset
-
-.
- to check the for data window for the evaluators.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/evaluator1.png
-	lyxscale 50
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:server_evaluador1"
-
-\end_inset
-
-Details of the evaluator, Tab 1.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/evaluator2.png
-	lyxscale 50
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:server_evaluador2"
-
-\end_inset
-
-Details of the evaluator, Tab 2.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/evaluator3.png
-	lyxscale 50
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:server_evaluador3"
-
-\end_inset
-
-Details of the evaluator, Tab 3.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Upload or update session to server
-\end_layout
-
-\begin_layout Standard
-This is the most important function to share data.
- When the evaluator click on 
-\emph on
-Tools / Server / upload (or update) session to server
-\emph default
-, he must follow this steps:
-\end_layout
-
-\begin_layout Enumerate
-First, the evaluator will be asked to verify the data as described in paragraph
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:Datos-del-evaluador"
-
-\end_inset
-
-,
-\end_layout
-
-\begin_layout Enumerate
-then the evaluator will be asked if he wants to discard some of the subjects
- of the session (see Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:server_include-discard"
-
-\end_inset
-
-),
-\end_layout
-
-\begin_layout Enumerate
-then he will be asked for the confirmation,
-\end_layout
-
-\begin_layout Enumerate
-finally it shows a progress window of data to be incorporated into the server.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/Captura-Incluir-Descartar_atletas.png
-	lyxscale 50
-	scale 70
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:server_include-discard"
-
-\end_inset
-
-Include / Discard subject to the server.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-At any time the evaluator can re-upload the session to the server (update).
- The data that has already been uploaded will not be included again, but
- it wills so, the data created the last time.
- 
-\end_layout
-
-\begin_layout Standard
-The tests that have been simulated (not obtained from Chronopic) will be
- uploaded to the server.
-\end_layout
-
-\begin_layout Subsection
-Query the server
-\end_layout
-
-\begin_layout Standard
-It has been created a window that allows average of the simple jumps, reactive
- jumps and simple runs.
- To access to it click on 
-\emph on
-Tools / Server / Query
-\emph default
-.
- The query is performed clicking on the test selectors and the subject selectors.
-\end_layout
-
-\begin_layout Standard
-Below, we can observe the selectors of the query.
- Some of them are mandatory, while the most can be selected on 
-\emph on
-Any
-\emph default
- to indicate that this variable should not affect the result.
- 
-\end_layout
-
-\begin_layout Subsubsection
-Test selector
-\end_layout
-
-\begin_layout Standard
-Here are the three selectors and possible values:
-\end_layout
-
-\begin_layout Description
-Test
-\begin_inset space ~
-\end_inset
-
-type: simple jump test, reactive jump or simple run.
-\end_layout
-
-\begin_layout Description
-Test: correspond to the type of test described above.
-\end_layout
-
-\begin_layout Description
-Variable: the average obtained will be different depending on the test selected:
-\end_layout
-
-\begin_layout Itemize
-For a simple jump test without contact time the only variable is the 
-\emph on
-flight time
-\emph default
-.
-\end_layout
-
-\begin_layout Itemize
-For a single jump with contact time, the variables are: 
-\emph on
-time of flight, contact time, Index DJ
-\emph default
- (see 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:Índice-Dj"
-
-\end_inset
-
-), 
-\emph on
-Index Q
-\emph default
- (see 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:Índice-Q"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Itemize
-For a reactive jump the possible variables are: 
-\emph on
-Average Index
-\emph default
- (see 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:Índice-medio"
-
-\end_inset
-
-) and 
-\emph on
-Power (Bosco)
-\emph default
- (see 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:Potencia-(Bosco)"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Itemize
-For the running the only variable is the 
-\emph on
-time
-\emph default
-.
- 
-\end_layout
-
-\begin_layout Subsubsection
-Selectors on the subject 
-\end_layout
-
-\begin_layout Standard
-The selectors are:
-\end_layout
-
-\begin_layout Description
-Sex
-\end_layout
-
-\begin_layout Description
-Age: Refers to the age of the subject at the time the test is made.
- To calculate the age of the subject it’s used the date of the birth.
-\end_layout
-
-\begin_layout Description
-Country
-\end_layout
-
-\begin_layout Description
-Sport: Sometimes subdivided into specialty.
-\end_layout
-
-\begin_layout Description
-Level: Divided into: [0] sedentary or occasional practitioner, [1] regular
- practice, [2] competition; [3] elite.
- 
-\end_layout
-
-\begin_layout Subsubsection
-Evaluator selector
-\end_layout
-
-\begin_layout Standard
-Any data from a particular evaluator can be chosen.
- This option may be interesting even for yourself because this way is possible
- to quickly gather information from all the jumps that have been evaluated.
-\end_layout
-
-\begin_layout Subsubsection
-Query results
-\end_layout
-
-\begin_layout Standard
-When you click the search button, after a few seconds the server will indicate
- how many results have been found and which is the average.
-\end_layout
-
-\begin_layout Standard
-It is recommended to conduct general searches because the server has been
- created recently.
- As an example of search, try with simple jumps (Free) with most of the
- indicators on 
-\emph on
-Any
-\emph default
-.
-\end_layout
-
-\begin_layout Standard
-In Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:server_query"
-
-\end_inset
-
- is an example of consultation.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/Captura-Query-server.png
-	lyxscale 50
-	scale 70
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:server_query"
-
-\end_inset
-
-Query the server.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Server main statistics
-\end_layout
-
-\begin_layout Standard
-It has been programmed a window to get a snapshot of the existing data on
- the server.
- It shows the number of evaluators, as well as the subjects and the various
- type tests.
- Also indicated which data has been uploaded by the user who runs the program.
-\end_layout
-
-\begin_layout Standard
-You can access to this window by clicking on 
-\emph on
-Tools / Server / Statistics
-\emph default
-.
-\end_layout
-
-\begin_layout Section
-Web statistics
-\end_layout
-
-\begin_layout Standard
-The web page 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-http://www.chronojump.org/server.html
-\end_layout
-
-\end_inset
-
- shows the results from the crossing variables updated from the server.
- These charts are updated every time new data is included (usually automatically
- at night).
- The aim is to create constantly a set of charts that provide relevant informati
-on to anyone interested, even without using Chronojump.
-\end_layout
-
-\begin_layout Standard
-In Figures 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:server_graph1"
-
-\end_inset
-
-, 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:server_graph2"
-
-\end_inset
-
-, and 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:server_graph3"
-
-\end_inset
-
- it’s possible to check some examples of graphics that are obtained on the
- web server.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/server_persons.png
-	lyxscale 50
-	scale 70
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:server_graph1"
-
-\end_inset
-
-Statistics on the web server.
- Population graphic description.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/server_heights_by_jumps_boxplot.png
-	lyxscale 50
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:server_graph2"
-
-\end_inset
-
-Statistics on the web server.
- Boxplot flight time depending on the type of jump and gender.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/server_tv_by_level_sex_jumptype.png
-	lyxscale 50
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:server_graph3"
-
-\end_inset
-
-Statistics on the web server.
- Graph relates flight time, practical level, type of jump and gender.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Jumps privacy and confidentiality
-\end_layout
-
-\begin_layout Standard
-The names and dates of birth of the athletes and the evaluators will never
- be shown.
- Even when uploading the data, the names of the subjects are not sent (because
- is not required).
- The date of birth will be included to calculate the age, but it will never
- be displayed.
- The comments the evaluator add to the session, subject or test are neither
- provided.
-\end_layout
-
-\begin_layout Chapter
 Preferences of Chronojump
 \end_layout
 
@@ -9631,97 +8834,85 @@ Use this tab to have a copy of your data in order to avoid loosing your
 \end_layout
 
 \begin_layout Standard
-If you want to copy the data stored in the computer A to the computer B,
- follow this steps:
+In version 1.7.0 and above Chronojumps is able to import sessions from other
+ computers.
+ The export must be done of the whole database following the next steps:
+\end_layout
+
+\begin_layout Standard
+On the origin computer:
 \end_layout
 
 \begin_layout Enumerate
-On computer A:
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Go to: 
-\emph on
-Session / preferences / database 
+Menu -> Session -> Preferences -> Backup database
 \end_layout
 
 \begin_layout Enumerate
-Select the items you want to backup
+Select the path where the folder called Chronojump will be created.
+ This folder contains all the information needed for exporting the data
+ to other computer or, simply, have a backup of the sessions in this computer.
+\end_layout
+
+\begin_layout Standard
+On the destiny computer:
 \end_layout
 
 \begin_layout Enumerate
-Click in 
-\emph on
-Backup database.
+Copy the Chronojump folder to the destiny computer.
+ You can copy this, for example, in the Desktop or any other path.
 \end_layout
 
 \begin_layout Enumerate
-Depending on what you have selected to copy, a file or a folder with its
- corresponding subfolders will be exported.
- A directory called chronojump will be created with all the selected data
- if you selected to backup the 
-\emph on
-Multimedia and encoder tests.
+Go Menu -> Session -> Import session from another Chronojump database
+\end_layout
 
-\emph default
- If you didn't selected to backup the 
-\emph on
-Multimedia and encoder tests, 
-\emph default
-a file called 
-\emph on
+\begin_layout Enumerate
+Select where you want to import the session.
+ In the current loaded session or in a new session.
+\end_layout
+
+\begin_layout Enumerate
+Click on 
+\begin_inset Quotes eld
+\end_inset
+
+Open
+\begin_inset Quotes erd
+\end_inset
+
+ button.
+ You will be asked to select the file 
+\begin_inset Quotes eld
+\end_inset
+
 chronojump.db
-\emph default
- will be copied.
-\end_layout
+\begin_inset Quotes erd
+\end_inset
 
-\end_deeper
-\begin_layout Enumerate
-On computer B:
-\end_layout
+ that is located in the 
+\begin_inset Quotes eld
+\end_inset
 
-\begin_deeper
-\begin_layout Enumerate
-If Chronojump is not installed, do it.
-\end_layout
+Chronojump/database folder
+\begin_inset Quotes erd
+\end_inset
 
-\begin_layout Enumerate
-Go to 
-\emph on
-Session / preferences / database / open database folder
-\emph default
- .
- A file explorer window will be opened.
+
 \end_layout
 
 \begin_layout Enumerate
-If you have valuable data on B, then you should make a copy of the chronojump.db
- or the Chronojump whole folder that is located two levels above in the
- folders hierarchy.
+It will appear a list of available sessions to import.
+ Select the desired session and click on 
+\begin_inset Quotes eld
+\end_inset
+
+Accept
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Enumerate
-Copy the 
-\emph on
-chronojump folder
-\emph default
- or the 
-\emph on
-chronojump.db
-\emph default
- file
-\emph on
- 
-\emph default
-from A to B.
-\end_layout
-
-\begin_layout Enumerate
-Close chronojump, open again, and it's done.
-\end_layout
-
-\end_deeper
 \begin_layout Section
 Jumps
 \end_layout
@@ -10078,8 +9269,148 @@ Other
  If is unchecked then this last jump will be rejected.
 \end_layout
 
+\begin_layout Part
+Troubleshooting
+\end_layout
+
+\begin_layout Chapter
+General
+\end_layout
+
+\begin_layout Standard
+As a general recommendation, always try to have the software updated to
+ the last published version.
+ This way you'll be sure that already corrected bugs are not the cause of
+ the problems.
+\end_layout
+
+\begin_layout Section
+In Mac OSX, while executing Chronojump, it appears a message saying 
+\begin_inset Quotes eld
+\end_inset
+
+Maybe R is not installed
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In Mac OSX you need to install the R package independently.
+ Be sure that you have installed it.
+ In the next linx you will find information about how to install it.
+\end_layout
+
 \begin_layout Standard
 
+\lang spanish
+\begin_inset CommandInset href
+LatexCommand href
+name "http://chronojump.org/en/software/#MacOSX"
+target "http://chronojump.org/en/software/#MacOSX"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Chronopic
+\end_layout
+
+\begin_layout Section
+The Chronopic doesn't send any information to Chronojump
+\end_layout
+
+\begin_layout Standard
+First of all you must check that the LED lights of the Chronopic are on
+ once it is connected to the computer with the USB cable.
+ Without no devices connected to the Chronopic, the RED LED to the right
+ of the USB connector should be on.
+ In case it is not check that the USB cable is OK and connected to the computer.
+\end_layout
+
+\begin_layout Standard
+The green LED to the right of the USB port shows the state of the device
+ connected to the Chronopic.
+ If no device is connected the LED shoud be on.
+\end_layout
+
+\begin_layout Itemize
+If the green LED is on:
+\end_layout
+
+\begin_layout Standard
+Check the communication between the Chronopic and Chronojump running it
+ and, with the Chronopic connected, perform some test.
+ It is not necessary to connect any device to the Chronopic.
+ You can use the test button to simulate any interruptor device as a contact
+ platform or a photocell.
+ When pressing the test button the green LED should switch off and Chronojump
+ should detect the contact.
+ If it is not the case see the next chapter.
+\end_layout
+
+\begin_layout Itemize
+If the green LED is off:
+\end_layout
+
+\begin_layout Standard
+It probably is a hardware problem and Chronopic substitution is needed.
+\end_layout
+
+\begin_layout Chapter
+Jumps
+\end_layout
+
+\begin_layout Section
+The contact platform doesn't detect any jump.
+\end_layout
+
+\begin_layout Standard
+First, connect the RCA cable, without the platform, to the Chronopic previously
+ connected to the computer.
+ If the green LED to the right of the USB connector switchs off if means
+ that the RCA cable have a problem.
+ You can substitute it for any other RCA cable.
+\end_layout
+
+\begin_layout Standard
+If the cable doesn't show any of the above simptoms, connect the contact
+ platform to the RCA cable already connected to the Chronopic.
+ If the green light to the right of the USB connector turns off, it means
+ that the two inner copper plates of the platform are in contact or that
+ the RCA connector is in bat condition.
+\end_layout
+
+\begin_layout Standard
+In the first case, check that there is no knoks on the corners of the platform
+ that causes the two copper being in contact.
+ If it is this way, you can use a flat screwer to separate the two copper
+ plates and introduce some piece of paperboard or other insulating material.
+\end_layout
+
+\begin_layout Standard
+In the case that the problem is in the RCA connector it would require a
+ substitution or cable repairing.
+\end_layout
+
+\begin_layout Section
+The height of the jumps in random and independent of the real height
+\end_layout
+
+\begin_layout Standard
+Check that the jump you are viewing in the software is not a simulated one.
+ Before the 1.6.2, in the case of not having a Chronopic connected
+\end_layout
+
+\begin_layout Chapter
+Races
+\end_layout
+
+\begin_layout Chapter
+Encoder
 \end_layout
 
 \begin_layout Chapter
