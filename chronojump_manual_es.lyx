@@ -99,7 +99,7 @@ Manual de Chronojump
 
 
 \size large
-(Actualizado el 17/01/17)
+(Actualizado el 28/04/17)
 \end_layout
 
 \begin_layout Author
@@ -5775,6 +5775,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/encoder-manual-images/encoder_admin_es.png
+	scale 50
 
 \end_inset
 
@@ -6850,257 +6851,6 @@ e, la concéntrica
 Las repeticiones guardadas se indican con un recuadro en el número de repetición.
 \end_layout
 
-\begin_layout Subsubsection
-Análisis
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/encoder-manual-images/analyze_es.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\lang british
-Analyze tab
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Segun los datos a analizar hay dos opciones: la serie actual 
-\begin_inset Graphics
-	filename images/encoder-manual-images/set_button.png
-
-\end_inset
-
- (la mostrada en el área de captura) o las repeticiones guardadas
-\begin_inset Graphics
-	filename images/encoder-manual-images/repetition_button.png
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Con el modo 
-\emph on
-Repeticiones guardadas
-\emph default
- seleccionado puede hacer clic en el botón 
-\emph on
-Seleccionar
-\emph default
- para discriminar las repeticiones activas de la no-activas.
- El análisis cubrirá solo las repeticiones activas.
- Además las repeticiones guardadas le permiten hacer comparaciones entre
- sujetos (de la sesión actual) o entre sesiones (para comparar la evolución
- de una persona en diferentes sesiones).
-\end_layout
-
-\begin_layout Standard
-Hay cuatro modos de análisis:
-\end_layout
-
-\begin_layout Itemize
-Individual / Serie actual 
-\begin_inset Graphics
-	filename images/encoder-manual-images/analyze_individual_current_set.png
-	scale 80
-
-\end_inset
-
-: Análisis de todas las repeticiones de la serie actual.
-\end_layout
-
-\begin_layout Itemize
-Individual / Sesión actual 
-\begin_inset Graphics
-	filename images/encoder-manual-images/analyze_individual_intrasession.png
-	scale 80
-
-\end_inset
-
-: Análisis de las repeticiones guardadas y seleccionadas de la sesión actual.
-\end_layout
-
-\begin_layout Itemize
-Individual / Todas las sesiones 
-\begin_inset Graphics
-	filename images/encoder-manual-images/analyze_individual_intersession.png
-	scale 80
-
-\end_inset
-
-: Análisis de todas las repeticiones guardades en las sesiones seleccionadas.
-\end_layout
-
-\begin_layout Itemize
-Grupal / Serie actual 
-\begin_inset Graphics
-	filename images/encoder-manual-images/analyze_groupal_current_session.png
-	scale 80
-
-\end_inset
-
-: Análisis de las repeticiones guardadas durante la sesión actual y de los
- sujetos seleccionados.
-\end_layout
-
-\begin_layout Standard
-Dentro de cada modo hay varios tipos de análisis
-\end_layout
-
-\begin_layout Itemize
-Barras de potencia 
-\begin_inset Graphics
-	filename images/analyze_power_button.png
-	lyxscale 75
-	scale 75
-
-\end_inset
-
-: Muestra la potencia, el pico de potencia, tiempo necesario para llegar
- al pico de potencia y rango de movimiento.
-\end_layout
-
-\begin_layout Itemize
-Cruzar variables 
-\begin_inset Graphics
-	filename images/analyze_cross_button.png
-	lyxscale 75
-	scale 75
-
-\end_inset
-
-: Muestra las relaciones entre variables como 
-\emph on
-Potencia/Carga
-\emph default
-.
- Incluye el cálculo del 1RM.
- Variables cruzadas es el único modo que se permite en modo 
-\emph on
-Comparar.
-\end_layout
-
-\begin_layout Itemize
-Comparar lateral 
-\begin_inset Graphics
-	filename images/analyze_sidecompare_button.png
-	lyxscale 75
-	scale 75
-
-\end_inset
-
-: Permite ver las gráficas de las variables mecánicas de diferentes repeticiones
- con los mismos ejes.
- Videotutorial: Gráfico Carga vs Potencia 
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-https://youtu.be/mynNxYELja4
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-1RM 
-\begin_inset Graphics
-	filename images/1RM_button.png
-	lyxscale 75
-	scale 75
-
-\end_inset
-
-: Permite hacer diferentes cálculos de las máximas repeticiones que se pueden
- hacer con distintas cargas.
- Videotutorial: Cálculos de nRM 
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-https://youtu.be/sd40bI2UQ9c
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Repetición única 
-\begin_inset Graphics
-	filename images/analyze_singlecurve_button.png
-	lyxscale 75
-	scale 75
-
-\end_inset
-
-: Muestra la gráfica de las variables mecánicas de una única repetición.
-\end_layout
-
-\begin_layout Itemize
-Perfil neuromuscular 
-\begin_inset Graphics
-	filename images/analyze_nmp.png
-	lyxscale 75
-	scale 75
-
-\end_inset
-
-: Para ver el perfil neuromuscular de los tres mejores saltos de una serie
- de seis.
- Por lo menos son necesarios seis saltos para efectuar este tipo de análisis.
-\end_layout
-
-\begin_layout Standard
-El análisis empezará cuando el usuario presione sobre 
-\emph on
-Analizar.
- 
-\emph default
-Al cabo de un instante una gráfica y una tabla aparecerá.
- Ambas pueden ser guardadas mediante el botón de 
-\emph on
-Guardar gráfica
-\emph default
- o 
-\emph on
-Guardar tabla
-\emph default
-.
-\end_layout
-
 \begin_layout Subsection
 Configuración del encoder.
 \end_layout
@@ -7708,8 +7458,8 @@ Test
 \emph default
  
 \begin_inset Graphics
-	filename images/test_button.svg
-	lyxscale 3
+	filename images/test_button.png
+	scale 3
 
 \end_inset
 
@@ -7778,7 +7528,7 @@ status open
 \begin_inset Graphics
 	filename images/multiChronopic_mc.png
 	lyxscale 50
-	scale 80
+	scale 60
 
 \end_inset
 
@@ -8053,7 +7803,7 @@ status open
 \begin_inset Graphics
 	filename images/multiChronopic_ra.png
 	lyxscale 50
-	scale 80
+	scale 60
 	rotateAngle 90
 
 \end_inset
@@ -8089,7 +7839,7 @@ Análisis de carrera
 \end_layout
 
 \begin_layout Chapter
-Estadísticas y gráficas de carreras y saltos
+Estadísticas y gráficas
 \end_layout
 
 \begin_layout Standard
@@ -8120,7 +7870,7 @@ status open
 \begin_inset Graphics
 	filename images/chronojump_stats_window.png
 	lyxscale 50
-	scale 75
+	width 100col%
 
 \end_inset
 
@@ -8150,23 +7900,11 @@ Ventana de estadísticas de Chronojump.
 
 \end_layout
 
-\begin_layout Standard
-La versión actual Chronojump sólo contempla estadísticos referentes a saltos
- y carreras.
- En futuras versiones se incluirán también estadísticos de otros tests.
- Si desea realizar estadísticos y gráficos de otros tests, le recomendamos
- que exporte los datos a hoja de cálculo tal y como se explica en el apartado
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:Exportación-a-hoja"
-
-\end_inset
-
-.
+\begin_layout Section
+Saltos y carreras
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Tipos, subtipos y aplicación de estadísticas
 \end_layout
 
@@ -8216,7 +7954,7 @@ Saltos
 reactivos que presenta diversas formas de analizar saltos repetitivos
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Saltos simples
 \end_layout
 
@@ -8249,7 +7987,7 @@ Diferencia entre tests
 Picos de potencia de Lewis, Harman, Sayers (2), Shetty, Cannavan, Lara(5)
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Sin índices
 \end_layout
 
@@ -8262,7 +8000,7 @@ aplicación
 .
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Fuerza-velocidad
 \end_layout
 
@@ -8286,7 +8024,7 @@ los saltos SJ con el 100% de carga extra respecto al peso corporal, y SJ
  sin carga adicional.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Índice de elasticidad
 \end_layout
 
@@ -8308,7 +8046,7 @@ Estadístico de salto simple en que se muestra el índice de elasticidad a
 entre los saltos SJ y CMJ.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Índice de utilización de brazos
 \end_layout
 
@@ -8330,7 +8068,7 @@ Estadístico de salto simple en que se muestra el índice de utilización de
 entre los saltos CMJ y ABK.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Diferencia entre tests
 \end_layout
 
@@ -8347,7 +8085,7 @@ Estadístico que permite ver la diferencia relativa entre dos tests cualesquiera
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Picos de potencia
 \end_layout
 
@@ -8406,7 +8144,7 @@ Estadísticas de saltos simples.
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Saltos con tiempo de contacto
 \end_layout
 
@@ -8434,7 +8172,7 @@ aplicación
 , se refiere al tipo de salto al que es aplicado el estadístico.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:Índice-Dj"
@@ -8458,7 +8196,7 @@ Estudio de la relación tiempo de vuelo / tiempo de contacto en un salto
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:Índice-Q"
@@ -8482,7 +8220,7 @@ Estudio de la relación tiempo de vuelo / tiempo de contacto en un salto
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Saltos reactivos
 \end_layout
 
@@ -8522,7 +8260,7 @@ aplicación
 , se refiere al tipo de salto al que es aplicado el estadístico.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:Índice-medio"
@@ -8546,7 +8284,7 @@ Estudio de la relación tiempo de vuelo / tiempo de contacto en un salto
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:Potencia-(Bosco)"
@@ -8570,7 +8308,7 @@ Estudio de la relación tiempo de vuelo / tiempo de contacto en un salto
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Evolución
 \end_layout
 
@@ -8598,7 +8336,7 @@ marcar los mejores 'n' consecutivos
  Si selecciona el valor 1 entonces el mejor subsalto será resaltado.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Promedio y Desviación estándar usando RjIndex
 \end_layout
 
@@ -8620,7 +8358,7 @@ para cada uno de los saltos de un test reactivo.
  Se muestra el promedio y la desviación estándar conseguidos.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Promedio y Desviación estándar usando QIndex
 \end_layout
 
@@ -8642,7 +8380,7 @@ para cada uno de los saltos de un test reactivo.
  Se muestra el promedio y la desviación estándar conseguidos.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Estadísticas multisesión
 \end_layout
 
@@ -8670,7 +8408,7 @@ Seleccionar
  la sesión actual entre las mismas.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsubsection
 Selección de saltos a mostrar
 \end_layout
 
@@ -8732,7 +8470,7 @@ La mayoría de los estadísticos ofrecen las cuatro opciones, en los que se
  omita alguno de estos modos es porque se cree que no tendría sentido generarlo.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Otras configuraciones
 \end_layout
 
@@ -8741,7 +8479,7 @@ Se presentan a continuación otros botones de acción vinculados al estadístico
  mostrado.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Enunciado de los estadísticos
 \end_layout
 
@@ -8752,7 +8490,7 @@ Todo estadístico dispone de un enunciado que se crea automáticamente en
  El enunciado puede ayudarle a entender el estadístico.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Distinción de género
 \end_layout
 
@@ -8778,7 +8516,7 @@ Cuando las filas de resultado de los estadísticos correspondan con saltadores,
 Este botón podrá ayudarle a realizar comparaciones intra e intergéneros.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Actualización automática
 \end_layout
 
@@ -8789,7 +8527,7 @@ La ventana de estadísticas de Chronojump está diseñada para que cada cambio
 te.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Marcado de filas
 \end_layout
 
@@ -8819,7 +8557,7 @@ reference "sec:Generación-de-Informes"
  respectivamente.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Creación de gráficos
 \begin_inset CommandInset label
 LatexCommand label
@@ -9025,6 +8763,600 @@ Gráfico dotchart de un subconjunto de los valores anteriores.
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Encoder
+\end_layout
+
+\begin_layout Standard
+Hay cuatro modos de análisis:
+\end_layout
+
+\begin_layout Itemize
+Individual / Serie actual 
+\begin_inset Graphics
+	filename images/encoder-manual-images/analyze_individual_current_set.png
+	scale 80
+
+\end_inset
+
+: Análisis de todas las repeticiones de la serie actual.
+\end_layout
+
+\begin_layout Itemize
+Individual / Sesión actual 
+\begin_inset Graphics
+	filename images/encoder-manual-images/analyze_individual_intrasession.png
+	scale 80
+
+\end_inset
+
+: Análisis de las repeticiones guardadas y seleccionadas de la sesión actual.
+\end_layout
+
+\begin_layout Itemize
+Individual / Todas las sesiones 
+\begin_inset Graphics
+	filename images/encoder-manual-images/analyze_individual_intersession.png
+	scale 80
+
+\end_inset
+
+: Análisis de todas las repeticiones guardades en las sesiones seleccionadas.
+\end_layout
+
+\begin_layout Itemize
+Grupal / Serie actual 
+\begin_inset Graphics
+	filename images/encoder-manual-images/analyze_groupal_current_session.png
+	scale 80
+
+\end_inset
+
+: Análisis de las repeticiones guardadas durante la sesión actual y de los
+ sujetos seleccionados.
+\end_layout
+
+\begin_layout Standard
+Dentro de cada modo hay varios tipos de análisis
+\end_layout
+
+\begin_layout Itemize
+Barras de potencia 
+\begin_inset Graphics
+	filename images/analyze_power_button.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+: Muestra la potencia, el pico de potencia, tiempo necesario para llegar
+ al pico de potencia y rango de movimiento.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/analysis_power_bars.png
+	scale 60
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfico de barras de potencia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\noindent
+\align left
+Cruzar variables 
+\begin_inset Graphics
+	filename images/analyze_cross_button.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+: Muestra las relaciones entre variables como 
+\emph on
+Potencia/Carga
+\emph default
+.
+ Incluye el cálculo del 1RM.
+ Variables cruzadas es el único modo que se permite en modo 
+\emph on
+Comparar.
+
+\emph default
+ Videotutorial: Gráfico Carga vs Potencia 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://youtu.be/mynNxYELja4
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/analysis_power_V-M_es.png
+	lyxscale 90
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/analysis_power_V-P_es.png
+	lyxscale 90
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/analysis_power_V-F_es.png
+	lyxscale 90
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/analysis_power_V-P-M_es.png
+	lyxscale 90
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráficos de variables cruzadas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\noindent
+\align left
+Comparar lateral 
+\begin_inset Graphics
+	filename images/analyze_sidecompare_button.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+: Permite ver las gráficas de las variables mecánicas de diferentes repeticiones
+ con los mismos ejes.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/analysis_side_comparing_Left_Right.png
+	lyxscale 50
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfico de dos repeticiones
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\noindent
+\align left
+1RM 
+\begin_inset Graphics
+	filename images/1RM_button.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+: Permite hacer diferentes cálculos de las máximas repeticiones que se pueden
+ hacer con distintas cargas.
+ Videotutorial: Cálculos de nRM 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://youtu.be/sd40bI2UQ9c
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/analysis_1RM-Any_es.png
+	lyxscale 90
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/analysis_1RM-Squat_es.png
+	lyxscale 90
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/analysis_1RM-Bech-Press_es.png
+	lyxscale 90
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/analysis_1RM-Indirect_es.png
+	lyxscale 90
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráficos de 1RM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\noindent
+\align left
+Repetición única 
+\begin_inset Graphics
+	filename images/analyze_singlecurve_button.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+: Muestra la gráfica de las variables mecánicas de una única repetición.
+ Permite analizar los valores en cada milisegundo así como valores medios
+ y máximos de un intervalo de tiempo.
+ 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/analysis-1_repetition.png
+	lyxscale 80
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Análisis de una repetición
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Perfil neuromuscular 
+\begin_inset Graphics
+	filename images/analyze_nmp.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+: Para ver el perfil neuromuscular de los tres mejores saltos de una serie
+ de seis.
+ Por lo menos son necesarios seis saltos para efectuar este tipo de análisis.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/analysis_NMP_es.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfico del perfil neuromuscular
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+El análisis empezará cuando el usuario presione sobre 
+\emph on
+Analizar.
+ 
+\emph default
+Al cabo de un instante una gráfica y una tabla aparecerá.
+ Ambas pueden ser guardadas mediante el botón de 
+\emph on
+Guardar gráfica
+\emph default
+ o 
+\emph on
+Guardar tabla
+\emph default
+ de abajo a la derecha.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/analysis_table_es.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabla de datos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 

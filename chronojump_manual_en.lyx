@@ -5360,6 +5360,7 @@ status open
 \lang spanish
 \begin_inset Graphics
 	filename images/encoder-manual-images/encoder_admin.png
+	scale 50
 
 \end_inset
 
@@ -6469,237 +6470,6 @@ The descending white line in the bar indicates an excentric repetition.
 The saved repetitions apears with a framed number below.
 \end_layout
 
-\begin_layout Subsubsection
-Encoder analyze tab
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/encoder-manual-images/analyze.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Analyze tab
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Regarding the data, two things can be analysed: current set 
-\lang spanish
-
-\begin_inset Graphics
-	filename images/encoder-manual-images/set_button.png
-
-\end_inset
-
-
-\lang british
-(the set in the capture tab) or user repetitions 
-\lang spanish
-
-\begin_inset Graphics
-	filename images/encoder-manual-images/repetition_button.png
-
-\end_inset
-
-
-\lang british
-.
-\end_layout
-
-\begin_layout Standard
-When “User repetitions” is marked, then using the “Select” button, it can
- be discriminated the active repetitions and the not-active.
- The analysis will cover only the active repetitions.
- Also the “User repetitions” allow to make comparisons between subjects
- (to compare the different subjects in this session), or between sessions
- (to compare the evolution of a person during different sessions).
-\end_layout
-
-\begin_layout Standard
-There are five modes of analysis:
-\end_layout
-
-\begin_layout Itemize
-Individual / Current Set 
-\begin_inset Graphics
-	filename images/encoder-manual-images/analyze_individual_current_set.png
-	scale 80
-
-\end_inset
-
-: Analysis of all repetitions of the current set.
-\end_layout
-
-\begin_layout Itemize
-Individual / Current session 
-\begin_inset Graphics
-	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analyze_individual_intrasession.png
-	scale 80
-
-\end_inset
-
-: Analysis of the saved and selected repetitions.
-\end_layout
-
-\begin_layout Itemize
-Individual / All sessions 
-\begin_inset Graphics
-	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analyze_individual_intersession.png
-	scale 80
-
-\end_inset
-
-: Analysis of all repetitions saved in the selected sessions.
-\end_layout
-
-\begin_layout Itemize
-Groupal / Current session 
-\begin_inset Graphics
-	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analyze_groupal_current_session.png
-	scale 80
-
-\end_inset
-
-: Analysis of current session and selected subjects.
-\end_layout
-
-\begin_layout Standard
-Within each mode there's various types of analysis:
-\end_layout
-
-\begin_layout Itemize
-Power bars 
-\begin_inset Graphics
-	filename images/analyze_power_button.png
-	lyxscale 75
-	scale 75
-
-\end_inset
-
-: Shows power, peak power, time needed to arrive to peak power and range
- of movement.
-\end_layout
-
-\begin_layout Itemize
-Cross variables 
-\begin_inset Graphics
-	filename images/analyze_cross_button.png
-	lyxscale 75
-	scale 75
-
-\end_inset
-
-: to show relationships between variables like “Power / Load”.
- Includes the 1RM calculation.
- Cross variables is the only analysis that can be done on “compare” mode.
- Videotutorial: Power vs Load curve 
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-https://youtu.be/mynNxYELja4
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-1RM 
-\begin_inset Graphics
-	filename images/1RM_button.png
-	lyxscale 75
-	scale 75
-
-\end_inset
-
-: It allows to make different calculations of the maximum repetitions that
- can be performed with different loads.
- Videotutorial: Chronojump tutorials: Estimate nRM indirectly 
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-https://youtu.be/sd40bI2UQ9c
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Side compare 
-\begin_inset Graphics
-	filename images/analyze_sidecompare_button.png
-	lyxscale 75
-	scale 75
-
-\end_inset
-
-: to see a graph of the mechanical variables of different repetitions all
- with the same axis.
-\end_layout
-
-\begin_layout Itemize
-Single repetition 
-\begin_inset Graphics
-	filename images/analyze_singlecurve_button.png
-	lyxscale 75
-	scale 75
-
-\end_inset
-
-: to see a graph of the mechanical variables of a repetition.
-\end_layout
-
-\begin_layout Itemize
-Neuromuscular profile 
-\begin_inset Graphics
-	filename images/analyze_nmp.png
-	lyxscale 75
-	scale 75
-
-\end_inset
-
-: to see the neuromuscular profile of the three best jumps of a set of six.
- At least six jumping repetitions are needed to performe that kind of analysis.
-\end_layout
-
-\begin_layout Standard
-The analysis starts when user click in “Analyse”.
- After a while, a graph and a table will appear, both can be saved using
- each save button in the lower right.
-\end_layout
-
 \begin_layout Subsection
 Encoder settings and preferences
 \end_layout
@@ -7587,7 +7357,8 @@ status open
 \begin_inset Graphics
 	filename images/multiChronopic_ra.png
 	lyxscale 50
-	width 100col%
+	scale 60
+	rotateAngle 90
 
 \end_inset
 
@@ -7618,7 +7389,7 @@ Multi Chronopic screenshot with Run Analysis results.
 \end_layout
 
 \begin_layout Chapter
-Statistics and graphics of jumps and races
+Statistics and graphics
 \end_layout
 
 \begin_layout Standard
@@ -7680,21 +7451,11 @@ Chronojump statistics window.
 
 \end_layout
 
-\begin_layout Standard
-The current version only provides statistical Chronojump concerning to jumps.
- Future versions will also include other statistical tests.
- If you have graphics and other statistical tests, we recommend that you
- export the worksheet data as described in Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:Exportación-a-hoja"
-
-\end_inset
-
-.
+\begin_layout Section
+Jumps and races
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Statistic type, subtype and applications
 \end_layout
 
@@ -7739,7 +7500,7 @@ Reactive
 jumps which presents several ways to analyze repetitive jumps.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Simple jumps
 \end_layout
 
@@ -7768,7 +7529,7 @@ Use of arms index (IUB)
 Power peak of Lewis, Harman, Sayers (2), Shetty, Canavan, Lara (5)
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 No index
 \end_layout
 
@@ -7781,7 +7542,7 @@ application
  field.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Force-velocity
 \end_layout
 
@@ -7805,7 +7566,7 @@ SJ jumps with 100% extra charge to the body weight, and SJ with no additional
  charge.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Elasticity index
 \end_layout
 
@@ -7826,7 +7587,7 @@ Statistical simple jump that shows the elasticity index formula
 between SJ and CMJ jumps.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Use of arms index
 \end_layout
 
@@ -7848,7 +7609,7 @@ Statistical simple jump that shows the rate of the use of arms from the
 between CMJ and ABK jumps.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Substraction between tests
 \end_layout
 
@@ -7867,7 +7628,7 @@ Statistical tha shows the relative difference between two tests.
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Peak power
 \end_layout
 
@@ -7925,7 +7686,7 @@ Statistics of simple jumps.
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Contact time jumps
 \end_layout
 
@@ -7950,7 +7711,7 @@ The application field in both cases refers to the type of jump that is applied
  to the statistic.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:Índice-Dj"
@@ -7974,7 +7735,7 @@ Study of the relationship between time of flight / time of contact in a
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:Índice-Q"
@@ -7998,7 +7759,7 @@ Study of the relationship between time of flight / time of contact in a
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Repetitive jump
 \end_layout
 
@@ -8036,7 +7797,7 @@ In all cases the application field refers to the type of jump that is applied
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:Índice-medio"
@@ -8060,7 +7821,7 @@ Study of the relationship of flight time / contact time in the repetitive
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:Potencia-(Bosco)"
@@ -8084,7 +7845,7 @@ Study of the relationship of flight time / contact time in the repetitive
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Evolution
 \end_layout
 
@@ -8108,7 +7869,7 @@ Sometimes some athletes do a jump with a very good TF / TC because of the
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Mean and standard deviation using RjIndex 
 \end_layout
 
@@ -8131,7 +7892,7 @@ for each of the jumps of the repetitive jump test it’s shown the average
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Mean and standard deviation using QIndex
 \end_layout
 
@@ -8153,7 +7914,7 @@ for each of the jumps of the repetitive jump test it’s shown the average
  and standard deviation obtained.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Multisession statistics
 \end_layout
 
@@ -8183,7 +7944,7 @@ Select
  the current session between them.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Selection of the jumps to be shown
 \end_layout
 
@@ -8237,7 +7998,7 @@ Most of the statistics offers the four options.
  Those omitted is because is not a purpose generate them.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Other settings
 \end_layout
 
@@ -8246,7 +8007,7 @@ Other related action buttons presented below.
  
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Statistics formulation
 \end_layout
 
@@ -8256,7 +8017,7 @@ All statistics have a statement that is automatically created based on the
  The statement can help you understand the statistics.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Genus distinction
 \end_layout
 
@@ -8281,7 +8042,7 @@ When the result rows of statistical correspond to the subjects, it will
 This button can help intra and inter genus comparisons.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Automatic actualization
 \end_layout
 
@@ -8291,7 +8052,7 @@ The statistics window Chronojump is designed so each change in the database
  ...) is updated directly.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Marked rows
 \end_layout
 
@@ -8320,7 +8081,7 @@ reference "sec:Generación-de-Informes"
  respectively.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Graphic creation 
 \begin_inset CommandInset label
 LatexCommand label
@@ -8529,6 +8290,208 @@ Graph dotchart a subset of the above values.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Encoder
+\end_layout
+
+\begin_layout Subsubsection
+Encoder analyze tab
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/analyze.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Analyze tab
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are four modes of analysis:
+\end_layout
+
+\begin_layout Itemize
+Individual / Current Set 
+\begin_inset Graphics
+	filename images/encoder-manual-images/analyze_individual_current_set.png
+	scale 80
+
+\end_inset
+
+: Analysis of all repetitions of the current set.
+\end_layout
+
+\begin_layout Itemize
+Individual / Current session 
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analyze_individual_intrasession.png
+	scale 80
+
+\end_inset
+
+: Analysis of the saved and selected repetitions.
+\end_layout
+
+\begin_layout Itemize
+Individual / All sessions 
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analyze_individual_intersession.png
+	scale 80
+
+\end_inset
+
+: Analysis of all repetitions saved in the selected sessions.
+\end_layout
+
+\begin_layout Itemize
+Groupal / Current session 
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analyze_groupal_current_session.png
+	scale 80
+
+\end_inset
+
+: Analysis of current session and selected subjects.
+\end_layout
+
+\begin_layout Standard
+Within each mode there's various types of analysis:
+\end_layout
+
+\begin_layout Itemize
+Power bars 
+\begin_inset Graphics
+	filename images/analyze_power_button.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+: Shows power, peak power, time needed to arrive to peak power and range
+ of movement.
+\end_layout
+
+\begin_layout Itemize
+Cross variables 
+\begin_inset Graphics
+	filename images/analyze_cross_button.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+: to show relationships between variables like “Power / Load”.
+ Includes the 1RM calculation.
+ Cross variables is the only analysis that can be done on “compare” mode.
+ Videotutorial: Power vs Load curve 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://youtu.be/mynNxYELja4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+1RM 
+\begin_inset Graphics
+	filename images/1RM_button.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+: It allows to make different calculations of the maximum repetitions that
+ can be performed with different loads.
+ Videotutorial: Chronojump tutorials: Estimate nRM indirectly 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://youtu.be/sd40bI2UQ9c
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Side compare 
+\begin_inset Graphics
+	filename images/analyze_sidecompare_button.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+: to see a graph of the mechanical variables of different repetitions all
+ with the same axis.
+\end_layout
+
+\begin_layout Itemize
+Single repetition 
+\begin_inset Graphics
+	filename images/analyze_singlecurve_button.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+: to see a graph of the mechanical variables of a repetition.
+\end_layout
+
+\begin_layout Itemize
+Neuromuscular profile 
+\begin_inset Graphics
+	filename images/analyze_nmp.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+: to see the neuromuscular profile of the three best jumps of a set of six.
+ At least six jumping repetitions are needed to performe that kind of analysis.
+\end_layout
+
+\begin_layout Standard
+The analysis starts when user click in “Analyse”.
+ After a while, a graph and a table will appear, both can be saved using
+ each save button in the lower right corner.
 \end_layout
 
 \begin_layout Chapter
