@@ -97,7 +97,7 @@ Chronojump
 
 
 \size large
-(Updated on 17/02/17)
+(Updated on 03/05/17)
 \end_layout
 
 \begin_layout Author
@@ -8130,6 +8130,7 @@ reference "fig:Gráfico-stats4"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -8171,6 +8172,7 @@ Graph example: Histogram of a height of jump.
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -8212,6 +8214,7 @@ Box diagram of the same values.
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -8253,6 +8256,7 @@ Graph stripchart of the same values.
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -8383,10 +8387,14 @@ Groupal / Current session
 \end_layout
 
 \begin_layout Standard
+\noindent
+\align left
 Within each mode there's various types of analysis:
 \end_layout
 
 \begin_layout Itemize
+\noindent
+\align left
 Power bars 
 \begin_inset Graphics
 	filename images/analyze_power_button.png
@@ -8397,9 +8405,48 @@ Power bars
 
 : Shows power, peak power, time needed to arrive to peak power and range
  of movement.
+\lang spanish
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_power_bars.png
+	scale 60
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Power bars graph
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
+\noindent
+\align left
 Cross variables 
 \begin_inset Graphics
 	filename images/analyze_cross_button.png
@@ -8423,9 +8470,131 @@ https://youtu.be/mynNxYELja4
 \end_inset
 
 
+\lang spanish
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Graphics
+	filename images/encoder-manual-images/analysis_power_V-M.png
+	lyxscale 90
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_power_V-P.png
+	lyxscale 90
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_power_V-F.png
+	lyxscale 90
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_power_V-P-M.png
+	lyxscale 90
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Cross variables graphs
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
+\noindent
+\align left
 1RM 
 \begin_inset Graphics
 	filename images/1RM_button.png
@@ -8448,9 +8617,129 @@ https://youtu.be/sd40bI2UQ9c
 \end_inset
 
 
+\lang spanish
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_1RM-Any.png
+	lyxscale 90
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_1RM-Squat.png
+	lyxscale 90
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_1RM-Bech-Press.png
+	lyxscale 90
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_1RM-Indirect.png
+	lyxscale 90
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+1RM graphs
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
+\noindent
+\align left
 Side compare 
 \begin_inset Graphics
 	filename images/analyze_sidecompare_button.png
@@ -8461,9 +8750,51 @@ Side compare
 
 : to see a graph of the mechanical variables of different repetitions all
  with the same axis.
+\lang spanish
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_side_comparing_Left_Right.png
+	lyxscale 50
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Side comparing graph
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
+\noindent
+\align left
 Single repetition 
 \begin_inset Graphics
 	filename images/analyze_singlecurve_button.png
@@ -8473,9 +8804,51 @@ Single repetition
 \end_inset
 
 : to see a graph of the mechanical variables of a repetition.
+\lang spanish
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis-1_repetition.png
+	lyxscale 80
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Single repetition analysis
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
+\noindent
+\align left
 Neuromuscular profile 
 \begin_inset Graphics
 	filename images/analyze_nmp.png
@@ -8486,9 +8859,52 @@ Neuromuscular profile
 
 : to see the neuromuscular profile of the three best jumps of a set of six.
  At least six jumping repetitions are needed to performe that kind of analysis.
+\lang spanish
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_NMP.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Neuromuscular profile
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+\noindent
+\align left
 The analysis starts when user click in “Analyse”.
  After a while, a graph and a table will appear, both can be saved using
  each save button in the lower right corner.
