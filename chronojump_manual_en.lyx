@@ -92,12 +92,6 @@
 Chronojump
 \size default
  Manual
-\begin_inset Newline newline
-\end_inset
-
-
-\size large
-(Updated on 03/05/17)
 \end_layout
 
 \begin_layout Author
@@ -874,8 +868,6 @@ USB
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang spanish
 /dev/tty.usbserial-[serial number]
 \end_layout
 
@@ -1497,7 +1489,7 @@ Help Menu.
 Chronopic/s Connection.
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Conexión-de-Chronopic/s"
+name "sec:Chronopic/s_connection"
 
 \end_inset
 
@@ -3667,8 +3659,6 @@ Prevent double contacts
 \end_layout
 
 \begin_layout Standard
-
-\lang spanish
 \begin_inset Float figure
 wide false
 sideways false
@@ -3676,8 +3666,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang spanish
 \begin_inset Graphics
 	filename images/preferences_double_contact.png
 
@@ -3687,8 +3675,6 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
-\lang spanish
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -3974,8 +3960,6 @@ Run intervallic
 \end_layout
 
 \begin_layout Standard
-
-\lang spanish
 \begin_inset Float figure
 wide false
 sideways false
@@ -3983,8 +3967,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang spanish
 \begin_inset Graphics
 	filename images/race_graph.png
 	lyxscale 75
@@ -3996,8 +3978,6 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
-\lang spanish
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -5284,8 +5264,6 @@ Encoder configuration
 \begin_layout Standard
 The next step is the selection of the type of encoder, how it is atached
  to the machine and the type of machine used in the exercise.
-\lang spanish
-
 \begin_inset Float figure
 placement H
 wide false
@@ -5295,8 +5273,6 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
-
-\lang spanish
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/select.png
 
@@ -5306,8 +5282,6 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
-\lang spanish
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -5345,8 +5319,6 @@ on.
 \end_layout
 
 \begin_layout Standard
-
-\lang spanish
 \begin_inset Float figure
 placement H
 wide false
@@ -5356,8 +5328,6 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
-
-\lang spanish
 \begin_inset Graphics
 	filename images/encoder-manual-images/encoder_admin.png
 	scale 50
@@ -5368,8 +5338,6 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
-\lang spanish
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -5434,8 +5402,6 @@ Inertial machines configuration
 \begin_layout Standard
 The characteristics of the inertial machines make necessary to enter a set
  of extra parameters that are being descrived below:
-\lang spanish
-
 \begin_inset Float figure
 placement h
 wide false
@@ -5445,8 +5411,6 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
-
-\lang spanish
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/inertial_conf.png
 	lyxscale 50
@@ -5458,8 +5422,6 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
-\lang spanish
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -6050,8 +6012,6 @@ Important!: When using inertial machiens, remember always start with the
 \begin_layout Plain Layout
 \noindent
 \align center
-
-\lang spanish
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="2">
 <features rotate="0" tabularvalignment="middle">
@@ -6062,8 +6022,6 @@ Important!: When using inertial machiens, remember always start with the
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang spanish
 Right execution
 \end_layout
 
@@ -6073,8 +6031,6 @@ Right execution
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang spanish
 Wrong execution
 \end_layout
 
@@ -6086,8 +6042,6 @@ Wrong execution
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang spanish
 \begin_inset Graphics
 	filename images/encoder-manual-images/inertial_right.png
 	lyxscale 50
@@ -6104,8 +6058,6 @@ Wrong execution
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang spanish
 \begin_inset Graphics
 	filename images/encoder-manual-images/inertial_wrong.png
 	lyxscale 50
@@ -7045,17 +6997,13 @@ Some of these tests require a synchronization to intend that the various
  (example 1 and 2) or from contact with the tapping and the tread on the
  ground (Example 3).
  This sync can be selected from a check box and carried out by making contact
- with several devices at once, or by touching the Test butto
-\lang spanish
-n
+ with several devices at once, or by touching the Test button
 \begin_inset Graphics
 	filename images/test_button.png
 	scale 3
 
 \end_inset
 
-
-\lang british
  of Chronopics.
  In the Chronojump Forum 
 \begin_inset Flex URL
@@ -7620,8 +7568,6 @@ Statistical tha shows the relative difference between two tests.
 \begin_layout Standard
 \noindent
 \align center
-
-\lang spanish
 \begin_inset Formula $\%dif=\frac{(test1-test2)}{test2}*100$
 \end_inset
 
@@ -8405,8 +8351,6 @@ Power bars
 
 : Shows power, peak power, time needed to arrive to peak power and range
  of movement.
-\lang spanish
-
 \begin_inset Float figure
 placement H
 wide false
@@ -8416,8 +8360,6 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
-
-\lang spanish
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_power_bars.png
 	scale 60
@@ -8470,8 +8412,6 @@ https://youtu.be/mynNxYELja4
 \end_inset
 
 
-\lang spanish
-
 \begin_inset Float figure
 placement H
 wide false
@@ -8481,8 +8421,6 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
-
-\lang spanish
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="2">
 <features rotate="0" tabularvalignment="middle">
@@ -8493,8 +8431,6 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang spanish
 \begin_inset Graphics
 	filename images/encoder-manual-images/analysis_power_V-M.png
 	lyxscale 90
@@ -8511,8 +8447,6 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang spanish
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_power_V-P.png
 	lyxscale 90
@@ -8531,8 +8465,6 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang spanish
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_power_V-F.png
 	lyxscale 90
@@ -8549,8 +8481,6 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang spanish
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_power_V-P-M.png
 	lyxscale 90
@@ -8572,8 +8502,6 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
-\lang spanish
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -8617,8 +8545,6 @@ https://youtu.be/sd40bI2UQ9c
 \end_inset
 
 
-\lang spanish
-
 \begin_inset Float figure
 placement H
 wide false
@@ -8626,8 +8552,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\lang spanish
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="2">
 <features rotate="0" tabularvalignment="middle">
@@ -8638,8 +8562,6 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang spanish
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_1RM-Any.png
 	lyxscale 90
@@ -8656,8 +8578,6 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang spanish
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_1RM-Squat.png
 	lyxscale 90
@@ -8676,8 +8596,6 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang spanish
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_1RM-Bech-Press.png
 	lyxscale 90
@@ -8694,8 +8612,6 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang spanish
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_1RM-Indirect.png
 	lyxscale 90
@@ -8717,8 +8633,6 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
-\lang spanish
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -8750,8 +8664,6 @@ Side compare
 
 : to see a graph of the mechanical variables of different repetitions all
  with the same axis.
-\lang spanish
-
 \begin_inset Float figure
 placement H
 wide false
@@ -8761,8 +8673,6 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
-
-\lang spanish
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_side_comparing_Left_Right.png
 	lyxscale 50
@@ -8774,8 +8684,6 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
-\lang spanish
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -8804,8 +8712,6 @@ Single repetition
 \end_inset
 
 : to see a graph of the mechanical variables of a repetition.
-\lang spanish
-
 \begin_inset Float figure
 placement H
 wide false
@@ -8815,8 +8721,6 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
-
-\lang spanish
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis-1_repetition.png
 	lyxscale 80
@@ -8828,8 +8732,6 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
-\lang spanish
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -8859,8 +8761,6 @@ Neuromuscular profile
 
 : to see the neuromuscular profile of the three best jumps of a set of six.
  At least six jumping repetitions are needed to performe that kind of analysis.
-\lang spanish
-
 \begin_inset Float figure
 placement H
 wide false
@@ -8870,8 +8770,6 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
-
-\lang spanish
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_NMP.png
 	scale 50
@@ -8882,8 +8780,6 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
-\lang spanish
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -9682,8 +9578,6 @@ In Mac OSX you need to install the R package independently.
 \end_layout
 
 \begin_layout Standard
-
-\lang spanish
 \begin_inset CommandInset href
 LatexCommand href
 name "http://chronojump.org/en/software/#MacOSX"
@@ -9694,12 +9588,45 @@ target "http://chronojump.org/en/software/#MacOSX"
 
 \end_layout
 
+\begin_layout Section
+Chronojump buttons are disabled in all modes
+\end_layout
+
+\begin_layout Standard
+Make sure that you created or loaded a session with the corresponding athletes.
+\end_layout
+
+\begin_layout Standard
+Chronojump stores automatically all the tests associating them to a session
+ and a person.
+ If there is no active session with athletes you won't be allowed to perform
+ any test.
+\end_layout
+
+\begin_layout Section
+The data exported cannot be read correctly
+\end_layout
+
+\begin_layout Standard
+Chronojump allows to export the data of the session, set or repetition in
+ CSV format.
+ Files in this format can be read by spreadsheed applications as MS Excel,
+ libreOffice or Numbers.
+\end_layout
+
+\begin_layout Standard
+When importing the data to any of these programs remember to specify the
+ UTF-8 format and the field and decimal separator characters accordindg
+ to your configuration in Chronojump preferences (Menu -> Session -> Preferences
+ -> Language)
+\end_layout
+
 \begin_layout Chapter
 Chronopic
 \end_layout
 
 \begin_layout Section
-The Chronopic doesn't send any information to Chronojump
+The multitest Chronopic doesn't send any information to Chronojump
 \end_layout
 
 \begin_layout Standard
@@ -9781,15 +9708,194 @@ The height of the jumps in random and independent of the real height
 
 \begin_layout Standard
 Check that the jump you are viewing in the software is not a simulated one.
- Before the 1.6.2, in the case of not having a Chronopic connected
+ Before the 1.6.2, in the case of not having a Chronopic connected, Chronojump
+ performs a simulated jump with random values.
+ This can be checked in the bars and seeing if there is a 
+\begin_inset Quotes eld
+\end_inset
+
+Simulated
+\begin_inset Quotes erd
+\end_inset
+
+ word inside the height bars.
+\end_layout
+
+\begin_layout Standard
+To connect the Chronopic go to the section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Chronopic/s_connection"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From 1.6.2 version and above this behavior only happens in the 
+\begin_inset Quotes eld
+\end_inset
+
+Simulated
+\begin_inset Quotes erd
+\end_inset
+
+ session
 \end_layout
 
 \begin_layout Chapter
 Races
 \end_layout
 
+\begin_layout Section
+The photocell barriers doesn't work when the athlete passes at high speed.
+\end_layout
+
+\begin_layout Standard
+Check that the elapsed time between crossing one barrier and the next is
+ greater than the time set to avoid double contacts.
+ You can see the configuration at Menu -> Session -> Preferences -> Races.
+\end_layout
+
+\begin_layout Section
+The photocell doesn't switch on
+\end_layout
+
+\begin_layout Standard
+The photocells need to be powered with altern current or direct current.
+ Make sure that beside the RCA that connects the Chronopic and the photocells,
+ they are connected to the power.
+ To check that the photocell is switched on you there's is a LED in the
+ front side that switch on when the photocell is powered.
+ If the photocell is aligned with the reflector you should ear a clic each
+ time you interrupt the beam with your hand.
+\end_layout
+
+\begin_layout Section
+The time counter doesn't start when the athlete crosses the photocell
+\end_layout
+
+\begin_layout Standard
+If you have all the photocells powered and the time counter doesn't start
+ it can be caused by a misaligned photocell.
+ If this is the case the green light of the Chronopic will be switched off.
+ If this is the case Chronojump interprets this situation as if the athlete
+ is in the first photocell and have not started yet.
+\end_layout
+
+\begin_layout Standard
+To know if a photocell is aligned you can interrupt the beam with your hand.
+ If the interruption causes a click, it means that is alligned.
+ In other cases it means that the photocells is not aiming to the reflector.
+\lang spanish
+
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/emissor-reflector-ull.png
+	lyxscale 50
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Alignment of the photocell
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Encoder
+\end_layout
+
+\begin_layout Section
+When capturing with an encoder Chronojump doesn't receive any signal at
+ all.
+\end_layout
+
+\begin_layout Standard
+Check that the Chronopic is connected to the computer with a USB calbe.
+ If this is well connected the red light to the right of the USB connector
+ should be switched on.
+\end_layout
+
+\begin_layout Standard
+Check that the encoder is connected to the Chronopic.
+ Is older versions of the Chronopic the encoder is soldered directly to
+ the Chronopic, but in the newer versions the connections are made with
+ an RJ45 connector (the same type as in the LAN connections)
+\end_layout
+
+\begin_layout Standard
+In most of the inertial machines the Chronopic is integrated in the machine
+ itself and can be more difficult to see the RJ45 connector.
+ If you cannot locate this connector, contact your provider to ask for it.
+\end_layout
+
+\begin_layout Section
+When analysing a progressive loads test, all the repetitions have the same
+ load.
+\end_layout
+
+\begin_layout Standard
+Check that you have selected the mode Individual / current session
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analyze_individual_intrasession.png
+
+\end_inset
+
+ and you have selected the repetitions of each set previously saved.
+\end_layout
+
+\begin_layout Section
+In the 1RM analysis, Chronojump doesn't show any 1RM
+\end_layout
+
+\begin_layout Standard
+To show the value of the 1RM after a progressive loads test three conditions
+ are needed.
+\end_layout
+
+\begin_layout Enumerate
+The exercise must have defined the speed at which the 1RM is performed.
+\end_layout
+
+\begin_layout Enumerate
+It must have been performed a progressive loads test with at least three
+ different loads.
+\end_layout
+
+\begin_layout Enumerate
+The loads mus be gravitational loads.
+ In the inertial machines it doesn't exist the 1RM concept.
 \end_layout
 
 \begin_layout Chapter

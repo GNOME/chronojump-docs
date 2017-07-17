@@ -92,14 +92,6 @@
 
 \size huge
 Manual de Chronojump
-\size default
-
-\begin_inset Newline newline
-\end_inset
-
-
-\size large
-(Actualizado el 28/04/17)
 \end_layout
 
 \begin_layout Author
@@ -9037,7 +9029,7 @@ Comparar lateral
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -9193,10 +9185,6 @@ Gráficos de 1RM
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -9227,9 +9215,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/analysis-1_repetition.png
+	filename images/encoder-manual-images/analysis-1_repetition_es.png
 	lyxscale 80
-	scale 50
+	scale 40
 
 \end_inset
 
@@ -9337,7 +9325,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/encoder-manual-images/analysis_table_es.png
-	scale 50
+	scale 60
 
 \end_inset
 
@@ -10218,12 +10206,44 @@ target "http://chronojump.org/en/software/#MacOSX"
 
 \end_layout
 
+\begin_layout Section
+Los botones de Chronojump están desactivados en todos los modos.
+\end_layout
+
+\begin_layout Standard
+Asegúrese de que ha creado o cargado una sesión con sus atletas correspondientes.
+\end_layout
+
+\begin_layout Standard
+Chronojump almacena automáticamente todos los tests asociándolos a una sesión
+ y a una persona.
+ Si no hay una sesión activa con atletas en ella no se permite la adquisición
+ de datos.
+\end_layout
+
+\begin_layout Section
+La exportación de datos no se puede leer correctamente
+\end_layout
+
+\begin_layout Standard
+Chronojump permite exportar los datos de la sesión, repetición o serie en
+ formato CSV.
+ Los archivos en este formato pueden ser leidos por programas de hoja de
+ cálculo como MS Excel, libreOffice o Numbers.
+\end_layout
+
+\begin_layout Standard
+A la hora de importar los datos a uno de estos programas recuerde especifcar
+ el formato UTF-8 y el separador de campo y decimal como esté definido en
+ las preferencias de Chronojump (Menú -> Sessión -> Preferencias -> Idioma)
+\end_layout
+
 \begin_layout Chapter
 Chronopic
 \end_layout
 
 \begin_layout Section
-El Chronopic no envia ninguna información a Chronojump
+El Chronopic multites no envia ninguna información a Chronojump
 \end_layout
 
 \begin_layout Standard
@@ -10463,6 +10483,30 @@ Si tiene la fotocélula fijada a un trípode con los soportes de Chronojump,
 
 \begin_layout Chapter
 Encoder
+\end_layout
+
+\begin_layout Section
+Al capturar con encoder no llega ninguna señal a Chronojump
+\end_layout
+
+\begin_layout Standard
+Compruebe que el Chronopic está conectado al ordenador mediante el cable
+ USB.
+ Si está bien conectado debería tener la luz roja a la derecha del conector
+ USB encendida.
+\end_layout
+
+\begin_layout Standard
+Compruebe que el encoder está conectado al Chronopic.
+ En versiones antiguas del Chronopic el encoder está directamente soldado
+ pero en las versiones recientes la conexión se realiza mediante un conector
+ RJ45 (del tipo usado en los cables de red)
+\end_layout
+
+\begin_layout Standard
+En la mayoría de máquinas inerciales el Chronopic viene integrado en la
+ misma máquina y puede ser más difícil ver la el conector RJ45.
+ Si no es capaz de localizar esta conexión consulte al proveedor de su máquina.
 \end_layout
 
 \begin_layout Section
