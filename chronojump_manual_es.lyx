@@ -637,6 +637,67 @@ Chronopic 3 dispone de una entrada USB que gracias a un cable del mismo
 \end_layout
 
 \begin_layout Standard
+Hay dos tipos de Chronopics:
+\end_layout
+
+\begin_layout Itemize
+Multitest: Usado para tests de saltos y carreras.
+ 
+\end_layout
+
+\begin_layout Itemize
+Encoder: Usado para contectar a encoders lineales, rotacionales o de fricción.
+\end_layout
+
+\begin_layout Standard
+La primera vez que se conecte un Chronopic y se inicie Chronojump aparecerá
+ una ventana donde se le pedirá que identifique el tipo de Chronopic.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/chronopic-connection_es.png
+	lyxscale 70
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:chronopic-connection"
+
+\end_inset
+
+Conexión del Chronopic
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Multitest
+\end_layout
+
+\begin_layout Standard
 Los Chronopic se conectarán a la plataforma de contactos o fotocélulas mediante
  la conexión RCA 
 \begin_inset Graphics
@@ -655,16 +716,258 @@ Los Chronopic se conectarán a la plataforma de contactos o fotocélulas mediant
 \end_inset
 
 .
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="6">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nombre
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+USB-A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+USB-B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RCA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Adaptador RCA 2-1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Enchufe
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Conectado a:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ordenador
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chronopic
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dispositivo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dispositivo +Cables RCA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+corriente
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/USB-A.png
+	lyxscale 25
+	scale 7
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/USB-B.png
+	lyxscale 25
+	scale 7
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/RCA.png
+	lyxscale 30
+	scale 7
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/Adaptador-RCA.PNG
+	lyxscale 40
+	scale 10
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/Photocel-Current.png
+	lyxscale 20
+	scale 8
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Conexiones multitest
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 Es posible conectar 'n' plataformas de contactos a cualquier Chronopic usando
- la conexión RCA (y/o la conexión roscada).
+ el adaptador RCA 2-1 (y/o la conexión roscada).
  Chronopic sirve para cronometrar en situaciones en que un deportista no
  debería poder estar en más de una plataforma o barrera fotoeléctrica a
  la vez.
  Se deben conectar los dos cables de todas las plataformas al conector RCA
- ( o el conector roscado).
+ (o el conector roscado).
+ Para conectar más de un dispositivo puede hacerlo mediante el adaptador
+ RCA 2-1
 \end_layout
 
 \begin_layout Standard
@@ -674,8 +977,8 @@ Se permite conectar hasta 4 Chronopics con una señal independiente, conectadas
  cronometrar ritmos complejos u otras aplicaciones.
 \end_layout
 
-\begin_layout Section
-Funcionamiento de Chronopic
+\begin_layout Subsubsection
+Funcionamiento de Chronopic Multitest
 \end_layout
 
 \begin_layout Standard
@@ -696,6 +999,137 @@ Chronopic detecta los cambios en el estado en el dispositivo de detección
 Chronopic dispone de una luz verde que cuando está apagada indica que el
  sujeto está en la plataforma i/o en la barrera fotoeléctrica y cuando está
  encendida indica que está fuera de la misma.
+\end_layout
+
+\begin_layout Subsection
+Encoder
+\end_layout
+
+\begin_layout Standard
+La conexión del encoder al Chronopic se realizará mediante el cable RJ45
+ del encoder.
+ La conexión del Chropic al ordenador se realizará mediante el cable USB
+ tipo A-B
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+USB-A (Ordenador)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+USB-B (Chronopic)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RJ45 (Chronopic)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/USB-A.png
+	lyxscale 25
+	scale 10
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/USB-B.png
+	lyxscale 25
+	scale 10
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/RJ45.png
+	lyxscale 40
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Conexiones del encoder
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -10243,7 +10677,83 @@ Chronopic
 \end_layout
 
 \begin_layout Section
-El Chronopic multites no envia ninguna información a Chronojump
+El Chronopic no aparece en la lista de dispositivos conectados.
+\end_layout
+
+\begin_layout Standard
+En algunas ocasiones, Windows o un antivirus, puede deshabilitar el controlador
+ de dispositivo usado por el Chronopic.
+ Para solucionar este problema se recomienda desactivar cualquir antivirus
+ y reinstalar el Chronojump asegurándose de marcar la casilla de instalación
+ del Chronopic.
+\end_layout
+
+\begin_layout Itemize
+Descargue el instalador de Chronojump desde 
+\lang british
+
+\begin_inset CommandInset href
+LatexCommand href
+name "http://chronojump.org/es/software/"
+target "http://chronojump.org/es/software/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Deshabilite cualquier antivirus de sus systema.
+\end_layout
+
+\begin_layout Itemize
+Reinstale Chronojump y asegúrese de marcar la casilla de instalación del
+ driver Chronopic.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/chronopic-driver_es.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:driver_chronopic"
+
+\end_inset
+
+Instalación del driver de Chronopic
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+El Chronopic multitest no envia ninguna información a Chronojump
 \end_layout
 
 \begin_layout Standard
