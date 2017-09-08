@@ -4423,6 +4423,7 @@ reference "fig:Esquema-dos-plat"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -4430,8 +4431,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/chronojump_esquema_two_platforms.png
-	scale 60
+	filename images/photocells-connections.png
+	lyxscale 50
+	scale 50
 
 \end_inset
 
@@ -10703,7 +10705,7 @@ target "http://chronojump.org/es/software/"
 \end_layout
 
 \begin_layout Itemize
-Deshabilite cualquier antivirus de sus systema.
+Deshabilite cualquier antivirus de sus sistema.
 \end_layout
 
 \begin_layout Itemize

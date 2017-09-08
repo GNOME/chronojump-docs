@@ -3990,15 +3990,17 @@ reference "fig:Schem-two-plat"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/chronojump_esquema_two_platforms.png
-	width 100col%
+	filename images/photocells-connections.png
+	lyxscale 50
+	width 50col%
 
 \end_inset
 
@@ -10101,8 +10103,8 @@ In some occasions, Windows or some antivirus, can disable the Chronopic
 Downlod Chronojump installer from 
 \begin_inset CommandInset href
 LatexCommand href
-name "http://chronojump.org/es/software/"
-target "http://chronojump.org/es/software/"
+name "http://chronojump.org/en/software/"
+target "http://chronojump.org/en/software/"
 
 \end_inset
 
@@ -10110,12 +10112,12 @@ target "http://chronojump.org/es/software/"
 \end_layout
 
 \begin_layout Itemize
-Disable any antivirus on your system
+Disable any antivirus on your system.
 \end_layout
 
 \begin_layout Itemize
 Reinstall Chronojump by executing the installer and making sure that the
- Chronopic driver check box is marked.
+ Chronopic driver checkbox is marked.
 \end_layout
 
 \begin_layout Standard
