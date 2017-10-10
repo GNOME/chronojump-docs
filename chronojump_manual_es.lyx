@@ -4433,7 +4433,7 @@ status open
 \begin_inset Graphics
 	filename images/photocells-connections.png
 	lyxscale 50
-	scale 50
+	scale 60
 
 \end_inset
 
@@ -5111,6 +5111,7 @@ Desde la versión de Chronojump 0.9, se permite crear carreras con tramos
  de distancia variable.
  Esto es óptimo para obtener las velocidades en los tramos de pruebas de
  agilidad.
+ En el test se permite establecer los tiempos de descanso.
  
 \begin_inset Float figure
 wide false
@@ -5206,7 +5207,7 @@ SprintCortoVariable
 \begin_inset Quotes eld
 \end_inset
 
-20*5
+20x5
 \begin_inset Quotes erd
 \end_inset
 
@@ -5221,7 +5222,7 @@ SprintCortoVariable
 \begin_inset Quotes eld
 \end_inset
 
-20*n
+20xn
 \begin_inset Quotes erd
 \end_inset
 
@@ -5236,7 +5237,7 @@ SprintCortoVariable
 \begin_inset Quotes eld
 \end_inset
 
-40*50%fatiga
+40x50%fatiga
 \begin_inset Quotes erd
 \end_inset
 
@@ -5254,7 +5255,7 @@ SprintCortoVariable
 \begin_inset Quotes eld
 \end_inset
 
-100*?
+100x?
 \begin_inset Quotes erd
 \end_inset
 
@@ -5281,6 +5282,18 @@ SprintCortoVariable
  20m, el segundo tiene 10m y el tercero 7m.
 \end_layout
 
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+10x4x5
+\begin_inset Quotes erd
+\end_inset
+
+ 5 Carreras de 40m con barreras cada 10m y descansos entre carreras de 1
+ minuto.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float table
 placement H
@@ -5291,7 +5304,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="8" columns="5">
+<lyxtabular version="3" rows="9" columns="5">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -5444,7 +5457,7 @@ Variable
 \begin_inset Text
 
 \begin_layout Plain Layout
-20*5
+20x5
 \end_layout
 
 \end_inset
@@ -5462,7 +5475,7 @@ Con tramos
 \begin_inset Text
 
 \begin_layout Plain Layout
-Pistas
+Tramos
 \end_layout
 
 \end_inset
@@ -5491,7 +5504,7 @@ Fijo(20)
 \begin_inset Text
 
 \begin_layout Plain Layout
-20*n
+20xn
 \end_layout
 
 \end_inset
@@ -5509,7 +5522,7 @@ Con tramos
 \begin_inset Text
 
 \begin_layout Plain Layout
-Pistas
+Tramos
 \end_layout
 
 \end_inset
@@ -5538,7 +5551,7 @@ Fijo(20)
 \begin_inset Text
 
 \begin_layout Plain Layout
-40*50%fatiga
+40x50%fatiga
 \end_layout
 
 \end_inset
@@ -5585,7 +5598,7 @@ Fijo(40)
 \begin_inset Text
 
 \begin_layout Plain Layout
-100*?
+100x?
 \end_layout
 
 \end_inset
@@ -5628,11 +5641,58 @@ Fijo(100)
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 2 min 20-10-7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Con tramos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tiempo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sí(120'')
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Diferente(20,10,7)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10x4x5
 \end_layout
 
 \end_inset
@@ -5650,7 +5710,7 @@ Con tramos
 \begin_inset Text
 
 \begin_layout Plain Layout
-Tiempo
+Tramos
 \end_layout
 
 \end_inset
@@ -5659,7 +5719,7 @@ Tiempo
 \begin_inset Text
 
 \begin_layout Plain Layout
-Sí(120'')
+Sí(24)*
 \end_layout
 
 \end_inset
@@ -5668,7 +5728,7 @@ Sí(120'')
 \begin_inset Text
 
 \begin_layout Plain Layout
-Variable(20,10,7)
+Diferente(10,10,10,10,R60)
 \end_layout
 
 \end_inset
@@ -5679,6 +5739,13 @@ Variable(20,10,7)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+*El último descanso no se contabiliza.
+ 24 = 5*4 + 4
 \end_layout
 
 \begin_layout Plain Layout

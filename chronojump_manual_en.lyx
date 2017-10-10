@@ -3993,14 +3993,14 @@ reference "fig:Schem-two-plat"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename images/photocells-connections.png
 	lyxscale 50
-	width 50col%
+	width 60col%
 
 \end_inset
 
@@ -4715,6 +4715,7 @@ From Chronojump version 0.9, you can create intervallic runs with variable
  track distance.
  This is suitable to calculate speed in the different tracks of agility
  tests.
+ In the test you can set the resting time.
  
 \begin_inset Float figure
 wide false
@@ -4891,7 +4892,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="8" columns="5">
+<lyxtabular version="3" rows="9" columns="5">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -5062,7 +5063,7 @@ Intervallic
 \begin_inset Text
 
 \begin_layout Plain Layout
-Tracks
+Laps
 \end_layout
 
 \end_inset
@@ -5109,7 +5110,7 @@ Intervallic
 \begin_inset Text
 
 \begin_layout Plain Layout
-Tracks
+Laps
 \end_layout
 
 \end_inset
@@ -5228,11 +5229,58 @@ Fixed(100)
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 2 min 20-10-7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Intervallic
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Time
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes(120'')
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Different(20,10,7)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10x4x5
 \end_layout
 
 \end_inset
@@ -5250,7 +5298,7 @@ Intervallic
 \begin_inset Text
 
 \begin_layout Plain Layout
-Time
+Laps
 \end_layout
 
 \end_inset
@@ -5259,7 +5307,7 @@ Time
 \begin_inset Text
 
 \begin_layout Plain Layout
-Yes(120'')
+Yes(24)*
 \end_layout
 
 \end_inset
@@ -5268,7 +5316,7 @@ Yes(120'')
 \begin_inset Text
 
 \begin_layout Plain Layout
-Variable(20,10,7)
+Different(10,10,10,10,R60)
 \end_layout
 
 \end_inset
@@ -5279,6 +5327,13 @@ Variable(20,10,7)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+*The last resting is not accounted.
+ 24 = 5*4 + 4
 \end_layout
 
 \begin_layout Plain Layout
