@@ -3942,7 +3942,7 @@ Runs
 \end_layout
 
 \begin_layout Standard
-Running can be detected by two kind of devices:
+Running can be detected by three kind of devices:
 \end_layout
 
 \begin_layout Itemize
@@ -3951,6 +3951,10 @@ platform/s
 
 \begin_layout Itemize
 photocell/s
+\end_layout
+
+\begin_layout Itemize
+push button/s
 \end_layout
 
 \begin_layout Standard
@@ -3963,8 +3967,9 @@ circular
 \begin_inset Quotes erd
 \end_inset
 
-, it can be used a single device (platform or photocell), in the other circuits,
- there's a need of more than one detection device (of any type).
+, it can be used a single device (platform, photocell or push button), in
+ the other circuits, there's a need of more than one detection device (of
+ any type).
 \end_layout
 
 \begin_layout Standard
@@ -3972,7 +3977,8 @@ From now on,
 \emph on
 device in contact
 \emph default
- means that the person is on the platform or blocking a photocell signal.
+ means that the person is on the platform or blocking a photocell signal
+ or pressing the push button.
  Is important to note that the person should never be in contact in more
  than one device at the same time.
 \end_layout
@@ -3981,7 +3987,7 @@ device in contact
 The figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Schem-two-plat"
+reference "fig:Schem-two-photo"
 
 \end_inset
 
@@ -4013,11 +4019,11 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Schem-two-plat"
+name "fig:Schem-two-photo"
 
 \end_inset
 
-Drawing of two platforms circuit to measure run.
+Drawing of two barriers and a switch to measure races.
 \end_layout
 
 \end_inset
@@ -10140,6 +10146,64 @@ When importing the data to any of these programs remember to specify the
  -> Language)
 \end_layout
 
+\begin_layout Section
+The RCA cables don't transmit the device signal to the Chronopic
+\end_layout
+
+\begin_layout Standard
+In order to check the RCA cables or adapters connect the Chronopic to the
+ computer with the USB cable and after that connect the RCA adapter or cable.
+ Make sure that no device is connected to the RCA cable or adapter.
+ The LED to the right of the USB socket should stay on.
+ In the case it isn't, it means that the cable or adapter should be replaced.
+\end_layout
+
+\begin_layout Standard
+In the case it is not turning off, with the side that is not connected,
+ use some metallic piece to shortcircuit the central pin and the exterior
+ metallic part of the RCA connector as shown in the picture.
+ At this moment the green LED should turn off.
+ If this is not the case it would indicate also that the cable or adapter
+ should be replaced.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/RCA-check.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Checking the RCA cable
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Chronopic
 \end_layout
@@ -10227,6 +10291,12 @@ The multitest Chronopic doesn't send any information to Chronojump
 \end_layout
 
 \begin_layout Standard
+The green LED to the right of the USB socket should be on if the Chronopic
+ is receiving no signal at all and should turn off in the other case.
+ Check RCA connections following the instructions on the 9.4 section.
+\end_layout
+
+\begin_layout Standard
 First of all you must check that the LED lights of the Chronopic are on
  once it is connected to the computer with the USB cable.
  Without no devices connected to the Chronopic, the RED LED to the right
@@ -10241,12 +10311,8 @@ The green LED to the right of the USB port shows the state of the device
 \end_layout
 
 \begin_layout Itemize
-If the green LED is on:
-\end_layout
-
-\begin_layout Standard
-Check the communication between the Chronopic and Chronojump running it
- and, with the Chronopic connected, perform some test.
+If the green LED is on, check the communication between the Chronopic and
+ Chronojump running it and, with the Chronopic connected, perform some test.
  It is not necessary to connect any device to the Chronopic.
  You can use the test button to simulate any interruptor device as a contact
  platform or a photocell.
@@ -10256,11 +10322,8 @@ Check the communication between the Chronopic and Chronojump running it
 \end_layout
 
 \begin_layout Itemize
-If the green LED is off:
-\end_layout
-
-\begin_layout Standard
-It probably is a hardware problem and Chronopic substitution is needed.
+If the green LED is off, It probably is a hardware problem and a Chronopic
+ or USB cable substitution is needed.
 \end_layout
 
 \begin_layout Chapter
@@ -10272,11 +10335,7 @@ The contact platform doesn't detect any jump.
 \end_layout
 
 \begin_layout Standard
-First, connect the RCA cable, without the platform, to the Chronopic previously
- connected to the computer.
- If the green LED to the right of the USB connector switchs off if means
- that the RCA cable have a problem.
- You can substitute it for any other RCA cable.
+Check the RCA cables following the instructions on the 9.4 section.
 \end_layout
 
 \begin_layout Standard
@@ -10284,11 +10343,11 @@ If the cable doesn't show any of the above simptoms, connect the contact
  platform to the RCA cable already connected to the Chronopic.
  If the green light to the right of the USB connector turns off, it means
  that the two inner copper plates of the platform are in contact or that
- the RCA connector is in bat condition.
+ the RCA connector is in bad condition.
 \end_layout
 
 \begin_layout Standard
-In the first case, check that there is no knoks on the corners of the platform
+In that case, check that there is no knocks on the corners of the platform
  that causes the two copper being in contact.
  If it is this way, you can use a flat screwer to separate the two copper
  plates and introduce some piece of paperboard or other insulating material.

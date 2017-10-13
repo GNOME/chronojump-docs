@@ -4380,7 +4380,7 @@ Carreras
 \end_layout
 
 \begin_layout Standard
-Las carreras pueden ser detectadas por dos tipos de dispositivos de detección:
+Las carreras pueden ser detectadas por tres tipos de dispositivos de detección:
 \end_layout
 
 \begin_layout Itemize
@@ -4389,6 +4389,10 @@ plataforma/s
 
 \begin_layout Itemize
 fotocélula/s
+\end_layout
+
+\begin_layout Itemize
+Pulsador/es
 \end_layout
 
 \begin_layout Standard
@@ -4413,7 +4417,7 @@ dispositivo en contacto
 En la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Esquema-dos-plat"
+reference "fig:Esquema-dos-foto"
 
 \end_inset
 
@@ -4446,11 +4450,12 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Esquema-dos-plat"
+name "fig:Esquema-dos-foto"
 
 \end_inset
 
-Esquema de la disposición de dos plataformas para el cronometrado de carreras.
+Esquema de la disposición dos barreras y un pulsador para el cronometrado
+ de carreras.
 \end_layout
 
 \end_inset
@@ -10741,6 +10746,63 @@ A la hora de importar los datos a uno de estos programas recuerde especifcar
  las preferencias de Chronojump (Menú -> Sessión -> Preferencias -> Idioma)
 \end_layout
 
+\begin_layout Section
+Los cables RCA no transmiten la señal del dispositivo al Chronopic
+\end_layout
+
+\begin_layout Standard
+Para comprobar los cables o adaptadores conecte el Chronopic al ordenador
+ mediante el cable USB y seguidamente conecte un cable o adaptador RCA que
+ no esté conectado a nada más.
+ El LED verde a la derecha del conector USB debe permanecer encendido.
+ En caso de que se apagara indicaría que el cable está defectuoso.
+\end_layout
+
+\begin_layout Standard
+En caso de que no se apague, con el extremo del cable RCA que no está conectado,
+ utilice alguna pieza metálica para poner en contacto el pin central y el
+ círculo exterior del conector RCA como se muestra en la figura.
+ En este momento el LED verde debería apagarse.
+ Si no es así también indicaría que el cable está defectuoso.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/RCA-check.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comprovación del cable RCA
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Chronopic
 \end_layout
@@ -10826,6 +10888,12 @@ El Chronopic multitest no envia ninguna información a Chronojump
 \end_layout
 
 \begin_layout Standard
+El LED verde a la derecha del conector USB debería estar encendido si el
+ Chronopic no recibe ningúna señal y apagado en caso contrario.
+ Compruebe las conexiones RCA siguiendo las intrucciones del apartado 9.4.
+\end_layout
+
+\begin_layout Standard
 Lo primero que se debe comprobar es que las luces del Chronopic estén encendidas
  una vez se conecta mediante el cable USB al ordenador.
  Sin ningún dispositivo conectado al Chronopic, el LED rojo a la derecha
@@ -10837,16 +10905,13 @@ Lo primero que se debe comprobar es que las luces del Chronopic estén encendida
 \begin_layout Standard
 El led verde a la derecha del conector USB indica el estado del dispositivo
  conectado al Chronopic.
- Si no hay ningún dispositivo conectado este debería estar encendido.
+ Si no hay ningún dispositivo ni cable conectado éste debería estar encendido.
 \end_layout
 
 \begin_layout Itemize
-Si el LED verde está encendido:
-\end_layout
-
-\begin_layout Standard
-Compruebe la comunicación entre el Chronopic y Chronojump abriendo el último
- y, con el Chronopic conectado, realizar algún test.
+Si el LED verde está encendido, compruebe la comunicación entre el Chronopic
+ y Chronojump abriendo el último y, con el Chronopic conectado, realizar
+ algún test.
  No es necesario que conecte ningún dispositivo al Chronopic ya que puede
  utilizar el botón de test para simular cualquier dispositivo interruptor
  como una plataforma o una fotocélula.
@@ -10856,12 +10921,8 @@ Compruebe la comunicación entre el Chronopic y Chronojump abriendo el último
 \end_layout
 
 \begin_layout Itemize
-Si LED verde está apagado:
-\end_layout
-
-\begin_layout Standard
-Posiblemente sea un problema de hardware y se necesite una sustitución del
- Chronopic.
+Si LED verde está apagado, posiblemente sea un problema de hardware y se
+ necesite una sustitución del Chronopic o el cable USB.
 \end_layout
 
 \begin_layout Chapter
@@ -10873,32 +10934,28 @@ La plataforma de saltos no detecta ningún salto
 \end_layout
 
 \begin_layout Standard
-Conecte primero el cable RCA, sin la plataforma, al Chronopic previamente
- conectado al ordenador.
- Si la luz led verde a la derecha del conector USB se apaga significa que
- el cable está en mal estado.
- Sustitúyalo por cualquier otro cable RCA.
+Compruebe el estado de los cables RCA siguiendo las instrucciones del apartado
+ 9.4.
 \end_layout
 
 \begin_layout Standard
-Si el cable no presenta los síntomas anteriores, conecte la plataforma al
- cable RCA ya conectado al Chronopic.
+Si el cable no presenta los síntomas de estar defectuoso, conecte la plataforma
+ al cable RCA y éste al Chronopic.
  Si la luz led verde a la derecha del conector USB se apagara significaría
- o que las dos placas de la plataforma se tocan o que el conector RCA de
- la misma plataforma está en mal estado.
+ o que las dos placas de la plataforma se tocan.
 \end_layout
 
 \begin_layout Standard
-En el primero de los casos compruebe que en las esquinas no hay algún golpe
- que haga que las esquinas de las dos placas se toquen entre ellas.
+En tal caso compruebe que en las esquinas no hay algún golpe que haga que
+ las esquinas de las dos placas se toquen entre ellas.
  Si fuera así puede utilizar un destornillador de punta plana para separa
  las dos placa e introducir algún trozo de cartón o material aislante donde
  se haya producido el golpe.
 \end_layout
 
 \begin_layout Standard
-En el segundo de los casos se requerirá de una sustitución o reparación
- de ese cable.
+En el caso de que el problema esté en el cable o conector RCA, se requiere
+ una substitución o reparación.
 \end_layout
 
 \begin_layout Section
@@ -10988,12 +11045,14 @@ El contador de tiempo no se inicia cuando un atleta pasa por la fotocélula
 \end_layout
 
 \begin_layout Standard
-Si con las fotocélulas conectadas y encendidas el contador de tiempo no
- se iniciara podría ser debido a que alguna de las fotocélulas está desalineada
+Si con las fotocélulas conectadas encendidas, el contador de tiempo no se
+ iniciara, podría ser debido a que alguna de las fotocélulas está desalineada
  y, en consecuencia, se interpreta como si continuamente hubiera un atleta
  en contacto con la barrera.
  Asegúrese de que todas las fotocélulas estan alineadas con su respectivo
  reflector.
+ Otra posible causa sería que alguno de los cables o adaptador RCA estuviera
+ defectuoso.
 \end_layout
 
 \begin_layout Standard
