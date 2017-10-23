@@ -9644,7 +9644,7 @@ On the origin computer:
 \end_layout
 
 \begin_layout Enumerate
-Menu -> Session -> Preferences -> Backup database
+Menu -> Session -> Preferences -> Database -> Backup database
 \end_layout
 
 \begin_layout Enumerate
