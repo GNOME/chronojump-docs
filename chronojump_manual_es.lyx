@@ -10960,7 +10960,23 @@ Menú -> Sesión -> Preferencias -> Base de datos -> Respaldar la base de
 Especificar la ubicación donde se creará una carpeta con el nombre de Chronojump.
  Dicha carpeta contiene toda la información necesaria para exportar los
  datos a otro ordenador o, simplemente, mantener una copia de las sesiones
- almacenadas en Chronojump
+ almacenadas en Chronojump.
+ Puede seleccionar cualquier medio extraible para poder copiar los datos
+ posteriormente en el ordenador destino.
+\end_layout
+
+\begin_layout Standard
+Hay dos opciones para importar los datos en el ordenador destino.
+\end_layout
+
+\begin_layout Subsection
+Opción1: Añadir los datos importados a datos de Chronojump existentes.
+\end_layout
+
+\begin_layout Standard
+Esta opción le permite importar datos sin perder ningún dato en el ordenador
+ destino.
+ Como contrapartida, deberá importar cada sessión una a una.
 \end_layout
 
 \begin_layout Standard
@@ -11023,6 +11039,10 @@ Aceptar
 .
 \end_layout
 
+\begin_layout Enumerate
+Si desea importar más sesiones vaya al paso 2.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 placement H
@@ -11035,6 +11055,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/import_es.png
+	scale 66
 
 \end_inset
 
@@ -11065,11 +11086,65 @@ Importación de una base de datos Chronojump
 
 \end_layout
 
+\begin_layout Subsection
+Opción2: Substituir cualquier dato previo del ordenador destino.
+\end_layout
+
 \begin_layout Standard
-\begin_inset Newpage pagebreak
+Esta opción borrará todos los datos que existan previamente en el ordenador
+ destino.
+ Si no está seguro de que sea esta su opción, por favor no use este método.
+\end_layout
+
+\begin_layout Standard
+En el ordenador destino:
+\end_layout
+
+\begin_layout Enumerate
+Vaya a Menú -> Sesión -> Base de datos -> Abrir carpeta de base de datos
+\end_layout
+
+\begin_layout Enumerate
+Una ventana con un navegador de archivos se abrirá.
+ En ella podrá ver algunas carpetas como 
+\begin_inset Quotes eld
 \end_inset
 
+database
+\begin_inset Quotes erd
+\end_inset
 
+, 
+\begin_inset Quotes eld
+\end_inset
+
+encoder
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+logs
+\begin_inset Quotes erd
+\end_inset
+
+...
+\end_layout
+
+\begin_layout Enumerate
+Cierre la ventana de configuración y el Chronojump mismo.
+\end_layout
+
+\begin_layout Enumerate
+Sustituya todos los archivos y carpetas por los archivos y carpetas que
+ se encuentran en la carpeta resultante de la exportación.
+\end_layout
+
+\begin_layout Enumerate
+Abra Chronojump para comprobar que se han importado todas las sesiones del
+ ordenador origen.
 \end_layout
 
 \begin_layout Section

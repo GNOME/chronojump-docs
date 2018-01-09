@@ -10400,8 +10400,8 @@ Preferences.
 \emph on
 Database
 \emph default
- tab shows where Chronojump data are, allows to open the folder, and make
- one copy of it in a directory of choice for the users.
+ tab shows where Chronojump data are located, allows to open the folder,
+ and make one copy of it in a directory of choice for the users.
  Maybe it shows two possible locations for the database because some Windows
  systems offer a place to store data while the program runs, and another
  when it’s closed.
@@ -10432,6 +10432,21 @@ Menu -> Session -> Preferences -> Database -> Backup database
 Select the path where the folder called Chronojump will be created.
  This folder contains all the information needed for exporting the data
  to other computer or, simply, have a backup of the sessions in this computer.
+ You can choose a removable media to copy it later in the destination computer
+\end_layout
+
+\begin_layout Standard
+There's two options for importing the data in the destination computer.
+\end_layout
+
+\begin_layout Subsection
+Option1: Add the imported data to existent Chronojump data.
+\end_layout
+
+\begin_layout Standard
+This option allows you to import data without loosing any data in the destinatio
+n computer.
+ The counterpart is that you will have to import each session one by one.
 \end_layout
 
 \begin_layout Standard
@@ -10492,6 +10507,103 @@ Accept
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Enumerate
+If you want to import more sessions go to the step 2.
+\lang spanish
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename images/import.png
+	scale 66
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Import an existing Chronojump database
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Option2: Substitute any previous data existing in the destination computer
+\end_layout
+
+\begin_layout Standard
+This option will erase the existing data in the destination computer.
+ If you aren't sure that this is what you want, please don't use this method.
+\end_layout
+
+\begin_layout Standard
+On the destination computer:
+\end_layout
+
+\begin_layout Enumerate
+Go to Menu -> Session -> Database -> Open data folder
+\end_layout
+
+\begin_layout Enumerate
+A file browser windows will appear with a some folders and files like 
+\begin_inset Quotes eld
+\end_inset
+
+database
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+encoder
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+logs
+\begin_inset Quotes erd
+\end_inset
+
+...
+\end_layout
+
+\begin_layout Enumerate
+Close the Chronojump preferences window and the Chronojump itself.
+\end_layout
+
+\begin_layout Enumerate
+Substitute all the mentioned files and folders by files and folders the
+ stored in the previously exported Chronojump folder.
+\end_layout
+
+\begin_layout Enumerate
+Open Chronojump to check that all the sessions from the origin computer
+ are imported.
 \end_layout
 
 \begin_layout Section
