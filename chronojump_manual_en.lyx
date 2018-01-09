@@ -7145,6 +7145,787 @@ Example of encoder use
 \end_layout
 
 \begin_layout Section
+Maximum isometric force
+\end_layout
+
+\begin_layout Standard
+Chronojump allows, using a sensor force, to perform a test of maximum isometric
+ force to measure some parameters like:
+\end_layout
+
+\begin_layout Itemize
+Instant force
+\end_layout
+
+\begin_layout Itemize
+Maximum force
+\end_layout
+
+\begin_layout Itemize
+RFD
+\end_layout
+
+\begin_layout Itemize
+Impulse
+\end_layout
+
+\begin_layout Standard
+This parameters can be measured from:
+\end_layout
+
+\begin_layout Itemize
+Real force or raw data (Black).
+\end_layout
+
+\begin_layout Itemize
+Modeled force using an inverse monoexponential function (Blue).
+\end_layout
+
+\begin_layout Standard
+The RFD refers to Rate of Force Development.
+ This variable is the derivative or the slope of the function force versus
+ time.
+\end_layout
+
+\begin_layout Subsection
+Connecting the force sensor
+\end_layout
+
+\begin_layout Standard
+In order to connect the force sensor to Chronojump, connect the strength
+ gauge to the converting device and this to the computer with the mini-USB
+ cable.
+\end_layout
+
+\begin_layout Standard
+The first time you connect the device to the computer you must config it
+ clicking on the 
+\emph on
+device
+\emph default
+ button 
+\lang spanish
+
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/device_button.png
+	lyxscale 75
+	scale 50
+
+\end_inset
+
+
+\lang british
+.
+ A window with a list of connected devices will be shown where you should
+ identify the type of device.
+ Click on the arrows until the force sensor image shows up.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/MIF-Device.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Configuring the force sensor device
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Taring and configuring the force sensor
+\end_layout
+
+\begin_layout Standard
+Due to the analog nature of the force sensor, this must be tared and calibrated.
+\end_layout
+
+\begin_layout Subsubsection
+Taring
+\end_layout
+
+\begin_layout Standard
+The taring process consists in indicating at which state the sensor should
+ register a force of zero Newtons.
+\end_layout
+
+\begin_layout Standard
+To perform this process put the sensor in a horizontal and stable surface
+ and, without supporting any external force apart from the weight.
+ Then press the button 
+\emph on
+Tare.
+ 
+\emph default
+Chronojump will register for a few seconds and save the results.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/Tare.JPG
+	lyxscale 25
+	scale 10
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Taring the force sensor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Calibration
+\end_layout
+
+\begin_layout Standard
+The calibration consists in stablishing a lineal relationship between the
+ electrical signal of the sensor and the real force.
+ This relation could change in function of the sensor, temperature, humidity...
+ For this reason it is recommended to calibrate once per session.
+ By default Chronojump will use a generic calibration.
+\end_layout
+
+\begin_layout Standard
+To perform the calibration, in Chronojump enter the mass in kilograms of
+ an object with a known weight.
+ Tie this object to the force sensor and lift it making the sensor to hold
+ all the weight.
+\lang spanish
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/Calibrate.png
+	lyxscale 33
+	scale 12.5
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Force sensor calibration
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The closer the weight is to the force you are going to perform in your tests,
+ the more precision you will have with this calibration.
+ Once you have the load lifted and stable, click on the calibrate button.
+\end_layout
+
+\begin_layout Subsection
+Configuring the maximum isometric force test
+\end_layout
+
+\begin_layout Standard
+In the Menu -> Session -> Preferences -> Force sensor tab you can config
+ up to 4 values of RFD and 1 of impulse.
+\end_layout
+
+\begin_layout Standard
+In the figure is shown an complete example of configuration.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/MIF_config.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Maximum isometric force test configuration
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Each value of the RFD can be calculated from two types of signals:
+\end_layout
+
+\begin_layout Itemize
+The Raw signal shows the values of force registered by the sensor during
+ the test.
+ All that is refered to this signal will be black.
+\end_layout
+
+\begin_layout Itemize
+The fitted signal refers to the inverse monoexponential function that better
+ fits the raw data.
+ This fitting is made adjusting the Fmax (maximum force) and K (the speed
+ at which the maximum force is reached)
+\lang spanish
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Some papers express 
+\begin_inset Formula $k=\frac{1}{\tau}$
+\end_inset
+
+, where 
+\lang spanish
+
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\lang british
+ means the time necessary to reach the 63.2% of the Fmax
+\end_layout
+
+\end_inset
+
+
+\lang british
+.
+ All that is refered to this signal is blue.
+\lang spanish
+
+\begin_inset Formula 
+\[
+F=Fmax\text{·}\left(1-e^{-k\text{·t}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Besides, the RFD can be calculated in various ways:
+\end_layout
+
+\begin_layout Itemize
+Instantaneous.
+ The RFD is calculated at the instant specified in milliseconds.
+\end_layout
+
+\begin_layout Itemize
+Average.
+ The RFD is calculated measuring the increment of force between two instants,
+ specified in milliseconds, divided by the elapsed time.
+\end_layout
+
+\begin_layout Itemize
+% Force max.
+ The RFD is calculated in the instant when the force is equal to a percentage
+ of the maximum force.
+\end_layout
+
+\begin_layout Itemize
+RFDmax.
+ The RFD calculated is the maximum of the test.
+\end_layout
+
+\begin_layout Standard
+In all cases the RFD is plotted as a line with a slope equal to the RFD
+ and located at the points specified.
+\end_layout
+
+\begin_layout Standard
+In the 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:MIF-analysis"
+
+\end_inset
+
+ table are shown some examples of a maximum isometric test .
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Raw
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fitted
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/MIF-RAW-Instant.png
+	lyxscale 75
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/MIF-Fitted-Instant.png
+	lyxscale 75
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Instantaeous RFD of the raw signal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RFD Instantaeous of the fitted signal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/MIF-RAW-average.png
+	lyxscale 75
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/MIF-Fitted-Average.png
+	lyxscale 75
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Average (0-300)ms RFD of the raw signal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Average (0-300)ms of the fitted signal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/MIF-RAW-percentFmax.png
+	lyxscale 75
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/MIF-RAW-Instant.png
+	lyxscale 75
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RFD at 50% of Fmax of the raw signal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RFD en el 50% of Fmax of the fitted signal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/MIF-RAW-MaxRFD.png
+	lyxscale 75
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/MIF-Fitted-maxRFD.png
+	lyxscale 75
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Maximum RFD of the raw signal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Maximum RFD of the fitted signal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/MIF-Raw-Impulse.png
+	lyxscale 75
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/MIF-Fitted-Impulse.png
+	lyxscale 75
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Impulse (0-300)ms of the raw signal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Impulse (0-300)ms of the fitted signal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:MIF-analysis"
+
+\end_inset
+
+Different analysis of the RFD in a maximum isometric force test
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Execution of the maximum isometric force test
+\end_layout
+
+\begin_layout Standard
+To perform the test it is recommended to exert a minimum initial force to
+ avoid the any jerks that could spoil the results.
+\end_layout
+
+\begin_layout Standard
+Once the subject is applying a minimum force, click the 
+\emph on
+capture
+\emph default
+ button 
+\lang spanish
+
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/capture_button.png
+	lyxscale 50
+	scale 25
+
+\end_inset
+
+
+\lang british
+.
+\end_layout
+
+\begin_layout Standard
+The subject must start exerting his maximum possible force during, at least,
+ 2 seconds.
+\end_layout
+
+\begin_layout Standard
+Finally, press the the 
+\emph on
+finish
+\emph default
+ button 
+\lang spanish
+
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/finish-button.png
+	scale 50
+
+\end_inset
+
+
+\lang british
+.
+ Automatically a graph will be plot with all the necessary calculi.
+\end_layout
+
+\begin_layout Standard
+To load a previous test, click on 
+\emph on
+load
+\emph default
+ button.
+ When a file is loaded, it will be performed all the calculi depending on
+ the preferences set at this moment.
+\end_layout
+
+\begin_layout Section
 Other tests
 \end_layout
 
@@ -10212,6 +10993,10 @@ Chronopic
 The Chronopic doesn't appear in the list of devices connected.
 \end_layout
 
+\begin_layout Subsection
+Windows systems
+\end_layout
+
 \begin_layout Standard
 In some occasions, Windows or some antivirus, can disable the Chronopic
  driver.
@@ -10284,6 +11069,70 @@ Chronopic driver installation
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+MacOS
+\end_layout
+
+\begin_layout Standard
+In previous versions of OSX you need to install Chronopic drivers.
+\end_layout
+
+\begin_layout Standard
+Since the update of MacOS to the version 10.13 it is not necessary to install
+ the Chronopic drivers.
+\end_layout
+
+\begin_layout Standard
+If you are using the 10.13 version (High Sierra) or above and you have installed
+ Chronopic drivers previously and they are not working correctly … We recommend
+ you to uninstall the Chronopic drivers following this steps:
+\end_layout
+
+\begin_layout Enumerate
+Open a Finder window
+\end_layout
+
+\begin_layout Enumerate
+Go to Menu -> Finder -> Preferences
+\end_layout
+
+\begin_layout Enumerate
+On General tab -> Show this items on the desktop:, check Hard disks
+\end_layout
+
+\begin_layout Enumerate
+On your desktop, open your Macintosh HD
+\end_layout
+
+\begin_layout Enumerate
+Go to /System/Library/Extensions.
+\end_layout
+
+\begin_layout Enumerate
+Locate FTDIUSBSerialDriver.kext and move it to trash.
+\end_layout
+
+\begin_layout Enumerate
+Go back three times and go to /Library
+\end_layout
+
+\begin_layout Enumerate
+Locate FTDIUSBSerialDriver.pkg and move it to trash.
+\end_layout
+
+\begin_layout Enumerate
+Go to Menu -> Finder -> Preferences
+\end_layout
+
+\begin_layout Enumerate
+On General tab -> Show this items on the desktop:, uncheck Hard disks
+\end_layout
+
+\begin_layout Enumerate
+Make sure there’s no USB devices connected to the computer and reboot it.
+ 
 \end_layout
 
 \begin_layout Section

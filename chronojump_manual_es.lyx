@@ -7581,7 +7581,7 @@ Impulso
 \end_layout
 
 \begin_layout Standard
-Estas variables se pueden medir 
+Estas variables se pueden medir de:
 \end_layout
 
 \begin_layout Itemize
@@ -7607,7 +7607,7 @@ Conexión del sensor de fuerza
 \end_layout
 
 \begin_layout Standard
-Para conectar sensor de fuerza a Chronojump, conecte la galga extensométrica
+Para conectar el sensor de fuerza a Chronojump, conecte la galga extensométrica
  al dispositivo conversor y éste al ordenador mediante el cable mini-USB.
 \end_layout
 
@@ -7646,7 +7646,8 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/ForceSensor/MIF-Device.png
+	filename images/ForceSensor/MIF-Device_es.png
+	scale 50
 
 \end_inset
 
@@ -7659,10 +7660,6 @@ Configuración de dispositivo de adquisición de datos
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -7736,27 +7733,26 @@ Calibración
 \end_layout
 
 \begin_layout Standard
-La calibración consiste en establecer una relación entre la señal eléctrica
- del sensor y los Newtons reales.
- Esta relación puede variar en función del sensor, temperatura, humedad..
+La calibración consiste en establecer una relación lineal entre la señal
+ eléctrica del sensor y la fuerza real.
+ Esta relación puede variar en función del sensor, temperatura, humedad...
  Por eso se recomienda hacer una calibración una vez por sesión.
  Por defecto Chronojump utilizará una calibración genérica.
 \end_layout
 
 \begin_layout Standard
-Para realizar la calibración coloque un peso conocido de en el sensor y
- levántelo de modo que el sensor soporte toda la fuerza del peso.
- Cuanto más próximo esté el peso a las fuerzas que se van a realizar más
- precisas serán las mediciones con esa calibración.
+Para realizar la calibración introduzca en Chronojump la masa en Kg de un
+ objeto cuyo peso sea conocido.
+ Ate dicho objeto al sensor y levántelo de modo que el sensor soporte el
+ peso del mismo.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \noindent
@@ -7772,7 +7768,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Calibración del sensor de fuarza
+Calibración del sensor de fuerza
 \end_layout
 
 \end_inset
@@ -7780,13 +7776,11 @@ Calibración del sensor de fuarza
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
-
+Cuanto más próximo esté el peso a las fuerzas que se van a realizar, más
+ precisas serán las mediciones con esa calibración.
+ Una vez tenga el peso levantado y estable, haga clic en el botón calibrar.
 \end_layout
 
 \begin_layout Subsection
@@ -7811,6 +7805,7 @@ reference "fig:Configuración-Fuerza"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -7824,6 +7819,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/ForceSensor/MIF_config.png
+	scale 50
 
 \end_inset
 
@@ -7867,8 +7863,26 @@ La señal cruda muestra los valores de fuerza en Newtons que ha registrado
 \begin_layout Itemize
 La señal ajustada se refiere a la función monoexponencial inversa que mejor
  ajusta a los datos crudos.
- El ajuste se hace sobre los parámetreos Fmax, Fuerza máxima, y K, velocidad
- con la que se alcanza la Fmax.
+ El ajuste se hace sobre los parámetreos Fmax, Fuerza máxima, y K (velocidad
+ con la que se alcanza la Fmax)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Algunas publicaciones expresan 
+\begin_inset Formula $k=\frac{1}{\tau}$
+\end_inset
+
+, donde 
+\begin_inset Formula $\tau$
+\end_inset
+
+ se refiere al tiempo necesario para alcanzar el 63,2% de la Fmax
+\end_layout
+
+\end_inset
+
+.
  Todo lo referido a esta señal será de color azul.
 \begin_inset Formula 
 \[
@@ -7878,29 +7892,10 @@ F=Fmax\text{·}\left(1-e^{-k\text{·t}}\right)
 \end_inset
 
 
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Algunas publicaciones expresan 
-\begin_inset Formula $k=\frac{1}{\tau}$
-\end_inset
-
- donde 
-\begin_inset Formula $\tau$
-\end_inset
-
- se refiere al tiempo necesario para alcanzar el 63,2% de la Fmax
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
-Además, el RFD se puede calcular de distintas formas.
- 
+Además, el RFD se puede calcular de distintas formas:
 \end_layout
 
 \begin_layout Itemize
@@ -8275,11 +8270,11 @@ Ejecución del test de fuerza máxima Isométrica
 
 \begin_layout Standard
 Para la realización del test se recomienda que se haga una fuerza inicial
- mínima para evitar impactos que pueden desvirtual los resultados.
+ mínima para evitar impactos que pueden desvirtuar los resultados.
 \end_layout
 
 \begin_layout Standard
-Una vez el sujeta ya esté aplicando una mínima fuerza haga clic en botón
+Una vez el sujeto ya esté aplicando una mínima fuerza haga clic en botón
  de capturar 
 \begin_inset Graphics
 	filename images/capture_button.png
@@ -8297,7 +8292,7 @@ El sujeto deberá empezar a hacer la máxima fuerza posible durante un mínimo
 \end_layout
 
 \begin_layout Standard
-Finalmente presione el botón de finalizar 
+Finalmente, presione el botón de finalizar 
 \begin_inset Graphics
 	filename images/finish-button.png
 	scale 50
@@ -11575,6 +11570,10 @@ Chronopic
 El Chronopic no aparece en la lista de dispositivos conectados.
 \end_layout
 
+\begin_layout Subsection
+Sistemas Windows
+\end_layout
+
 \begin_layout Standard
 En algunas ocasiones, Windows o un antivirus, puede deshabilitar el controlador
  de dispositivo usado por el Chronopic.
@@ -11645,6 +11644,69 @@ Instalación del driver de Chronopic
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Sistemas MacOS
+\end_layout
+
+\begin_layout Standard
+Desde la actualización de MacOS a la versión 10.13 no es necesario instalar
+ los controladores (drivers) de Chronopic.
+\end_layout
+
+\begin_layout Standard
+Si usa la versión 10.13 (High Sierra) o superior y había instalado los controlado
+res de Chronopic anteriormente y ahora no le funcionan correctamente … le
+ recomendamos que desinstale los controladores de Chronopic siguiendo los
+ siguientes pasos:
+\end_layout
+
+\begin_layout Enumerate
+Abra una ventana de Finder.
+\end_layout
+
+\begin_layout Enumerate
+Vaya a Menú -> Finder -> Preferencias
+\end_layout
+
+\begin_layout Enumerate
+En la pestaña General -> Mostrar estos ítems en el escritorio: Marque Discos
+ duros.
+\end_layout
+
+\begin_layout Enumerate
+En el escritorio abra Macintosh HD
+\end_layout
+
+\begin_layout Enumerate
+Vaya a /Sistema/Biblioteca/Extensions
+\end_layout
+
+\begin_layout Enumerate
+Busque FTDIUSBSerialDriver.kext y muévalo a la papelera.
+\end_layout
+
+\begin_layout Enumerate
+Vaya atrás tres veces y entre en /Biblioteca
+\end_layout
+
+\begin_layout Enumerate
+Busque FTDIUSBSerialDriver.pkg y muévalo a la papelera.
+\end_layout
+
+\begin_layout Enumerate
+Vaya a Menú -> Finder -> Preferencias
+\end_layout
+
+\begin_layout Enumerate
+En la pestaña General -> Mostrar estos ítems en el escritorio: Desmarque
+ Discos duros.
+\end_layout
+
+\begin_layout Enumerate
+Asegúrese de no tener ningún dispositivo USB conectado al ordenador y reinicie
+ el mismo.
 \end_layout
 
 \begin_layout Section
