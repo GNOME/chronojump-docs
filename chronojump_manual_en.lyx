@@ -3938,7 +3938,49 @@ Examples on jump types created by user.
 \end_layout
 
 \begin_layout Section
-Runs
+Races
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/races.png
+	lyxscale 50
+	width 60col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Schem-two-photo-1"
+
+\end_inset
+
+Drawing of two barriers and a switch to measure races.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4107,6 +4149,95 @@ run along two or more tracks limited by devices at a fixed distance
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsection
+Raction time
+\end_layout
+
+\begin_layout Standard
+Chronojump allows to measure the reaction time.
+ This time is the elapsed time between a starting signal and the moment
+ at which the subject starts the movement.
+\end_layout
+
+\begin_layout Standard
+To activate this option clic on 
+\begin_inset Quotes eld
+\end_inset
+
+Measure reaction time
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename images/reactTime.png
+	scale 66
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The results will be shown in the tab 
+\begin_inset Quotes eld
+\end_inset
+
+Show table
+\begin_inset Quotes erd
+\end_inset
+
+ and the column
+\begin_inset Quotes eld
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/races_Table.png
+	scale 66
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Races-table"
+
+\end_inset
+
+
+\lang british
+Races results table
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -5712,8 +5843,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/encoder-manual-images/main.png
-	lyxscale 50
-	scale 60
+	lyxscale 30
+	scale 30
 
 \end_inset
 
@@ -5745,41 +5876,20 @@ A) Starting on the top left of main window, there's a menu bar with session
 \end_layout
 
 \begin_layout Standard
-B) Under the menu bar there's Chronopic information: number of Chronopics
- connected and the button to manage them.
- Chronopic is the microntroller used on Chronojump project to measure from
- external devices like a contact platform, photocells or the encoder.
- Use the Chronopic button to tell the software how Chronopic is connected.
-\end_layout
-
-\begin_layout Standard
-C) The rest of the left part of the screen is related to subjects.
+B) The rest of the left part of the screen is related to subjects.
  On the top you can create new subjects or load from another session.
  Below you can select the current person and finally, at the bottom you
  can edit the person, see all it's tests and delete it.
 \end_layout
 
 \begin_layout Standard
-D) The centre-right part of the screen is for managing the tests (or exercises).
+C) The centre-right part of the screen is for managing the tests (or exercises).
  At the top there are two tabs: contacts and encoder.
  Select the encoder tab.
 \end_layout
 
 \begin_layout Subsubsection
 Connecting encoder
-\end_layout
-
-\begin_layout Paragraph
-Chronopic windows
-\end_layout
-
-\begin_layout Standard
-In order to connect the encoder, click on the Chronopic button (“B”, in
- the above image) and Chronopic window will be opened.
- On this new window select “Encoder” and the port where Chronopic is connected.
- If you have any problem press the help button in that window, it has little
- and useful information.
- After Chronopic port has been selected, just close the window.
 \end_layout
 
 \begin_layout Paragraph
@@ -6447,7 +6557,7 @@ Capture tab
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Paragraph*
 Exercise
 \end_layout
 
@@ -6489,7 +6599,7 @@ The exercise area includes also the contraction type (eccentric-concentric
  and the recalculate button.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Paragraph*
 Aquire
 \end_layout
 
@@ -6497,8 +6607,8 @@ Aquire
 In the acquire area a new set can be captured 
 \begin_inset Graphics
 	filename images/capture_button.png
-	lyxscale 75
-	scale 75
+	lyxscale 50
+	scale 50
 
 \end_inset
 
@@ -6717,12 +6827,14 @@ Show star and duration of each repetition.
 \end_layout
 
 \begin_layout Standard
-Feedback.
- This button opens the sound and colour feedback options.
+Feedback / Rhythm.
+ This button opens the sound and colour feedback options as well as using
+ an advanced metronome for executing the exercise with the desired rhythm.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -6743,7 +6855,13 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Sound feedback options
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Feedback"
+
+\end_inset
+
+Feedback options
 \end_layout
 
 \end_inset
@@ -6754,6 +6872,69 @@ Sound feedback options
 \end_inset
 
 
+\end_layout
+
+\begin_layout Paragraph*
+Feedback
+\end_layout
+
+\begin_layout Standard
+In the Feedback tab you can configure the visual and sound signals in function
+ of the selected variable and referred to the best repetition or to the
+ history of the athlete with this load and exercise.
+\end_layout
+
+\begin_layout Paragraph*
+Rhythms
+\end_layout
+
+\begin_layout Standard
+The Rhythm tab allows to configure an advanced metronome in which you can
+ select the desired time of each phase (concentric, excenctric or rest)
+ of the execution.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/rhythm.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Rhythm"
+
+\end_inset
+
+Rhythm
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Load
 \end_layout
 
 \begin_layout Standard
@@ -6784,6 +6965,10 @@ https://youtu.be/UiZJKbU4OSg
 
 \end_layout
 
+\begin_layout Paragraph*
+Recalculate
+\end_layout
+
 \begin_layout Standard
 Recalculate can be used after capturing or loading.
  When user detects that some parameter has not been set correctly and wants
@@ -6804,7 +6989,7 @@ Recalculate can be used after capturing or loading.
  in order to have the force and power calculated correctly.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Paragraph*
 Camera record
 \end_layout
 
@@ -6816,7 +7001,7 @@ At the right of the exercise frame there is a check box where a web cam
  using a button on set frame.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Paragraph*
 set frame
 \end_layout
 
@@ -6826,7 +7011,7 @@ During the capture this frame will show the set sent by the encoder.
  in the same frame with some basic graphic information.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Paragraph*
 repetitions frame
 \end_layout
 
@@ -6893,7 +7078,7 @@ In excentric-concentric mode, saving a excentreic (concentric) repetition
  exercise.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Paragraph*
 Bars frame
 \end_layout
 
@@ -7447,9 +7632,11 @@ The Raw signal shows the values of force registered by the sensor during
 The fitted signal refers to the inverse monoexponential function that better
  fits the raw data.
  This fitting is made adjusting the Fmax (maximum force) and K (the speed
- at which the maximum force is reached)
-\lang spanish
+ at which the maximum force is reached) and 
+\begin_inset Formula $\tau$
+\end_inset
 
+ (tau).
 \begin_inset Foot
 status open
 
@@ -7459,24 +7646,21 @@ Some papers express
 \end_inset
 
 , where 
-\lang spanish
-
 \begin_inset Formula $\tau$
 \end_inset
 
+ means the time necessary to reach the 63.2% of the Fmax.
+ Another way of expressing K is as the initial RFD normalized by Fmax (
+\begin_inset Formula $k=\frac{RFD0}{Fmax}$
+\end_inset
 
-\lang british
- means the time necessary to reach the 63.2% of the Fmax
+)
 \end_layout
 
 \end_inset
 
-
-\lang british
 .
  All that is refered to this signal is blue.
-\lang spanish
-
 \begin_inset Formula 
 \[
 F=Fmax\text{·}\left(1-e^{-k\text{·t}}\right)

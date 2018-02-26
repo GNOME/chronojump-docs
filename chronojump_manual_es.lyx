@@ -4380,6 +4380,48 @@ Carreras
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/races.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Carreras"
+
+\end_inset
+
+Ventana de captura de carreras
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Las carreras pueden ser detectadas por tres tipos de dispositivos de detección:
 \end_layout
 
@@ -4517,6 +4559,114 @@ Carrera de dos o más tramos delimitados por dispositivos de detección a
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsection
+Tiempo de reacción
+\end_layout
+
+\begin_layout Standard
+Chronojump permite medir el tiempo de reacción de modo que se mide el tiempo
+ que transcurre entre una señal de salida y el momento en que el sujeto
+ inicia el movimiento.
+\end_layout
+
+\begin_layout Standard
+Para activar esta opción haga clic en 
+\begin_inset Quotes eld
+\end_inset
+
+Medir tiempo de reación
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename images/reactTime_es.png
+	scale 66
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La secuencia para medir el tiempo de reacción es la siguiente:
+\end_layout
+
+\begin_layout Itemize
+Hacer clic en iniciar test (botón con el cronómetro)
+\end_layout
+
+\begin_layout Itemize
+La persona evaluada se situa sobre el dispositivo en la salida (cortando
+ la barrera fotoeléctrica o pulsando el pulsador)
+\end_layout
+
+\begin_layout Itemize
+El evaluador presiona
+\end_layout
+
+\begin_layout Standard
+Los resultados se mostrarán en la pestaña 
+\begin_inset Quotes eld
+\end_inset
+
+Mostrar tabla
+\begin_inset Quotes erd
+\end_inset
+
+ y la columna 
+\begin_inset Quotes eld
+\end_inset
+
+descripción de la carrera
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/races_Table_es.png
+	scale 66
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Carreras-tabla"
+
+\end_inset
+
+Tabla de resultados de carreras
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -6129,7 +6279,7 @@ status open
 \begin_inset Graphics
 	filename images/encoder-manual-images/main_es.png
 	lyxscale 30
-	scale 30
+	scale 66
 
 \end_inset
 
@@ -6162,51 +6312,18 @@ A) Área de menú.
 \begin_layout Standard
 B) Gestión de sujetos.
  Mediante estos botones se podrá crear sujetos nuevos o cargar sujetos de
- otras sesiones.
+ otras sesiones así como cambiar de sujeto actual, editarlo, borrarlo o
+ ver los datos del mismo
 \end_layout
 
 \begin_layout Standard
-C) Listado de los sujetos de la sesión.
- En este recuadro se podrá cambiar de sujeto actual, editarlo, borrarlo
- o ver los datos del mismo.
-\end_layout
-
-\begin_layout Standard
-D) Área de captura/análisis.
+C) Área de captura/análisis.
  Aquí aparecerán las opciones necesarias para hacer la captura de una serie
  o el análisis posterior.
 \end_layout
 
 \begin_layout Subsubsection
 Conexión del encoder
-\end_layout
-
-\begin_layout Paragraph
-Ventana de Chronopic
-\end_layout
-
-\begin_layout Standard
-Para conectar el Chronopic, haga clic en el botón 
-\emph on
-Conectar Chronopic
-\emph default
-
-\begin_inset Graphics
-	filename images/chronopic_button.png
-	lyxscale 80
-	scale 80
-
-\end_inset
-
-.
- En la nueva ventana seleccione el puerto donde se configuró el Chronopic.
- Si tiene algún problema presione sobre el botón de ayuda, aparecerá una
- breve información que le puede ser útil.
- Una vez seleccionado el puerto del Chronopic, simplemente cierre la ventana.
-\end_layout
-
-\begin_layout Paragraph
-Configuración del encoder
 \end_layout
 
 \begin_layout Standard
@@ -6332,7 +6449,7 @@ https://youtu.be/s-8Zel1RtGs
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Configuración de máquinas inerciales
 \end_layout
 
@@ -6875,7 +6992,7 @@ status open
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Paragraph*
 Ejercicio
 \end_layout
 
@@ -6904,7 +7021,7 @@ El área de ejercicio también incluye el tipo de contracción (excéntrica-conc
 ica o concéntrica), la lateralidad y el botón de 1RM del atleta.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Paragraph*
 Captura
 \end_layout
 
@@ -7122,9 +7239,10 @@ Mostrar el inicio y duración de cada repetición.
 \end_layout
 
 \begin_layout Standard
-Campanas.
+Feedback / Ritmos.
  Este botón le permite configurar los mensajes sonoros y de color en función
- de diferentes variables.
+ de diferentes variables así como usar un metrónomo avanzado para ejecutar
+ el ejercicio al ritmo deseado.
 \end_layout
 
 \begin_layout Standard
@@ -7149,7 +7267,13 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Alertas sonoras
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Feedback"
+
+\end_inset
+
+Feedback
 \end_layout
 
 \end_inset
@@ -7160,6 +7284,76 @@ Alertas sonoras
 \end_inset
 
 
+\end_layout
+
+\begin_layout Paragraph*
+Feedback
+\end_layout
+
+\begin_layout Standard
+En la pestaña de Retroalimentación se puede configurar las señales sonoras
+ y visuales en función de la variable seleccionada y referido a la mejor
+ repetición de la serie o al histórico del atleta con la misma carga y ejercicio.
+\end_layout
+
+\begin_layout Paragraph*
+Ritmos
+\end_layout
+
+\begin_layout Standard
+La pestaña de ritmos permite configurar un metrónomo avanzado en el que
+ podrá seleccionar los tiempos de cada fase (concéntrica, exéntrica o descanso)
+ de la ejecución.
+\end_layout
+
+\begin_layout Standard
+También le permite definir las agrupaciones de repeticiones con descansos
+ entre ellas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/rhythm_es.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Ritmo"
+
+\end_inset
+
+Ritmo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Cargar
 \end_layout
 
 \begin_layout Standard
@@ -7185,6 +7379,10 @@ target "https://youtu.be/UiZJKbU4OSg"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Paragraph*
+Recalcular
 \end_layout
 
 \begin_layout Standard
@@ -7218,7 +7416,7 @@ Recalcular
  para tener los valores de fuerza y potencia reales.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Paragraph*
 Grabación de video
 \end_layout
 
@@ -7230,7 +7428,7 @@ En la parte derecha hay un botón de selección que le permite activar una
  posteriormente.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Paragraph*
 Recuadro de la serie
 \end_layout
 
@@ -7240,7 +7438,7 @@ Durante la captura este recuadro mostrará la serie enviada por el encoder.
  en el mismo recuadro junto con alguna información básica
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Paragraph*
 Recuadro de repeticiones
 \end_layout
 
@@ -7297,7 +7495,7 @@ En modo excéntrico-concéntrico guardar la fase excéntrica (concéntrica)
  también guarda la fase concéntrica (excéntrica) del ejercicio.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Paragraph*
 Recuadro de barras
 \end_layout
 
@@ -7864,7 +8062,12 @@ La señal cruda muestra los valores de fuerza en Newtons que ha registrado
 La señal ajustada se refiere a la función monoexponencial inversa que mejor
  ajusta a los datos crudos.
  El ajuste se hace sobre los parámetreos Fmax, Fuerza máxima, y K (velocidad
- con la que se alcanza la Fmax)
+ con la que se alcanza la Fmax) y 
+\begin_inset Formula $\tau$
+\end_inset
+
+ (tau).
+ 
 \begin_inset Foot
 status open
 
@@ -7877,7 +8080,13 @@ Algunas publicaciones expresan
 \begin_inset Formula $\tau$
 \end_inset
 
- se refiere al tiempo necesario para alcanzar el 63,2% de la Fmax
+ se refiere al tiempo necesario para alcanzar el 63,2% de la Fmax.
+ Otro modo de expresar K es como el RFD inicial normalizado por la Fmax
+ (
+\begin_inset Formula $k=\frac{RFD0}{Fmax}$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
