@@ -7029,8 +7029,8 @@ Captura
 En el área de captura se puede adquirir nuevos datos 
 \begin_inset Graphics
 	filename images/capture_button.png
-	lyxscale 75
-	scale 75
+	lyxscale 50
+	scale 50
 
 \end_inset
 
@@ -7245,6 +7245,10 @@ Feedback / Ritmos.
  el ejercicio al ritmo deseado.
 \end_layout
 
+\begin_layout Paragraph*
+Feedback
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -7256,7 +7260,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/encoder-manual-images/bells_es.png
-	scale 70
+	scale 50
 
 \end_inset
 
@@ -7286,35 +7290,15 @@ Feedback
 
 \end_layout
 
-\begin_layout Paragraph*
-Feedback
-\end_layout
-
 \begin_layout Standard
 En la pestaña de Retroalimentación se puede configurar las señales sonoras
  y visuales en función de la variable seleccionada y referido a la mejor
  repetición de la serie o al histórico del atleta con la misma carga y ejercicio.
-\end_layout
-
-\begin_layout Paragraph*
-Ritmos
-\end_layout
-
-\begin_layout Standard
-La pestaña de ritmos permite configurar un metrónomo avanzado en el que
- podrá seleccionar los tiempos de cada fase (concéntrica, exéntrica o descanso)
- de la ejecución.
-\end_layout
-
-\begin_layout Standard
-También le permite definir las agrupaciones de repeticiones con descansos
- entre ellas.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
 status open
 
 \begin_layout Plain Layout
@@ -7322,14 +7306,12 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/encoder-manual-images/rhythm_es.png
-	scale 70
+	lyxscale 50
+	scale 50
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -7350,6 +7332,21 @@ Ritmo
 \end_inset
 
 
+\end_layout
+
+\begin_layout Paragraph*
+Ritmos
+\end_layout
+
+\begin_layout Standard
+La pestaña de ritmos permite configurar un metrónomo avanzado en el que
+ podrá seleccionar los tiempos de cada fase (concéntrica, exéntrica o descanso)
+ de la ejecución.
+\end_layout
+
+\begin_layout Standard
+También le permite definir las agrupaciones de repeticiones con descansos
+ entre ellas.
 \end_layout
 
 \begin_layout Paragraph*
@@ -7618,6 +7615,94 @@ puede seleccionar el método para obtener la regresión lineal.
  será usado en la regresión ponderada.
  La función del peso de la ponderación puede ser cero (sin ponderación),
  uno (lineal), dos (cuadrática) o tres (cúbica).
+\end_layout
+
+\begin_layout Subsection
+Uso de triggers
+\end_layout
+
+\begin_layout Standard
+Desde 2017, el Chronopic permite leer señales externas de sincronización
+ o triggers.
+ Estas señales se generarán mediante cualquier dispositivo que cierre un
+ contacto eléctrico(botón, fotocélula, plataforma de contactos...).
+ Puede comprobar si su Chronopic lo admite presionando el botón de test
+ del mismo.
+ Si se enciende un LED verde es que lo admite.
+\end_layout
+
+\begin_layout Standard
+Estas señales pueden ser usadas para cortar la serie en repeticiones de
+ modo que cada señal indique el inicio de la repetición o simplemente para
+ destacar un instante que nos pueda interesar de la serie o repetición.
+ Para especificar este comportamiento vaya a Menú -> Sesión -> Preferencias
+ -> Encoder -> Cortar repeticiones usando triggers.
+\end_layout
+
+\begin_layout Standard
+Si lo que quiere es poder identificar ciertos instantes dentro de la ejecución
+ del ejercicio, en el análisis instantáneo de la repetición verá unas líneas
+ discontínuas verticales amarillas que indican el momento en que se ha recibido
+ una señal de trigger.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/trigger.png
+	lyxscale 50
+	scale 33
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Triggers"
+
+\end_inset
+
+Triggers
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Además, si quiere ver los instantes en milisegundos de los flancos de subida
+ (In) y bajada (Out) de la señal de trigger puede ir a la pestaña de 
+\begin_inset Quotes eld
+\end_inset
+
+Mostrar triggers
+\begin_inset Quotes erd
+\end_inset
+
+ en la parte inferior del recuadro de análisis.
 \end_layout
 
 \begin_layout Subsection

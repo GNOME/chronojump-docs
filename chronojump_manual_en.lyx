@@ -6829,7 +6829,7 @@ Show star and duration of each repetition.
 \begin_layout Standard
 Feedback / Rhythm.
  This button opens the sound and colour feedback options as well as using
- an advanced metronome for executing the exercise with the desired rhythm.
+ an advanced metronome for executing the exercise with the desiredrhythm.
 \end_layout
 
 \begin_layout Standard
@@ -6840,18 +6840,19 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/encoder-manual-images/bells.png
-	scale 70
-
-\end_inset
-
 
 \end_layout
 
 \begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/bells.png
+	scale 50
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -6866,6 +6867,10 @@ Feedback options
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -6884,25 +6889,24 @@ In the Feedback tab you can configure the visual and sound signals in function
  history of the athlete with this load and exercise.
 \end_layout
 
-\begin_layout Paragraph*
-Rhythms
-\end_layout
-
 \begin_layout Standard
-The Rhythm tab allows to configure an advanced metronome in which you can
- select the desired time of each phase (concentric, excenctric or rest)
- of the execution.
-\begin_inset Float figure
-placement H
-wide false
-sideways false
+\begin_inset Wrap figure
+lines 0
+placement l
+overhang 0in
+width "50col%"
 status open
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \begin_layout Plain Layout
 \noindent
 \align center
 \begin_inset Graphics
 	filename images/encoder-manual-images/rhythm.png
+	scale 50
 
 \end_inset
 
@@ -6924,13 +6928,19 @@ Rhythm
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Paragraph*
+Rhythms
+\end_layout
+
+\begin_layout Standard
+The Rhythm tab allows to configure an advanced metronome in which you can
+ select the desired time of each phase (concentric, excenctric or rest)
+ of the execution.
 \end_layout
 
 \begin_layout Paragraph*
@@ -7190,6 +7200,94 @@ In the
  used the larger is the weight used for the regression.
  The function of the weight can be zero (non wighted), one (linear), two
  (quadratic) or three (cubic).
+\end_layout
+
+\begin_layout Subsection
+Using triggers
+\end_layout
+
+\begin_layout Standard
+Since 2017, the Chronopic new models allows to read external synchronization
+ signals or triggers.
+ These signals will be generated using any device that close an electric
+ contact (button, photocell, contact platform...).
+ You can check if your Chronopic can read it by pressing the test button
+ in it.
+ If a green LED turns on it means that your device can receive trigger signals.
+\end_layout
+
+\begin_layout Standard
+These signals can be used to cut the set into repetitions so that each signal
+ indicates the start of a repetition or simply to highlight an instant that
+ could be of interest.
+ To specify this behavior go to Menu -> Session -> Preferences -> Encoder
+ -> Cut sets into repetitions using triggers.
+\end_layout
+
+\begin_layout Standard
+If you want to identify certain instants inside the execution of the exercise,
+ in the instantaneous analysis of the repetition you will see a dashed vertical
+ yellow line that indicates the moment at which was produced the trigger
+ signal.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/trigger.png
+	lyxscale 50
+	scale 33
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Triggers"
+
+\end_inset
+
+Triggers
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Besides, if you want to se the instants in milliseconds of the rising (In)
+ and falling (Out) flank you can click on the tab 
+\begin_inset Quotes eld
+\end_inset
+
+Show triggers
+\begin_inset Quotes erd
+\end_inset
+
+ on the lower side of the analysis frame.
 \end_layout
 
 \begin_layout Subsection
