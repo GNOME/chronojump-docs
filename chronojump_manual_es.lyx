@@ -3501,65 +3501,78 @@ Campanas - feedback auditivo y visual.
 \end_layout
 
 \begin_layout Subsection
+\noindent
 Perfil Chronojump
 \end_layout
 
 \begin_layout Standard
+\noindent
 Chronojump incorpora un método rápido para generar un perfil del atleta
  en el que se pueden ver las distintas variables:
 \end_layout
 
 \begin_layout Itemize
-Fuerza maxima: Capacidad de movilizar una resistencia externa igual al doble
- del peso corporal
+\noindent
+Fuerza maxima: Capacidad de movilizar una resistencia igual al doble del
+ peso corporal
 \end_layout
 
 \begin_layout Itemize
-Fuerza explosiva:Capacidad movilizar una resistencia externa igual al peso
- corporal
+\noindent
+Fuerza explosiva:Capacidad movilizar una resistencia igual al peso corporal
 \end_layout
 
 \begin_layout Itemize
+\noindent
 Elasticidad: Aumento de la fuerza debido a la energía elástica acumulada
  durante el ciclo de estiramiento-acortamiento.
 \end_layout
 
 \begin_layout Itemize
+\noindent
 Uso de brazos: Aumento de la fuerza por el movimiento de brazos.
 \end_layout
 
 \begin_layout Itemize
+\noindent
 Reflejo reactivo: aumento de la fuerza debido a la caída previa desde cierta
  altura (activación de mecanismos reflejos)
 \end_layout
 
 \begin_layout Standard
+\noindent
 Para poder tener el perfil completo es necesario, por lo menos, haber realizado
  los siguentes saltos:
 \end_layout
 
 \begin_layout Itemize
+\noindent
 SJl con un peso extra igual a la masa corporal.
 \end_layout
 
 \begin_layout Itemize
+\noindent
 SJ
 \end_layout
 
 \begin_layout Itemize
+\noindent
 CMJ
 \end_layout
 
 \begin_layout Itemize
+\noindent
 Abalakov
 \end_layout
 
 \begin_layout Itemize
+\noindent
 DJ desde una altura de caída próxima a la altura desde la cual se consigue
  el máximo salto
 \end_layout
 
 \begin_layout Standard
+\noindent
 Si desea ver el perfil de un atleta haga clic en la pestaña de 
 \emph on
 Perfil de saltos.
@@ -3616,7 +3629,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/chronojump_profile.png
-	lyxscale 50
+	lyxscale 75
 	scale 50
 
 \end_inset
@@ -3850,6 +3863,7 @@ reference "fig:Creación-de-nuevo-tipo-salto"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -4629,6 +4643,7 @@ descripción de la carrera
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -4638,7 +4653,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/races_Table_es.png
-	scale 66
+	lyxscale 66
+	scale 50
 
 \end_inset
 
@@ -4690,6 +4706,7 @@ Evitar contactos dobles.
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -4698,6 +4715,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/preferences_double_contact_es.png
+	lyxscale 66
+	scale 50
 
 \end_inset
 
@@ -4731,8 +4750,66 @@ Configuración de dobles contactos
 En el cuadro de diálogo permite establecer el tiempo mínimo que deben transcurri
 r entre dos contactos para que sean considerados como correctos.
  Si el tiempo entre dos contactos es inferior al estipulado en el cuadro
- de diálogo Chronojump actuará según la opción seleccionada (primero, media
- o último).
+ de diálogo Chronojump considerará el instante en el que inicia el contacto
+ más prolongado.
+ En la figura
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Ejemplo-Doble-contacto"
+
+\end_inset
+
+ se puede ver un ejemplo de carrera en la que se producen dobles contactos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/races_double_contacts.png
+	scale 66
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Ejemplo-Doble-contacto"
+
+\end_inset
+
+Ejemplo de dobles contactos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la parte inferior del gráfico, cada contacto real se muestra como un
+ segmento de longitud igual a su duración.
+ Los segmentos están agrupados de modo que cada agrupación será considerada
+ como un solo contacto.
+ Las líneas discontinuas verticales indican el instante que se ha considerado
+ como el inicio del contacto.
 \end_layout
 
 \begin_layout Subsection
@@ -4963,9 +5040,9 @@ Visualización de carreras
 \end_layout
 
 \begin_layout Standard
-Desde la pestaña de 
+Desde la el modo de 
 \emph on
-Carrera
+Carreras simples
 \emph default
  podrá ver las carreras simples que se han realizado en una sesión, mientras
  que desde la pestaña de 
@@ -10323,6 +10400,77 @@ Gráfico dotchart de un subconjunto de los valores anteriores.
 
 \end_layout
 
+\begin_layout Subsubsection
+Análisis de un sprint
+\end_layout
+
+\begin_layout Standard
+Si la carrera es un sprint medido al menos con dos tramos puede realizar
+ el test de sprint en Analysis -> Sprint
+\end_layout
+
+\begin_layout Standard
+Para realizar este análisis es necesario que el sujeto tenga especificada
+ la altura.
+\end_layout
+
+\begin_layout Standard
+Seleccione la carrera y haga clic en el botón de Analizar
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/sprint_es.png
+	lyxscale 50
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sprint"
+
+\end_inset
+
+Análisis de un sprint
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este análisis le dará un modelo de la velocidad que le permite saber la
+ velocidad en cada instante así como la aceleración fuerza y potencia.
+\end_layout
+
+\begin_layout Standard
+La variable K indica como de rápido el sujeto alcanza su velocidad máxima
+ independientemente de esta velocidad máxima.
+\end_layout
+
+\begin_layout Standard
+La fuerza y la potencia son relativas al peso corporal.
+\end_layout
+
 \begin_layout Section
 Encoder
 \end_layout
@@ -10381,6 +10529,8 @@ Dentro de cada modo hay varios tipos de análisis
 \end_layout
 
 \begin_layout Itemize
+\noindent
+\align left
 Barras de potencia 
 \begin_inset Graphics
 	filename images/analyze_power_button.png
@@ -10390,7 +10540,8 @@ Barras de potencia
 \end_inset
 
 : Muestra la potencia, el pico de potencia, tiempo necesario para llegar
- al pico de potencia y rango de movimiento.
+ al pico de potencia, rango de movimiento y el impulso mecánico generado
+ en la repetición.
 \begin_inset Float figure
 placement H
 wide false
@@ -10575,55 +10726,6 @@ Gráficos de variables cruzadas
 \begin_layout Itemize
 \noindent
 \align left
-Comparar lateral 
-\begin_inset Graphics
-	filename images/analyze_sidecompare_button.png
-	lyxscale 75
-	scale 75
-
-\end_inset
-
-: Permite ver las gráficas de las variables mecánicas de diferentes repeticiones
- con los mismos ejes.
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/encoder-manual-images/analysis_side_comparing_Left_Right.png
-	lyxscale 50
-	scale 20
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Gráfico de dos repeticiones
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\noindent
-\align left
 1RM 
 \begin_inset Graphics
 	filename images/1RM_button.png
@@ -10753,7 +10855,7 @@ Gráficos de 1RM
 \begin_layout Itemize
 \noindent
 \align left
-Repetición única 
+Análisis instantáneo 
 \begin_inset Graphics
 	filename images/analyze_singlecurve_button.png
 	lyxscale 75
@@ -10761,10 +10863,8 @@ Repetición única
 
 \end_inset
 
-: Muestra la gráfica de las variables mecánicas de una única repetición.
- Permite analizar los valores en cada milisegundo así como valores medios
- y máximos de un intervalo de tiempo.
- 
+: Muestra las variables mecánicas en cada milisegundo.
+ Hay cuatro tipos de gráficos posibles: 
 \begin_inset Float figure
 placement H
 wide false
@@ -10774,10 +10874,121 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features rotate="0" tabularvalignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/encoder-manual-images/analysis-1_repetition_es.png
-	lyxscale 80
-	scale 40
+	lyxscale 20
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/compare_lateral_es.png
+	lyxscale 15
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Análisis de una sola repetición.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comparación lateral
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/superpose_es.png
+	lyxscale 15
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/analysis_all_set.png
+	lyxscale 33
+	scale 33
+	rotateOrigin leftTop
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Superposición de dos o más repeticiones
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Análisis de toda la serie
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
@@ -10788,7 +10999,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Análisis de una repetición
+Análisis instantáneo
 \end_layout
 
 \end_inset

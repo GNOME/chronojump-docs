@@ -3185,7 +3185,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/campanas_es.png
-	lyxscale 50
+	lyxscale 75
 	scale 60
 
 \end_inset
@@ -3204,6 +3204,157 @@ name "fig:Campanas---feedback"
 \end_inset
 
 Bells - auditive and visual feedback.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\noindent
+Chronojump profile
+\end_layout
+
+\begin_layout Standard
+Chronojump incorporates a quick method for generating an athlete profile
+ in which different variables are shown:
+\end_layout
+
+\begin_layout Itemize
+Maximum force: Hability of moving an load equal to the double of the body
+ weight.
+\end_layout
+
+\begin_layout Itemize
+Explosive force: Hability of moving a load equal to the body weight.
+\end_layout
+
+\begin_layout Itemize
+Elasticity: Force increment due to the elastic energy acumulated during
+ the shortening-stretching cycle.
+\end_layout
+
+\begin_layout Itemize
+Arms using: Force increment due to the arms using.
+\end_layout
+
+\begin_layout Itemize
+Reacitve reflex: Force increment due a previous falling from certain heigth
+ (activation of reflex mechanisms)
+\end_layout
+
+\begin_layout Standard
+In order to generate a complete profile it is necessary to have been performed
+ this jumps:
+\end_layout
+
+\begin_layout Itemize
+SJl with an external load equal to the body weight.
+\end_layout
+
+\begin_layout Itemize
+\noindent
+SJ
+\end_layout
+
+\begin_layout Itemize
+\noindent
+CMJ
+\end_layout
+
+\begin_layout Itemize
+\noindent
+Abalakov
+\end_layout
+
+\begin_layout Itemize
+DJ with a falling height near the one that generates the maximum jump height.
+\end_layout
+
+\begin_layout Standard
+\noindent
+Si desea ver el perfil de un atleta haga clic en la pestaña de 
+\emph on
+Perfil de saltos.
+\end_layout
+
+\begin_layout Standard
+To generate the Jumps profile go to Jumps profile tab.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/chronojump_profile_tab.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Jumps profile tab
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Once there, and if al the jumps are performed a graph similar to this will
+ be shown.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/chronojump_profile.png
+	lyxscale 75
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Chronojump jumps profile
 \end_layout
 
 \end_inset
@@ -3416,6 +3567,7 @@ reference "fig:Creación-de-nuevo-tipo-salto"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -4198,6 +4350,7 @@ Show table
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -4206,7 +4359,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/races_Table.png
-	scale 66
+	lyxscale 66
+	scale 50
 
 \end_inset
 
@@ -4261,6 +4415,7 @@ Prevent double contacts
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -4269,6 +4424,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/preferences_double_contact.png
+	lyxscale 50
+	scale 66
 
 \end_inset
 
@@ -4301,10 +4458,74 @@ Double contact configuration
 \end_layout
 
 \begin_layout Standard
+\noindent
 This dialog box allows to set the minimum time between contacts to be considered
  as correct.
  If the time between contacts is lesser than the configuration in the dialog
- Chronojump will act as set in the selected option (first, average or last)
+ Chronojump will consider the instant when the longest contact start.
+\end_layout
+
+\begin_layout Standard
+\noindent
+in the figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Double-contact-example"
+
+\end_inset
+
+ is shown an example of a race with multiple contacts situation.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/races_double_contacts.png
+	lyxscale 66
+	scale 66
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Double-contact-example"
+
+\end_inset
+
+
+\lang british
+Double contacts example
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the lower part of the graph, each real contact is shown as a segment
+ with a length equal to the duration of the contact.
+ The segments are grouped so that each cluster is treated as a single contact.
+ The vertical dashed lines show the instant when the start of the contact
+ is considered.
 \end_layout
 
 \begin_layout Subsection
@@ -4547,15 +4768,15 @@ Runs view
 \end_layout
 
 \begin_layout Standard
-Simple runs are shown on the 
+Simple races are shown on the 
 \emph on
-Run
+Races - Simple
 \emph default
- tab and the intervallic runs on the 
+ mode and the intervallic runs on the 
 \emph on
-Run intervallic
+Races - intervallic
 \emph default
- tab.
+ mode.
  In both cases, it’s included a filter for all the possible runs or only
  a particular type.
 \end_layout
@@ -9830,6 +10051,77 @@ Graph dotchart a subset of the above values.
 
 \end_layout
 
+\begin_layout Subsubsection
+Sprint analysis
+\end_layout
+
+\begin_layout Standard
+If the race is a sprint measured with at least 2 laps you can perform the
+ sprint test in Analysis -> Sprint.
+\end_layout
+
+\begin_layout Standard
+To execute this analysis the height of the subject must be specified.
+\end_layout
+
+\begin_layout Standard
+Select the race and click the Analyze button.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/sprint.png
+	lyxscale 50
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sprint-test"
+
+\end_inset
+
+Sprint test
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This analysis returns a model of the speed that allows to know the speed
+ in each instant as well as the acceleration, force and power.
+\end_layout
+
+\begin_layout Standard
+The K variable indicates how fast the subject reaches his maximum velocity,
+ independently of this maximum velocity.
+ Force and power are relative to the body weight.
+\end_layout
+
 \begin_layout Section
 Encoder
 \end_layout
@@ -9937,8 +10229,8 @@ Power bars
 
 \end_inset
 
-: Shows power, peak power, time needed to arrive to peak power and range
- of movement.
+: Shows power, peak power, time needed to arrive to peak power, range of
+ movement and the mechanical impulse.
 \begin_inset Float figure
 placement H
 wide false
@@ -10240,56 +10532,7 @@ status open
 \begin_layout Itemize
 \noindent
 \align left
-Side compare 
-\begin_inset Graphics
-	filename images/analyze_sidecompare_button.png
-	lyxscale 75
-	scale 75
-
-\end_inset
-
-: to see a graph of the mechanical variables of different repetitions all
- with the same axis.
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_side_comparing_Left_Right.png
-	lyxscale 50
-	scale 20
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Side comparing graph
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\noindent
-\align left
-Single repetition 
+Instantaneous analysis 
 \begin_inset Graphics
 	filename images/analyze_singlecurve_button.png
 	lyxscale 75
@@ -10297,7 +10540,10 @@ Single repetition
 
 \end_inset
 
-: to see a graph of the mechanical variables of a repetition.
+: Shows the mecanical variables at each millisecond.
+ There are four kind of graphs:
+\lang spanish
+
 \begin_inset Float figure
 placement H
 wide false
@@ -10307,10 +10553,131 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
+
+\lang spanish
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features rotate="0" tabularvalignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang spanish
 \begin_inset Graphics
-	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis-1_repetition.png
-	lyxscale 80
-	scale 40
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis-1_repetition_es.png
+	lyxscale 20
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/compare_lateral_es.png
+	lyxscale 15
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Single repetition analysis
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lateral comparison
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/superpose_es.png
+	lyxscale 15
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_all_set.png
+	lyxscale 33
+	scale 33
+	rotateOrigin leftTop
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Superposing of repetitions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Analysis of the whole set
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
@@ -10318,10 +10685,12 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+
+\lang spanish
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Single repetition analysis
+Instantaneous analysis
 \end_layout
 
 \end_inset
