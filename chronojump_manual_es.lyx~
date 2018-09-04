@@ -10902,8 +10902,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/compare_lateral_es.png
-	lyxscale 20
-	scale 20
+	lyxscale 15
+	scale 15
 
 \end_inset
 
@@ -10940,8 +10940,8 @@ Comparación lateral
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/superpose_es.png
-	lyxscale 20
-	scale 20
+	lyxscale 15
+	scale 15
 
 \end_inset
 

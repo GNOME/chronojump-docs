@@ -4350,6 +4350,7 @@ Show table
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -4475,6 +4476,7 @@ reference "fig:Double-contact-example"
 
  is shown an example of a race with multiple contacts situation.
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open

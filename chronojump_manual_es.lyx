@@ -12300,8 +12300,8 @@ El LED verde a la derecha del conector USB debería estar encendido si el
 \end_layout
 
 \begin_layout Standard
-Lo primero que se debe comprobar es que las luces del Chronopic estén encendidas
- una vez se conecta mediante el cable USB al ordenador.
+Lo primero que se debe comprobar es que la luz roja D4 del Chronopic esté
+ encendida una vez se conecta mediante el cable USB al ordenador.
  Sin ningún dispositivo conectado al Chronopic, el LED rojo a la derecha
  del conector USB debería estar encendido.
  En caso contrario compruebe que el cable USB esta conectado y funciona
@@ -12361,7 +12361,7 @@ En tal caso compruebe que en las esquinas no hay algún golpe que haga que
 
 \begin_layout Standard
 En el caso de que el problema esté en el cable o conector RCA, se requiere
- una substitución o reparación.
+ una sustitución o reparación.
 \end_layout
 
 \begin_layout Section
