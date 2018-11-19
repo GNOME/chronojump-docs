@@ -4350,6 +4350,7 @@ Show table
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -4475,6 +4476,7 @@ reference "fig:Double-contact-example"
 
  is shown an example of a race with multiple contacts situation.
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -4527,7 +4529,7 @@ In the lower part of the graph, each real contact is shown as a segment
 \end_layout
 
 \begin_layout Subsection
-Simple runs execution
+Simple races execution
 \end_layout
 
 \begin_layout Standard
@@ -7890,6 +7892,20 @@ Configuring the maximum isometric force test
 \end_layout
 
 \begin_layout Standard
+The onset of the test is allways calculated automatically.
+ The duration of the test can be configured automatically or manually.
+\end_layout
+
+\begin_layout Itemize
+Automatically: The test will be considered that is finished when the force
+ falls a 5% of the maximum force.
+\end_layout
+
+\begin_layout Itemize
+Fixed: A fixed number of seconds from the begining of the test
+\end_layout
+
+\begin_layout Standard
 In the Menu -> Session -> Preferences -> Force sensor tab you can config
  up to 4 values of RFD and 1 of impulse.
 \end_layout
@@ -7971,7 +7987,13 @@ Some papers express
 \begin_inset Formula $k=\frac{RFD0}{Fmax}$
 \end_inset
 
-)
+) because 
+\lang spanish
+
+\begin_inset Formula $RFD0=k*Fmax$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -8392,8 +8414,8 @@ capture
 \end_layout
 
 \begin_layout Standard
-The subject must start exerting his maximum possible force during, at least,
- 2 seconds.
+The subject must start exerting his maximum force as fast as possible.
+ It is recommended to hold the maximum force for at least 3 seconds.
 \end_layout
 
 \begin_layout Standard
@@ -8422,8 +8444,6 @@ To load a previous test, click on
 load
 \emph default
  button.
- When a file is loaded, it will be performed all the calculi depending on
- the preferences set at this moment.
 \end_layout
 
 \begin_layout Section
@@ -10530,55 +10550,6 @@ status open
 \begin_layout Itemize
 \noindent
 \align left
-Side compare 
-\begin_inset Graphics
-	filename images/analyze_sidecompare_button.png
-	lyxscale 75
-	scale 75
-
-\end_inset
-
-: to see a graph of the mechanical variables of different repetitions all
- with the same axis.
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_side_comparing_Left_Right.png
-	lyxscale 50
-	scale 20
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Side comparing graph
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\noindent
-\align left
 Instantaneous analysis 
 \begin_inset Graphics
 	filename images/analyze_singlecurve_button.png
@@ -10616,8 +10587,8 @@ status open
 \lang spanish
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis-1_repetition_es.png
-	lyxscale 33
-	scale 33
+	lyxscale 20
+	scale 20
 
 \end_inset
 
@@ -10634,8 +10605,8 @@ status open
 \lang spanish
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/compare_lateral_es.png
-	lyxscale 30
-	scale 30
+	lyxscale 15
+	scale 15
 
 \end_inset
 
@@ -10674,8 +10645,8 @@ Lateral comparison
 \lang spanish
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/superpose_es.png
-	lyxscale 33
-	scale 33
+	lyxscale 15
+	scale 15
 
 \end_inset
 
@@ -10692,8 +10663,8 @@ Lateral comparison
 \lang spanish
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_all_set.png
-	lyxscale 60
-	scale 60
+	lyxscale 33
+	scale 33
 	rotateOrigin leftTop
 
 \end_inset
@@ -11954,8 +11925,8 @@ The green LED to the right of the USB socket should be on if the Chronopic
 \end_layout
 
 \begin_layout Standard
-First of all you must check that the LED lights of the Chronopic are on
- once it is connected to the computer with the USB cable.
+First of all you must check that the LED D4 of the Chronopic is on once
+ it is connected to the computer with the USB cable.
  Without no devices connected to the Chronopic, the RED LED to the right
  of the USB connector should be on.
  In case it is not check that the USB cable is OK and connected to the computer.
@@ -12016,7 +11987,7 @@ In the case that the problem is in the RCA connector it would require a
 \end_layout
 
 \begin_layout Section
-The height of the jumps in random and independent of the real height
+The height of the jumps in random and independent of the real height.
 \end_layout
 
 \begin_layout Standard
@@ -12055,6 +12026,30 @@ Simulated
 \end_inset
 
  session
+\end_layout
+
+\begin_layout Section
+In countermovement jumps, the height of jump are very low.
+\end_layout
+
+\begin_layout Standard
+In some subjects, specialy those with low weight, during the excentric phase
+ is detected a loss of contact with the platform.
+ This is because of a too quick descent with an acceleration close to the
+ gravity.
+ This negative acceleration provoques the force exerted on the platform
+ to be very little and, in conjuction with the light weight of the subject,
+ his presence is not detected.
+\end_layout
+
+\begin_layout Standard
+In this occasions it is recommended to give instructions to the subject
+ to not fall so quickly.
+\end_layout
+
+\begin_layout Standard
+Besides, the evaluator can press the Chronopic Test button until the subject
+ starts the concentric phase of the jump.
 \end_layout
 
 \begin_layout Chapter

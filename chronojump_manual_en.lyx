@@ -4529,7 +4529,7 @@ In the lower part of the graph, each real contact is shown as a segment
 \end_layout
 
 \begin_layout Subsection
-Simple runs execution
+Simple races execution
 \end_layout
 
 \begin_layout Standard
@@ -7892,6 +7892,20 @@ Configuring the maximum isometric force test
 \end_layout
 
 \begin_layout Standard
+The onset of the test is allways calculated automatically.
+ The duration of the test can be configured automatically or manually.
+\end_layout
+
+\begin_layout Itemize
+Automatically: The test will be considered that is finished when the force
+ falls a 5% of the maximum force.
+\end_layout
+
+\begin_layout Itemize
+Fixed: A fixed number of seconds from the begining of the test
+\end_layout
+
+\begin_layout Standard
 In the Menu -> Session -> Preferences -> Force sensor tab you can config
  up to 4 values of RFD and 1 of impulse.
 \end_layout
@@ -7973,7 +7987,13 @@ Some papers express
 \begin_inset Formula $k=\frac{RFD0}{Fmax}$
 \end_inset
 
-)
+) because 
+\lang spanish
+
+\begin_inset Formula $RFD0=k*Fmax$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -8394,8 +8414,8 @@ capture
 \end_layout
 
 \begin_layout Standard
-The subject must start exerting his maximum possible force during, at least,
- 2 seconds.
+The subject must start exerting his maximum force as fast as possible.
+ It is recommended to hold the maximum force for at least 3 seconds.
 \end_layout
 
 \begin_layout Standard
@@ -8424,8 +8444,6 @@ To load a previous test, click on
 load
 \emph default
  button.
- When a file is loaded, it will be performed all the calculi depending on
- the preferences set at this moment.
 \end_layout
 
 \begin_layout Section
@@ -11969,7 +11987,7 @@ In the case that the problem is in the RCA connector it would require a
 \end_layout
 
 \begin_layout Section
-The height of the jumps in random and independent of the real height
+The height of the jumps in random and independent of the real height.
 \end_layout
 
 \begin_layout Standard
@@ -12008,6 +12026,30 @@ Simulated
 \end_inset
 
  session
+\end_layout
+
+\begin_layout Section
+In countermovement jumps, the height of jump are very low.
+\end_layout
+
+\begin_layout Standard
+In some subjects, specialy those with low weight, during the excentric phase
+ is detected a loss of contact with the platform.
+ This is because of a too quick descent with an acceleration close to the
+ gravity.
+ This negative acceleration provoques the force exerted on the platform
+ to be very little and, in conjuction with the light weight of the subject,
+ his presence is not detected.
+\end_layout
+
+\begin_layout Standard
+In this occasions it is recommended to give instructions to the subject
+ to not fall so quickly.
+\end_layout
+
+\begin_layout Standard
+Besides, the evaluator can press the Chronopic Test button until the subject
+ starts the concentric phase of the jump.
 \end_layout
 
 \begin_layout Chapter

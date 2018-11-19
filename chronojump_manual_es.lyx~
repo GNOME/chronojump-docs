@@ -12300,8 +12300,8 @@ El LED verde a la derecha del conector USB debería estar encendido si el
 \end_layout
 
 \begin_layout Standard
-Lo primero que se debe comprobar es que las luces del Chronopic estén encendidas
- una vez se conecta mediante el cable USB al ordenador.
+Lo primero que se debe comprobar es que la luz roja D4 del Chronopic esté
+ encendida una vez se conecta mediante el cable USB al ordenador.
  Sin ningún dispositivo conectado al Chronopic, el LED rojo a la derecha
  del conector USB debería estar encendido.
  En caso contrario compruebe que el cable USB esta conectado y funciona
@@ -12361,7 +12361,7 @@ En tal caso compruebe que en las esquinas no hay algún golpe que haga que
 
 \begin_layout Standard
 En el caso de que el problema esté en el cable o conector RCA, se requiere
- una substitución o reparación.
+ una sustitución o reparación.
 \end_layout
 
 \begin_layout Section
@@ -12414,6 +12414,30 @@ Simulated
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+En saltos con contramovimiento, se dan alturas muy pequeñas.
+\end_layout
+
+\begin_layout Standard
+En algunos sujetos, especialmente los que pesan poco, al realizar la fase
+ excéntrica, se detecta una pérdida de contacto con la plataforma.
+ Esto es debido a una fase de descenso demasiado rápida con una aceleración
+ cercana a la de la gravedad.
+ Esta aceleración negativa provoca que la fuerza que se ejerce sobre la
+ plataforma sea muy pequeña y unido al poco peso del sujeto hace que no
+ se detecte la presencia del mismo.
+\end_layout
+
+\begin_layout Standard
+En estas ocasiones se recomienda dar instrucciones al sujeto para que no
+ realize el descenso tan rápido.
+\end_layout
+
+\begin_layout Standard
+Otra posible opción sería que el evaluador mantenga apretado el botón de
+ test del Chronopic hasta que el sujeto inicia la fase concéntrica del salto.
 \end_layout
 
 \begin_layout Chapter

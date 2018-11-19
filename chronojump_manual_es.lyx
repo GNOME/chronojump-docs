@@ -8148,8 +8148,22 @@ Configuración del test de fuerza máxima isométrica
 \end_layout
 
 \begin_layout Standard
-En Menú -> Sesión -> Preferencias -> Pestaña de sensor de fuerza se permite
- configurar hasta 4 valores de RFD y 1 de impulso.
+El inicio del test siempre se calcula automáticamente.
+ La duración del test se puede especificar de manera automática o fija.
+\end_layout
+
+\begin_layout Itemize
+Automática: Se considerará que el test ha finalizado cuando la fuerza descienda
+ un 5% respecto a la fuerza máxima
+\end_layout
+
+\begin_layout Itemize
+Fija: Se analizará un número de segundos fijo desde el inicio del test.
+\end_layout
+
+\begin_layout Standard
+En la pestaña de Análisis, el botón de configurar permite configurar hasta
+ 4 valores de RFD y 1 de impulso.
 \end_layout
 
 \begin_layout Standard
@@ -8248,7 +8262,11 @@ Algunas publicaciones expresan
 \begin_inset Formula $k=\frac{RFD0}{Fmax}$
 \end_inset
 
-)
+) ya que 
+\begin_inset Formula $RFD0=k*Fmax$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -8658,8 +8676,9 @@ Una vez el sujeto ya esté aplicando una mínima fuerza haga clic en botón
 \end_layout
 
 \begin_layout Standard
-El sujeto deberá empezar a hacer la máxima fuerza posible durante un mínimo
- de 2 segundos.
+El sujeto deberá empezar a hacer la máxima fuerza posible además de llegar
+ en el mínimo tiempo posible.
+ Se recomienda que se sostenga la máxima fuerza durante un mínimo de 3 segundos.
 \end_layout
 
 \begin_layout Standard
@@ -8678,10 +8697,6 @@ Finalmente, presione el botón de finalizar
 Para recuperar un test realizado previamente haga presione el botón 
 \emph on
 Cargar archivo.
-
-\emph default
- Cuando cargue un archivo, se realizarán los cálculos en función de las
- preferencias que haya establecidas en ese momento.
 \end_layout
 
 \begin_layout Section
@@ -12416,6 +12431,30 @@ Simulated
 .
 \end_layout
 
+\begin_layout Section
+En saltos con contramovimiento, se dan alturas muy pequeñas.
+\end_layout
+
+\begin_layout Standard
+En algunos sujetos, especialmente los que pesan poco, al realizar la fase
+ excéntrica, se detecta una pérdida de contacto con la plataforma.
+ Esto es debido a una fase de descenso demasiado rápida con una aceleración
+ cercana a la de la gravedad.
+ Esta aceleración negativa provoca que la fuerza que se ejerce sobre la
+ plataforma sea muy pequeña y unido al poco peso del sujeto hace que no
+ se detecte la presencia del mismo.
+\end_layout
+
+\begin_layout Standard
+En estas ocasiones se recomienda dar instrucciones al sujeto para que no
+ realize el descenso tan rápido.
+\end_layout
+
+\begin_layout Standard
+Otra posible opción sería que el evaluador mantenga apretado el botón de
+ test del Chronopic hasta que el sujeto inicia la fase concéntrica del salto.
+\end_layout
+
 \begin_layout Chapter
 Carreras
 \end_layout
@@ -12589,6 +12628,29 @@ Haber realizado un test de cargas progresivas con un mínimo de tres cargas.
 \begin_layout Enumerate
 Que las cargas sean resistencias gravitacionales.
  Con máquinas inerciales no existe el concepto de 1RM.
+\end_layout
+
+\begin_layout Chapter
+Sensor de fuerza
+\end_layout
+
+\begin_layout Section
+En el análisis de fuerza máxima isométrica, aparece el mensaje 
+\begin_inset Quotes eld
+\end_inset
+
+"Bad execution.
+ Probably not sustained force"
+\end_layout
+
+\begin_layout Standard
+Para la correcta evaluació de este tipo de test se deben dar las instrucciones
+ siguientes al sujeto medido.
+\end_layout
+
+\begin_layout Enumerate
+Antes de realizar el test el sujeto debe ejercer una fuerza mínima que deje
+ totalmente tenso el 
 \end_layout
 
 \begin_layout Part
