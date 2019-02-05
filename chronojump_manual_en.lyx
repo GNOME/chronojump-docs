@@ -6118,6 +6118,86 @@ Encoder configuration
 \end_layout
 
 \begin_layout Standard
+Click on the set config button
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/set_config_button.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Set config
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This will expand the set configuration dialog.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/set_config.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Set configuration
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The next step is the selection of the type of encoder, how it is atached
  to the machine and the type of machine used in the exercise.
 \begin_inset Float figure
@@ -6131,6 +6211,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/select.png
+	scale 75
 
 \end_inset
 
@@ -6141,9 +6222,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang spanish
-Encoder selection
+Encoder config button
 \end_layout
 
 \end_inset
@@ -6197,8 +6276,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang spanish
 Encoder configuration admin
 \end_layout
 
@@ -6566,7 +6643,7 @@ Parameters for calculating the IM
 
 \begin_layout Enumerate
 Pull the weight to approximately 90 degrees position and leave it.
- The disk should start oscil ating.
+ The disk should start swinging.
 \end_layout
 
 \begin_layout Enumerate
@@ -11977,7 +12054,7 @@ If the cable doesn't show any of the above simptoms, connect the contact
 \begin_layout Standard
 In that case, check that there is no knocks on the corners of the platform
  that causes the two copper being in contact.
- If it is this way, you can use a flat screwer to separate the two copper
+ If it is this way, you can use a flat screwdriver to separate the two copper
  plates and introduce some piece of paperboard or other insulating material.
 \end_layout
 
@@ -11987,7 +12064,7 @@ In the case that the problem is in the RCA connector it would require a
 \end_layout
 
 \begin_layout Section
-The height of the jumps in random and independent of the real height.
+The height of the jumps is random and independent of the real height.
 \end_layout
 
 \begin_layout Standard

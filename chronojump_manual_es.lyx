@@ -6404,6 +6404,85 @@ Conexión del encoder
 \end_layout
 
 \begin_layout Standard
+\noindent
+\align left
+Haga clic en el botón de configuración de la serie
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/set_config_button_es.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Botón de configuración de la serie
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+Esto expanderá el diálogo de configuración de la serie
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/set_config_es.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Configuración de la serie
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 El siguiente paso consiste en seleccionar el tipo de encoder que se ha conectado
 , tipo de máquina al que se ha acoplado y el ejercicio que se realizará
  con la misma.
@@ -6418,6 +6497,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/encoder-manual-images/select_es.png
+	scale 75
 
 \end_inset
 
@@ -6454,6 +6534,8 @@ aparecerá una nueva ventana con imágenes de las diferentes combinaciones
 \end_layout
 
 \begin_layout Standard
+\noindent
+\align left
 Desde la versión 1.7.0 y superiores Chronojump puede administrar múltiples
  configuraciones de encoder.
  De este modo se puede Crear, borrar, importar y exportar diferentes configuraci
@@ -6480,7 +6562,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Encoder configuration admin
+Administración de configuraciones de encoder
 \end_layout
 
 \end_inset
@@ -6723,7 +6805,7 @@ Seleccionar codificador
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
