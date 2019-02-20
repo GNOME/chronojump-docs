@@ -31,7 +31,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\float_placement h
+\float_placement H
 \paperfontsize default
 \spacing single
 \use_hyperref true
@@ -6048,7 +6048,7 @@ https://youtu.be/MoFKMGGLbdw
 Using the encoder
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Standard
 Chronojump main windows
 \end_layout
 
@@ -6065,7 +6065,7 @@ status open
 \begin_inset Graphics
 	filename images/encoder-manual-images/main.png
 	lyxscale 30
-	scale 30
+	scale 50
 
 \end_inset
 
@@ -6109,16 +6109,62 @@ C) The centre-right part of the screen is for managing the tests (or exercises).
  Select the encoder tab.
 \end_layout
 
-\begin_layout Subsubsection
-Connecting encoder
-\end_layout
-
-\begin_layout Paragraph
-Encoder configuration
+\begin_layout Standard
+Inside the capture area there's six different areas
 \end_layout
 
 \begin_layout Standard
-Click on the set config button
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/capture_area.png
+	lyxscale 75
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Capture area
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Set configuration
+\end_layout
+
+\begin_layout Standard
+This area shows the configuration of the set (machine used, exercise typo
+ of contraction, laterality and load)
+\end_layout
+
+\begin_layout Standard
+Clicking on the set configuration button will expand the corresponding dialog.
 \end_layout
 
 \begin_layout Standard
@@ -6144,7 +6190,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Set config
+Set config button
 \end_layout
 
 \end_inset
@@ -6173,7 +6219,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/encoder-manual-images/set_config.png
-	scale 75
+	scale 50
 
 \end_inset
 
@@ -6197,9 +6243,17 @@ Set configuration
 
 \end_layout
 
+\begin_layout Subsubsection
+Encoder configuration
+\end_layout
+
 \begin_layout Standard
-The next step is the selection of the type of encoder, how it is atached
- to the machine and the type of machine used in the exercise.
+The first step for configuring the set consists in selecting the type of
+ encoder connected, the type of machine at which the encoder is connected
+ and the exercise that will be performed.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -6236,15 +6290,14 @@ Encoder config button
 \end_layout
 
 \begin_layout Standard
-Clicking on the 
-\begin_inset Quotes eld
-\end_inset
-
-Select encoder
-\begin_inset Quotes erd
-\end_inset
-
- button a new window with selfexplanatory images will open.
+Clicking on 
+\emph on
+Configure
+\emph default
+ button will show a new windows with different combinations of encoders/machines.
+ Each type of encoder has a different set of configurations.
+ The arrow buttons allow to change between different configuration of each
+ encoder.
 \end_layout
 
 \begin_layout Standard
@@ -6336,7 +6389,7 @@ Inertial machines configuration
 The characteristics of the inertial machines make necessary to enter a set
  of extra parameters that are being descrived below:
 \begin_inset Float figure
-placement h
+placement H
 wide false
 sideways false
 status open
@@ -6358,8 +6411,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang spanish
 Inertial machines parameters
 \end_layout
 
@@ -6374,23 +6425,169 @@ Inertial machines parameters
 \end_layout
 
 \begin_layout Standard
-There's three types of inertial configuration
+Using the rotary axis encoder (the most common), there's four types of intertial
+ machines configuration depending on whether its movement is vertical or
+ horizontal and wether the force is applied directly on a rope/ribbon or
+ the force is applied on a moving pulley:
 \end_layout
 
-\begin_layout Enumerate
-Machines where the subject works against gravity, or in a vertical movement.
- Example: squat.
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
-\begin_layout Enumerate
-Machines where the subject works in a horizontal movement.
- Example: lateral displacement.
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Without moving pulley
 \end_layout
 
-\begin_layout Enumerate
-Machines that have a set of pulleys thet makes the movement of the machine
- to be a multiple or a fraction of the movement of the subject with the
- objective of doubling the resistance offered by the machine.
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+With moving pulley
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vertical
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/InertialMachine-01.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/InertialMachine-03.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Horizontal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/InertialMachine-02.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/InertialMachine-04.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Rotary axis encoder configuration
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6414,7 +6611,7 @@ Inertia momentum: This is a parameter that depends on each machine and is
 status open
 
 \begin_layout Plain Layout
-5.3.3.2.4
+5.3.3.2.2
 \end_layout
 
 \end_inset
@@ -6441,7 +6638,7 @@ Force multiplier factor: This parameter especifies the configuration of
  set.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subparagraph
 Calculation of the inertia momentum
 \end_layout
 
@@ -6496,7 +6693,7 @@ status open
 \begin_inset Graphics
 	filename images/encoder-manual-images/Disk.png
 	lyxscale 12
-	scale 12
+	scale 6
 
 \end_inset
 
@@ -6709,6 +6906,7 @@ status open
 \begin_inset Graphics
 	filename images/encoder-manual-images/capture_inertial.png
 	lyxscale 66
+	scale 75
 
 \end_inset
 
@@ -6811,11 +7009,146 @@ Where:
 \end_layout
 
 \begin_layout Subsubsection
-Encoder capture tab
+Exercise configuration
 \end_layout
 
 \begin_layout Standard
-At this tab you can see six areas: 
+In the exersise section you will find a drop-down with some preconfigured
+ exercises.
+ Chronojump allows to edit an exercise 
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/edit_button.png
+	scale 75
+
+\end_inset
+
+ or create a new one 
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/create_button.png
+	scale 75
+
+\end_inset
+
+.
+\lang spanish
+
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/exercise_window.png
+	scale 75
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exercise configuration window
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the exercise configuration window the following parameters will be shown:
+\end_layout
+
+\begin_layout Itemize
+Name of the exercise: Identifying text that will be shown in the exercise
+ drop-down.
+\end_layout
+
+\begin_layout Itemize
+Displaced body weight: Percentage of the body that is displaced during the
+ exercise.
+\end_layout
+
+\begin_layout Itemize
+Resistance: Descriptive text where is specified the type of resistance used.
+\end_layout
+
+\begin_layout Itemize
+Description: Short information text with the description of the exercise.
+\end_layout
+
+\begin_layout Itemize
+Speed at 1RM: Speed of execution when the load is the one that allows to
+ only one repetition.
+ This parameter is mandatory if you want to calculate the 1RM with the method
+ 
+\begin_inset Quotes eld
+\end_inset
+
+1RM any exercise
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Selection of phase or phases analysed
+\end_layout
+
+\begin_layout Standard
+At the time of showing or analyzing you must select if the concentric phase
+ (force in the same way that speed) 
+\begin_inset Graphics
+	filename images/encoder-manual-images/concentric.png
+	scale 50
+
+\end_inset
+
+ or both (excentric and concentric) 
+\begin_inset Graphics
+	filename images/encoder-manual-images/eccentric_concentric.png
+	scale 50
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Laterality
+\end_layout
+
+\begin_layout Standard
+For information purpouses the laterality with which is executed the exercise
+ is also stored.
+ This will be usefull is you want to see asymmetries in different muscle
+ groups.
+\end_layout
+
+\begin_layout Subsubsection
+Resistance
+\end_layout
+
+\begin_layout Standard
+Finally, the resistance that will be used is configured.
+\end_layout
+
+\begin_layout Standard
+In the gravitatory exercises.
+ the extra mass that will be moved will be introduced without taking in
+ account the mass of the athlete.
 \end_layout
 
 \begin_layout Standard
@@ -6826,23 +7159,23 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/capture_en.png
-	lyxscale 20
-	scale 50
+	filename images/encoder-manual-images/mass_config.png
+	scale 75
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Capture tab
+Configuring the extra mass
 \end_layout
 
 \end_inset
@@ -6850,32 +7183,25 @@ Capture tab
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Paragraph*
-Exercise
+\begin_layout Standard
+The extra mass of the exercise will be calculated using the formula
 \end_layout
 
 \begin_layout Standard
-At exercise area there's the exercise name, information of that exercise
- and a button to create a new exercise.
- Clicking at the information or at the new exercise creation you will notice
- there's a selector called “Displaced body weight (%)”.
- This selector is important to measure the force and power, because 100%
- of body weight is displaced during a jump, but 0% of body weight is displaced
- in a bench press.
- “Extra weight” selector is used to input how many Kg are moved (weight
- bearing is not considered).
- Summarizing, weight displacement is calculated like this:
-\end_layout
 
-\begin_layout Standard
+\lang spanish
 \begin_inset Formula 
 \[
-WeightDispacement=\frac{PersonWeight*DisplacedBodyWeight}{100}+ExtraWeight
+TotalMass=\frac{PersonMass*\%DisplacedBodyWeight}{100}+ExtraMass
 \]
 
 \end_inset
@@ -6884,21 +7210,53 @@ WeightDispacement=\frac{PersonWeight*DisplacedBodyWeight}{100}+ExtraWeight
 \end_layout
 
 \begin_layout Standard
-The exercise area includes also the contraction type (eccentric-concentric
- or concentric), the laterality, the recording time selected, the minimal
- height, the feedback bell 
+At the right of the total mass will be shown at which percentage of the
+ 1RM of the person the extra mass corresponds.
+\end_layout
+
+\begin_layout Standard
+In the case of inertial exercises, the diameter (depending on the ancorages)
+ and the extra loads need to be entered.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
 \begin_inset Graphics
-	filename images/bell_button.png
-	lyxscale 75
+	filename images/encoder-manual-images/inertia_config.png
 	scale 75
 
 \end_inset
 
- and the recalculate button.
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Inertia config
 \end_layout
 
-\begin_layout Paragraph*
-Aquire
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Capture configuration
 \end_layout
 
 \begin_layout Standard
@@ -6936,8 +7294,26 @@ height_special "totalheight"
 status open
 
 \begin_layout Plain Layout
-Important!: When using inertial machiens, remember always start with the
- rope fully unwrapped when you press the capture button.
+Important!: Using inertial machines, after opening the software the first
+ time that an aquisition is made, a calibration of the machine must be done.
+ It requires to unwrap completely the rope/ribbon and clicking on calibrate.
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/inertial_calibration.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+When using inertial machiens, remember always start with the rope fully
+ unwrapped when you press the capture button.
  I you don't do that, you will see that half of the repetitions have a much
  smaller range of movement than the other half.
 \end_layout
@@ -7017,117 +7393,35 @@ Wrong execution
 \end_layout
 
 \begin_layout Standard
-With the Options button 
+During the capturing process you can finish 
 \begin_inset Graphics
-	filename images/signal_settings_button.png
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/finish_button.png
 	lyxscale 75
-	scale 75
+	scale 50
 
 \end_inset
 
- the following parameters of the capture or loaded set can be adjusted:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
+ or cancel 
 \begin_inset Graphics
-	filename images/encoder-manual-images/capture_options.png
-	scale 70
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/cancel_button.png
+	lyxscale 75
+	scale 50
 
 \end_inset
 
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Capture options
+ the set.
+ In the first case the capture will finish and the data will be saved.
+ In the second case the data will be discarded as well as all the associated
+ data.
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-Recording time
-\emph default
-.
- How long Chronojump will be capturing the set resulting of the exercise
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-End at n inactivity seconds
-\emph default
-.
- If the encoder don't receive any movement in the specified time Chronojump
- will end the capuring process.
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-Minimal height
-\emph default
- is the minimum range of centimetres that a repetition has.
- E.g.
- In a bench press, when person lifts the bar fom r the first time before
- starting exercise (weight was in the support), this is not considered a
- repetition because it's range of movement is lower than “Minimal height”
- defined.
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-Displayed height
-\emph default
-.
- The scale of the set frame.
- The optimal value is the range of the movement in each exercise.
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-Main variable
-\emph default
-.
- The data displayed in the bars frame.
- This is the variable that will be showed during the exercise capturing
- process as an instant visual feedback.
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-Show star and duration of each repetition.
-
-\emph default
- If checked will show in the repetitions table the instant every repetition
- starts and de duration of it.
+\begin_layout Subsubsection*
+Feedback /Rhythm
 \end_layout
 
 \begin_layout Standard
-Feedback / Rhythm.
- This button opens the sound and colour feedback options as well as using
- an advanced metronome for executing the exercise with the desiredrhythm.
+This window shows the information that will be shown during the capturing
+ process.
 \end_layout
 
 \begin_layout Standard
@@ -7136,10 +7430,6 @@ placement H
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \noindent
@@ -7168,17 +7458,9 @@ Feedback options
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
-\end_layout
-
-\begin_layout Paragraph*
-Feedback
 \end_layout
 
 \begin_layout Standard
@@ -7188,16 +7470,27 @@ In the Feedback tab you can configure the visual and sound signals in function
 \end_layout
 
 \begin_layout Standard
+The drop-down allows to select the variable that will be used to colour
+ in green, blue or red each repetition.
+\end_layout
+
+\begin_layout Standard
+The bells allow to config the threshold at which the bars will be shown
+ in green (greater than the specified value) or red (less than the specified
+ value)
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+The Rhythm tab allows to configure an advanced metronome in which you can
+ select the desired time of each phase of the execution.
 \begin_inset Wrap figure
 lines 0
 placement l
 overhang 0in
 width "50col%"
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \noindent
@@ -7231,17 +7524,26 @@ Rhythm
 
 \end_layout
 
-\begin_layout Paragraph*
-Rhythms
+\begin_layout Standard
+Selecting 
+\emph on
+Show rhythm while capturing
+\emph default
+ will show a set of options that will allow to config the duration of the
+ excentric and concentric phase.
 \end_layout
 
 \begin_layout Standard
-The Rhythm tab allows to configure an advanced metronome in which you can
- select the desired time of each phase (concentric, excenctric or rest)
- of the execution.
+If you want to use cluster of sets, click on 
+\emph on
+Use clusters.
+
+\emph default
+ This option allows to execute the specified number of repetitions in a
+ cluster and rest the amount of seconds specified between clusteres.
 \end_layout
 
-\begin_layout Paragraph*
+\begin_layout Subsubsection*
 Load
 \end_layout
 
@@ -7273,7 +7575,7 @@ https://youtu.be/UiZJKbU4OSg
 
 \end_layout
 
-\begin_layout Paragraph*
+\begin_layout Subsubsection*
 Recalculate
 \end_layout
 
@@ -7297,30 +7599,186 @@ Recalculate can be used after capturing or loading.
  in order to have the force and power calculated correctly.
 \end_layout
 
-\begin_layout Paragraph*
-Camera record
+\begin_layout Subsubsection*
+Delete
 \end_layout
 
 \begin_layout Standard
-At the right of the exercise frame there is a check box where a web cam
- can be activated.
- If it's active it will be used on encoder capturing.
- The resulting video will be attached to the encoder set and can be watched
- using a button on set frame.
+If you need to delete a set, click on the trash icon 
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/delete_set.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Paragraph*
-set frame
+\begin_layout Subsection
+Chronopic
 \end_layout
 
 \begin_layout Standard
-During the capture this frame will show the set sent by the encoder.
- Once finished Chronojump will calculate all the repetitions and show them
- in the same frame with some basic graphic information.
+The device button allows to specify which typo of device is going to be
+ used.
+ Each time a new device is connected to Chronojump the type of device must
+ be specified.
+ This configuration will be remembered by Chronojump for future uses.
 \end_layout
 
-\begin_layout Paragraph*
-repetitions frame
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chronopic not configured
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chronopic configured
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/device_window.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/device_window_encoder.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Device window
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Bars of the main variable
+\end_layout
+
+\begin_layout Standard
+The bars frame shows, during the exercise, the main variable in real time.
+ This way the athlete can have an instant feedback of every execution of
+ the exersice.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/power_bars.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Power bars
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The descending white line in the bar indicates an excentric repetition.
+ An ascending line, a concentric.
+\end_layout
+
+\begin_layout Standard
+The saved repetitions apears with a framed number below.
+\end_layout
+
+\begin_layout Subsection
+Repetitions table
 \end_layout
 
 \begin_layout Standard
@@ -7386,14 +7844,27 @@ In excentric-concentric mode, saving a excentreic (concentric) repetition
  exercise.
 \end_layout
 
-\begin_layout Paragraph*
-Bars frame
+\begin_layout Subsection
+Raw data
 \end_layout
 
 \begin_layout Standard
-The bars frame shows, during the exercise, the main variable in real time.
- This way the athlete can have an instant feedback of every execution of
- the exersice.
+During the capture this frame will show the set sent by the encoder.
+ Once finished Chronojump will calculate all the repetitions and show them
+ in the same frame with some basic graphic information.
+\end_layout
+
+\begin_layout Subsection
+Encoder settings and preferences
+\end_layout
+
+\begin_layout Standard
+In order to configure the encoder capture parameter, in “Menu -> Session
+ -> Preferences -> Encoder capture” you will find the next parameters:
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Standard
@@ -7406,19 +7877,16 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/power_bars.png
-	scale 70
+	filename images/encoder-manual-images/encoder_capture_preferences.png
+	scale 50
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Power bars
+Encoder preferences
 \end_layout
 
 \end_inset
@@ -7426,32 +7894,198 @@ Power bars
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-The descending white line in the bar indicates an excentric repetition.
- An ascending line, a concentric.
+\begin_layout Itemize
+Recording time.
+ Sets how long Chronojump will register during the set in case the capture
+ is not cancelled manually.
 \end_layout
 
-\begin_layout Standard
-The saved repetitions apears with a framed number below.
+\begin_layout Itemize
+End at n inactivity seconds.
+ If Chronojump detects that the encoder is not measuring any movement during
+ this seconds, the program will finish the capture process.
+\end_layout
+
+\begin_layout Itemize
+Minimal height.
+ The minimum range of movement of a repetition in centimeters.
+ For example, in a bench press taking the bar for the first time (from a
+ bar support) won't be considered as a repetition because the rang of movement
+ is less than the value specified.
+\end_layout
+
+\begin_layout Itemize
+Show only bars.
+ This option allows that the repetitions table to be shown in another table
+ and not show the raw data area, reserving much more space for the bars
+ area.
+ To see the repetitions table click on the tab 
+\begin_inset Quotes eld
+\end_inset
+
+table
+\begin_inset Quotes erd
+\end_inset
+
+ in the left lower part of the area.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Normal configuration
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Only bars configuration
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/no_only_bars.png
+	lyxscale 50
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/only_bars.png
+	lyxscale 50
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Only bars option
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Show all bars.
+ If this option is selected all the repetitions will be shown and after
+ each repetition all the bars will be resized to fit in the bars area.
+\end_layout
+
+\begin_layout Itemize
+Show only last n bars.
+ Allows to show only the last bars of the set.
+ In this mode the bars won't be resized but at each repetition the bars
+ wil slide from right to left.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Save repetitions automatically.
+ Allows to save the repetitions automatically depending on the specified
+ criterion.
+\end_layout
+
+\begin_layout Itemize
+Cut sets into repetitions using triggers.
+ In the section 
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+5.3.11
+\end_layout
+
+\end_inset
+
+ the use of the triggers during the set is detailed.
 \end_layout
 
 \begin_layout Subsection
-Encoder settings and preferences
+Other encoder configurations
 \end_layout
 
 \begin_layout Standard
-At preferences there are some options that are more advanced and are not
- changed frequently.
- Clicking at “Session / Preferences” you will see five tabs, third one is
- related to encoder.
+In the tab called 
+\begin_inset Quotes eld
+\end_inset
+
+Encoder other
+\begin_inset Quotes erd
+\end_inset
+
+ some preferences that are less commonly used can be found.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 If you want to do calculations of mechanical parameters only in the propulsive
  phase just ensure the parameter “propulsive” is active.
  The meaning is the following: In a fast concentric movement where there's
@@ -7465,30 +8099,12 @@ If you want to do calculations of mechanical parameters only in the propulsive
  phase.
 \end_layout
 
-\begin_layout Standard
-On 
-\emph on
-Save repetitions automatically on capture 
-\emph default
-can be selected what repetition must be saved when perfoming a new exercise.
- By default the repetitions with the best mean power will be saved, but
- it can be changed to 
-\emph on
-Save all
-\emph default
- the repetitions or 
-\emph on
-Do not save 
-\emph default
-any repetition of the exercise.
-\end_layout
-
-\begin_layout Standard
+\begin_layout Itemize
 The next options are related to smoothing of the capture and we recommend
  to leave them untouched.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 In the 
 \emph on
 1RM prediction,
