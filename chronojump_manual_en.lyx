@@ -5781,7 +5781,7 @@ Do not release
 
 \begin_layout Standard
 Do not release the wire when it is extended because it will return at high
- speed and will break.
+ speed and will break it.
 \end_layout
 
 \begin_layout Standard
@@ -5795,6 +5795,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/encoder-manual-images/handle.jpeg
+	lyxscale 25
+	scale 25
 
 \end_inset
 
@@ -5819,7 +5821,7 @@ Wire handle
 \end_layout
 
 \begin_layout Subsubsection
-Handle the carabiner with care
+Make sure that the cable is correctly fixed
 \end_layout
 
 \begin_layout Standard
@@ -5839,8 +5841,66 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/encoder-manual-images/never_fingers.jpeg
+	filename images/encoder-manual-images/attachedEncoder.JPG
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/encoderOnPlates.JPG
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fixing on a barbell
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fixing on a plates loads
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
@@ -5851,7 +5911,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Wrong use
+examples of fixing
 \end_layout
 
 \end_inset
@@ -5865,49 +5925,17 @@ Wrong use
 \end_layout
 
 \begin_layout Subsubsection
-Measure wire length
+Do not exceed the 2.5m of range of movement
 \end_layout
 
 \begin_layout Standard
-Measure with care (not pulling with the fingers) the length of the wire
- and the maximum range of the analysed movement.
- Do not do tests that can exceed the wire length.
- Note you can fix encoder to a table or other place if needed.
- 
+The encoder cable is 3m long but it never must be fully extended.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/encoder-manual-images/measure.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Measure
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+Remember that this limitation refers to the range of movement.
+ If necessary, you can lengthen the thread by attaching another thread to
+ the encoder.
 \end_layout
 
 \begin_layout Subsubsection
@@ -5920,6 +5948,152 @@ Perpendicular use: Encoder measures distance, speed and power of the wire
  If you pull/push the wire with an inclination, data will not be accurate
  and the wire can be damaged.
  
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/encoderWrong1.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/encoderWrong2.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/encoderCorrect1.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/encoderCorrect2.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wrong
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wrong
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Right
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Right
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Examples of wrong and right using of the encoder
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -8121,6 +8295,49 @@ Using triggers
 \end_layout
 
 \begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/PushButton.jpg
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Push Button
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Since 2017, the Chronopic new models allows to read external synchronization
  signals or triggers.
  These signals will be generated using any device that close an electric
@@ -8218,7 +8435,7 @@ On the floor, at the side of the weight bar, put a gym weight (not made
 \end_layout
 
 \begin_layout Enumerate
-The plastic hook is attached to weight bar securely, and to encoder.
+The carabiner is attached to the barbell or the training machine.
 \end_layout
 
 \begin_layout Enumerate
@@ -8250,16 +8467,16 @@ Select exercise options: bench press, extra weight: 20Kg (10 bar + 10 gym
 
 \begin_layout Enumerate
 Select athlete1.
- Click on capture (“Safe” or “External”).
+ Click on capture.
  See the results but have no time to analyse them now.
- set is automatically saved.
+ The set is automatically saved.
 \end_layout
 
 \begin_layout Enumerate
 Select athlete2.
- Click on capture (“Safe” or “External”).
+ Click on capture.
  See the results but have no time to analyse them now.
- set is automatically saved.
+ The set is automatically saved.
 \end_layout
 
 \begin_layout Enumerate
@@ -8297,7 +8514,24 @@ Repeat [2] for all the sets of Athlete1 and Athlete2.
 
 \begin_layout Enumerate
 Go to analyse tab.
- Select User repetitions, compare between subjects, “Power / Load”.
+ Click on group intrasession 
+\lang spanish
+
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analyze_groupal_current_session.png
+	scale 50
+
+\end_inset
+
+
+\lang british
+.
+ Select the exercise.
+ Choose repetitions, “Power / Load” and click on 
+\begin_inset Quotes eld
+\end_inset
+
+Analyze.
 \end_layout
 
 \begin_layout Enumerate
@@ -8658,7 +8892,7 @@ The Raw signal shows the values of force registered by the sensor during
 The fitted signal refers to the inverse monoexponential function that better
  fits the raw data.
  This fitting is made adjusting the Fmax (maximum force) and K (the speed
- at which the maximum force is reached) and 
+ at which the maximum force is reached) or 
 \begin_inset Formula $\tau$
 \end_inset
 
@@ -11921,7 +12155,7 @@ On the destination computer:
 \end_layout
 
 \begin_layout Enumerate
-Go to Menu -> Session -> Database -> Open data folder
+Go to Menu -> Session -> Preferences -> Database -> Open data folder
 \end_layout
 
 \begin_layout Enumerate

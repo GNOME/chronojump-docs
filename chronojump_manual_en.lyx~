@@ -31,7 +31,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\float_placement h
+\float_placement H
 \paperfontsize default
 \spacing single
 \use_hyperref true
@@ -5781,7 +5781,7 @@ Do not release
 
 \begin_layout Standard
 Do not release the wire when it is extended because it will return at high
- speed and will break.
+ speed and will break it.
 \end_layout
 
 \begin_layout Standard
@@ -5795,6 +5795,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/encoder-manual-images/handle.jpeg
+	lyxscale 25
+	scale 25
 
 \end_inset
 
@@ -5819,7 +5821,7 @@ Wire handle
 \end_layout
 
 \begin_layout Subsubsection
-Handle the carabiner with care
+Make sure that the cable is correctly fixed
 \end_layout
 
 \begin_layout Standard
@@ -5839,8 +5841,66 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/encoder-manual-images/never_fingers.jpeg
+	filename images/encoder-manual-images/attachedEncoder.JPG
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/encoderOnPlates.JPG
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fixing on a barbell
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fixing on a plates loads
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
@@ -5851,7 +5911,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Wrong use
+examples of fixing
 \end_layout
 
 \end_inset
@@ -5865,49 +5925,17 @@ Wrong use
 \end_layout
 
 \begin_layout Subsubsection
-Measure wire length
+Do not exceed the 2.5m of range of movement
 \end_layout
 
 \begin_layout Standard
-Measure with care (not pulling with the fingers) the length of the wire
- and the maximum range of the analysed movement.
- Do not do tests that can exceed the wire length.
- Note you can fix encoder to a table or other place if needed.
- 
+The encoder cable is 3m long but it never must be fully extended.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/encoder-manual-images/measure.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Measure
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+Remember that this limitation refers to the range of movement.
+ If necessary, you can lengthen the thread by attaching another thread to
+ the encoder.
 \end_layout
 
 \begin_layout Subsubsection
@@ -5920,6 +5948,152 @@ Perpendicular use: Encoder measures distance, speed and power of the wire
  If you pull/push the wire with an inclination, data will not be accurate
  and the wire can be damaged.
  
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/encoderWrong1.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/encoderWrong2.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/encoderCorrect1.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/encoderCorrect2.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wrong
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wrong
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Right
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Right
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Examples of wrong and right using of the encoder
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -6065,7 +6239,7 @@ status open
 \begin_inset Graphics
 	filename images/encoder-manual-images/main.png
 	lyxscale 30
-	scale 30
+	scale 50
 
 \end_inset
 
@@ -6219,7 +6393,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/encoder-manual-images/set_config.png
-	scale 75
+	scale 50
 
 \end_inset
 
@@ -6389,7 +6563,7 @@ Inertial machines configuration
 The characteristics of the inertial machines make necessary to enter a set
  of extra parameters that are being descrived below:
 \begin_inset Float figure
-placement h
+placement H
 wide false
 sideways false
 status open
@@ -6497,7 +6671,7 @@ Vertical
 \lang spanish
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/InertialMachine-01.png
-	scale 75
+	scale 50
 
 \end_inset
 
@@ -6514,7 +6688,7 @@ Vertical
 \lang spanish
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/InertialMachine-03.png
-	scale 75
+	scale 50
 
 \end_inset
 
@@ -6542,7 +6716,7 @@ Horizontal
 \lang spanish
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/InertialMachine-02.png
-	scale 75
+	scale 50
 
 \end_inset
 
@@ -6559,7 +6733,7 @@ Horizontal
 \lang spanish
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/InertialMachine-04.png
-	scale 75
+	scale 50
 
 \end_inset
 
@@ -6693,7 +6867,7 @@ status open
 \begin_inset Graphics
 	filename images/encoder-manual-images/Disk.png
 	lyxscale 12
-	scale 12
+	scale 6
 
 \end_inset
 
@@ -6906,6 +7080,7 @@ status open
 \begin_inset Graphics
 	filename images/encoder-manual-images/capture_inertial.png
 	lyxscale 66
+	scale 75
 
 \end_inset
 
@@ -7152,6 +7327,7 @@ In the gravitatory exercises.
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -7292,8 +7468,26 @@ height_special "totalheight"
 status open
 
 \begin_layout Plain Layout
-Important!: When using inertial machiens, remember always start with the
- rope fully unwrapped when you press the capture button.
+Important!: Using inertial machines, after opening the software the first
+ time that an aquisition is made, a calibration of the machine must be done.
+ It requires to unwrap completely the rope/ribbon and clicking on calibrate.
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/inertial_calibration.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+When using inertial machiens, remember always start with the rope fully
+ unwrapped when you press the capture button.
  I you don't do that, you will see that half of the repetitions have a much
  smaller range of movement than the other half.
 \end_layout
@@ -7461,6 +7655,8 @@ The bells allow to config the threshold at which the bars will be shown
 \end_layout
 
 \begin_layout Standard
+\noindent
+\align left
 The Rhythm tab allows to configure an advanced metronome in which you can
  select the desired time of each phase of the execution.
 \begin_inset Wrap figure
@@ -7593,114 +7789,6 @@ If you need to delete a set, click on the trash icon
 .
 \end_layout
 
-\begin_layout Standard
-With the Options button 
-\begin_inset Graphics
-	filename images/signal_settings_button.png
-	lyxscale 75
-	scale 75
-
-\end_inset
-
- the following parameters of the capture or loaded set can be adjusted:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/encoder-manual-images/capture_options.png
-	scale 70
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Capture options
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-Recording time
-\emph default
-.
- How long Chronojump will be capturing the set resulting of the exercise
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-End at n inactivity seconds
-\emph default
-.
- If the encoder don't receive any movement in the specified time Chronojump
- will end the capuring process.
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-Minimal height
-\emph default
- is the minimum range of centimetres that a repetition has.
- E.g.
- In a bench press, when person lifts the bar fom r the first time before
- starting exercise (weight was in the support), this is not considered a
- repetition because it's range of movement is lower than “Minimal height”
- defined.
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-Displayed height
-\emph default
-.
- The scale of the set frame.
- The optimal value is the range of the movement in each exercise.
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-Main variable
-\emph default
-.
- The data displayed in the bars frame.
- This is the variable that will be showed during the exercise capturing
- process as an instant visual feedback.
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-Show start and duration of each repetition.
-
-\emph default
- If checked will show in the repetitions table the instant every repetition
- starts and de duration of it.
-\end_layout
-
 \begin_layout Subsection
 Chronopic
 \end_layout
@@ -7820,6 +7908,7 @@ The bars frame shows, during the exercise, the main variable in real time.
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -7829,7 +7918,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/encoder-manual-images/power_bars.png
-	scale 70
+	scale 50
 
 \end_inset
 
@@ -7863,7 +7952,7 @@ The saved repetitions apears with a framed number below.
 \end_layout
 
 \begin_layout Subsection
-Repetitions frame
+Repetitions table
 \end_layout
 
 \begin_layout Standard
@@ -7944,10 +8033,12 @@ Encoder settings and preferences
 \end_layout
 
 \begin_layout Standard
-At preferences there are some options that are more advanced and are not
- changed frequently.
- Clicking at “Session / Preferences” you will see five tabs, third one is
- related to encoder.
+In order to configure the encoder capture parameter, in “Menu -> Session
+ -> Preferences -> Encoder capture” you will find the next parameters:
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Standard
@@ -7961,7 +8052,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/encoder-manual-images/encoder_capture_preferences.png
-	scale 25
+	scale 50
 
 \end_inset
 
@@ -7986,7 +8077,189 @@ Encoder preferences
 
 \end_layout
 
+\begin_layout Itemize
+Recording time.
+ Sets how long Chronojump will register during the set in case the capture
+ is not cancelled manually.
+\end_layout
+
+\begin_layout Itemize
+End at n inactivity seconds.
+ If Chronojump detects that the encoder is not measuring any movement during
+ this seconds, the program will finish the capture process.
+\end_layout
+
+\begin_layout Itemize
+Minimal height.
+ The minimum range of movement of a repetition in centimeters.
+ For example, in a bench press taking the bar for the first time (from a
+ bar support) won't be considered as a repetition because the rang of movement
+ is less than the value specified.
+\end_layout
+
+\begin_layout Itemize
+Show only bars.
+ This option allows that the repetitions table to be shown in another table
+ and not show the raw data area, reserving much more space for the bars
+ area.
+ To see the repetitions table click on the tab 
+\begin_inset Quotes eld
+\end_inset
+
+table
+\begin_inset Quotes erd
+\end_inset
+
+ in the left lower part of the area.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Normal configuration
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Only bars configuration
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/no_only_bars.png
+	lyxscale 50
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/only_bars.png
+	lyxscale 50
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Only bars option
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Show all bars.
+ If this option is selected all the repetitions will be shown and after
+ each repetition all the bars will be resized to fit in the bars area.
+\end_layout
+
+\begin_layout Itemize
+Show only last n bars.
+ Allows to show only the last bars of the set.
+ In this mode the bars won't be resized but at each repetition the bars
+ wil slide from right to left.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Save repetitions automatically.
+ Allows to save the repetitions automatically depending on the specified
+ criterion.
+\end_layout
+
+\begin_layout Itemize
+Cut sets into repetitions using triggers.
+ In the section 
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+5.3.11
+\end_layout
+
+\end_inset
+
+ the use of the triggers during the set is detailed.
+\end_layout
+
+\begin_layout Subsection
+Other encoder configurations
+\end_layout
+
 \begin_layout Standard
+In the tab called 
+\begin_inset Quotes eld
+\end_inset
+
+Encoder other
+\begin_inset Quotes erd
+\end_inset
+
+ some preferences that are less commonly used can be found.
+\end_layout
+
+\begin_layout Itemize
 If you want to do calculations of mechanical parameters only in the propulsive
  phase just ensure the parameter “propulsive” is active.
  The meaning is the following: In a fast concentric movement where there's
@@ -8000,30 +8273,12 @@ If you want to do calculations of mechanical parameters only in the propulsive
  phase.
 \end_layout
 
-\begin_layout Standard
-On 
-\emph on
-Save repetitions automatically on capture 
-\emph default
-can be selected what repetition must be saved when perfoming a new exercise.
- By default the repetitions with the best mean power will be saved, but
- it can be changed to 
-\emph on
-Save all
-\emph default
- the repetitions or 
-\emph on
-Do not save 
-\emph default
-any repetition of the exercise.
-\end_layout
-
-\begin_layout Standard
+\begin_layout Itemize
 The next options are related to smoothing of the capture and we recommend
  to leave them untouched.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 In the 
 \emph on
 1RM prediction,
@@ -8037,6 +8292,49 @@ In the
 
 \begin_layout Subsection
 Using triggers
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/PushButton.jpg
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Push Button
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -8137,7 +8435,7 @@ On the floor, at the side of the weight bar, put a gym weight (not made
 \end_layout
 
 \begin_layout Enumerate
-The plastic hook is attached to weight bar securely, and to encoder.
+The carabiner is attached to the barbell or the training machine.
 \end_layout
 
 \begin_layout Enumerate
@@ -8577,7 +8875,7 @@ The Raw signal shows the values of force registered by the sensor during
 The fitted signal refers to the inverse monoexponential function that better
  fits the raw data.
  This fitting is made adjusting the Fmax (maximum force) and K (the speed
- at which the maximum force is reached) and 
+ at which the maximum force is reached) or 
 \begin_inset Formula $\tau$
 \end_inset
 
@@ -11840,7 +12138,7 @@ On the destination computer:
 \end_layout
 
 \begin_layout Enumerate
-Go to Menu -> Session -> Database -> Open data folder
+Go to Menu -> Session -> Preferences -> Database -> Open data folder
 \end_layout
 
 \begin_layout Enumerate

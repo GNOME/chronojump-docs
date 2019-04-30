@@ -2181,7 +2181,7 @@ La primera vez que conecte un Chronopic a un equipo deberá especificar el
 
 \begin_layout Standard
 \begin_inset Float figure
-placement p
+placement H
 wide false
 sideways false
 status open
@@ -6070,7 +6070,8 @@ Nunca suelte el hilo
 \end_layout
 
 \begin_layout Standard
-Nunca suelte el hilo porque volverá a gran velocidad y seguramente se romperá.
+Si suelta el hilo estando este extendido, dependiendo de la longitud del
+ mismo, volverá a gran velocidad y puede romperse.
 \end_layout
 
 \begin_layout Standard
@@ -6084,6 +6085,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/encoder-manual-images/handle.jpeg
+	lyxscale 25
+	scale 25
 
 \end_inset
 
@@ -6108,14 +6111,12 @@ Mosquetón
 \end_layout
 
 \begin_layout Subsubsection
-Nunca tire del hilo con sus dedos
+Asegúrese que el hilo está bien fijado.
 \end_layout
 
 \begin_layout Standard
-Nunca use sus dedos para estirar el hilo.
- El aro metálico o el hilo se escaparán fácilmente de sus dedos provocando
- un rápido retorno y una rotura.
- Use el gancho de plástico negro que encontrará en la bolsa de su encoder.
+Para evitar que el hilo vuelva a gran velocidad, asegúrese que este esté
+ bien fijado a la barra de pesas o máquina que se esté usando.
 \end_layout
 
 \begin_layout Standard
@@ -6127,9 +6128,66 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
-3o
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/encoder-manual-images/never_fingers.jpeg
+	filename images/encoder-manual-images/attachedEncoder.JPG
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/encoderOnPlates.JPG
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fijación en una barra de pesas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fijación en los pesos de placas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
@@ -6140,11 +6198,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Uso indebido
+Ejemplos de fijación
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -6154,49 +6216,17 @@ Uso indebido
 \end_layout
 
 \begin_layout Subsubsection
-Mida la longitud de su encoder
+No supere los 2,5m de rango de movimiento
 \end_layout
 
 \begin_layout Standard
-Mida con cuidado (sin tirar con sus dedos) la longitud del hilo.
- No realice tests que requieran de mayor longitud.
- Recuerde que puede ubicar el encoder encima de una mesa (fijándolo bien)
- o cualquier otra superficie.
- 
+El hilo del encoder tiene una longitud de 3m pero nunca se debe llegar a
+ extender totalmente el hilo.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/encoder-manual-images/measure.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Medida
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+Recuerde que esta limitación se refiere al rango de movimiento.
+ En caso necesario puede alargar el hilo atando otro hilo al del encoder.
 \end_layout
 
 \begin_layout Subsubsection
@@ -6209,6 +6239,154 @@ Uso no inclinado: El encoder mide las distancias, velocidades y potencias
  base.
  Si usted tira del encoder con alguna inclinación sus datos no serán del
  todo correctos y se arriesga a deteriorar el hilo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/encoderWrong1.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/encoderWrong2.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/encoderCorrect1.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/encoderCorrect2.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Erroneo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Erroneo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Correcto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Correcto
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ejempos de buen y mal uso del encoder
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -6607,7 +6785,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/encoder-manual-images/encoder_admin_es.png
-	scale 66
+	scale 50
 
 \end_inset
 
@@ -6687,7 +6865,7 @@ status open
 \begin_inset Graphics
 	filename images/encoder-manual-images/inertial_conf_es.png
 	lyxscale 50
-	scale 66
+	scale 50
 
 \end_inset
 
@@ -6775,7 +6953,7 @@ Vertical
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/encoder-manual-images/InertialMachine-01.png
-	scale 75
+	scale 50
 
 \end_inset
 
@@ -6790,7 +6968,7 @@ Vertical
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/encoder-manual-images/InertialMachine-03.png
-	scale 75
+	scale 50
 
 \end_inset
 
@@ -6816,7 +6994,7 @@ Horizontal
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/encoder-manual-images/InertialMachine-02.png
-	scale 75
+	scale 50
 
 \end_inset
 
@@ -6831,7 +7009,7 @@ Horizontal
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/encoder-manual-images/InertialMachine-04.png
-	scale 75
+	scale 50
 
 \end_inset
 
@@ -7517,7 +7695,7 @@ te del anclaje) y los pesos extras utilizados durante el ejercicio
 
 \begin_layout Standard
 \begin_inset Float figure
-placement h
+placement H
 wide false
 sideways false
 status open
@@ -8300,7 +8478,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/encoder-manual-images/encoder_capture_preferences_es.png
-	scale 66
+	scale 50
 
 \end_inset
 
@@ -8563,6 +8741,45 @@ Uso de triggers
 \end_layout
 
 \begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/PushButton.jpg
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pulsador
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
 name "triggers"
@@ -8667,8 +8884,8 @@ Al lado de la barra de pesas, poner una pesa (que no sea de goma) en el
 \end_layout
 
 \begin_layout Enumerate
-El gancho de plástico negro se fija a la argolla del encoder y a la barra
- de pesas.
+El mosquetón se fija a la barra de pesas o la máquina que se esté usando
+ en el momento.
 \end_layout
 
 \begin_layout Enumerate
@@ -8688,7 +8905,7 @@ El evaluador conecta el Encoder al ordenador través del Chronopic y un cable
 \end_layout
 
 \begin_layout Enumerate
-El evaluador selecciona el puerto en la ventana de Chronopic (apartado encoder).
+El evaluador selecciona el puerto en la ventana de dispositivo.
 \end_layout
 
 \begin_layout Enumerate
@@ -8702,16 +8919,16 @@ Seleccionar las opciones del ejercicio: press banca, peso extra: 20Kg (10
 
 \begin_layout Enumerate
 Seleccionar atleta1.
- Clic en capturar (“seguro” o “externo”).
+ Clic en capturar.
  Observa los resultados pero no tiene tiempo de analizarlos en este momento.
- La señal se guarda automáticamente.
+ La serie se guarda automáticamente.
 \end_layout
 
 \begin_layout Enumerate
 Seleccionar atleta2.
  Clic en capturar (“seguro” o “externo”).
  Observa los resultados pero no tiene tiempo de analizarlos en este momento.
- La señal se guarda automáticamente.
+ La serie se guarda automáticamente.
 \end_layout
 
 \begin_layout Enumerate
@@ -8730,17 +8947,25 @@ Abrir el software.
 \end_layout
 
 \begin_layout Enumerate
-Cargar la sesión, seleccionar atleta1, cargar la primera señal, “Guardar
- todas” las curvas.
+Cargar la sesión, seleccionar atleta1, cargar la primera serie, hacer clic
+ en “Mejor” para guardar la mejor repetición.
 \end_layout
 
 \begin_layout Enumerate
-Repetir el paso [2] para todas las señales de ambos atletas.
+Repetir el paso [2] para todas las series de ambos atletas.
 \end_layout
 
 \begin_layout Enumerate
-Ir a la pestaña de análisis.
- Seleccionar “Curvas del usuario”, comparar entre sujetos, “Potencia / Carga”.
+Ir a la pestaña de análisis, grupal sesión actual
+\begin_inset Graphics
+	filename images/encoder-manual-images/analyze_groupal_current_session.png
+	scale 50
+
+\end_inset
+
+.
+ Seleccione el ejercicio.
+ Seleccionar “repeticiones”, “Potencia / Carga” y hacer clic en analizar
 \end_layout
 
 \begin_layout Enumerate
@@ -9107,8 +9332,8 @@ La señal cruda muestra los valores de fuerza en Newtons que ha registrado
 \begin_layout Itemize
 La señal ajustada se refiere a la función monoexponencial inversa que mejor
  ajusta a los datos crudos.
- El ajuste se hace sobre los parámetreos Fmax, Fuerza máxima, y K (velocidad
- con la que se alcanza la Fmax) y 
+ El ajuste se hace sobre los parámetreos Fmax (Fuerza máxima) y K (velocidad
+ con la que se alcanza la Fmax) o 
 \begin_inset Formula $\tau$
 \end_inset
 
@@ -12491,7 +12716,8 @@ En el ordenador destino:
 \end_layout
 
 \begin_layout Enumerate
-Vaya a Menú -> Sesión -> Base de datos -> Abrir carpeta de base de datos
+Vaya a Menú -> Sesión -> Preferencias -> Base de datos -> Abrir carpeta
+ de base de datos
 \end_layout
 
 \begin_layout Enumerate
@@ -12719,6 +12945,126 @@ Esta pestaña permite configurar el comportamiento de Chronojump en los tests
 La opción de propulsivo se utilizará en los cálculos para tener en cuenta
  sólo la parte del movimiento en que la aceleración es superior a la de
  la gravedad, es decir, cuando se está aplicando una fuerza.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/propulsive.png
+	lyxscale 50
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/non_propulsive.png
+	lyxscale 50
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Propulsivo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No propulsivo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Propulsivo"
+
+\end_inset
+
+Propulsivo / no propulsivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Propulsivo"
+
+\end_inset
+
+ se muestra qué parte de la repetición será analizada (zona sombreada),
+ según se tenga marcada o no la opción propulsivo.
+\end_layout
+
+\begin_layout Standard
+En el ejemplo se puede ver como las línieas horizontales verde y roja (velocidad
+ y potencia medias) difieren en altura y anchura en los dos gráficos.
 \end_layout
 
 \begin_layout Standard
