@@ -8098,6 +8098,14 @@ Minimal height.
 \end_layout
 
 \begin_layout Itemize
+(Inertial) On inertial discard first repetitions: Allows to discard the
+ submaximum repetitions in whitch the subject has not reached the maximum
+ velocity of execution.
+ This repetition will not be taken in account when calculing the mean values
+ of the set and will be drawn in gray.
+\end_layout
+
+\begin_layout Itemize
 Show only bars.
  This option allows that the repetitions table to be shown in another table
  and not show the raw data area, reserving much more space for the bars

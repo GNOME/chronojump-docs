@@ -8532,9 +8532,25 @@ Altura mínima
 \end_layout
 
 \begin_layout Itemize
-Mostrar sólo las barras: Esta opción permite que la tabla de las repeticiones
- se muestre en otra pestaña y no se muestre el área de señal cruda, dejando
- mucho más espacio para el área de barras.
+(Inerciales) 
+\emph on
+En inercial, descartar las primeras repeticiones
+\emph default
+.
+ Permite descartar las repeticiones submàximas en las que el sujeto no ha
+ alcanzado la máxima velocidad de ejecución.
+ Estas repeticiones no se tendrán en cuenta a la hora de calcular las medias
+ de la serie y se dibujarán en gris.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Mostrar sólo las barras
+\emph default
+: Esta opción permite que la tabla de las repeticiones se muestre en otra
+ pestaña y no se muestre el área de señal cruda, dejando mucho más espacio
+ para el área de barras.
  Para acceder a la tabla de datos de las repeticiones haga clic en la pestanya
  
 \begin_inset Quotes eld
@@ -8639,16 +8655,24 @@ Opción de sólo barras
 
 \begin_deeper
 \begin_layout Itemize
-Mostrar todas las barras: Si esta opción está marcada se mostrarán todas
- las repeticiones y a cada repetición se redimensionarán todas las barras
- para que quepan en el área de barras
+
+\emph on
+Mostrar todas las barras
+\emph default
+: Si esta opción está marcada se mostrarán todas las repeticiones y a cada
+ repetición se redimensionarán todas las barras para que quepan en el área
+ de barras
 \end_layout
 
 \begin_layout Itemize
-Mostrar sólo las últimas barras: Permite , durante la adquisición de datos,
- mostrar un número finito de las últimas barras de modo que estas no se
- redimensionarán sino que se irán desplazando de derecha a izquiera a medida
- que se ejecuten más repeticiones.
+
+\emph on
+Mostrar sólo las últimas barras
+\emph default
+: Permite , durante la adquisición de datos, mostrar un número finito de
+ las últimas barras de modo que estas no se redimensionarán sino que se
+ irán desplazando de derecha a izquiera a medida que se ejecuten más repeticione
+s.
 \end_layout
 
 \end_deeper
@@ -8956,7 +8980,7 @@ Repetir el paso [2] para todas las series de ambos atletas.
 \end_layout
 
 \begin_layout Enumerate
-Ir a la pestaña de análisis, grupal sesión actual
+Ir a la pestaña de análisis, grupal sesión actual 
 \begin_inset Graphics
 	filename images/encoder-manual-images/analyze_groupal_current_session.png
 	scale 50
@@ -9011,7 +9035,729 @@ Ejemplo de uso del encoder
 \end_layout
 
 \begin_layout Section
-Test de fuerza máxima isométrica
+Test de fuerza
+\end_layout
+
+\begin_layout Standard
+Chronojump permite medir en tiempo real la fuerza realizada sobre el sensor
+ de fuerza.
+ Esta fuerza se puede transmitir del sujeto al sensor mediante cuerdas,
+ cinchas, gomas u objetos rígidos.
+ De este modo la fuerza medida puede ser isométrica en el caso de usar elementos
+ no elásticos o dinámica si se usan elementos elásticos.
+\end_layout
+
+\begin_layout Subsection
+Instrucciones de seguridad
+\end_layout
+
+\begin_layout Standard
+El sensor de fuerza tiene un cable fijado que en ningún caso se debe intentar
+ desmontar ya que se dañaría irreparablemente la electrónica interna del
+ mismo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/ForceSensor/Cable-Broken.JPG
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:FS-Cable-roto"
+
+\end_inset
+
+Cable roto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Subsection
+Conexión del sensor de fuerza
+\end_layout
+
+\begin_layout Standard
+Para conectar el sensor de fuerza a Chronojump, conecte la galga extensométrica
+ al dispositivo conversor y éste al ordenador mediante el cable mini-USB.
+\end_layout
+
+\begin_layout Standard
+La primera vez que conecte el dispositivo al ordenador deberá configurarlo
+ haciendo clic sobre el botón 
+\emph on
+dispositivo
+\emph default
+ 
+\begin_inset Graphics
+	filename images/device_button_es.png
+	lyxscale 75
+	scale 50
+
+\end_inset
+
+.
+ Se abrirá una ventana con una lista de dispositivos conectados donde deberá
+ identificar el tipo de dispositivo.
+ Haga clic sobre las flechas hasta que aparezca la imagen del sensor de
+ fuerza.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/ForceSensor/MIF-Device_es.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Configuración de dispositivo de adquisición de datos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Tara y calibración del sensor de fuerza
+\end_layout
+
+\begin_layout Standard
+Debido a la naturaleza analógica del sensor de fuerza, éste deberá ser tarado
+ y calibrado.
+\end_layout
+
+\begin_layout Standard
+El proceso de tara consiste en indicar el estado en el cual el sensor debería
+ registrar una fuerza de 0 Newtons.
+\end_layout
+
+\begin_layout Standard
+El proceso de calibración consiste en aumentar la fuerza que recibe el sensor
+ y establecer una relación lineal entre el aumento de fuerza y el aumento
+ de la respuesta eléctrica del mismo.
+\end_layout
+
+\begin_layout Standard
+Para hacer el proceso de tara y calibración deberá presionar el botón de
+ Ajustar 
+\begin_inset Graphics
+	filename images/ForceSensor/Adjust-Button_es.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Le aparecerán las siguientes opciones:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/ForceSensor/Adjust.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ajustes del sensor de fuerza
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Tara (previa a la calibración)
+\end_layout
+
+\begin_layout Standard
+Para llevar a cabo este proceso coloque el sensor colgando de uno de los
+ extremos sin soportar ningúna fuerza externa aparte del peso.
+ Seguigamente presione sobre el botón de 
+\emph on
+Tara
+\emph default
+.
+ Chronojump ragistrará durante unos segundos y guardará el resultado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/ForceSensor/Tare-Vertical.png
+	lyxscale 33
+	scale 12
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tara vertical del sensor de fuerza
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Calibración
+\end_layout
+
+\begin_layout Standard
+La calibración consiste en establecer una relación lineal entre la señal
+ eléctrica del sensor y la fuerza real.
+ Esta relación puede variar en función del sensor, temperatura, humedad...
+ Por eso se recomienda hacer una calibración una vez por sesión.
+ Por defecto Chronojump utilizará una calibración genérica.
+\end_layout
+
+\begin_layout Standard
+Para realizar la calibración introduzca en Chronojump la masa en Kg de un
+ objeto cuyo peso sea conocido.
+ Suponiendo que quiera medir fuerzas de tracción, ate dicho objeto al sensor
+ y levántelo de modo que el sensor soporte el peso del mismo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/ForceSensor/Calibrate.png
+	lyxscale 33
+	scale 12.5
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Calibración del sensor de fuerza
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el caso de que quiera medir fuerzas de compresión, deje descansar
+\end_layout
+
+\begin_layout Standard
+Cuanto más próximo esté el peso a las fuerzas que se van a realizar, más
+ precisas serán las mediciones con esa calibración.
+ Una vez tenga el peso levantado y estable, haga clic en el botón calibrar.
+\end_layout
+
+\begin_layout Subsubsection
+Tara (posterior a la calibración)
+\end_layout
+
+\begin_layout Standard
+En la mayoría de casos el peso del sensor de fuerza deberá tenerse en cuenta
+ a la hora de medir la fuerza ejercida por el sujeto analizado.
+ En tal caso antes de realizar la captura de datos se deberá hacer una nueva
+ tara pero esta vez con el sensor en posición horizontal sobre una superficie
+ horizontal estable y sin ninguna fuerza exterior.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/ForceSensor/Tare.JPG
+	lyxscale 33
+	scale 15
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tara horizontal del sensor de fuerza
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De este modo el sensor también registrará el propio peso.
+\end_layout
+
+\begin_layout Standard
+En el caso en que el sujeto no tenga que soportar el peso del sensor de
+ fuerza no será necesario hacer esta nueva tara.
+\end_layout
+
+\begin_layout Subsection
+Registro de datos
+\end_layout
+
+\begin_layout Standard
+Cada registro se asociará a un sujeto, un ejercicio y una lateralidad .
+\end_layout
+
+\begin_layout Standard
+Puede crear tantos ejercicios como desee mediante el botón 
+\begin_inset Graphics
+	filename images/ForceSensor/Create-Exercice-Button.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El registro de datos se hará mediante el botón del cronómetro 
+\begin_inset Graphics
+	filename images/capture_button.png
+	lyxscale 50
+	scale 33
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Durante el registro de datos se verá una línea que variará su altura en
+ función de la fuerza que se esté detectando en el sensor.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/ForceSensor/Capture_es.png
+	lyxscale 75
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Captura en tiempo real
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para finalizar y guardar el registro del ejercicio puede hacer clic sobre
+ el botón de 
+\begin_inset Quotes eld
+\end_inset
+
+Fin
+\begin_inset Quotes erd
+\end_inset
+
+ o presionar la tecla 
+\begin_inset Quotes eld
+\end_inset
+
+Enter
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Presionar el botón de cancelar hará que no se guarden los datos y en consecuenci
+a se pierda la captura.
+\end_layout
+
+\begin_layout Subsubsection
+Feedback
+\end_layout
+
+\begin_layout Standard
+Durante el registro, se puede mostrar una línia horizontal en la fuerza
+ especificada así como un intervalo en color amarillo alrededor de esta.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/ForceSensor/Feedback_es.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Feedback durante la captura
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta opción permite analizar la estabilidad de la señal.
+\end_layout
+
+\begin_layout Standard
+Posteriormente, en el análisis se podrá analizar el error medio entre la
+ fuerza real y la fuerza especificadad en el Feedback
+\end_layout
+
+\begin_layout Subsection
+Análisis del ejercicio
+\end_layout
+
+\begin_layout Standard
+Hay dos tipos de análisis:
+\end_layout
+
+\begin_layout Itemize
+Análisis manual: Permite analizar milisegundo a milisegundo las distintas
+ variables.
+\end_layout
+
+\begin_layout Itemize
+Análisis de RFD automático: Realiza un análisis automático de un test de
+ fuerza isométrica en el que partiendo de una fuerza mínima o nula se intenta
+ llegar a la máxima fuerza posible en el menor tiempo posible.
+ Esta fuerza se mantendrá durante algunos segundos
+\end_layout
+
+\begin_layout Subsubsection
+Análisis manual
+\end_layout
+
+\begin_layout Standard
+Haciendo clic en el botón de analizar 
+\begin_inset Graphics
+	filename images/ForceSensor/Analyze_button.png
+
+\end_inset
+
+entrará en el módo de anális general.
+\end_layout
+
+\begin_layout Standard
+Si no se tiene una serie cargada no será necesario cargar una mediante el
+ botón de 
+\begin_inset Quotes eld
+\end_inset
+
+Cargar archivo
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/ForceSensor/Analysis-General_es.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Análisis general de un instante
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Mediante el deslizador A podrá analizar los valores instantáneos a lo largo
+ del tiempo.
+\end_layout
+
+\begin_layout Standard
+En la parte inferior derecha se indicará el tiempo en milisegundos, la fuerza
+ en Newtons y el RFD del instante analizado.
+\end_layout
+
+\begin_layout Standard
+Activando el deslizador B podrá analizar un intervalo de tiempo
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/ForceSensor/Analysis-General-A-B_es.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Análisis general de un intervalo de tiempo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con el deslizador B activado, además de los datos de un segundo instante
+ se mostrará la diferencia, la media y el máximo de cada variable en el
+ rango especificado.
+ También se darán valores de impulso, variabilidad y, en el caso de tener
+ el feedback activado, error medio.
+\end_layout
+
+\begin_layout Standard
+El deslizador 
+\begin_inset Quotes eld
+\end_inset
+
+A+B
+\begin_inset Quotes erd
+\end_inset
+
+ le permite desplazar simultáneamente los deslizadores A y B.
+\end_layout
+
+\begin_layout Standard
+Además, una vez se ha activado el deslizador 
+\begin_inset Quotes eld
+\end_inset
+
+A+B
+\begin_inset Quotes erd
+\end_inset
+
+, aparecerá el botón de zoom 
+\begin_inset Graphics
+	filename images/ForceSensor/Zoom-Button.png
+	scale 50
+
+\end_inset
+
+.
+ Una vez activado el zoom se mostrará en pantalla sólo el intervalo seleccionado.
+\end_layout
+
+\begin_layout Subsubsection
+Test de RFD automático
 \end_layout
 
 \begin_layout Standard
@@ -9057,188 +9803,7 @@ Rate of Force Development
  o a la pendiente de la función fuerza en función del tiempo.
 \end_layout
 
-\begin_layout Subsection
-Conexión del sensor de fuerza
-\end_layout
-
-\begin_layout Standard
-Para conectar el sensor de fuerza a Chronojump, conecte la galga extensométrica
- al dispositivo conversor y éste al ordenador mediante el cable mini-USB.
-\end_layout
-
-\begin_layout Standard
-La primera vez que conecte el dispositivo al ordenador deberá configurarlo
- haciendo clic sobre el botón 
-\emph on
-dispositivo
-\emph default
- 
-\begin_inset Graphics
-	filename images/device_button_es.png
-	lyxscale 75
-	scale 50
-
-\end_inset
-
-.
- Se abrirá una ventana con una lista de dispositivos conectados donde deberá
- identificar el tipo de dispositivo.
- Haga clic sobre las flechas hasta que aparezca la imagen del sensor de
- fuerza.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/ForceSensor/MIF-Device_es.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Configuración de dispositivo de adquisición de datos
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Tara y calibración del sensor de fuerza
-\end_layout
-
-\begin_layout Standard
-Debido a la naturaleza analógica del sensor de fuerza, éste deberá ser tarado
- y calibrado.
-\end_layout
-
-\begin_layout Subsubsection
-Tara
-\end_layout
-
-\begin_layout Standard
-El proceso de tara consiste en indicar el estado en el cual el sensor debería
- registrar una fuerza de 0 Newtons.
-\end_layout
-
-\begin_layout Standard
-Para llevar a cabo este proceso coloque el sensor en una superficie horizontal
- y estable y, sin soportar ningúna fuerza externa aparte del peso.
- Seguigamente presione sobre el botón de 
-\emph on
-Tara
-\emph default
-.
- Chronojump ragistrará durante unos segundos y guardará el resultado.
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/ForceSensor/Tare.JPG
-	lyxscale 25
-	scale 10
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Tara del sensor de fuerza
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Calibración
-\end_layout
-
-\begin_layout Standard
-La calibración consiste en establecer una relación lineal entre la señal
- eléctrica del sensor y la fuerza real.
- Esta relación puede variar en función del sensor, temperatura, humedad...
- Por eso se recomienda hacer una calibración una vez por sesión.
- Por defecto Chronojump utilizará una calibración genérica.
-\end_layout
-
-\begin_layout Standard
-Para realizar la calibración introduzca en Chronojump la masa en Kg de un
- objeto cuyo peso sea conocido.
- Ate dicho objeto al sensor y levántelo de modo que el sensor soporte el
- peso del mismo.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/ForceSensor/Calibrate.png
-	lyxscale 33
-	scale 12.5
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Calibración del sensor de fuerza
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-Cuanto más próximo esté el peso a las fuerzas que se van a realizar, más
- precisas serán las mediciones con esa calibración.
- Una vez tenga el peso levantado y estable, haga clic en el botón calibrar.
-\end_layout
-
-\begin_layout Subsection
+\begin_layout Paragraph
 Configuración del test de fuerza máxima isométrica
 \end_layout
 
@@ -9748,7 +10313,7 @@ Distintos análisis de un mismo test de fuerza máxima isométrica
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Paragraph
 Ejecución del test de fuerza máxima Isométrica
 \end_layout
 
@@ -9779,13 +10344,29 @@ El sujeto deberá empezar a hacer la máxima fuerza posible además de llegar
 \begin_layout Standard
 Finalmente, presione el botón de finalizar 
 \begin_inset Graphics
-	filename images/finish-button.png
+	filename images/ForceSensor/Finish-Button.png
 	scale 50
 
 \end_inset
 
 .
- Automáticamente se generará el gráfico con todos los cálculos necesarios.
+ Posteriormente haga clic en 
+\begin_inset Quotes eld
+\end_inset
+
+Analizar
+\begin_inset Quotes erd
+\end_inset
+
+ y análisis 
+\begin_inset Quotes eld
+\end_inset
+
+RFD automático
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

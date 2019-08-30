@@ -8467,16 +8467,16 @@ Select exercise options: bench press, extra weight: 20Kg (10 bar + 10 gym
 
 \begin_layout Enumerate
 Select athlete1.
- Click on capture (“Safe” or “External”).
+ Click on capture.
  See the results but have no time to analyse them now.
- set is automatically saved.
+ The set is automatically saved.
 \end_layout
 
 \begin_layout Enumerate
 Select athlete2.
- Click on capture (“Safe” or “External”).
+ Click on capture.
  See the results but have no time to analyse them now.
- set is automatically saved.
+ The set is automatically saved.
 \end_layout
 
 \begin_layout Enumerate
@@ -8514,7 +8514,24 @@ Repeat [2] for all the sets of Athlete1 and Athlete2.
 
 \begin_layout Enumerate
 Go to analyse tab.
- Select User repetitions, compare between subjects, “Power / Load”.
+ Click on group intrasession 
+\lang spanish
+
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/encoder-manual-images/analyze_groupal_current_session.png
+	scale 50
+
+\end_inset
+
+
+\lang british
+.
+ Select the exercise.
+ Choose repetitions, “Power / Load” and click on 
+\begin_inset Quotes eld
+\end_inset
+
+Analyze.
 \end_layout
 
 \begin_layout Enumerate
