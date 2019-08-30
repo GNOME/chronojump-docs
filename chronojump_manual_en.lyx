@@ -8584,46 +8584,61 @@ Example of encoder use
 \end_layout
 
 \begin_layout Section
-Maximum isometric force
+Force test
 \end_layout
 
 \begin_layout Standard
-Chronojump allows, using a sensor force, to perform a test of maximum isometric
- force to measure some parameters like:
+Chronojump allows to measure in realtime the force applied on a force sensor.
+ This force can be transmited to the force sensor with ropes, straps, rubber
+ bands or rigid objects.
+ This way the measured force can be isometric if you are using non elastic
+ elements or dynamic if elastic elements are used.
 \end_layout
 
-\begin_layout Itemize
-Instant force
-\end_layout
-
-\begin_layout Itemize
-Maximum force
-\end_layout
-
-\begin_layout Itemize
-RFD
-\end_layout
-
-\begin_layout Itemize
-Impulse
+\begin_layout Subsection
+Safety instructions
 \end_layout
 
 \begin_layout Standard
-This parameters can be measured from:
-\end_layout
-
-\begin_layout Itemize
-Real force or raw data (Black).
-\end_layout
-
-\begin_layout Itemize
-Modeled force using an inverse monoexponential function (Blue).
+The force sensor has an attached cable that never should be disassembled,
+ since it would irreparably damage its internal electronics.
 \end_layout
 
 \begin_layout Standard
-The RFD refers to Rate of Force Development.
- This variable is the derivative or the slope of the function force versus
- time.
+
+\lang spanish
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/Cable-Broken.JPG
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Broken cable
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -8697,6 +8712,586 @@ Configuring the force sensor device
 \end_layout
 
 \begin_layout Subsection
+Tare and calibrating the force sensor
+\end_layout
+
+\begin_layout Standard
+Due to the analog nature of the force sensor, it must be tared and calibrated.
+\end_layout
+
+\begin_layout Standard
+The tare process consists of indicating the state in which the sensor should
+ register a force of 0 Newtons.
+\end_layout
+
+\begin_layout Standard
+The calibration process consists in increasing the force that the sensor
+ receives and establishing a linear relationship between force increase
+ and the electrical response of the sensor increase.
+\end_layout
+
+\begin_layout Standard
+To perform the tare and calibration process you must press the Adjust button
+ 
+\lang spanish
+
+\begin_inset Graphics
+	filename images/ForceSensor/Adjust-Button_en.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\lang british
+.
+\end_layout
+
+\begin_layout Standard
+The following options will appear: 
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename images/ForceSensor/Adjust_en.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Force sensor adjusting
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Tare (previous to calibration)
+\end_layout
+
+\begin_layout Standard
+To carry out this process place the sensor hanging from one end without
+ supporting any external force apart from its own weight.
+ Then press on the Tare button.
+ Chronojump will record for a few seconds and save the result.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/Tare-Vertical.png
+	lyxscale 33
+	scale 12
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Vertical taring of the force sensor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Calibration
+\end_layout
+
+\begin_layout Standard
+Calibration consists in establishing a linear relationship between the electrica
+l signal of the sensor and the real force.
+ This ratio may vary depending on the sensor, temperature, humidity ...
+ Therefore it is recommended to do a calibration once per session.
+ By default Chronojump will use a generic calibration.
+\end_layout
+
+\begin_layout Standard
+To perform the calibration, type in Chronojump the mass in kg of an object
+ whose weight is known.
+ Assuming you want to measure tensile forces, attach the object to the sensor
+ and lift it so that the sensor supports the weight of the object.
+\lang spanish
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/Calibrate.png
+	lyxscale 33
+	scale 12.5
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Force sensor calibration
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In case you want to measure compression forces, let the weight rest on the
+ sensor having previously removed the eyebolts from it.
+\end_layout
+
+\begin_layout Standard
+The closer the weight is to the forces to be performed, the more accurate
+ the measurements with that calibration will be.
+ Once the weight is stable and stable, click on the calibrate button.
+\end_layout
+
+\begin_layout Subsubsection
+Tare (after calibration)
+\end_layout
+
+\begin_layout Standard
+In most cases the weight of the force sensor must be taken into account
+ when measuring the force exerted by the analyzed subject.
+ In this case, before performing the data acquisition, a new tare must be
+ done but this time with the sensor in a horizontal position on a stable
+ horizontal surface and without any external force.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/Tare.JPG
+	lyxscale 33
+	scale 15
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Horizontal tare of the force sensor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this way the sensor will also register its own weight.
+\end_layout
+
+\begin_layout Standard
+In the case where the subject does not have to support the weight of the
+ force sensor, it will not be necessary to do this new tare.
+\end_layout
+
+\begin_layout Subsection
+Data acquisition
+\end_layout
+
+\begin_layout Standard
+Each record will be associated with a subject, an exercise and a laterality.
+\end_layout
+
+\begin_layout Standard
+You can create as many exercises as you want using the button
+\end_layout
+
+\begin_layout Standard
+Data recording will be done using the stopwatch button.
+\end_layout
+
+\begin_layout Standard
+During the data acquisition you will see a line that will vary in height
+ depending on the force that is being detected by the sensor.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/Capture_en.png
+	lyxscale 75
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Realtime data acquisition
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To finish and save the exercise data you can click on the "Finish" button
+ or press the "Enter" key
+\end_layout
+
+\begin_layout Standard
+Pressing the 
+\begin_inset Quotes eld
+\end_inset
+
+Cancel
+\begin_inset Quotes erd
+\end_inset
+
+ button will not save the data and consequently the capture will be lost.
+\end_layout
+
+\begin_layout Subsubsection
+Feedback
+\end_layout
+
+\begin_layout Standard
+During registration, a horizontal line can be displayed at the specified
+ force as well as a yellow interval around it.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/Feedback_en.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Feedback during the exercise
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This option allows to analyze the stability of the signal.
+\end_layout
+
+\begin_layout Standard
+Subsequently, in the analysis you can analyze the average error between
+ the real force and the specificity force in the Feedback
+\end_layout
+
+\begin_layout Subsection
+Exercise analysis
+\end_layout
+
+\begin_layout Standard
+There are two types of analysis:
+\end_layout
+
+\begin_layout Itemize
+Manual analysis: Allows the different variables to be analyzed millisecond
+ to millisecond.
+\end_layout
+
+\begin_layout Itemize
+Automatic RFD analysis: Performs an automatic analysis of an isometric force
+ test in which, starting from a minimum or zero force, the subject tries
+ to reach the maximum force possible in the shortest time possible.
+ This force will remain for a few seconds.
+\end_layout
+
+\begin_layout Subsubsection
+Manual analysis
+\end_layout
+
+\begin_layout Standard
+Clicking on the analyze button 
+\begin_inset Graphics
+	filename images/ForceSensor/Analyze_button_en.png
+	scale 50
+
+\end_inset
+
+ you will enter the general analysis mode.
+\end_layout
+
+\begin_layout Standard
+If you do not have a loaded exercise, it will not be necessary to load one
+ using the “Load file” button
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename images/ForceSensor/Analysis-General_en.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+General analysis of an instant
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the A slider you can analyze the instantaneous values over time.
+\end_layout
+
+\begin_layout Standard
+The time in milliseconds, the force in Newtons and the RFD of the analyzed
+ moment will be indicated in the lower right.
+\end_layout
+
+\begin_layout Standard
+Activating slider B can analyze a time interval.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename images/ForceSensor/Analysis-General-A-B_en.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+General analysis of a time interval
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With the slider B activated, in addition to the data of a second instant,
+ the difference, the average and the maximum of each variable in the specified
+ range will be shown.
+ Impulse, variability and, in the case of having the feedback activated,
+ average error values will also be given.
+\end_layout
+
+\begin_layout Standard
+The “A + B” slider allows you to simultaneously move the A and B sliders.
+\end_layout
+
+\begin_layout Standard
+In addition, once the “A + B” slider has been activated, the zoom button
+\lang spanish
+
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/Zoom-Button.png
+	scale 50
+
+\end_inset
+
+
+\lang british
+ will appear.
+ Once it is clicked, only the selected interval will be displayed.
+\end_layout
+
+\begin_layout Subsubsection
+Automatic RFD test
+\end_layout
+
+\begin_layout Standard
+Chronojump allows, using a sensor force, to perform a test of maximum isometric
+ force to measure some parameters like:
+\end_layout
+
+\begin_layout Itemize
+Instant force
+\end_layout
+
+\begin_layout Itemize
+Maximum force
+\end_layout
+
+\begin_layout Itemize
+RFD
+\end_layout
+
+\begin_layout Itemize
+Impulse
+\end_layout
+
+\begin_layout Standard
+This parameters can be measured from:
+\end_layout
+
+\begin_layout Itemize
+Real force or raw data (Black).
+\end_layout
+
+\begin_layout Itemize
+Modeled force using an inverse monoexponential function (Blue).
+\end_layout
+
+\begin_layout Standard
+The RFD refers to Rate of Force Development.
+ This variable is the derivative or the slope of the function force versus
+ time.
+\end_layout
+
+\begin_layout Paragraph
 Taring and configuring the force sensor
 \end_layout
 
@@ -8704,7 +9299,7 @@ Taring and configuring the force sensor
 Due to the analog nature of the force sensor, this must be tared and calibrated.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Taring
 \end_layout
 
@@ -8762,7 +9357,7 @@ Taring the force sensor
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Calibration
 \end_layout
 
@@ -8822,7 +9417,7 @@ The closer the weight is to the force you are going to perform in your tests,
  Once you have the load lifted and stable, click on the calibrate button.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Paragraph
 Configuring the maximum isometric force test
 \end_layout
 
@@ -9319,7 +9914,7 @@ Different analysis of the RFD in a maximum isometric force test
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Paragraph
 Execution of the maximum isometric force test
 \end_layout
 

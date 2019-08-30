@@ -17,10 +17,12 @@
 \usepackage{verbatim}
 \usepackage{varioref}
 \usepackage{float}
+\usepackage{wrapfig}
 \usepackage{fancybox}
 \usepackage{calc}
 \usepackage{textcomp}
 \usepackage{url}
+\usepackage{amstext}
 \usepackage{graphicx}
 \usepackage[unicode=true,pdfusetitle,
  bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
@@ -44,8 +46,7 @@
 
 \begin{document}
 
-\title{{\huge{}Chronojump} Manual\\
-{\large{}(Updated on 11/02/16)}}
+\title{{\huge{}Chronojump} Manual}
 
 
 \author{http://www.chronojump.org\\
@@ -199,7 +200,7 @@ For more information about Chronopic consult the web page: \url{http://chronojum
 
 Current Chronopic version is Chronopic3 {\small{}(fig \ref{fig:Chronopic3}).}{\small \par}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \noindent \begin{centering}
 \includegraphics[width=250pt,height=188pt]{images/chronopic3}
 \par\end{centering}
@@ -215,11 +216,81 @@ Chronopic 3 is a USB powered hardware. Using USB cable it receives
 data from PC and also power. To complete the connection, this cable
 will also be connected to the socket.
 
+There are two types of Chronopics:
+\begin{itemize}
+\item Multitest: Used in jumping and racing tests.
+\item Encoder: Used to connect linear, rotary and friction encoders.
+\end{itemize}
+The first time you connect a Chronopic and open Chronojump a Chronopic
+connection window will ask you to identify the type of Chronopic you
+have connected.
+
+\selectlanguage{spanish}%
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=0.5\columnwidth]{/home/xpadulles/chronojump-docs/images/chronopic-connection}
+\par\end{centering}
+
+\caption{\selectlanguage{british}%
+\label{fig:chronopic-connection}Chronopic connection\selectlanguage{spanish}%
+}
+\end{figure}
+
+
+\selectlanguage{british}%
+
+\subsection{Multitest}
+
 Chronopic will be connected to the contact platform or photocell barrier
 through the RCA connection\includegraphics[scale=0.03]{images/RCA_connector}
 , the terminal block \includegraphics[scale=0.03]{images/screw_connector}
 or both.
 
+\selectlanguage{spanish}%
+\begin{figure}[H]
+\noindent \centering{}%
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+\selectlanguage{british}%
+Name\selectlanguage{spanish}%
+ & \selectlanguage{british}%
+USB-A\selectlanguage{spanish}%
+ & \selectlanguage{british}%
+USB-B\selectlanguage{spanish}%
+ & \selectlanguage{british}%
+RCA\selectlanguage{spanish}%
+ & \selectlanguage{british}%
+RCA 2-1 adaptor\selectlanguage{spanish}%
+ & \selectlanguage{british}%
+Plug\selectlanguage{spanish}%
+\tabularnewline
+\hline 
+\hline 
+\selectlanguage{british}%
+Connected to:\selectlanguage{spanish}%
+ & \selectlanguage{british}%
+Computer\selectlanguage{spanish}%
+ & \selectlanguage{british}%
+Chronopic\selectlanguage{spanish}%
+ & \selectlanguage{british}%
+Device\selectlanguage{spanish}%
+ & \selectlanguage{british}%
+Device + RCA cables\selectlanguage{spanish}%
+ & \selectlanguage{british}%
+Electric socket\selectlanguage{spanish}%
+\tabularnewline
+\hline 
+\selectlanguage{british}%
+\selectlanguage{spanish}%
+ & \includegraphics[scale=0.07]{/home/xpadulles/chronojump-docs/images/USB-A} & \includegraphics[scale=0.07]{/home/xpadulles/chronojump-docs/images/USB-B} & \includegraphics[scale=0.07]{/home/xpadulles/chronojump-docs/images/RCA} & \includegraphics[scale=0.1]{/home/xpadulles/chronojump-docs/images/Adaptador-RCA.PNG} & \includegraphics[scale=0.08]{/home/xpadulles/chronojump-docs/images/Photocel-Current}\tabularnewline
+\hline 
+\end{tabular}\caption{\selectlanguage{british}%
+Multitest connections\selectlanguage{spanish}%
+}
+\end{figure}
+
+
+\selectlanguage{british}%
 Using Chronopic RCA (and / or fuse) it is possible to connect 'n'
 networking platforms to any Chronopic. This model is useful to chronometer
 situations where an athlete should not be able to be in more than
@@ -232,7 +303,7 @@ possible chronometer independently various subjects, complex paces
 or other applications. 
 
 
-\section{Chronopic working process}
+\subsubsection{Chronopic working process}
 
 Chronopic detect changes in the contact platform and sends it to the
 computer by USB cable, USB-serial or serials. You can also use the
@@ -243,6 +314,36 @@ Chronopic has a green light to indicate when the subject is on the
 platform or the photoelectric barrier (light stays off) or outside
 (light is on).
 
+
+\subsection{Encoder}
+
+The encoder to Chronopic connection will be done with the RJ45 cable
+of the encoder. The Chronopic to computer connection is made with
+the USB A-B cable.
+
+\selectlanguage{spanish}%
+\begin{figure}[H]
+\noindent \centering{}%
+\begin{tabular}{|c|c|c|}
+\hline 
+\selectlanguage{british}%
+USB-A (Computer)\selectlanguage{spanish}%
+ & \selectlanguage{british}%
+USB-B (Chronopic)\selectlanguage{spanish}%
+ & \selectlanguage{british}%
+RJ45 (Chronopic)\selectlanguage{spanish}%
+\tabularnewline
+\hline 
+\hline 
+\includegraphics[scale=0.1]{/home/xpadulles/chronojump-docs/images/USB-A} & \includegraphics[scale=0.1]{/home/xpadulles/chronojump-docs/images/USB-B} & \includegraphics[scale=0.15]{/home/xpadulles/chronojump-docs/images/RJ45}\tabularnewline
+\hline 
+\end{tabular}\caption{\selectlanguage{british}%
+Encoder Chronopic\selectlanguage{spanish}%
+}
+\end{figure}
+
+
+\selectlanguage{british}%
 
 \section{\label{sub:Chronopic-puertos-USB}USB ports}
 
@@ -258,6 +359,8 @@ Operating system & Port & Name & Comments\tabularnewline
 MS Windows & USB & COM1, COM2, COM3, ... (seen to COM27) & Driver required\tabularnewline
 \hline 
 GNU/Linux & USB & \textbf{/dev/ttyUSB0}, /dev/ttyUSB1 & \tabularnewline
+\hline 
+Mac OSX & USB & /dev/tty.usbserial-{[}serial number{]} & Driver required\tabularnewline
 \hline 
 \end{tabular}
 \par\end{centering}
@@ -444,19 +547,17 @@ In the following pictures you can see the drop down menu of the program.
 
 
 
-\section{Chronopic/s Connection.\label{sec:Conexi=0000F3n-de-Chronopic/s}}
+\section{Chronopic/s Connection.\label{sec:Chronopic/s_connection}}
 
 Is possible to connect one or more Chronopics on the menu: \emph{Tools
 / Chronopic}. In Figure \ref{fig:Chronopic-connection} two Chronopics
-connected are shown. There is a help button for the ports by clicking
-on the \emph{Help} button window. The connection to the Chronopic
-timer is specifically addressed in section \ref{par:Chronopic:-concepto-y-configuracion}.
+connected are shown. The connection to the Chronopic timer is specifically
+addressed in section \ref{par:Chronopic:-concepto-y-configuracion}.
 
-If the first Chronopic is activated, the first circle will be green.
-You can connect more than one to perform tests in Multi Chronopic.
-When you select the port, you must click on the right button to make
-the connection. In each successful activation the red circles will
-become green.
+The first time a Chronopic is connected to a computer, the typ of
+Chronopic (Jumps/Races or Encoder) must be configured. This configuration
+will be stored for future Chronojump use. Chronojump will detect automatically
+all the Chronojump previously configured.
 
 \begin{figure}[p]
 \begin{centering}
@@ -466,8 +567,8 @@ become green.
 \caption{\label{fig:Chronopic-connection}Chronopic connection.}
 
 
-\noindent \centering{}The figure corresponds to the program Chronojump-in
-version for Linux operating system, which are connected with two Chronopics.
+\noindent \centering{}The figure corresponds to the program Chronojump
+whith two connected Chronopics.
 \end{figure}
 
 
@@ -504,7 +605,7 @@ you can make comparisons between data.
 Figures \ref{fig:Nueva-sesi=0000F3n.-Alumnos} and \ref{fig:Nueva-sesi=0000F3n.-Deportistas}
 demonstrate the creation of a session.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \noindent \begin{centering}
 \includegraphics[scale=0.6]{images/nueva_sesion_colegio}
 \par\end{centering}
@@ -513,7 +614,7 @@ demonstrate the creation of a session.
 \end{figure}
 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \noindent \begin{centering}
 \includegraphics[scale=0.6]{images/nueva_sesion_artistica_competicion}
 \par\end{centering}
@@ -563,7 +664,7 @@ loaded.
 Figure \ref{fig:Creaci=0000F3n-de-un-sujeto} shows the creation of
 a person.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \noindent \begin{centering}
 \includegraphics[scale=0.6]{\string"images/Captura-Nuevo saltador\string".png}
 \par\end{centering}
@@ -863,12 +964,67 @@ green (good performance) together with a distinctive sound. Click
 on the \textquotedbl{}Bells\textquotedbl{} to configure these actions
 as shown in Figure \ref{fig:Campanas---feedback}.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \noindent \begin{centering}
 \includegraphics[scale=0.6]{images/campanas_es}
 \par\end{centering}
 
 \caption{\label{fig:Campanas---feedback}Bells - auditive and visual feedback.}
+\end{figure}
+
+
+
+\subsection{\noindent Chronojump profile}
+
+Chronojump incorporates a quick method for generating an athlete profile
+in which different variables are shown:
+\begin{itemize}
+\item Maximum force: Hability of moving an load equal to the double of the
+body weight.
+\item Explosive force: Hability of moving a load equal to the body weight.
+\item Elasticity: Force increment due to the elastic energy acumulated during
+the shortening-stretching cycle.
+\item Arms using: Force increment due to the arms using.
+\item Reacitve reflex: Force increment due a previous falling from certain
+heigth (activation of reflex mechanisms)
+\end{itemize}
+In order to generate a complete profile it is necessary to have been
+performed this jumps:
+\begin{itemize}
+\item SJl with an external load equal to the body weight.
+\item \noindent SJ
+\item \noindent CMJ
+\item \noindent Abalakov
+\item DJ with a falling height near the one that generates the maximum jump
+height.
+\end{itemize}
+\noindent Si desea ver el perfil de un atleta haga clic en la pestaña
+de \emph{Perfil de saltos.}
+
+To generate the Jumps profile go to Jumps profile tab.
+
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics{/home/xpadulles/chronojump-docs/images/chronojump_profile_tab}
+\par\end{centering}
+
+\caption{\selectlanguage{spanish}%
+Jumps profile tab\selectlanguage{british}%
+}
+\end{figure}
+
+
+Once there, and if al the jumps are performed a graph similar to this
+will be shown.
+
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics[scale=0.5]{/home/xpadulles/chronojump-docs/images/chronojump_profile}
+\par\end{centering}
+
+\caption{\selectlanguage{spanish}%
+Chronojump jumps profile\selectlanguage{british}%
+}
 \end{figure}
 
 
@@ -954,7 +1110,7 @@ to jump with an extra weight, and add a description to the jump type.
 In the figure \ref{fig:Creaci=0000F3n-de-nuevo-tipo-salto} you can
 see the creation of new jump type.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{centering}
 \includegraphics[scale=0.6]{\string"images/Captura-Crear un tipo de salto nuevo\string".png}
 \par\end{centering}
@@ -1012,33 +1168,44 @@ by user.}
 
 
 
-\section{Runs}
+\section{Races}
 
-Running can be detected by two kind of devices:
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=0.6\columnwidth]{images/races}
+\par\end{centering}
+
+\caption{\label{fig:Schem-two-photo-1}Drawing of two barriers and a switch
+to measure races.}
+\end{figure}
+
+
+Running can be detected by three kind of devices:
 \begin{itemize}
 \item platform/s
 \item photocell/s
+\item push button/s
 \end{itemize}
 On a run test Chronojump detects time between detection devices. If
-the run is ``circular'', it can be used a single device (platform
-or photocell), in the other circuits, there's a need of more than
-one detection device (of any type).
+the run is ``circular'', it can be used a single device (platform,
+photocell or push button), in the other circuits, there's a need of
+more than one detection device (of any type).
 
 From now on, \emph{device in contact} means that the person is on
-the platform or blocking a photocell signal. Is important to note
-that the person should never be in contact in more than one device
-at the same time.
+the platform or blocking a photocell signal or pressing the push button.
+Is important to note that the person should never be in contact in
+more than one device at the same time.
 
-The figure \ref{fig:Schem-two-plat} shows a drawing of the position
+The figure \ref{fig:Schem-two-photo} shows a drawing of the position
 of two platforms to measure run.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{centering}
-\includegraphics[width=1\columnwidth]{images/chronojump_esquema_two_platforms}
+\includegraphics[width=0.6\columnwidth]{images/photocells-connections}
 \par\end{centering}
 
-\caption{\label{fig:Schem-two-plat}Drawing of two platforms circuit to measure
-run.}
+\caption{\label{fig:Schem-two-photo}Drawing of two barriers and a switch to
+measure races.}
 \end{figure}
 
 
@@ -1064,6 +1231,28 @@ it should be understanded as ``run along two or more tracks limited
 by devices at a fixed distance''.
 
 
+\subsection{Raction time}
+
+Chronojump allows to measure the reaction time. This time is the elapsed
+time between a starting signal and the moment at which the subject
+starts the movement.
+
+To activate this option clic on ``Measure reaction time'' \includegraphics[scale=0.66]{images/reactTime}
+
+The results will be shown in the tab ``Show table'' and the column``.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{images/races_Table}
+\par\end{centering}
+
+\caption{\selectlanguage{spanish}%
+\label{fig:Races-table}\foreignlanguage{british}{Races results table}\selectlanguage{british}%
+}
+\end{figure}
+
+
+
 \subsection{Correction of multiple contacts}
 
 Chronojump allows to fix the situations where the subject activates
@@ -1075,24 +1264,43 @@ that make contact with body).
 To prevent this type of situations in Menu -> Preferences -> Runs
 check \emph{Prevent double contacts}
 
-\selectlanguage{spanish}%
 \begin{figure}[h]
 \begin{centering}
-\includegraphics{images/preferences_double_contact}
+\includegraphics[scale=0.66]{images/preferences_double_contact}
 \par\end{centering}
 
-\caption{\label{fig:Double-contact}Double contact configuration}
+\caption{\selectlanguage{spanish}%
+\label{fig:Double-contact}Double contact configuration\selectlanguage{british}%
+}
 \end{figure}
 
 
-\selectlanguage{british}%
-This dialog box allows to set the minimum time between contacts to
-be considered as correct. If the time between contacts is lesser than
-the configuration in the dialog Chronojump will act as set in the
-selected option (first, average or last)
+\noindent This dialog box allows to set the minimum time between contacts
+to be considered as correct. If the time between contacts is lesser
+than the configuration in the dialog Chronojump will consider the
+instant when the longest contact start.
+
+\noindent in the figure \ref{fig:Double-contact-example} is shown
+an example of a race with multiple contacts situation.
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.66]{images/races_double_contacts}
+\par\end{centering}
+
+\caption{\selectlanguage{spanish}%
+\label{fig:Double-contact-example}\foreignlanguage{british}{Double
+contacts example}\selectlanguage{british}%
+}
+\end{figure}
 
 
-\subsection{Simple runs execution}
+In the lower part of the graph, each real contact is shown as a segment
+with a length equal to the duration of the contact. The segments are
+grouped so that each cluster is treated as a single contact. The vertical
+dashed lines show the instant when the start of the contact is considered.
+
+
+\subsection{Simple races execution}
 
 To execute a simple run, click the following buttons on\emph{ Runs}
 tab:
@@ -1103,7 +1311,7 @@ tab:
 Run, Zig-Zag test. The figure \ref{fig:Test-de-agilidad-505} shows
 the information available on software about the 505 test.
 \end{itemize}
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{centering}
 \includegraphics[scale=0.55]{images/chronojump-505}
 \par\end{centering}
@@ -1173,9 +1381,20 @@ Configure this actions clicking on ``Bells''.
 
 \subsection{Runs view}
 
-Simple runs are shown on the \emph{Run} tab and the intervallic runs
-on the \emph{Run intervallic} tab. In both cases, it\textquoteright s
+Simple races are shown on the \emph{Races - Simple} mode and the intervallic
+runs on the \emph{Races - intervallic} mode. In both cases, it\textquoteright s
 included a filter for all the possible runs or only a particular type.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.75]{images/race_graph}
+\par\end{centering}
+
+\caption{\selectlanguage{spanish}%
+\label{fig:Race display}Lap race display\selectlanguage{british}%
+}
+\end{figure}
+
 
 Tests are associated with the runners. The shown order of the tests
 of each jumper is chronological so, the last test appears at the end
@@ -1254,7 +1473,7 @@ Last settings include: fix the distance of the tracks, and add a description
 to the run type. In the figure \ref{fig:Creaci=0000F3n-de-nuevo-tipo-carrera}
 you can see the creation of new run type.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{centering}
 \includegraphics[scale=0.55]{images/run_type_add}
 \par\end{centering}
@@ -1266,8 +1485,9 @@ run type.}
 
 From Chronojump version 0.9, you can create intervallic runs with
 variable track distance. This is suitable to calculate speed in the
-different tracks of agility tests. 
-\begin{figure}[h]
+different tracks of agility tests. In the test you can set the resting
+time. 
+\begin{figure}[H]
 \begin{centering}
 \includegraphics[scale=0.55]{images/run_type_add-variable}
 \par\end{centering}
@@ -1309,17 +1529,23 @@ Sprint10 & Simple & - & - & Fixed(10)\tabularnewline
 \hline 
 SprintShortVariable & Simple & - & - & Variable\tabularnewline
 \hline 
-20{*}5 & Intervallic & Tracks & Yes (5) & Fixed(20)\tabularnewline
+20{*}5 & Intervallic & Laps & Yes (5) & Fixed(20)\tabularnewline
 \hline 
-20{*}n & Intervallic & Tracks & No & Fixed(20)\tabularnewline
+20{*}n & Intervallic & Laps & No & Fixed(20)\tabularnewline
 \hline 
 40{*}50\%fatigue & Intervallic & Time & No & Fixed(40)\tabularnewline
 \hline 
 100{*}? & Intervallic & Unlimited & - & Fixed(100)\tabularnewline
 \hline 
-2 min 20-10-7 & Intervallic & Time & Yes(120'') & Variable(20,10,7)\tabularnewline
+2 min 20-10-7 & Intervallic & Time & Yes(120'') & Different(20,10,7)\tabularnewline
+\hline 
+10x4x5 & Intervallic & Laps & Yes(24){*} & Different(10,10,10,10,R60)\tabularnewline
 \hline 
 \end{tabular}
+\par\end{centering}
+
+\noindent \begin{centering}
+{*}The last resting is not accounted. 24 = 5{*}4 + 4
 \par\end{centering}
 
 \caption{\label{tab:Ejemplos-de-tipos-carreras-creados}Examples on run types
@@ -1344,7 +1570,7 @@ If you broke your encoder contact us at hardware@chronojump.org
 Fix the encoder on iron or metal surface like the weights on a gym.
 Note some gym weights are covered with rubber and have not magnet
 power. 
-\begin{figure}[h]
+\begin{figure}[H]
 \noindent \begin{centering}
 \includegraphics{images/encoder-manual-images/magnets.jpeg}
 \par\end{centering}
@@ -1357,11 +1583,11 @@ power.
 \subsubsection{Do not release}
 
 Do not release the wire when it is extended because it will return
-at high speed and will break.
+at high speed and will break it.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \noindent \begin{centering}
-\includegraphics{images/encoder-manual-images/handle.jpeg}
+\includegraphics[scale=0.25]{images/encoder-manual-images/handle.jpeg}
 \par\end{centering}
 
 \caption{Wire handle}
@@ -1369,38 +1595,37 @@ at high speed and will break.
 
 
 
-\subsubsection{Handle the carabiner with care}
+\subsubsection{Make sure that the cable is correctly fixed}
 
 Allways be careful when manipulating the carabiner. Ensure that it
 is well secured in your fingers. A wrong grab could end up with a
 broken encoder. When possible, try to put a finger inside the carabiner
 to avoid it slipping from your fingers.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \noindent \begin{centering}
-\includegraphics{images/encoder-manual-images/never_fingers.jpeg}
+\begin{tabular}{|c|c|}
+\hline 
+\includegraphics[scale=0.5]{images/encoder-manual-images/attachedEncoder.JPG} & \includegraphics[scale=0.5]{images/encoder-manual-images/encoderOnPlates.JPG}\tabularnewline
+\hline 
+\hline 
+Fixing on a barbell & Fixing on a plates loads\tabularnewline
+\hline 
+\end{tabular}
 \par\end{centering}
 
-\caption{Wrong use}
+\caption{examples of fixing}
 \end{figure}
 
 
 
-\subsubsection{Measure wire length}
+\subsubsection{Do not exceed the 2.5m of range of movement}
 
-Measure with care (not pulling with the fingers) the length of the
-wire and the maximum range of the analysed movement. Do not do tests
-that can exceed the wire length. Note you can fix encoder to a table
-or other place if needed. 
+The encoder cable is 3m long but it never must be fully extended.
 
-\begin{figure}[h]
-\noindent \begin{centering}
-\includegraphics{images/encoder-manual-images/measure}
-\par\end{centering}
-
-\caption{Measure}
-\end{figure}
-
+Remember that this limitation refers to the range of movement. If
+necessary, you can lengthen the thread by attaching another thread
+to the encoder.
 
 
 \subsubsection{Perpendicular use}
@@ -1410,6 +1635,26 @@ wire assuming it's perpendicular to the surface. If you pull/push
 the wire with an inclination, data will not be accurate and the wire
 can be damaged. 
 
+\selectlanguage{spanish}%
+\begin{figure}[H]
+\selectlanguage{british}%
+\noindent \begin{centering}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+\includegraphics[scale=0.25]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/encoderWrong1} & \includegraphics[scale=0.25]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/encoderWrong2} & \includegraphics[scale=0.25]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/encoderCorrect1} & \includegraphics[scale=0.25]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/encoderCorrect2}\tabularnewline
+\hline 
+\hline 
+Wrong & Wrong & Right & Right\tabularnewline
+\hline 
+\end{tabular}
+\par\end{centering}
+
+\caption{Examples of wrong and right using of the encoder}
+\selectlanguage{spanish}%
+\end{figure}
+
+
+\selectlanguage{british}%
 
 \subsection{Concepts}
 
@@ -1484,12 +1729,11 @@ automatically following user criteria. Videotutorial: Saving Repetitions
 
 \subsection{Using the encoder}
 
-
-\subsubsection{Chronojump main windows}
+Chronojump main windows
 
 \begin{figure}[H]
 \noindent \begin{centering}
-\includegraphics[scale=0.6]{images/encoder-manual-images/main}
+\includegraphics[scale=0.5]{images/encoder-manual-images/main}
 \par\end{centering}
 
 \caption{Main window}
@@ -1500,56 +1744,94 @@ A) Starting on the top left of main window, there's a menu bar with
 session options and help. You should start your work creating a new
 session or loading an existing one.
 
-B) Under the menu bar there's Chronopic information: number of Chronopics
-connected and the button to manage them. Chronopic is the microntroller
-used on Chronojump project to measure from external devices like a
-contact platform, photocells or the encoder. Use the Chronopic button
-to tell the software how Chronopic is connected.
-
-C) The rest of the left part of the screen is related to subjects.
+B) The rest of the left part of the screen is related to subjects.
 On the top you can create new subjects or load from another session.
 Below you can select the current person and finally, at the bottom
 you can edit the person, see all it's tests and delete it.
 
-D) The centre-right part of the screen is for managing the tests (or
+C) The centre-right part of the screen is for managing the tests (or
 exercises). At the top there are two tabs: contacts and encoder. Select
 the encoder tab.
 
+Inside the capture area there's six different areas
 
-\subsubsection{Connecting encoder}
-
-
-\paragraph{Chronopic windows}
-
-In order to connect the encoder, click on the Chronopic button (\textquotedblleft B\textquotedblright ,
-in the above image) and Chronopic window will be opened. On this new
-window select \textquotedblleft Encoder\textquotedblright{} and the
-port where Chronopic is connected. If you have any problem press the
-help button in that window, it has little and useful information.
-After Chronopic port has been selected, just close the window.
-
-
-\paragraph{Encoder configuration}
-
-The next step is the selection of the type of encoder, how it is atached
-to the machine and the type of machine used in the exercise.\foreignlanguage{spanish}{}
 \begin{figure}[H]
-\selectlanguage{spanish}%
+
+
 \noindent \begin{centering}
-\includegraphics{/home/xpadulles/chronojump-docs/images/encoder-manual-images/select}
+\includegraphics[scale=0.5]{images/encoder-manual-images/capture_area}\caption{Capture area}
+
 \par\end{centering}
 
-\caption{Encoder selection}
-\selectlanguage{british}%
 \end{figure}
 
 
-Clicking on the ``Select encoder'' button a new window with selfexplanatory
-images will open.
+
+\subsubsection{Set configuration}
+
+This area shows the configuration of the set (machine used, exercise
+typo of contraction, laterality and load)
+
+Clicking on the set configuration button will expand the corresponding
+dialog.
+
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics[scale=0.75]{images/encoder-manual-images/set_config_button}
+\par\end{centering}
+
+\caption{Set config button}
+\end{figure}
+
+
+This will expand the set configuration dialog.
+
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics[scale=0.5]{images/encoder-manual-images/set_config}
+\par\end{centering}
+
+\caption{Set configuration}
+\end{figure}
+
+
+
+\subsubsection{Encoder configuration}
+
+The first step for configuring the set consists in selecting the type
+of encoder connected, the type of machine at which the encoder is
+connected and the exercise that will be performed.
+
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics[scale=0.75]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/select}
+\par\end{centering}
+
+\caption{Encoder config button}
+\end{figure}
+
+
+Clicking on \emph{Configure} button will show a new windows with different
+combinations of encoders/machines. Each type of encoder has a different
+set of configurations. The arrow buttons allow to change between different
+configuration of each encoder.
+
+In 1.7.0 and newer versiona Chronojump can manage multiple encoder
+config. This way you can Create, delete, import and export diferent
+encoder configuration.
+
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics[scale=0.5]{images/encoder-manual-images/encoder_admin}
+\par\end{centering}
+
+\caption{Encoder configuration admin}
+\end{figure}
+
 
 Each type of encoder has a diferent set of configurations. Clicking
 on the arrow buttons will change the configuration for this type of
-encoder
+encoder.
 
 There are three types of encoder:
 \begin{itemize}
@@ -1565,28 +1847,49 @@ machine \url{https://youtu.be/s-8Zel1RtGs}
 \paragraph{Inertial machines configuration}
 
 The characteristics of the inertial machines make necessary to enter
-a set of extra parameters that are being descrived below:\foreignlanguage{spanish}{}
-\begin{figure}[h]
-\selectlanguage{spanish}%
+a set of extra parameters that are being descrived below:
+\begin{figure}[H]
 \noindent \begin{centering}
 \includegraphics[scale=0.5]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/inertial_conf}
 \par\end{centering}
 
 \caption{Inertial machines parameters}
-\selectlanguage{british}%
 \end{figure}
 
 
-There's three types of inertial configuration
-\begin{enumerate}
-\item Machines where the subject works against gravity, or in a vertical
-movement. Example: squat.
-\item Machines where the subject works in a horizontal movement. Example:
-lateral displacement.
-\item Machines that have a set of pulleys thet makes the movement of the
-machine to be a multiple or a fraction of the movement of the subject
-with the objective of doubling the resistance offered by the machine.
-\end{enumerate}
+Using the rotary axis encoder (the most common), there's four types
+of intertial machines configuration depending on whether its movement
+is vertical or horizontal and wether the force is applied directly
+on a rope/ribbon or the force is applied on a moving pulley:
+
+\selectlanguage{spanish}%
+\begin{figure}[H]
+\noindent \centering{}%
+\begin{tabular}{|c|c|c|}
+\cline{2-3} 
+\multicolumn{1}{c|}{\selectlanguage{british}%
+\selectlanguage{spanish}%
+} & \selectlanguage{british}%
+Without moving pulley\selectlanguage{spanish}%
+ & \selectlanguage{british}%
+With moving pulley\selectlanguage{spanish}%
+\tabularnewline
+\hline 
+\selectlanguage{british}%
+Vertical\selectlanguage{spanish}%
+ & \includegraphics[scale=0.5]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/InertialMachine-01} & \includegraphics[scale=0.5]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/InertialMachine-03}\tabularnewline
+\hline 
+\selectlanguage{british}%
+Horizontal\selectlanguage{spanish}%
+ & \includegraphics[scale=0.5]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/InertialMachine-02} & \includegraphics[scale=0.5]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/InertialMachine-04}\tabularnewline
+\hline 
+\end{tabular}\caption{\selectlanguage{british}%
+Rotary axis encoder configuration\selectlanguage{spanish}%
+}
+\end{figure}
+
+
+\selectlanguage{british}%
 Below are descrived the needed parameters:
 \begin{itemize}
 \item Number of anchorages: Some models of inertial machines have more than
@@ -1597,7 +1900,7 @@ the options to enter the diameter of each one.
 and is reffered to the machine without any extra load. Chronojump
 implements a system to calculate the inertia momentum that allows
 to config an encoder in almost all type of inertial machines. Follow
-the instructions in section \index{5.3.3.2.4} to calcuate the inertia
+the instructions in section \index{5.3.3.2.2} to calcuate the inertia
 momentum of your machine configuration.
 \item Mass of each extra load: If the inertial machine allows to add extra
 loads to augment the inertia momentum, Chronojump will calcule it
@@ -1611,7 +1914,7 @@ a multiple or a fraction of the force that the machine would offer
 without the pulleys set.
 \end{itemize}
 
-\paragraph{Calculation of the inertia momentum}
+\subparagraph{Calculation of the inertia momentum}
 
 The firs part of this section will explain how to calculate the inertia
 momentum (IM) of the disk in an inertial machine. The calculus of
@@ -1633,8 +1936,8 @@ plane.
 \item Attach a known weight to known distance from the center of the disk.
 This way the disk will be unbalanced and after lifting and living
 the weight it will start to oscilate like a pendulus.
-\begin{figure}[h]
-\noindent \centering{}\includegraphics[scale=0.12]{images/encoder-manual-images/Disk}\caption{Reference weight}
+\begin{figure}[H]
+\noindent \centering{}\includegraphics[scale=0.06]{images/encoder-manual-images/Disk}\caption{Reference weight}
 \end{figure}
 
 \item In chrono jump software, with the encoder connected go to Select encoder.
@@ -1669,7 +1972,7 @@ is wrapping at.
 \end{figure}
 
 \item Pull the weight to approximately 90 degrees position and leave it.
-The disk should start oscil ating.
+The disk should start swinging.
 \item Quickly, click on the capture button. You will see the signal sent
 by the encoder. Chrnonojump will detect when the machine stops moving
 and will return the calculated IM.
@@ -1688,7 +1991,7 @@ will be asked for the extra weights that are attached to the disk
 as shown in the figure below.
 
 \begin{figure}[H]
-\noindent \centering{}\includegraphics{images/encoder-manual-images/capture_inertial}\caption{Exercise capturing with inertial configuration}
+\noindent \centering{}\includegraphics[scale=0.75]{images/encoder-manual-images/capture_inertial}\caption{Exercise capturing with inertial configuration}
 \end{figure}
 
 
@@ -1723,56 +2026,110 @@ $n$ is the number of weights added to the disk. - is the inertia
 momentum of each weight calculated above
 
 
-\subsubsection{Encoder capture tab}
+\subsubsection{Exercise configuration}
 
-At this tab you can see six areas: 
+In the exersise section you will find a drop-down with some preconfigured
+exercises. Chronojump allows to edit an exercise \includegraphics[scale=0.75]{/home/xpadulles/chronojump-docs/images/edit_button}
+or create a new one \includegraphics[scale=0.75]{/home/xpadulles/chronojump-docs/images/create_button}.\foreignlanguage{spanish}{}
+\begin{figure}[h]
+\selectlanguage{spanish}%
+\noindent \centering{}\includegraphics[scale=0.75]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/exercise_window}\caption{\selectlanguage{british}%
+Exercise configuration window\selectlanguage{spanish}%
+}
+\selectlanguage{british}%
+\end{figure}
+
+
+In the exercise configuration window the following parameters will
+be shown:
+\begin{itemize}
+\item Name of the exercise: Identifying text that will be shown in the exercise
+drop-down.
+\item Displaced body weight: Percentage of the body that is displaced during
+the exercise.
+\item Resistance: Descriptive text where is specified the type of resistance
+used.
+\item Description: Short information text with the description of the exercise.
+\item Speed at 1RM: Speed of execution when the load is the one that allows
+to only one repetition. This parameter is mandatory if you want to
+calculate the 1RM with the method ``1RM any exercise''.
+\end{itemize}
+
+\subsubsection{Selection of phase or phases analysed}
+
+At the time of showing or analyzing you must select if the concentric
+phase (force in the same way that speed) \includegraphics[scale=0.5]{images/encoder-manual-images/concentric}
+or both (excentric and concentric) \includegraphics[scale=0.5]{images/encoder-manual-images/eccentric_concentric}.
+
+
+\subsubsection{Laterality}
+
+For information purpouses the laterality with which is executed the
+exercise is also stored. This will be usefull is you want to see asymmetries
+in different muscle groups.
+
+
+\subsubsection{Resistance}
+
+Finally, the resistance that will be used is configured.
+
+In the gravitatory exercises. the extra mass that will be moved will
+be introduced without taking in account the mass of the athlete.
 
 \begin{figure}[H]
+
+
 \noindent \begin{centering}
-\includegraphics[scale=0.5]{images/encoder-manual-images/capture_en}
+\includegraphics[scale=0.75]{images/encoder-manual-images/mass_config}\caption{Configuring the extra mass}
+
 \par\end{centering}
 
-\caption{Capture tab}
+\end{figure}
+
+
+The extra mass of the exercise will be calculated using the formula
+
+\selectlanguage{spanish}%
+\[
+TotalMass=\frac{PersonMass*\%DisplacedBodyWeight}{100}+ExtraMass
+\]
+
+
+\selectlanguage{british}%
+At the right of the total mass will be shown at which percentage of
+the 1RM of the person the extra mass corresponds.
+
+In the case of inertial exercises, the diameter (depending on the
+ancorages) and the extra loads need to be entered.
+
+\begin{figure}[H]
+
+
+\noindent \centering{}\includegraphics[scale=0.75]{images/encoder-manual-images/inertia_config}\caption{Inertia config}
 \end{figure}
 
 
 
-\paragraph{Exercise}
+\subsection{Capture configuration}
 
-At exercise area there's the exercise name, information of that exercise
-and a button to create a new exercise. Clicking at the information
-or at the new exercise creation you will notice there's a selector
-called \textquotedblleft Displaced body weight (\%)\textquotedblright .
-This selector is important to measure the force and power, because
-100\% of body weight is displaced during a jump, but 0\% of body weight
-is displaced in a bench press. \textquotedblleft Extra weight\textquotedblright{}
-selector is used to input how many Kg are moved (weight bearing is
-not considered). Summarizing, weight displacement is calculated like
-this:
-
-\[
-WeightDispacement=\frac{PersonWeight*DisplacedBodyWeight}{100}+ExtraWeight
-\]
-
-
-The exercise area includes also the contraction type (eccentric-concentric
-or concentric), the laterality, the recording time selected, the minimal
-height, the feedback bell \includegraphics[scale=0.75]{images/bell_button}
-and the recalculate button.
-
-
-\paragraph{Aquire}
-
-In the acquire area a new set can be captured \includegraphics[scale=0.75]{images/capture_button}
+In the acquire area a new set can be captured \includegraphics[scale=0.5]{images/capture_button}
 or a previusly captured one can be loaded \includegraphics[scale=0.75]{images/load_signal_button}.
 
 \shadowbox{\begin{minipage}[t]{1\columnwidth}%
-Important!: When using inertial machiens, remember always start with
-the rope fully unwrapped when you press the capture button. I you
-don't do that, you will see that half of the repetitions have a much
-smaller range of movement than the other half.
+Important!: Using inertial machines, after opening the software the
+first time that an aquisition is made, a calibration of the machine
+must be done. It requires to unwrap completely the rope/ribbon and
+clicking on calibrate.
 
-\selectlanguage{spanish}%
+\noindent \begin{center}
+\includegraphics[scale=0.5]{images/encoder-manual-images/inertial_calibration}
+\par\end{center}
+
+When using inertial machiens, remember always start with the rope
+fully unwrapped when you press the capture button. I you don't do
+that, you will see that half of the repetitions have a much smaller
+range of movement than the other half.
+
 \noindent \begin{center}
 \begin{tabular}{|c|c|}
 \hline 
@@ -1782,46 +2139,55 @@ Right execution & Wrong execution\tabularnewline
 \includegraphics[scale=0.25]{images/encoder-manual-images/inertial_right} & \includegraphics[scale=0.25]{images/encoder-manual-images/inertial_wrong}\tabularnewline
 \hline 
 \end{tabular}
-\par\end{center}\selectlanguage{british}%
-%
+\par\end{center}%
 \end{minipage}}
 
-With the Options button \includegraphics[scale=0.75]{images/signal_settings_button}
-the following parameters of the capture or loaded set can be adjusted:
+During the capturing process you can finish \includegraphics[scale=0.5]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/finish_button}
+or cancel \includegraphics[scale=0.5]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/cancel_button}
+the set. In the first case the capture will finish and the data will
+be saved. In the second case the data will be discarded as well as
+all the associated data.
+
+
+\subsubsection*{Feedback /Rhythm}
+
+This window shows the information that will be shown during the capturing
+process.
 
 \begin{figure}[H]
-\noindent \centering{}\includegraphics[scale=0.7]{images/encoder-manual-images/capture_options}\caption{Capture options}
+\noindent \centering{}\includegraphics[scale=0.5]{images/encoder-manual-images/bells}\caption{\label{fig:Feedback}Feedback options}
 \end{figure}
 
-\begin{itemize}
-\item \emph{Recording time}. How long Chronojump will be capturing the set
-resulting of the exercise
-\item \emph{End at n inactivity seconds}. If the encoder don't receive any
-movement in the specified time Chronojump will end the capuring process.
-\item \emph{Minimal height} is the minimum range of centimetres that a repetition
-has. E.g. In a bench press, when person lifts the bar fom r the first
-time before starting exercise (weight was in the support), this is
-not considered a repetition because it's range of movement is lower
-than \textquotedblleft Minimal height\textquotedblright{} defined.
-\item \emph{Displayed height}. The scale of the set frame. The optimal value
-is the range of the movement in each exercise.
-\item \emph{Main variable}. The data displayed in the bars frame. This is
-the variable that will be showed during the exercise capturing process
-as an instant visual feedback.
-\item \emph{Show star and duration of each repetition.} If checked will
-show in the repetitions table the instant every repetition starts
-and de duration of it.
-\end{itemize}
-Feedback. This button opens the sound and colour feedback options.
 
-\begin{figure}[h]
-\noindent \begin{centering}
-\includegraphics[scale=0.7]{images/encoder-manual-images/bells}
-\par\end{centering}
+In the Feedback tab you can configure the visual and sound signals
+in function of the selected variable and referred to the best repetition
+or to the history of the athlete with this load and exercise.
 
-\caption{Sound feedback options}
-\end{figure}
+The drop-down allows to select the variable that will be used to colour
+in green, blue or red each repetition.
 
+The bells allow to config the threshold at which the bars will be
+shown in green (greater than the specified value) or red (less than
+the specified value)
+
+\noindent \begin{flushleft}
+The Rhythm tab allows to configure an advanced metronome in which
+you can select the desired time of each phase of the execution.\begin{wrapfigure}{l}{0.5\columnwidth}%
+\noindent \centering{}\includegraphics[scale=0.5]{images/encoder-manual-images/rhythm}\caption{\label{fig:Rhythm}Rhythm}
+\end{wrapfigure}%
+
+\par\end{flushleft}
+
+Selecting \emph{Show rhythm while capturing} will show a set of options
+that will allow to config the duration of the excentric and concentric
+phase.
+
+If you want to use cluster of sets, click on \emph{Use clusters.}
+This option allows to execute the specified number of repetitions
+in a cluster and rest the amount of seconds specified between clusteres.
+
+
+\subsubsection*{Load}
 
 The load button \includegraphics[scale=0.75]{images/load_signal_button}
 of this frame allows to load a set, save set again with a comment
@@ -1830,6 +2196,9 @@ The load set window is used also to manage all the sets of current
 person. Right click on it to change the person who performed the exercise,
 add a comment or delete any set of a given person. Videoturotial:
 Edit set \url{https://youtu.be/UiZJKbU4OSg}
+
+
+\subsubsection*{Recalculate}
 
 Recalculate can be used after capturing or loading. When user detects
 that some parameter has not been set correctly and wants to perform
@@ -1841,22 +2210,59 @@ capture, user can change 40Kg to 55Kg and then press \textquotedblright recalcul
 in order to have the force and power calculated correctly.
 
 
-\paragraph{Camera record}
+\subsubsection*{Delete}
 
-At the right of the exercise frame there is a check box where a web
-cam can be activated. If it's active it will be used on encoder capturing.
-The resulting video will be attached to the encoder set and can be
-watched using a button on set frame.
+If you need to delete a set, click on the trash icon \includegraphics[scale=0.75]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/delete_set}.
 
 
-\paragraph{set frame}
+\subsection{Chronopic}
 
-During the capture this frame will show the set sent by the encoder.
-Once finished Chronojump will calculate all the repetitions and show
-them in the same frame with some basic graphic information.
+The device button allows to specify which typo of device is going
+to be used. Each time a new device is connected to Chronojump the
+type of device must be specified. This configuration will be remembered
+by Chronojump for future uses.
+
+\begin{figure}[H]
 
 
-\paragraph{repetitions frame}
+\noindent \begin{centering}
+\begin{tabular}{|c|c|}
+\hline 
+Chronopic not configured & Chronopic configured\tabularnewline
+\hline 
+\hline 
+\includegraphics[scale=0.5]{images/device_window} & \includegraphics[scale=0.5]{images/encoder-manual-images/device_window_encoder}\tabularnewline
+\hline 
+\end{tabular}\caption{Device window}
+
+\par\end{centering}
+
+\end{figure}
+
+
+
+\subsection{Bars of the main variable}
+
+The bars frame shows, during the exercise, the main variable in real
+time. This way the athlete can have an instant feedback of every execution
+of the exersice.
+
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics[scale=0.5]{images/encoder-manual-images/power_bars}
+\par\end{centering}
+
+\caption{Power bars}
+\end{figure}
+
+
+The descending white line in the bar indicates an excentric repetition.
+An ascending line, a concentric.
+
+The saved repetitions apears with a framed number below.
+
+
+\subsection{Repetitions table}
 
 Once set is loaded, captured or recalculated, Chronojump will find
 repetitions and write their data on a table. Here you can delete a
@@ -1865,7 +2271,7 @@ to an spreadsheet software. Most users will save only a repetition,
 or delete a repetition and the press \textquotedblleft save all\textquotedblright .
 This repetitions can be analysed at the Encoder analyse tab.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \noindent \begin{centering}
 \includegraphics[scale=0.7]{images/encoder-manual-images/save_curve}
 \par\end{centering}
@@ -1882,94 +2288,86 @@ will also save the corresponding concentric (excentric) repetition
 of the exercise.
 
 
-\paragraph{Bars frame}
+\subsection{Raw data}
 
-The bars frame shows, during the exercise, the main variable in real
-time. This way the athlete can have an instant feedback of every execution
-of the exersice.
-
-\begin{figure}[h]
-\noindent \begin{centering}
-\includegraphics[scale=0.7]{images/encoder-manual-images/power_bars}
-\par\end{centering}
-
-\caption{Power bars}
-\end{figure}
-
-
-The descending white line in the bar indicates an excentric repetition.
-An ascending line, a concentric.
-
-The saved repetitions apears with a framed number below.
-
-
-\subsubsection{Encoder analyze tab}
-
-\begin{figure}[H]
-\includegraphics[scale=0.5]{images/encoder-manual-images/analyze}
-
-\caption{Analyze tab}
-\end{figure}
-
-
-Regarding the data, two things can be analysed: current set \foreignlanguage{spanish}{\includegraphics{images/encoder-manual-images/set_button}}(the
-set in the capture tab) or user repetitions \foreignlanguage{spanish}{\includegraphics{images/encoder-manual-images/repetition_button}}.
-
-When \textquotedblleft User repetitions\textquotedblright{} is marked,
-then using the \textquotedblleft Select\textquotedblright{} button,
-it can be discriminated the active repetitions and the not-active.
-The analysis will cover only the active repetitions. Also the \textquotedblleft User
-repetitions\textquotedblright{} allow to make comparisons between
-subjects (to compare the different subjects in this session), or between
-sessions (to compare the evolution of a person during different sessions).
-
-There are five modes of analysis:
-\begin{itemize}
-\item Individual / Current Set \includegraphics[scale=0.8]{images/encoder-manual-images/analyze_individual_current_set}:
-Analysis of all repetitions of the current set.
-\item Individual / Current session \includegraphics[scale=0.8]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/analyze_individual_intrasession}:
-Analysis of the saved and selected repetitions.
-\item Individual / All sessions \includegraphics[scale=0.8]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/analyze_individual_intersession}:
-Analysis of all repetitions saved in the selected sessions.
-\item Groupal / Current session \includegraphics[scale=0.8]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/analyze_groupal_current_session}:
-Analysis of current session and selected subjects.
-\end{itemize}
-Within each mode there's various types of analysis:
-\begin{itemize}
-\item Power bars \includegraphics[scale=0.75]{images/analyze_power_button}:
-Shows power, peak power, time needed to arrive to peak power and range
-of movement.
-\item Cross variables \includegraphics[scale=0.75]{images/analyze_cross_button}:
-to show relationships between variables like \textquotedblleft Power
-/ Load\textquotedblright . Includes the 1RM calculation. Cross variables
-is the only analysis that can be done on \textquotedblleft compare\textquotedblright{}
-mode. Videotutorial: Power vs Load curve \url{https://youtu.be/mynNxYELja4}
-\item 1RM \includegraphics[scale=0.75]{images/1RM_button}: It allows to
-make different calculations of the maximum repetitions that can be
-performed with different loads. Videotutorial: Chronojump tutorials:
-Estimate nRM indirectly \url{https://youtu.be/sd40bI2UQ9c}
-\item Side compare \includegraphics[scale=0.75]{images/analyze_sidecompare_button}:
-to see a graph of the mechanical variables of different repetitions
-all with the same axis.
-\item Single repetition \includegraphics[scale=0.75]{images/analyze_singlecurve_button}:
-to see a graph of the mechanical variables of a repetition.
-\item Neuromuscular profile \includegraphics[scale=0.75]{images/analyze_nmp}:
-to see the neuromuscular profile of the three best jumps of a set
-of six. At least six jumping repetitions are needed to performe that
-kind of analysis.
-\end{itemize}
-The analysis starts when user click in \textquotedblleft Analyse\textquotedblright .
-After a while, a graph and a table will appear, both can be saved
-using each save button in the lower right.
+During the capture this frame will show the set sent by the encoder.
+Once finished Chronojump will calculate all the repetitions and show
+them in the same frame with some basic graphic information.
 
 
 \subsection{Encoder settings and preferences}
 
-At preferences there are some options that are more advanced and are
-not changed frequently. Clicking at \textquotedblleft Session / Preferences\textquotedblright{}
-you will see five tabs, third one is related to encoder.
+In order to configure the encoder capture parameter, in \textquotedblleft Menu
+-> Session -> Preferences -> Encoder capture\textquotedblright{} you
+will find the next parameters:
 
-If you want to do calculations of mechanical parameters only in the
+
+
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics[scale=0.5]{images/encoder-manual-images/encoder_capture_preferences}\caption{Encoder preferences}
+
+\par\end{centering}
+
+\end{figure}
+
+\begin{itemize}
+\item Recording time. Sets how long Chronojump will register during the
+set in case the capture is not cancelled manually.
+\item End at n inactivity seconds. If Chronojump detects that the encoder
+is not measuring any movement during this seconds, the program will
+finish the capture process.
+\item Minimal height. The minimum range of movement of a repetition in centimeters.
+For example, in a bench press taking the bar for the first time (from
+a bar support) won't be considered as a repetition because the rang
+of movement is less than the value specified.
+\item (Inertial) On inertial discard first repetitions: Allows to discard
+the submaximum repetitions in whitch the subject has not reached the
+maximum velocity of execution. This repetition will not be taken in
+account when calculing the mean values of the set and will be drawn
+in gray.
+\item Show only bars. This option allows that the repetitions table to be
+shown in another table and not show the raw data area, reserving much
+more space for the bars area. To see the repetitions table click on
+the tab ``table'' in the left lower part of the area.
+\begin{figure}[H]
+
+
+\noindent \begin{centering}
+\begin{tabular}{|c|c|}
+\hline 
+Normal configuration & Only bars configuration\tabularnewline
+\hline 
+\hline 
+\includegraphics[scale=0.25]{images/encoder-manual-images/no_only_bars} & \includegraphics[scale=0.25]{images/encoder-manual-images/only_bars}\tabularnewline
+\hline 
+\end{tabular}\caption{Only bars option}
+
+\par\end{centering}
+
+\end{figure}
+
+
+\begin{itemize}
+\item Show all bars. If this option is selected all the repetitions will
+be shown and after each repetition all the bars will be resized to
+fit in the bars area.
+\item Show only last n bars. Allows to show only the last bars of the set.
+In this mode the bars won't be resized but at each repetition the
+bars wil slide from right to left.
+\end{itemize}
+\item Save repetitions automatically. Allows to save the repetitions automatically
+depending on the specified criterion.
+\item Cut sets into repetitions using triggers. In the section \index{5.3.11}
+the use of the triggers during the set is detailed.
+\end{itemize}
+
+\subsection{Other encoder configurations}
+
+In the tab called ``Encoder other'' some preferences that are less
+commonly used can be found.
+\begin{itemize}
+\item If you want to do calculations of mechanical parameters only in the
 propulsive phase just ensure the parameter \textquotedblleft propulsive\textquotedblright{}
 is active. The meaning is the following: In a fast concentric movement
 where there's little weight displaced, the brake action of the person
@@ -1981,21 +2379,60 @@ exercise is related to negative force and the power values get very
 low. Then, if \textquotedblleft propulsive\textquotedblright{} phase
 is active, only this is used, and not the \textquotedblleft brake\textquotedblright{}
 phase.
-
-On \emph{Save repetitions automatically on capture }can be selected
-what repetition must be saved when perfoming a new exercise. By default
-the repetitions with the best mean power will be saved, but it can
-be changed to \emph{Save all} the repetitions or \emph{Do not save
-}any repetition of the exercise.
-
-The next options are related to smoothing of the capture and we recommend
+\item The next options are related to smoothing of the capture and we recommend
 to leave them untouched.
-
-In the \emph{1RM prediction,} the method to get the linear regression
+\item In the \emph{1RM prediction,} the method to get the linear regression
 can be selected. The exponent in the weight means that the larger
 is the mass of the point used the larger is the weight used for the
 regression. The function of the weight can be zero (non wighted),
 one (linear), two (quadratic) or three (cubic).
+\end{itemize}
+
+\subsection{Using triggers}
+
+\begin{wrapfigure}{o}{0.5\columnwidth}%
+
+
+\noindent \begin{centering}
+\includegraphics[scale=0.25]{images/PushButton}\caption{Push Button}
+
+\par\end{centering}
+
+\end{wrapfigure}%
+
+
+Since 2017, the Chronopic new models allows to read external synchronization
+signals or triggers. These signals will be generated using any device
+that close an electric contact (button, photocell, contact platform...).
+You can check if your Chronopic can read it by pressing the test button
+in it. If a green LED turns on it means that your device can receive
+trigger signals.
+
+These signals can be used to cut the set into repetitions so that
+each signal indicates the start of a repetition or simply to highlight
+an instant that could be of interest. To specify this behavior go
+to Menu -> Session -> Preferences -> Encoder -> Cut sets into repetitions
+using triggers.
+
+If you want to identify certain instants inside the execution of the
+exercise, in the instantaneous analysis of the repetition you will
+see a dashed vertical yellow line that indicates the moment at which
+was produced the trigger signal.
+
+\selectlanguage{spanish}%
+\noindent \begin{center}
+\begin{figure}[H]
+\noindent \centering{}\includegraphics[scale=0.33]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/trigger}\caption{\selectlanguage{british}%
+\label{tab:Triggers}Triggers\selectlanguage{spanish}%
+}
+\end{figure}
+
+\par\end{center}
+
+\selectlanguage{british}%
+Besides, if you want to se the instants in milliseconds of the rising
+(In) and falling (Out) flank you can click on the tab ``Show triggers''
+on the lower side of the analysis frame.
 
 
 \subsection{Examples of encoder use}
@@ -2004,7 +2441,7 @@ At the Gym:
 \begin{enumerate}
 \item On the floor, at the side of the weight bar, put a gym weight (not
 made by rubber) and encoder on the top of it (attached with the magnets).
-\item The plastic hook is attached to weight bar securely, and to encoder.
+\item The carabiner is attached to the barbell or the training machine.
 \item Athlete1 and athlete2 start the warming up slowly and full range of
 movement (in a different place) while evaluator prepare the software.
 \item Evaluator starts Chronojump software, loads a session prepared the
@@ -2014,12 +2451,10 @@ day before (session parameters and subjects were already introduced).
 \item On main window, go to encoder, capture tab.
 \item Select exercise options: bench press, extra weight: 20Kg (10 bar +
 10 gym weights).
-\item Select athlete1. Click on capture (\textquotedblleft Safe\textquotedblright{}
-or \textquotedblleft External\textquotedblright ). See the results
-but have no time to analyse them now. set is automatically saved.
-\item Select athlete2. Click on capture (\textquotedblleft Safe\textquotedblright{}
-or \textquotedblleft External\textquotedblright ). See the results
-but have no time to analyse them now. set is automatically saved.
+\item Select athlete1. Click on capture. See the results but have no time
+to analyse them now. The set is automatically saved.
+\item Select athlete2. Click on capture. See the results but have no time
+to analyse them now. The set is automatically saved.
 \item Select exercise options (extra weight: 30Kg). Change weight of bar
 + gym weights to 30Kg. Then repeat {[}9{]} and {[}10{]}.
 \item Repeat the process every time with 10Kg more until one repetition
@@ -2034,8 +2469,9 @@ Open software.
 \item Load session, select athlete1, load first set, and \textquotedblleft Save
 all\textquotedblright{} repetitions.
 \item Repeat {[}2{]} for all the sets of Athlete1 and Athlete2.
-\item Go to analyse tab. Select User repetitions, compare between subjects,
-\textquotedblleft Power / Load\textquotedblright .
+\item Go to analyse tab. Click on group intrasession \foreignlanguage{spanish}{\includegraphics[scale=0.5]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/analyze_groupal_current_session}}.
+Select the exercise. Choose repetitions, \textquotedblleft Power /
+Load\textquotedblright{} and click on ``Analyze.
 \item Use the resulting values to prepare training related to power. 
 \end{enumerate}
 \begin{figure}[H]
@@ -2046,6 +2482,441 @@ all\textquotedblright{} repetitions.
 \caption{Example of encoder use}
 \end{figure}
 
+
+
+\section{Force test}
+
+Chronojump allows to measure in realtime the force applied on a force
+sensor. This force can be transmited to the force sensor with ropes,
+straps, rubber bands or rigid objects. This way the measured force
+can be isometric if you are using non elastic elements or dynamic
+if elastic elements are used.
+
+
+\subsection{Safety instructions}
+
+The force sensor has an attached cable that never should be disassembled,
+since it would irreparably damage its internal electronics.
+
+\selectlanguage{spanish}%
+\begin{figure}[H]
+\noindent \centering{}\includegraphics[scale=0.5]{/home/xpadulles/chronojump-docs/images/ForceSensor/Cable-Broken.JPG}\caption{\selectlanguage{british}%
+Broken cable\selectlanguage{spanish}%
+}
+\end{figure}
+
+
+\selectlanguage{british}%
+
+\subsection{Connecting the force sensor}
+
+In order to connect the force sensor to Chronojump, connect the strength
+gauge to the converting device and this to the computer with the mini-USB
+cable.
+
+The first time you connect the device to the computer you must config
+it clicking on the \emph{device} button \foreignlanguage{spanish}{\includegraphics[scale=0.5]{/home/xpadulles/chronojump-docs/images/device_button}}.
+A window with a list of connected devices will be shown where you
+should identify the type of device. Click on the arrows until the
+force sensor image shows up.
+
+\selectlanguage{spanish}%
+\begin{figure}[H]
+\noindent \centering{}\includegraphics[scale=0.5]{/home/xpadulles/chronojump-docs/images/ForceSensor/MIF-Device}\caption{\selectlanguage{british}%
+Configuring the force sensor device\selectlanguage{spanish}%
+}
+\end{figure}
+
+
+\selectlanguage{british}%
+
+\subsection{Taring and calibrating the force sensor}
+
+Due to the analog nature of the force sensor, it must be tared and
+calibrated.
+
+The taring process consists of indicating the state in which the sensor
+should register a force of 0 Newtons.
+
+The calibration process consists in increasing the force that the
+sensor receives and establishing a linear relationship between force
+increase and the electrical response of the sensor increase.
+
+To perform the tare and calibration process you must press the Adjust
+button \foreignlanguage{spanish}{\includegraphics[scale=0.5]{/home/xpadulles/chronojump-docs/images/ForceSensor/Adjust-Button_es}}.
+
+The following options will appear: 
+
+\selectlanguage{spanish}%
+\begin{figure}[H]
+\noindent \centering{}\includegraphics[scale=0.5]{images/ForceSensor/Adjust_en}\caption{\selectlanguage{british}%
+Force sensor adjusting\selectlanguage{spanish}%
+}
+\end{figure}
+
+
+\selectlanguage{british}%
+
+\subsubsection{Taring (previous to calibration)}
+
+To carry out this process place the sensor hanging from one end without
+supporting any external force apart from its own weight. Then press
+on the Tare button. Chronojump will record for a few seconds and save
+the result.
+
+\selectlanguage{spanish}%
+\begin{figure}[H]
+\noindent \centering{}\includegraphics[scale=0.12]{/home/xpadulles/chronojump-docs/images/ForceSensor/Tare-Vertical}\caption{\selectlanguage{british}%
+Vertical taring of the force sensor\selectlanguage{spanish}%
+}
+\end{figure}
+
+
+\selectlanguage{british}%
+
+\subsubsection{Calibration}
+
+Calibration consists in establishing a linear relationship between
+the electrical signal of the sensor and the real force. This ratio
+may vary depending on the sensor, temperature, humidity ... Therefore
+it is recommended to do a calibration once per session. By default
+Chronojump will use a generic calibration.
+
+To perform the calibration, type in Chronojump the mass in kg of an
+object whose weight is known. Assuming you want to measure tensile
+forces, attach the object to the sensor and lift it so that the sensor
+supports the weight of the object.\foreignlanguage{spanish}{}
+\begin{figure}[H]
+\selectlanguage{spanish}%
+\noindent \centering{}\includegraphics[scale=0.125]{/home/xpadulles/chronojump-docs/images/ForceSensor/Calibrate}\caption{\selectlanguage{british}%
+Force sensor calibration\selectlanguage{spanish}%
+}
+\selectlanguage{british}%
+\end{figure}
+
+
+In case you want to measure compression forces, let the weight rest
+on the sensor having previously removed the eyebolts from it.
+
+The closer the weight is to the forces to be performed, the more accurate
+the measurements with that calibration will be. Once the weight is
+stable and stable, click on the calibrate button.
+
+
+\subsubsection{Taring (aftercalibration)}
+
+In most cases the weight of the force sensor must be taken into account
+when measuring the force exerted by the analyzed subject. In this
+case, before performing the data acquisition, a new tare must be done
+but this time with the sensor in a horizontal position on a stable
+horizontal surface and without any external force.
+
+\selectlanguage{spanish}%
+\begin{figure}[H]
+\noindent \centering{}\includegraphics[scale=0.15]{/home/xpadulles/chronojump-docs/images/ForceSensor/Tare.JPG}\caption{\selectlanguage{british}%
+Horizontal tare of the force sensor\selectlanguage{spanish}%
+}
+\end{figure}
+
+
+\selectlanguage{british}%
+In this way the sensor will also register its own weight.
+
+In the case where the subject does not have to support the weight
+of the force sensor, it will not be necessary to do this new tare.
+
+
+\subsection{Data acquisition}
+
+Each record will be associated with a subject, an exercise and a laterality.
+
+You can create as many exercises as you want using the button
+
+Data recording will be done using the stopwatch button.
+
+During the data acquisition you will see a line that will vary in
+height depending on the force that is being detected by the sensor.
+
+\selectlanguage{spanish}%
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics[scale=0.5]{/home/xpadulles/chronojump-docs/images/ForceSensor/Capture_en}
+\par\end{centering}
+
+\caption{\selectlanguage{british}%
+Realtime data acquisition\selectlanguage{spanish}%
+}
+\end{figure}
+
+
+\selectlanguage{british}%
+To finish and save the exercise data you can click on the \textquotedbl{}Finish\textquotedbl{}
+button or press the \textquotedbl{}Enter\textquotedbl{} key
+
+Pressing the ``Cancel'' button will not save the data and consequently
+the capture will be lost.
+
+
+\subsubsection{Feedback}
+
+During registration, a horizontal line can be displayed at the specified
+force as well as a yellow interval around it.
+
+\selectlanguage{spanish}%
+\begin{figure}[H]
+\noindent \centering{}\includegraphics[scale=0.5]{/home/xpadulles/chronojump-docs/images/ForceSensor/Feedback_en}\caption{\selectlanguage{british}%
+Feedback during the exercise\selectlanguage{spanish}%
+}
+\end{figure}
+
+
+\selectlanguage{british}%
+This option allows to analyze the stability of the signal.
+
+Subsequently, in the analysis you can analyze the average error between
+the real force and the specificity force in the Feedback
+
+
+\subsection{Exercise analysis}
+
+There are two types of analysis:
+\begin{itemize}
+\item Manual analysis: Allows the different variables to be analyzed millisecond
+to millisecond.
+\item Automatic RFD analysis: Performs an automatic analysis of an isometric
+force test in which, starting from a minimum or zero force, the subject
+tries to reach the maximum force possible in the shortest time possible.
+This force will remain for a few seconds.
+\end{itemize}
+
+\subsubsection{Manual analysis}
+
+Clicking on the analyze button \includegraphics[scale=0.5]{images/ForceSensor/Analyze_button_en}
+you will enter the general analysis mode.
+
+If you do not have a loaded exercise, it will not be necessary to
+load one using the \textquotedblleft Load file\textquotedblright{}
+button
+
+\selectlanguage{spanish}%
+\begin{figure}[H]
+\noindent \centering{}\includegraphics[scale=0.5]{images/ForceSensor/Analysis-General_en}\caption{\selectlanguage{british}%
+General analysis of an instant\selectlanguage{spanish}%
+}
+\end{figure}
+
+
+\selectlanguage{british}%
+Using the A slider you can analyze the instantaneous values over time.
+
+The time in milliseconds, the force in Newtons and the RFD of the
+analyzed moment will be indicated in the lower right.
+
+Activating slider B can analyze a time interval.
+
+\selectlanguage{spanish}%
+\begin{figure}[H]
+\noindent \centering{}\includegraphics[scale=0.5]{images/ForceSensor/Analysis-General-A-B_en}\caption{\selectlanguage{british}%
+General analysis of a time interval\selectlanguage{spanish}%
+}
+\end{figure}
+
+
+\selectlanguage{british}%
+With the slider B activated, in addition to the data of a second instant,
+the difference, the average and the maximum of each variable in the
+specified range will be shown. Impulse, variability and, in the case
+of having the feedback activated, average error values will also be
+given.
+
+The \textquotedblleft A + B\textquotedblright{} slider allows you
+to simultaneously move the A and B sliders.
+
+In addition, once the \textquotedblleft A + B\textquotedblright{}
+slider has been activated, the zoom button\foreignlanguage{spanish}{\includegraphics[scale=0.5]{/home/xpadulles/chronojump-docs/images/ForceSensor/Zoom-Button}}
+will appear. Once it is clicked, only the selected interval will be
+displayed.
+
+
+\subsubsection{Automatic RFD test}
+
+Chronojump allows, using a sensor force, to perform a test of maximum
+isometric force to measure some parameters like:
+\begin{itemize}
+\item Instant force
+\item Maximum force
+\item RFD
+\item Impulse
+\end{itemize}
+This parameters can be measured from:
+\begin{itemize}
+\item Real force or raw data (Black).
+\item Modeled force using an inverse monoexponential function (Blue).
+\end{itemize}
+The RFD refers to Rate of Force Development. This variable is the
+derivative or the slope of the function force versus time.
+
+
+\paragraph{Taring and configuring the force sensor}
+
+Due to the analog nature of the force sensor, this must be tared and
+calibrated.
+
+
+\paragraph{Taring}
+
+The taring process consists in indicating at which state the sensor
+should register a force of zero Newtons.
+
+To perform this process put the sensor in a horizontal and stable
+surface and, without supporting any external force apart from the
+weight. Then press the button \emph{Tare. }Chronojump will register
+for a few seconds and save the results.
+
+\selectlanguage{spanish}%
+\begin{figure}[H]
+\noindent \centering{}\includegraphics[scale=0.1]{/home/xpadulles/chronojump-docs/images/ForceSensor/Tare.JPG}\caption{\selectlanguage{british}%
+Taring the force sensor\selectlanguage{spanish}%
+}
+\end{figure}
+
+
+\selectlanguage{british}%
+
+\paragraph{Calibration}
+
+The calibration consists in stablishing a lineal relationship between
+the electrical signal of the sensor and the real force. This relation
+could change in function of the sensor, temperature, humidity... For
+this reason it is recommended to calibrate once per session. By default
+Chronojump will use a generic calibration.
+
+To perform the calibration, in Chronojump enter the mass in kilograms
+of an object with a known weight. Tie this object to the force sensor
+and lift it making the sensor to hold all the weight.\foreignlanguage{spanish}{}
+\begin{figure}[H]
+\selectlanguage{spanish}%
+\noindent \centering{}\includegraphics[scale=0.125]{/home/xpadulles/chronojump-docs/images/ForceSensor/Calibrate}\caption{\selectlanguage{british}%
+Force sensor calibration\selectlanguage{spanish}%
+}
+\selectlanguage{british}%
+\end{figure}
+
+
+The closer the weight is to the force you are going to perform in
+your tests, the more precision you will have with this calibration.
+Once you have the load lifted and stable, click on the calibrate button.
+
+
+\paragraph{Configuring the maximum isometric force test}
+
+The onset of the test is allways calculated automatically. The duration
+of the test can be configured automatically or manually.
+\begin{itemize}
+\item Automatically: The test will be considered that is finished when the
+force falls a 5\% of the maximum force.
+\item Fixed: A fixed number of seconds from the begining of the test
+\end{itemize}
+In the Menu -> Session -> Preferences -> Force sensor tab you can
+config up to 4 values of RFD and 1 of impulse.
+
+In the figure is shown an complete example of configuration.
+
+\selectlanguage{spanish}%
+\begin{figure}[H]
+\noindent \centering{}\includegraphics[scale=0.5]{/home/xpadulles/chronojump-docs/images/ForceSensor/MIF_config}\caption{\selectlanguage{british}%
+Maximum isometric force test configuration\selectlanguage{spanish}%
+}
+\end{figure}
+
+
+\selectlanguage{british}%
+Each value of the RFD can be calculated from two types of signals:
+\begin{itemize}
+\item The Raw signal shows the values of force registered by the sensor
+during the test. All that is refered to this signal will be black.
+\item The fitted signal refers to the inverse monoexponential function that
+better fits the raw data. This fitting is made adjusting the Fmax
+(maximum force) and K (the speed at which the maximum force is reached)
+or $\tau$ (tau).\footnote{Some papers express $k=\frac{1}{\tau}$, where $\tau$ means the time
+necessary to reach the 63.2\% of the Fmax. Another way of expressing
+K is as the initial RFD normalized by Fmax ($k=\frac{RFD0}{Fmax}$)
+because \foreignlanguage{spanish}{$RFD0=k*Fmax$.}}. All that is refered to this signal is blue.
+\[
+F=Fmax\text{·}\left(1-e^{-k\text{·t}}\right)
+\]
+
+\end{itemize}
+Besides, the RFD can be calculated in various ways:
+\begin{itemize}
+\item Instantaneous. The RFD is calculated at the instant specified in milliseconds.
+\item Average. The RFD is calculated measuring the increment of force between
+two instants, specified in milliseconds, divided by the elapsed time.
+\item \% Force max. The RFD is calculated in the instant when the force
+is equal to a percentage of the maximum force.
+\item RFDmax. The RFD calculated is the maximum of the test.
+\end{itemize}
+In all cases the RFD is plotted as a line with a slope equal to the
+RFD and located at the points specified.
+
+In the \ref{tab:MIF-analysis} table are shown some examples of a
+maximum isometric test .
+
+\selectlanguage{spanish}%
+\begin{table}[H]
+\selectlanguage{british}%
+\begin{tabular}{|c|c|}
+\hline 
+Raw & Fitted\tabularnewline
+\hline 
+\hline 
+\includegraphics[scale=0.3]{/home/xpadulles/chronojump-docs/images/ForceSensor/MIF-RAW-Instant} & \includegraphics[scale=0.3]{/home/xpadulles/chronojump-docs/images/ForceSensor/MIF-Fitted-Instant}\tabularnewline
+\hline 
+Instantaeous RFD of the raw signal & RFD Instantaeous of the fitted signal\tabularnewline
+\hline 
+\hline 
+\includegraphics[scale=0.33]{/home/xpadulles/chronojump-docs/images/ForceSensor/MIF-RAW-average} & \includegraphics[scale=0.33]{/home/xpadulles/chronojump-docs/images/ForceSensor/MIF-Fitted-Average}\tabularnewline
+\hline 
+Average (0-300)ms RFD of the raw signal & Average (0-300)ms of the fitted signal\tabularnewline
+\hline 
+\hline 
+\includegraphics[scale=0.3]{/home/xpadulles/chronojump-docs/images/ForceSensor/MIF-RAW-percentFmax} & \includegraphics[scale=0.3]{/home/xpadulles/chronojump-docs/images/ForceSensor/MIF-RAW-Instant}\tabularnewline
+\hline 
+RFD at 50\% of Fmax of the raw signal & RFD en el 50\% of Fmax of the fitted signal\tabularnewline
+\hline 
+\hline 
+\includegraphics[scale=0.3]{/home/xpadulles/chronojump-docs/images/ForceSensor/MIF-RAW-MaxRFD} & \includegraphics[scale=0.3]{/home/xpadulles/chronojump-docs/images/ForceSensor/MIF-Fitted-maxRFD}\tabularnewline
+\hline 
+Maximum RFD of the raw signal & Maximum RFD of the fitted signal\tabularnewline
+\hline 
+\hline 
+\includegraphics[scale=0.3]{/home/xpadulles/chronojump-docs/images/ForceSensor/MIF-Raw-Impulse} & \includegraphics[scale=0.3]{/home/xpadulles/chronojump-docs/images/ForceSensor/MIF-Fitted-Impulse}\tabularnewline
+\hline 
+Impulse (0-300)ms of the raw signal & Impulse (0-300)ms of the fitted signal\tabularnewline
+\hline 
+\end{tabular}\caption{\label{tab:MIF-analysis}Different analysis of the RFD in a maximum
+isometric force test}
+\selectlanguage{spanish}%
+\end{table}
+
+
+\selectlanguage{british}%
+
+\paragraph{Execution of the maximum isometric force test}
+
+To perform the test it is recommended to exert a minimum initial force
+to avoid the any jerks that could spoil the results.
+
+Once the subject is applying a minimum force, click the \emph{capture}
+button \foreignlanguage{spanish}{\includegraphics[scale=0.25]{/home/xpadulles/chronojump-docs/images/capture_button}}.
+
+The subject must start exerting his maximum force as fast as possible.
+It is recommended to hold the maximum force for at least 3 seconds.
+
+Finally, press the the \emph{finish} button \foreignlanguage{spanish}{\includegraphics[scale=0.5]{/home/xpadulles/chronojump-docs/images/finish-button}}.
+Automatically a graph will be plot with all the necessary calculi.
+
+To load a previous test, click on \emph{load} button.
 
 
 \section{Other tests}
@@ -2218,7 +3089,7 @@ is required so there is no error in the comparison of time between
 a tread and the other (example 1 and 2) or from contact with the tapping
 and the tread on the ground (Example 3). This sync can be selected
 from a check box and carried out by making contact with several devices
-at once, or by touching the Test butto\foreignlanguage{spanish}{n\includegraphics[scale=0.03]{images/test_button}}
+at once, or by touching the Test button\includegraphics[scale=0.03]{images/test_button}
 of Chronopics. In the Chronojump Forum \url{http://forum.chronojump.org}
 is described a method for the construction of a professional sync
 device.
@@ -2252,7 +3123,7 @@ proposed.
 
 \subsubsection{Multi Chronopic results view}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{centering}
 \includegraphics[scale=0.6]{images/multiChronopic_mc}
 \par\end{centering}
@@ -2340,9 +3211,9 @@ Note that the execution button Running Analysis will be activated
 when the distance between the photocells and the two Chronopics are
 connected. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{centering}
-\includegraphics[width=1\columnwidth]{images/multiChronopic_ra}
+\includegraphics[angle=90,scale=0.6]{images/multiChronopic_ra}
 \par\end{centering}
 
 \caption{\label{fig:Gr=0000E1fico-de-multiChronopic_ra}Multi Chronopic screenshot
@@ -2351,7 +3222,7 @@ with Run Analysis results.}
 
 
 
-\chapter{Statistics and graphics of jumps and races}
+\chapter{Statistics and graphics}
 
 Chronojump has multiple indices to study the tests proposed. Unlike
 general spreadsheets purpose, the provision of statistical and graphics
@@ -2359,7 +3230,7 @@ has been designed specifically to measure jumps and running. Figure
 \ref{fig:Ventana-de-estad=0000EDsiticas} shows the statistics window
 that appears when you click on \emph{Tools / Statistics}.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{centering}
 \includegraphics[width=1\columnwidth]{images/chronojump_stats_window}
 \par\end{centering}
@@ -2368,13 +3239,11 @@ that appears when you click on \emph{Tools / Statistics}.
 \end{figure}
 
 
-The current version only provides statistical Chronojump concerning
-to jumps. Future versions will also include other statistical tests.
-If you have graphics and other statistical tests, we recommend that
-you export the worksheet data as described in Section \ref{sub:Exportaci=0000F3n-a-hoja}.
+
+\section{Jumps and races}
 
 
-\section{Statistic type, subtype and applications}
+\subsection{Statistic type, subtype and applications}
 
 Each statistic can be classified by type, among which are:
 \begin{description}
@@ -2386,7 +3255,7 @@ to analyze simple jumps with contact time.
 jumps.
 \end{description}
 
-\subsection{Simple jumps}
+\subsubsection{Simple jumps}
 
 The simple hop statistical show various ways to analyze simple jumps
 without contact time, which can be classified into several subtypes:
@@ -2398,13 +3267,13 @@ without contact time, which can be classified into several subtypes:
 \item Power peak of Lewis, Harman, Sayers (2), Shetty, Canavan, Lara (5)
 \end{itemize}
 
-\subsubsection{No index}
+\paragraph{No index}
 
 Statistical simple jump that shows all the jumps or a particular type
 as selected on the \emph{application} field.
 
 
-\subsubsection{Force-velocity}
+\paragraph{Force-velocity}
 
 Statistical simple jump that shows the force-velocity relationship
 according to the formula
@@ -2418,7 +3287,7 @@ SJ jumps with 100\% extra charge to the body weight, and SJ with no
 additional charge.
 
 
-\subsubsection{Elasticity index}
+\paragraph{Elasticity index}
 
 Statistical simple jump that shows the elasticity index formula
 
@@ -2429,7 +3298,7 @@ $IE=\frac{(CMJ-SJ)}{SJ}*100$
 between SJ and CMJ jumps.
 
 
-\subsubsection{Use of arms index}
+\paragraph{Use of arms index}
 
 Statistical simple jump that shows the rate of the use of arms from
 the formula
@@ -2441,25 +3310,23 @@ $IUB=\frac{(ABK-CMJ)}{CMJ}*100$
 between CMJ and ABK jumps.
 
 
-\subsubsection{Substraction between tests}
+\paragraph{Substraction between tests}
 
 Statistical tha shows the relative difference between two tests.
 
-\selectlanguage{spanish}%
 \noindent \begin{center}
 $\%dif=\frac{(test1-test2)}{test2}*100$
 \par\end{center}
 
-\selectlanguage{british}%
 
-\subsubsection{Peak power}
+\paragraph{Peak power}
 
 Figure \ref{fig:Estad=0000EDsticas-de-saltos-simples} is the ratio
 of power peak of the individual authors and their formulas. In the
 future, is expected to include expanded documentation for each formula
 and literature.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{centering}
 \includegraphics[scale=0.7]{images/chronojump_estadisticas_saltos_simples}
 \par\end{centering}
@@ -2470,7 +3337,7 @@ jumps.}
 
 
 
-\subsection{Contact time jumps}
+\subsubsection{Contact time jumps}
 
 The most important in this type of jump is the relationship between
 flight time and contact time. In many sports it\textquoteright s necessary
@@ -2485,7 +3352,7 @@ The application field in both cases refers to the type of jump that
 is applied to the statistic.
 
 
-\subsubsection{\label{sub:=0000CDndice-Dj}Dj index}
+\paragraph{\label{sub:=0000CDndice-Dj}Dj index}
 
 Study of the relationship between time of flight / time of contact
 in a single jump from the formula
@@ -2495,7 +3362,7 @@ $DJindex=\frac{TF-TC}{TC}*100$
 \par\end{center}
 
 
-\subsubsection{\label{sub:=0000CDndice-Q}QIndex}
+\paragraph{\label{sub:=0000CDndice-Q}QIndex}
 
 Study of the relationship between time of flight / time of contact
 in a single jump from the formula
@@ -2505,7 +3372,7 @@ $QIndex=\frac{TF}{TC}$
 \par\end{center}
 
 
-\subsection{Repetitive jump}
+\subsubsection{Repetitive jump}
 
 In the repetition of a jump test specified by a number of jumps, time,
 or unlimited ends when the coach or athlete decides it. It represents
@@ -2522,7 +3389,7 @@ In all cases the application field refers to the type of jump that
 is applied to the statistic. 
 
 
-\subsubsection{\label{sub:=0000CDndice-medio}Average index}
+\paragraph{\label{sub:=0000CDndice-medio}Average index}
 
 Study of the relationship of flight time / contact time in the repetitive
 jump according to the formula 
@@ -2532,7 +3399,7 @@ $AverageIndex=\frac{TFmean-TCmean}{TCmean}*100$
 \par\end{center}
 
 
-\subsubsection{\label{sub:Potencia-(Bosco)}Power (Bosco)}
+\paragraph{\label{sub:Potencia-(Bosco)}Power (Bosco)}
 
 Study of the relationship of flight time / contact time in the repetitive
 jump according to the formula 
@@ -2542,7 +3409,7 @@ $Power=\frac{9.81^{2}*TFmean*jumps*totalTime}{4*jumps*(totalTime-TFmean*jumps)}$
 \par\end{center}
 
 
-\subsubsection{Evolution}
+\paragraph{Evolution}
 
 Study of the relationship of flight time / contact time over the repetitive
 jump according to the evolution of the formula $Evolution=\frac{TF}{TC}*100$
@@ -2556,7 +3423,7 @@ you can find the amount of jumps you want to study. If you select
 a value of 1 then the best jump will be highlighted. 
 
 
-\subsubsection{Mean and standard deviation using RjIndex }
+\paragraph{Mean and standard deviation using RjIndex }
 
 Study Index
 
@@ -2568,7 +3435,7 @@ for each of the jumps of the repetitive jump test it\textquoteright s
 shown the average and standard deviation obtained. 
 
 
-\subsubsection{Mean and standard deviation using QIndex}
+\paragraph{Mean and standard deviation using QIndex}
 
 Study Index
 
@@ -2580,7 +3447,7 @@ for each of the jumps of the repetitive jump test it\textquoteright s
 shown the average and standard deviation obtained.
 
 
-\section{Multisession statistics}
+\subsection{Multisession statistics}
 
 All statistical presented except the Evolution in the repetitive jumps
 can be used for the comparison of different jumps or subjects in several
@@ -2596,7 +3463,7 @@ as desired and is not required to display the current session between
 them.
 
 
-\section{Selection of the jumps to be shown}
+\subsection{Selection of the jumps to be shown}
 
 There are four selection modes for the jumps shown as a condition
 in the generation of statistical expectation:
@@ -2611,19 +3478,19 @@ Most of the statistics offers the four options. Those omitted is because
 is not a purpose generate them.
 
 
-\section{Other settings}
+\subsection{Other settings}
 
 Other related action buttons presented below. 
 
 
-\subsection{Statistics formulation}
+\subsubsection{Statistics formulation}
 
 All statistics have a statement that is automatically created based
 on the selections made by the user in the statistics window. The statement
 can help you understand the statistics.
 
 
-\subsection{Genus distinction}
+\subsubsection{Genus distinction}
 
 It presents the option of distinguish between genders for the presentation
 of the results. Selecting this option you can have a dual behavior:
@@ -2637,14 +3504,14 @@ will appear a letter at the end of the subject to indicate the gender.
 This button can help intra and inter genus comparisons.
 
 
-\subsection{Automatic actualization}
+\subsubsection{Automatic actualization}
 
 The statistics window Chronojump is designed so each change in the
 database (new jump, subject rename, delete, jump, change jumper who
 has made a jump ...) is updated directly.
 
 
-\section{Marked rows}
+\subsection{Marked rows}
 
 In the first column of each row you will find a small box that allows
 you to select whether or not a row is taken into account for the graphs
@@ -2656,7 +3523,7 @@ on charts and reports in paragraphs check \ref{sub:Creaci=0000F3n-de-graficos}
 and \ref{sec:Generaci=0000F3n-de-Informes} respectively.
 
 
-\section{Graphic creation \label{sub:Creaci=0000F3n-de-graficos}}
+\subsection{Graphic creation \label{sub:Creaci=0000F3n-de-graficos}}
 
 Chronojump can create any graphics of any of the data shown in the
 statistics window. To do this simply click on the Graph button that
@@ -2684,7 +3551,7 @@ of jump.}
 \end{figure}
 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{centering}
 \includegraphics[scale=0.6]{images/grafico_stats3}
 \par\end{centering}
@@ -2702,6 +3569,173 @@ of jump.}
 values.}
 \end{figure}
 
+
+
+\subsubsection{Sprint analysis}
+
+If the race is a sprint measured with at least 2 laps you can perform
+the sprint test in Analysis -> Sprint.
+
+To execute this analysis the height of the subject must be specified.
+
+Select the race and click the Analyze button.
+
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics[scale=0.33]{images/sprint}
+\par\end{centering}
+
+\caption{\label{fig:Sprint-test}Sprint test}
+\end{figure}
+
+
+This analysis returns a model of the speed that allows to know the
+speed in each instant as well as the acceleration, force and power.
+
+The K variable indicates how fast the subject reaches his maximum
+velocity, independently of this maximum velocity. Force and power
+are relative to the body weight.
+
+
+\section{Encoder}
+
+
+\subsubsection{Encoder analyze tab}
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{images/encoder-manual-images/analyze}
+
+\caption{Analyze tab}
+\end{figure}
+
+
+There are four modes of analysis:
+\begin{itemize}
+\item Individual / Current Set \includegraphics[scale=0.8]{images/encoder-manual-images/analyze_individual_current_set}:
+Analysis of all repetitions of the current set.
+\item Individual / Current session \includegraphics[scale=0.8]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/analyze_individual_intrasession}:
+Analysis of the saved and selected repetitions.
+\item Individual / All sessions \includegraphics[scale=0.8]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/analyze_individual_intersession}:
+Analysis of all repetitions saved in the selected sessions.
+\item Groupal / Current session \includegraphics[scale=0.8]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/analyze_groupal_current_session}:
+Analysis of current session and selected subjects.
+\end{itemize}
+\noindent \begin{flushleft}
+Within each mode there's various types of analysis:
+\par\end{flushleft}
+\begin{itemize}
+\item \noindent \begin{flushleft}
+Power bars \includegraphics[scale=0.75]{images/analyze_power_button}:
+Shows power, peak power, time needed to arrive to peak power, range
+of movement and the mechanical impulse.
+\begin{figure}[H]
+\noindent \centering{}\includegraphics[scale=0.6]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_power_bars}\caption{\selectlanguage{spanish}%
+Power bars graph\selectlanguage{british}%
+}
+\end{figure}
+
+\par\end{flushleft}
+\item \noindent \begin{flushleft}
+Cross variables \includegraphics[scale=0.75]{images/analyze_cross_button}:
+to show relationships between variables like \textquotedblleft Power
+/ Load\textquotedblright . Includes the 1RM calculation. Cross variables
+is the only analysis that can be done on \textquotedblleft compare\textquotedblright{}
+mode. Videotutorial: Power vs Load curve \url{https://youtu.be/mynNxYELja4}
+\begin{figure}[H]
+\noindent \begin{centering}
+\begin{tabular}{|c|c|}
+\hline 
+\includegraphics[scale=0.3]{images/encoder-manual-images/analysis_power_V-M} & \includegraphics[scale=0.3]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_power_V-P}\tabularnewline
+\hline 
+\hline 
+\includegraphics[scale=0.3]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_power_V-F} & \includegraphics[scale=0.3]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_power_V-P-M}\tabularnewline
+\hline 
+\end{tabular}
+\par\end{centering}
+
+\caption{Cross variables graphs}
+\end{figure}
+
+\par\end{flushleft}
+\item \noindent \begin{flushleft}
+1RM \includegraphics[scale=0.75]{images/1RM_button}: It allows to
+make different calculations of the maximum repetitions that can be
+performed with different loads. Videotutorial: Chronojump tutorials:
+Estimate nRM indirectly \url{https://youtu.be/sd40bI2UQ9c}
+\begin{figure}[H]
+\begin{tabular}{|c|c|}
+\hline 
+\includegraphics[scale=0.3]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_1RM-Any} & \includegraphics[scale=0.3]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_1RM-Squat}\tabularnewline
+\hline 
+\hline 
+\includegraphics[scale=0.3]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_1RM-Bech-Press} & \includegraphics[scale=0.3]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_1RM-Indirect}\tabularnewline
+\hline 
+\end{tabular}
+
+\caption{\selectlanguage{spanish}%
+1RM graphs\selectlanguage{british}%
+}
+\end{figure}
+
+\par\end{flushleft}
+\item \noindent \begin{flushleft}
+Instantaneous analysis \includegraphics[scale=0.75]{images/analyze_singlecurve_button}:
+Shows the mecanical variables at each millisecond. There are four
+kind of graphs:\foreignlanguage{spanish}{}
+\begin{figure}[H]
+\selectlanguage{spanish}%
+\noindent \begin{centering}
+\begin{tabular}[t]{|c|c|}
+\hline 
+\includegraphics[scale=0.2]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis-1_repetition_es} & \includegraphics[scale=0.15]{/home/xpadulles/chronojump-docs/images/compare_lateral_es}\tabularnewline
+\hline 
+\selectlanguage{british}%
+Single repetition analysis\selectlanguage{spanish}%
+ & \selectlanguage{british}%
+Lateral comparison\selectlanguage{spanish}%
+\tabularnewline
+\hline 
+\hline 
+\includegraphics[scale=0.15]{/home/xpadulles/chronojump-docs/images/superpose_es} & \includegraphics[scale=0.33]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_all_set}\tabularnewline
+\hline 
+\selectlanguage{british}%
+Superposing of repetitions\selectlanguage{spanish}%
+ & \selectlanguage{british}%
+Analysis of the whole set\selectlanguage{spanish}%
+\tabularnewline
+\hline 
+\end{tabular}
+\par\end{centering}
+
+\caption{\selectlanguage{british}%
+Instantaneous analysis\selectlanguage{spanish}%
+}
+\selectlanguage{british}%
+\end{figure}
+
+\par\end{flushleft}
+\item \noindent \begin{flushleft}
+Neuromuscular profile \includegraphics[scale=0.75]{images/analyze_nmp}:
+to see the neuromuscular profile of the three best jumps of a set
+of six. At least six jumping repetitions are needed to performe that
+kind of analysis.
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics[scale=0.5]{/home/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_NMP}
+\par\end{centering}
+
+\caption{\selectlanguage{spanish}%
+Neuromuscular profile\selectlanguage{british}%
+}
+\end{figure}
+
+\par\end{flushleft}
+\end{itemize}
+\noindent \begin{flushleft}
+The analysis starts when user click in \textquotedblleft Analyse\textquotedblright .
+After a while, a graph and a table will appear, both can be saved
+using each save button in the lower right corner.
+\par\end{flushleft}
 
 
 \chapter{Report and export in jumps and races}
@@ -2743,7 +3777,7 @@ Clicking on \emph{Make Report}, you can choose the filename images/to
 save the HTML document. Also, you can generate a folder that will
 include all necessary images and styles to display the page properly.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{centering}
 \includegraphics[scale=0.7]{images/report1}
 \par\end{centering}
@@ -2769,299 +3803,6 @@ character) to separate the different columns of data. Remember to
 indicate it when you import the CSV file in the spreadsheet.
 
 
-\chapter{Share Data Server }
-
-Chronojump has a server to share data between users on Internet. The
-server will obtain valuable data from the cross of many variables.
-For this, the users may share the data Chronojump. We believe in the
-good quality and usability of the technical characteristics of the
-server.
-
-Chronojump dispone de un servidor en Internet para compartir datos
-entre los usuarios. El servidor permitirá obtener datos valiosos a
-partir del cruce de muchas variables, pero para ello es necesario
-que exista predisposición por parte de los usuarios de Chronojump
-para compartir los datos. Creemos que las características técnicas
-del servidor y su usabilidad son óptimas.
-
-\begin{comment}
-Creemos que el servidor de Chronojump es óptimo en cuanto a facilidad
-de uso-conexión, tiempo en línea, capacidad, funcionalidad, seguridad
-y privacidad.
-\end{comment}
-
-
-
-\section{Share and use the data}
-
-The data that can be shared are the tests, subjects and sessions of
-each evaluator at any time. The evaluator may upload to the server
-any session, dismissing those athletes and tests that he doesn\textquoteright t
-want to share. Before upload the data to the server, check if they
-have completed the necessary data from each of the athletes as well
-as the data required from the evaluator. 
-
-
-\section{\label{sec:Calidad-de-los-datos}Data quality. Accredited assessors
-and reliable data}
-
-In order to get a lot of data, without sacrificing the quality, there
-are two types of data in terms of reliability:
-\begin{description}
-\item [{The~general~data}] that can be upload from anyone with the Chronojump
-technology. This will soon be available for many data that belongs
-to this category.
-\item [{The~reliable~data}] requires the accreditation of the evaluator
-and the justification of the session data. This deals with three different
-profiles of the evaluator: 
-
-\begin{description}
-\item [{Evaluator-trainer}] profile: person related to the field of training.
-\item [{Evaluator-researcher}] profile: person related to the academic
-field.
-\item [{Mixed~profile:}] person involved in the two areas mentioned above.
-\end{description}
-
-The process of accreditation of the assessors has not yet begun, so
-all assessors are currently uncredited and the data shared corresponds
-to general data. In the future, the new credited evaluators may wish
-to upload their data to the reliable data, even if this data has been
-uploaded without the accreditation.
-
-
-The accreditation is in charge of the Research Group: Salut, Activitat
-Física i Esport at the Blanquerna Faculty (Universitat Ramon Llull). 
-
-\end{description}
-
-\section{Server functions}
-
-Server functions can be located in the main menu, \emph{Tools / Server}.
-Below its described each of them.
-
-
-\subsection{Check connection}
-
-Allows connecting to the server. If not possible, it may be because
-the server is temporarily inoperative, your computer is not connected
-to Internet, or your Internet connection has limit on some types of
-connection.
-
-
-\subsection{\label{sub:Datos-del-evaluador}Evaluators data}
-
-This feature allows the evaluator to fill in a sheet which will be
-linked to the tests, subjects and sessions that will be shared. The
-personal information will be hidden. It\textquoteright s necessary
-to provide evaluation data for the following reasons:
-\begin{itemize}
-\item It\textquoteright s essential for uploading data.
-\item Allows knowing the nationalities, ages, equipment, evaluators\dots{}
-\item If problems occur with some data, the administrators can contact via
-mail to the server of the evaluator.
-\end{itemize}
-As discussed in Section \ref{sec:Calidad-de-los-datos}, currently
-the accreditation is not required, so the sheet that has to be filled
-is very short. See Figures \ref{fig:server_evaluador1}, \ref{fig:server_evaluador2}
-and \ref{fig:server_evaluador3}. to check the for data window for
-the evaluators.
-
-\begin{figure}[h]
-\begin{centering}
-\includegraphics[scale=0.5]{images/evaluator1}
-\par\end{centering}
-
-\caption{\label{fig:server_evaluador1}Details of the evaluator, Tab 1.}
-\end{figure}
-
-
-\begin{figure}[h]
-\begin{centering}
-\includegraphics[scale=0.5]{images/evaluator2}
-\par\end{centering}
-
-\caption{\label{fig:server_evaluador2}Details of the evaluator, Tab 2.}
-\end{figure}
-
-
-\begin{figure}[h]
-\begin{centering}
-\includegraphics[scale=0.5]{images/evaluator3}
-\par\end{centering}
-
-\caption{\label{fig:server_evaluador3}Details of the evaluator, Tab 3.}
-\end{figure}
-
-
-
-\subsection{Upload or update session to server}
-
-This is the most important function to share data. When the evaluator
-click on \emph{Tools / Server / upload (or update) session to server},
-he must follow this steps:
-\begin{enumerate}
-\item First, the evaluator will be asked to verify the data as described
-in paragraph \ref{sub:Datos-del-evaluador},
-\item then the evaluator will be asked if he wants to discard some of the
-subjects of the session (see Figure \ref{fig:server_include-discard}),
-\item then he will be asked for the confirmation,
-\item finally it shows a progress window of data to be incorporated into
-the server.
-\end{enumerate}
-\begin{figure}[h]
-\begin{centering}
-\includegraphics[scale=0.7]{images/Captura-Incluir-Descartar_atletas}
-\par\end{centering}
-
-\caption{\label{fig:server_include-discard}Include / Discard subject to the
-server. }
-\end{figure}
-
-
-At any time the evaluator can re-upload the session to the server
-(update). The data that has already been uploaded will not be included
-again, but it wills so, the data created the last time. 
-
-The tests that have been simulated (not obtained from Chronopic) will
-be uploaded to the server.
-
-
-\subsection{Query the server}
-
-It has been created a window that allows average of the simple jumps,
-reactive jumps and simple runs. To access to it click on \emph{Tools
-/ Server / Query}. The query is performed clicking on the test selectors
-and the subject selectors.
-
-Below, we can observe the selectors of the query. Some of them are
-mandatory, while the most can be selected on \emph{Any} to indicate
-that this variable should not affect the result. 
-
-
-\subsubsection{Test selector}
-
-Here are the three selectors and possible values:
-\begin{description}
-\item [{Test~type:}] simple jump test, reactive jump or simple run.
-\item [{Test:}] correspond to the type of test described above.
-\item [{Variable:}] the average obtained will be different depending on
-the test selected:\end{description}
-\begin{itemize}
-\item For a simple jump test without contact time the only variable is the
-\emph{flight time}.
-\item For a single jump with contact time, the variables are: \emph{time
-of flight, contact time, Index DJ} (see \ref{sub:=0000CDndice-Dj}),
-\emph{Index Q} (see \ref{sub:=0000CDndice-Q}).
-\item For a reactive jump the possible variables are: \emph{Average Index}
-(see \ref{sub:=0000CDndice-medio}) and \emph{Power (Bosco)} (see
-\ref{sub:Potencia-(Bosco)}).
-\item For the running the only variable is the \emph{time}. 
-\end{itemize}
-
-\subsubsection{Selectors on the subject }
-
-The selectors are:
-\begin{description}
-\item [{Sex}]~
-\item [{Age:}] Refers to the age of the subject at the time the test is
-made. To calculate the age of the subject it\textquoteright s used
-the date of the birth.
-\item [{Country}]~
-\item [{Sport:}] Sometimes subdivided into specialty.
-\item [{Level:}] Divided into: {[}0{]} sedentary or occasional practitioner,
-{[}1{]} regular practice, {[}2{]} competition; {[}3{]} elite. 
-\end{description}
-
-\subsubsection{Evaluator selector}
-
-Any data from a particular evaluator can be chosen. This option may
-be interesting even for yourself because this way is possible to quickly
-gather information from all the jumps that have been evaluated.
-
-
-\subsubsection{Query results}
-
-When you click the search button, after a few seconds the server will
-indicate how many results have been found and which is the average.
-
-It is recommended to conduct general searches because the server has
-been created recently. As an example of search, try with simple jumps
-(Free) with most of the indicators on \emph{Any}.
-
-In Figure \ref{fig:server_query} is an example of consultation.
-
-\begin{figure}[h]
-\begin{centering}
-\includegraphics[scale=0.7]{images/Captura-Query-server}
-\par\end{centering}
-
-\caption{\label{fig:server_query}Query the server. }
-\end{figure}
-
-
-
-\subsection{Server main statistics}
-
-It has been programmed a window to get a snapshot of the existing
-data on the server. It shows the number of evaluators, as well as
-the subjects and the various type tests. Also indicated which data
-has been uploaded by the user who runs the program.
-
-You can access to this window by clicking on \emph{Tools / Server
-/ Statistics}.
-
-
-\section{Web statistics}
-
-The web page \url{http://www.chronojump.org/server.html} shows the
-results from the crossing variables updated from the server. These
-charts are updated every time new data is included (usually automatically
-at night). The aim is to create constantly a set of charts that provide
-relevant information to anyone interested, even without using Chronojump.
-
-In Figures \ref{fig:server_graph1}, \ref{fig:server_graph2}, and
-\ref{fig:server_graph3} it\textquoteright s possible to check some
-examples of graphics that are obtained on the web server. 
-
-\begin{figure}[h]
-\begin{centering}
-\includegraphics[scale=0.7]{images/server_persons}
-\par\end{centering}
-
-\caption{\label{fig:server_graph1}Statistics on the web server. Population
-graphic description.}
-\end{figure}
-
-
-\begin{figure}[h]
-\begin{centering}
-\includegraphics[scale=0.6]{images/server_heights_by_jumps_boxplot}
-\par\end{centering}
-
-\caption{\label{fig:server_graph2}Statistics on the web server. Boxplot flight
-time depending on the type of jump and gender. }
-\end{figure}
-\begin{figure}[h]
-\begin{centering}
-\includegraphics[scale=0.6]{images/server_tv_by_level_sex_jumptype}
-\par\end{centering}
-
-\caption{\label{fig:server_graph3}Statistics on the web server. Graph relates
-flight time, practical level, type of jump and gender.}
-\end{figure}
-
-
-
-\section{Jumps privacy and confidentiality}
-
-The names and dates of birth of the athletes and the evaluators will
-never be shown. Even when uploading the data, the names of the subjects
-are not sent (because is not required). The date of birth will be
-included to calculate the age, but it will never be displayed. The
-comments the evaluator add to the session, subject or test are neither
-provided.
-
-
 \chapter{Preferences of Chronojump}
 
 The preferences window \emph{Session / Preferences}, is divided into
@@ -3078,46 +3819,78 @@ and Other.}
 
 \caption{\label{fig:preferences_database}Preferences. Database tab.}
 \end{figure}
-\emph{Database} tab shows where Chronojump data are, allows to open
-the folder, and make one copy of it in a directory of choice for the
-users. Maybe it shows two possible locations for the database because
-some Windows systems offer a place to store data while the program
-runs, and another when it\textquoteright s closed.
+\emph{Database} tab shows where Chronojump data are located, allows
+to open the folder, and make one copy of it in a directory of choice
+for the users. Maybe it shows two possible locations for the database
+because some Windows systems offer a place to store data while the
+program runs, and another when it\textquoteright s closed.
 
 Use this tab to have a copy of your data in order to avoid loosing
 your sessions, subjects and tests on a hard disk problem or if operating
 system is reinstalled. Also you can use this tab to have Cronojump
 database in more than one computer.
 
-If you want to copy the data stored in the computer A to the computer
-B, follow this steps:
-\begin{enumerate}
-\item On computer A:
+In version 1.7.0 and above Chronojumps is able to import sessions
+from other computers. The export must be done of the whole database
+following the next steps:
 
+On the origin computer:
 \begin{enumerate}
-\item Go to: \emph{Session / preferences / database }
-\item Select the items you want to backup
-\item Click in \emph{Backup database.}
-\item Depending on what you have selected to copy, a file or a folder with
-its corresponding subfolders will be exported. A directory called
-chronojump will be created with all the selected data if you selected
-to backup the \emph{Multimedia and encoder tests.} If you didn't selected
-to backup the \emph{Multimedia and encoder tests, }a file called \emph{chronojump.db}
-will be copied.
+\item Menu -> Session -> Preferences -> Database -> Backup database
+\item Select the path where the folder called Chronojump will be created.
+This folder contains all the information needed for exporting the
+data to other computer or, simply, have a backup of the sessions in
+this computer. You can choose a removable media to copy it later in
+the destination computer
 \end{enumerate}
-\item On computer B:
+There's two options for importing the data in the destination computer.
 
+
+\subsection{Option1: Add the imported data to existent Chronojump data.}
+
+This option allows you to import data without loosing any data in
+the destination computer. The counterpart is that you will have to
+import each session one by one.
+
+On the destiny computer:
 \begin{enumerate}
-\item If Chronojump is not installed, do it.
-\item Go to \emph{Session / preferences / database / open database folder}
-. A file explorer window will be opened.
-\item If you have valuable data on B, then you should make a copy of the
-chronojump.db or the Chronojump whole folder that is located two levels
-above in the folders hierarchy.
-\item Copy the \emph{chronojump folder} or the \emph{chronojump.db} file\emph{
-}from A to B.
-\item Close chronojump, open again, and it's done.
+\item Copy the Chronojump folder to the destiny computer. You can copy this,
+for example, in the Desktop or any other path.
+\item Go Menu -> Session -> Import session from another Chronojump database
+\item Select where you want to import the session. In the current loaded
+session or in a new session.
+\item Click on ``Open'' button. You will be asked to select the file ``chronojump.db''
+that is located in the ``Chronojump/database folder''
+\item It will appear a list of available sessions to import. Select the
+desired session and click on ``Accept''.
+\item If you want to import more sessions go to the step 2.\foreignlanguage{spanish}{}
+\begin{figure}[H]
+\selectlanguage{spanish}%
+\noindent \centering{}\includegraphics[scale=0.66]{images/import}\caption{\selectlanguage{british}%
+Import an existing Chronojump database\selectlanguage{spanish}%
+}
+\selectlanguage{british}%
+\end{figure}
+
 \end{enumerate}
+
+\subsection{Option2: Substitute any previous data existing in the destination
+computer}
+
+This option will erase the existing data in the destination computer.
+If you aren't sure that this is what you want, please don't use this
+method.
+
+On the destination computer:
+\begin{enumerate}
+\item Go to Menu -> Session -> Preferences -> Database -> Open data folder
+\item A file browser windows will appear with a some folders and files like
+``database'', ``encoder'', ``logs''...
+\item Close the Chronojump preferences window and the Chronojump itself.
+\item Substitute all the mentioned files and folders by files and folders
+the stored in the previously exported Chronojump folder.
+\item Open Chronojump to check that all the sessions from the origin computer
+are imported.
 \end{enumerate}
 
 \section{Jumps}
@@ -3239,7 +4012,292 @@ accept a jump where the person is in the air in the moment that time
 finishes. If is unchecked then this last jump will be rejected.
 
 
+\part{Troubleshooting}
 
+
+\chapter{General}
+
+As a general recommendation, always try to have the software updated
+to the last published version. This way you'll be sure that already
+corrected bugs are not the cause of the problems.
+
+
+\section{In Mac OSX, while executing Chronojump, it appears a message saying
+``Maybe R is not installed''.}
+
+In Mac OSX you need to install the R package independently. Be sure
+that you have installed it. In the next linx you will find information
+about how to install it.
+
+\href{http://chronojump.org/en/software/\#MacOSX}{http://chronojump.org/en/software/\#{}MacOSX}
+
+
+\section{Chronojump buttons are disabled in all modes}
+
+Make sure that you created or loaded a session with the corresponding
+athletes.
+
+Chronojump stores automatically all the tests associating them to
+a session and a person. If there is no active session with athletes
+you won't be allowed to perform any test.
+
+
+\section{The data exported cannot be read correctly}
+
+Chronojump allows to export the data of the session, set or repetition
+in CSV format. Files in this format can be read by spreadsheed applications
+as MS Excel, libreOffice or Numbers.
+
+When importing the data to any of these programs remember to specify
+the UTF-8 format and the field and decimal separator characters accordindg
+to your configuration in Chronojump preferences (Menu -> Session ->
+Preferences -> Language)
+
+
+\section{The RCA cables don't transmit the device signal to the Chronopic}
+
+In order to check the RCA cables or adapters connect the Chronopic
+to the computer with the USB cable and after that connect the RCA
+adapter or cable. Make sure that no device is connected to the RCA
+cable or adapter. The LED to the right of the USB socket should stay
+on. In the case it isn't, it means that the cable or adapter should
+be replaced.
+
+In the case it is not turning off, with the side that is not connected,
+use some metallic piece to shortcircuit the central pin and the exterior
+metallic part of the RCA connector as shown in the picture. At this
+moment the green LED should turn off. If this is not the case it would
+indicate also that the cable or adapter should be replaced.
+
+\selectlanguage{spanish}%
+\begin{figure}[H]
+\noindent \centering{}\includegraphics[scale=0.5]{/home/xpadulles/chronojump-docs/images/RCA-check}\caption{\selectlanguage{british}%
+Checking the RCA cable\selectlanguage{spanish}%
+}
+\end{figure}
+
+
+\selectlanguage{british}%
+
+\chapter{Chronopic}
+
+
+\section{The Chronopic doesn't appear in the list of devices connected.}
+
+
+\subsection{Windows systems}
+
+In some occasions, Windows or some antivirus, can disable the Chronopic
+driver. To solve this issue it is recommended to follow this steps:
+\begin{itemize}
+\item Downlod Chronojump installer from \href{http://chronojump.org/en/software/}{http://chronojump.org/en/software/}
+\item Disable any antivirus on your system.
+\item Reinstall Chronojump by executing the installer and making sure that
+the Chronopic driver checkbox is marked.
+\end{itemize}
+\selectlanguage{spanish}%
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{/home/xpadulles/chronojump-docs/images/chronopic-driver}
+\par\end{centering}
+
+\caption{\selectlanguage{british}%
+\label{fig:driver_chronopic}Chronopic driver installation\selectlanguage{spanish}%
+}
+\end{figure}
+
+
+\selectlanguage{british}%
+
+\subsection{MacOS}
+
+In previous versions of OSX you need to install Chronopic drivers.
+
+Since the update of MacOS to the version 10.13 it is not necessary
+to install the Chronopic drivers.
+
+If you are using the 10.13 version (High Sierra) or above and you
+have installed Chronopic drivers previously and they are not working
+correctly \dots{} We recommend you to uninstall the Chronopic drivers
+following this steps:
+\begin{enumerate}
+\item Open a Finder window
+\item Go to Menu -> Finder -> Preferences
+\item On General tab -> Show this items on the desktop:, check Hard disks
+\item On your desktop, open your Macintosh HD
+\item Go to /System/Library/Extensions.
+\item Locate FTDIUSBSerialDriver.kext and move it to trash.
+\item Go back three times and go to /Library
+\item Locate FTDIUSBSerialDriver.pkg and move it to trash.
+\item Go to Menu -> Finder -> Preferences
+\item On General tab -> Show this items on the desktop:, uncheck Hard disks
+\item Make sure there\textquoteright s no USB devices connected to the computer
+and reboot it. 
+\end{enumerate}
+
+\section{The multitest Chronopic doesn't send any information to Chronojump}
+
+The green LED to the right of the USB socket should be on if the Chronopic
+is receiving no signal at all and should turn off in the other case.
+Check RCA connections following the instructions on the 9.4 section.
+
+First of all you must check that the LED D4 of the Chronopic is on
+once it is connected to the computer with the USB cable. Without no
+devices connected to the Chronopic, the RED LED to the right of the
+USB connector should be on. In case it is not check that the USB cable
+is OK and connected to the computer.
+
+The green LED to the right of the USB port shows the state of the
+device connected to the Chronopic. If no device is connected the LED
+shoud be on.
+\begin{itemize}
+\item If the green LED is on, check the communication between the Chronopic
+and Chronojump running it and, with the Chronopic connected, perform
+some test. It is not necessary to connect any device to the Chronopic.
+You can use the test button to simulate any interruptor device as
+a contact platform or a photocell. When pressing the test button the
+green LED should switch off and Chronojump should detect the contact.
+If it is not the case see the next chapter.
+\item If the green LED is off, It probably is a hardware problem and a Chronopic
+or USB cable substitution is needed.
+\end{itemize}
+
+\chapter{Jumps}
+
+
+\section{The contact platform doesn't detect any jump.}
+
+Check the RCA cables following the instructions on the 9.4 section.
+
+If the cable doesn't show any of the above simptoms, connect the contact
+platform to the RCA cable already connected to the Chronopic. If the
+green light to the right of the USB connector turns off, it means
+that the two inner copper plates of the platform are in contact or
+that the RCA connector is in bad condition.
+
+In that case, check that there is no knocks on the corners of the
+platform that causes the two copper being in contact. If it is this
+way, you can use a flat screwdriver to separate the two copper plates
+and introduce some piece of paperboard or other insulating material.
+
+In the case that the problem is in the RCA connector it would require
+a substitution or cable repairing.
+
+
+\section{The height of the jumps is random and independent of the real height.}
+
+Check that the jump you are viewing in the software is not a simulated
+one. Before the 1.6.2, in the case of not having a Chronopic connected,
+Chronojump performs a simulated jump with random values. This can
+be checked in the bars and seeing if there is a ``Simulated'' word
+inside the height bars.
+
+To connect the Chronopic go to the section \ref{sec:Chronopic/s_connection}
+
+From 1.6.2 version and above this behavior only happens in the ``Simulated''
+session
+
+
+\section{In countermovement jumps, the height of jump are very low.}
+
+In some subjects, specialy those with low weight, during the excentric
+phase is detected a loss of contact with the platform. This is because
+of a too quick descent with an acceleration close to the gravity.
+This negative acceleration provoques the force exerted on the platform
+to be very little and, in conjuction with the light weight of the
+subject, his presence is not detected.
+
+In this occasions it is recommended to give instructions to the subject
+to not fall so quickly.
+
+Besides, the evaluator can press the Chronopic Test button until the
+subject starts the concentric phase of the jump.
+
+
+\chapter{Races}
+
+
+\section{The photocell barriers doesn't work when the athlete passes at high
+speed.}
+
+Check that the elapsed time between crossing one barrier and the next
+is greater than the time set to avoid double contacts. You can see
+the configuration at Menu -> Session -> Preferences -> Races.
+
+
+\section{The photocell doesn't switch on}
+
+The photocells need to be powered with altern current or direct current.
+Make sure that beside the RCA that connects the Chronopic and the
+photocells, they are connected to the power. To check that the photocell
+is switched on you there's is a LED in the front side that switch
+on when the photocell is powered. If the photocell is aligned with
+the reflector you should ear a clic each time you interrupt the beam
+with your hand.
+
+
+\section{The time counter doesn't start when the athlete crosses the photocell}
+
+If you have all the photocells powered and the time counter doesn't
+start it can be caused by a misaligned photocell. If this is the case
+the green light of the Chronopic will be switched off. If this is
+the case Chronojump interprets this situation as if the athlete is
+in the first photocell and have not started yet.
+
+To know if a photocell is aligned you can interrupt the beam with
+your hand. If the interruption causes a click, it means that is alligned.
+In other cases it means that the photocells is not aiming to the reflector.\foreignlanguage{spanish}{}
+\begin{figure}[h]
+\selectlanguage{spanish}%
+\noindent \begin{centering}
+\includegraphics[scale=0.25]{/home/xpadulles/chronojump-docs/images/emissor-reflector-ull}
+\par\end{centering}
+
+\caption{Alignment of the photocell}
+\selectlanguage{british}%
+\end{figure}
+
+
+
+\chapter{Encoder}
+
+
+\section{When capturing with an encoder Chronojump doesn't receive any signal
+at all.}
+
+Check that the Chronopic is connected to the computer with a USB calbe.
+If this is well connected the red light to the right of the USB connector
+should be switched on.
+
+Check that the encoder is connected to the Chronopic. Is older versions
+of the Chronopic the encoder is soldered directly to the Chronopic,
+but in the newer versions the connections are made with an RJ45 connector
+(the same type as in the LAN connections)
+
+In most of the inertial machines the Chronopic is integrated in the
+machine itself and can be more difficult to see the RJ45 connector.
+If you cannot locate this connector, contact your provider to ask
+for it.
+
+
+\section{When analysing a progressive loads test, all the repetitions have
+the same load.}
+
+Check that you have selected the mode Individual / current session\includegraphics{/home/xpadulles/chronojump-docs/images/encoder-manual-images/analyze_individual_intrasession}
+and you have selected the repetitions of each set previously saved.
+
+
+\section{In the 1RM analysis, Chronojump doesn't show any 1RM}
+
+To show the value of the 1RM after a progressive loads test three
+conditions are needed.
+\begin{enumerate}
+\item The exercise must have defined the speed at which the 1RM is performed.
+\item It must have been performed a progressive loads test with at least
+three different loads.
+\item The loads mus be gravitational loads. In the inertial machines it
+doesn't exist the 1RM concept.
+\end{enumerate}
 \appendix
 
 \chapter{Chronopics prior to Chronopic 3}
@@ -3251,7 +4309,7 @@ before March 2008).
 \section{Chronopic versions}
 
 \begin{table}[H]
-\begin{tabular}{|c|>{\centering}p{2cm}|>{\centering}p{2cm}|>{\centering}p{2.5cm}|>{\centering}p{2.5cm}|}
+\begin{tabular}{|c|>{\centering}p{2cm}|>{\centering}p{2cm}|>{\centering}p{2cm}|>{\centering}p{2cm}|}
 \hline 
 {\small{}Version} & {\small{}Launched} & {\small{}Connection} & {\small{}available at{*}} & {\small{}Price{*}}\tabularnewline
 \hline 
@@ -3273,7 +4331,7 @@ want it, just visit Chronojump store: \url{http://chronojump.org/pricing.html}}{
 \end{table}
 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \noindent \begin{centering}
 \includegraphics[width=250pt,height=159pt]{images/chronopic_2_0_usb_front_mini}
 \par\end{centering}
@@ -3282,7 +4340,7 @@ want it, just visit Chronojump store: \url{http://chronojump.org/pricing.html}}{
 \end{figure}
 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \noindent \begin{centering}
 \includegraphics[width=250pt,height=213pt]{images/chronopic_2_0_serial_front_mini}
 \par\end{centering}
@@ -3292,7 +4350,7 @@ want it, just visit Chronojump store: \url{http://chronojump.org/pricing.html}}{
 
 
 \noindent 
-\begin{figure}[h]
+\begin{figure}[H]
 \noindent \begin{centering}
 \includegraphics[width=250pt]{images/chronopic_foto}
 \par\end{centering}
@@ -3399,7 +4457,7 @@ Figure \ref{fig:Chronopic3-assembly-process} shows the assembly.
 Note: These instructions are only necessary for the first step of
 the assembly process. The latest Chronopic versions are fabric build. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \noindent \begin{centering}
 \includegraphics[scale=0.5]{images/chronopic_box_mount}
 \par\end{centering}
