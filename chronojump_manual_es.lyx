@@ -7918,6 +7918,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/encoder-manual-images/bells_es.png
+	lyxscale 50
 	scale 50
 
 \end_inset
@@ -7959,8 +7960,69 @@ En la pestaña de Retroalimentación se puede configurar las señales sonoras
 \begin_layout Standard
 \noindent
 \align left
-El desplegable permite seleccionar la variable que se utilizará para colorear
- en verde, azul o roja la repetición.
+El desplegable 
+\begin_inset Quotes eld
+\end_inset
+
+Variable principal
+\begin_inset Quotes erd
+\end_inset
+
+ permite seleccionar la variable que se utilizará para colorear en verde,
+ azul o roja la repetición.
+\end_layout
+
+\begin_layout Standard
+La opción 
+\begin_inset Quotes eld
+\end_inset
+
+Mostrar variable secundaria
+\begin_inset Quotes erd
+\end_inset
+
+ permite añadir una segunda variable en el gráfico que se mostrará con un
+ punto amarillo cuya altura representa el valor de la misma.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/Secondary-Variable.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Variable secundaria
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -9104,17 +9166,14 @@ Cable roto
 
 \end_layout
 
-\begin_layout Standard
-
-\end_layout
-
 \begin_layout Subsection
 Conexión del sensor de fuerza
 \end_layout
 
 \begin_layout Standard
-Para conectar el sensor de fuerza a Chronojump, conecte la galga extensométrica
- al dispositivo conversor y éste al ordenador mediante el cable mini-USB.
+Para conectar el kit del sensor de fuerza a Chronojump, conecte la galga
+ extensométrica al dispositivo conversor y éste al ordenador mediante el
+ cable mini-USB.
 \end_layout
 
 \begin_layout Standard
@@ -9222,7 +9281,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/ForceSensor/Adjust.png
+	filename images/ForceSensor/Adjust_es.png
 	lyxscale 50
 	scale 50
 
@@ -9255,7 +9314,7 @@ Tara (previa a la calibración)
 
 \begin_layout Standard
 Para llevar a cabo este proceso coloque el sensor colgando de uno de los
- extremos sin soportar ningúna fuerza externa aparte del peso.
+ extremos sin soportar ningúna fuerza externa aparte del propio peso.
  Seguidamente presione sobre el botón de 
 \emph on
 Tara
@@ -9429,18 +9488,8 @@ Registro de datos
 \end_layout
 
 \begin_layout Standard
-Cada registro se asociará a un sujeto, un ejercicio y una lateralidad .
-\end_layout
-
-\begin_layout Standard
-Puede crear tantos ejercicios como desee mediante el botón 
-\begin_inset Graphics
-	filename images/ForceSensor/Create-Exercice-Button.png
-	scale 50
-
-\end_inset
-
-
+Cada registro se asociará a un sujeto, un tipo de ejercicio y una lateralidad
+ .
 \end_layout
 
 \begin_layout Standard
@@ -9522,8 +9571,207 @@ Enter
 \end_layout
 
 \begin_layout Standard
-Presionar el botón de cancelar hará que no se guarden los datos y en consecuenci
-a se pierda la captura.
+Presionar el botón de 
+\begin_inset Quotes eld
+\end_inset
+
+Cancelar
+\begin_inset Quotes erd
+\end_inset
+
+ hará que no se guarden los datos y en consecuencia se pierda la captura.
+\end_layout
+
+\begin_layout Standard
+Los datos de la serie se pueden tratar de modo que se muestren los datos
+ sin tratar, los valores absolutos o los valores invertidos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Modo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Señal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Captura estandard
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ForceSensor/Capture-Standard.png
+	lyxscale 33
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Valores absolutos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ForceSensor/Capture-Absolute.png
+	lyxscale 33
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Valores invertidos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ForceSensor/Capture-Inverted.png
+	lyxscale 33
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tratamiento de la señal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Durante la captura se podrá mostrar un rango de tiempo fijo o que el rango
+ se vaya ampliando a medida que el tiempo transcurrido aumenta.
+ Si se desea usar la primera opción puede ir a Menú -> Sesión -> Preferencias
+ -> Sensor de fuerza y seleccionar la opción Desplazamiento.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/ForceSensor/Preferences.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Preferencias del sensor de fuerza
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -9550,7 +9798,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/ForceSensor/Feedback_es.png
-	lyxscale 50
+	lyxscale 75
 	scale 50
 
 \end_inset
@@ -9582,6 +9830,130 @@ Posteriormente, en el análisis se podrá analizar el error medio entre la
 \end_layout
 
 \begin_layout Subsection
+Creación y edición de tipos de tests
+\end_layout
+
+\begin_layout Standard
+Puede editar o crear tantos tipos de tests como desee mediante los botones
+ 
+\begin_inset Graphics
+	filename images/ForceSensor/Edit-Test-Button.png
+	scale 50
+
+\end_inset
+
+ y 
+\begin_inset Graphics
+	filename images/ForceSensor/Create-Test-Button.png
+	scale 50
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/ForceSensor/Create-Exercise-01_es.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Creación/Edición de un tipo test
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Edición de una serie
+\end_layout
+
+\begin_layout Standard
+Todos los registros de Chronojump se pueden editar.
+\end_layout
+
+\begin_layout Standard
+Para cambiar el atleta o el comentario asociado a la serie pulse sobre el
+ botón de Cargar 
+\begin_inset Graphics
+	filename images/ForceSensor/Load-Set-Button.png
+	scale 50
+
+\end_inset
+
+y en la ventana que apareceré presione en Editar.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/ForceSensor/Edit-Set_es.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Editar el atleta o comentario
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si desea cambiar el tipo de test de una serie, la lateralidad o el tipo
+ tratamiento de la señal, cargue primero la serie, cambie el parámetro deseado
+ y presione sobre Recalcular 
+\begin_inset Graphics
+	filename images/ForceSensor/Recalculate_es.png
+	scale 50
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
 Análisis del ejercicio
 \end_layout
 
@@ -9608,7 +9980,7 @@ Análisis manual
 \begin_layout Standard
 Haciendo clic en el botón de analizar 
 \begin_inset Graphics
-	filename images/ForceSensor/Analyze_button.png
+	filename images/ForceSensor/Analyze_button_es.png
 	scale 50
 
 \end_inset
@@ -9617,8 +9989,8 @@ entrará en el módo de anális general.
 \end_layout
 
 \begin_layout Standard
-Si no se tiene una serie cargada no será necesario cargar una mediante el
- botón de 
+Si no se tiene un ejercicio cargado no será necesario cargar uno mediante
+ el botón de 
 \begin_inset Quotes eld
 \end_inset
 
@@ -9634,10 +10006,6 @@ Cargar archivo
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \noindent
@@ -9686,10 +10054,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \noindent
 \align center
 \begin_inset Graphics
@@ -9710,17 +10074,13 @@ Análisis general de un intervalo de tiempo
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Con el deslizador B activado, además de los datos de un segundo instante
+Con el deslizador B activado, además de los datos de un segundo instante,
  se mostrará la diferencia, la media y el máximo de cada variable en el
  rango especificado.
  También se darán valores de impulso, variabilidad y, en el caso de tener
@@ -9756,7 +10116,8 @@ A+B
 \end_inset
 
 .
- Una vez activado el zoom se mostrará en pantalla sólo el intervalo seleccionado.
+ Haciendo clic en el botón se mostrará en pantalla sólo el intervalo seleccionad
+o.
 \end_layout
 
 \begin_layout Subsubsection
@@ -9848,10 +10209,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \noindent
 \align center
 \begin_inset Graphics
@@ -9875,10 +10232,6 @@ Configuración del test de fuerza máxima isométrica
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -13659,6 +14012,73 @@ es, así como el suavizado utilizado en los cálculos.
 \begin_layout Standard
 Respecto a la predicción 1RM las opciones permiten seleccionar como se deben
  ponderar las repeticiones según la carga empleada.
+\end_layout
+
+\begin_layout Section
+Sensor de fuerza
+\end_layout
+
+\begin_layout Standard
+En este apartado podrá configurar la visualización de los datos en tiempo
+ real.
+\end_layout
+
+\begin_layout Standard
+Al iniciar el registro de datos, se mostrará un intervalo de tiempo definido
+ en las preferencias.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/ForceSensor/Preferences_es.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Preferencias dels sensor de fuerza
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una vez transcurrido ese intervalo, por defecto se disminuirá el zoom de
+ modo que siempre se verán todos los datos de ese registro.
+\end_layout
+
+\begin_layout Standard
+Si se selecciona la opción de 
+\begin_inset Quotes eld
+\end_inset
+
+Desplazamiento
+\begin_inset Quotes erd
+\end_inset
+
+, una vez transcurrido el periodo de tiempo a mostrar, este se desplazará
+ de modo que siempre se mostrarán los últimos segundos registrados.
 \end_layout
 
 \begin_layout Section

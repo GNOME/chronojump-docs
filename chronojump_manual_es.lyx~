@@ -7918,6 +7918,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/encoder-manual-images/bells_es.png
+	lyxscale 50
 	scale 50
 
 \end_inset
@@ -7959,8 +7960,69 @@ En la pestaña de Retroalimentación se puede configurar las señales sonoras
 \begin_layout Standard
 \noindent
 \align left
-El desplegable permite seleccionar la variable que se utilizará para colorear
- en verde, azul o roja la repetición.
+El desplegable 
+\begin_inset Quotes eld
+\end_inset
+
+Variable principal
+\begin_inset Quotes erd
+\end_inset
+
+ permite seleccionar la variable que se utilizará para colorear en verde,
+ azul o roja la repetición.
+\end_layout
+
+\begin_layout Standard
+La opción 
+\begin_inset Quotes eld
+\end_inset
+
+Mostrar variable secundaria
+\begin_inset Quotes erd
+\end_inset
+
+ permite añadir una segunda variable en el gráfico que se mostrará con un
+ punto amarillo cuya altura representa el valor de la misma.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/encoder-manual-images/Secondary-Variable.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Variable secundaria
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -9104,17 +9166,14 @@ Cable roto
 
 \end_layout
 
-\begin_layout Standard
-
-\end_layout
-
 \begin_layout Subsection
 Conexión del sensor de fuerza
 \end_layout
 
 \begin_layout Standard
-Para conectar el sensor de fuerza a Chronojump, conecte la galga extensométrica
- al dispositivo conversor y éste al ordenador mediante el cable mini-USB.
+Para conectar el kit del sensor de fuerza a Chronojump, conecte la galga
+ extensométrica al dispositivo conversor y éste al ordenador mediante el
+ cable mini-USB.
 \end_layout
 
 \begin_layout Standard
@@ -9222,7 +9281,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/ForceSensor/Adjust.png
+	filename images/ForceSensor/Adjust_es.png
 	lyxscale 50
 	scale 50
 
@@ -9255,8 +9314,8 @@ Tara (previa a la calibración)
 
 \begin_layout Standard
 Para llevar a cabo este proceso coloque el sensor colgando de uno de los
- extremos sin soportar ningúna fuerza externa aparte del peso.
- Seguigamente presione sobre el botón de 
+ extremos sin soportar ningúna fuerza externa aparte del propio peso.
+ Seguidamente presione sobre el botón de 
 \emph on
 Tara
 \emph default
@@ -9359,7 +9418,8 @@ Calibración del sensor de fuerza
 \end_layout
 
 \begin_layout Standard
-En el caso de que quiera medir fuerzas de compresión, deje descansar
+En el caso de que quiera medir fuerzas de compresión, deje descansar el
+ peso sobre el sensor habiendo quitado previamente los cáncamos del mismo.
 \end_layout
 
 \begin_layout Standard
@@ -9428,18 +9488,8 @@ Registro de datos
 \end_layout
 
 \begin_layout Standard
-Cada registro se asociará a un sujeto, un ejercicio y una lateralidad .
-\end_layout
-
-\begin_layout Standard
-Puede crear tantos ejercicios como desee mediante el botón 
-\begin_inset Graphics
-	filename images/ForceSensor/Create-Exercice-Button.png
-	scale 50
-
-\end_inset
-
-
+Cada registro se asociará a un sujeto, un tipo de ejercicio y una lateralidad
+ .
 \end_layout
 
 \begin_layout Standard
@@ -9521,8 +9571,207 @@ Enter
 \end_layout
 
 \begin_layout Standard
-Presionar el botón de cancelar hará que no se guarden los datos y en consecuenci
-a se pierda la captura.
+Presionar el botón de 
+\begin_inset Quotes eld
+\end_inset
+
+Cancelar
+\begin_inset Quotes erd
+\end_inset
+
+ hará que no se guarden los datos y en consecuencia se pierda la captura.
+\end_layout
+
+\begin_layout Standard
+Los datos de la serie se pueden tratar de modo que se muestren los datos
+ sin tratar, los valores absolutos o los valores invertidos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Modo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Señal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Captura estandard
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ForceSensor/Capture-Standard.png
+	lyxscale 33
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Valores absolutos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ForceSensor/Capture-Absolute.png
+	lyxscale 33
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Valores invertidos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ForceSensor/Capture-Inverted.png
+	lyxscale 33
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tratamiento de la señal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Durante la captura se podrá mostrar un rango de tiempo fijo o que el rango
+ se vaya ampliando a medida que el tiempo transcurrido aumenta.
+ Si se desea usar la primera opción puede ir a Menú -> Sesión -> Preferencias
+ -> Sensor de fuerza y seleccionar la opción Desplazamiento.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/ForceSensor/Preferences.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Preferencias del sensor de fuerza
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -9549,7 +9798,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/ForceSensor/Feedback_es.png
-	lyxscale 50
+	lyxscale 75
 	scale 50
 
 \end_inset
@@ -9581,712 +9830,40 @@ Posteriormente, en el análisis se podrá analizar el error medio entre la
 \end_layout
 
 \begin_layout Subsection
-Análisis del ejercicio
+Creación y edición de tipos de tests
 \end_layout
 
 \begin_layout Standard
-Hay dos tipos de análisis:
-\end_layout
-
-\begin_layout Itemize
-Análisis manual: Permite analizar milisegundo a milisegundo las distintas
- variables.
-\end_layout
-
-\begin_layout Itemize
-Análisis de RFD automático: Realiza un análisis automático de un test de
- fuerza isométrica en el que partiendo de una fuerza mínima o nula se intenta
- llegar a la máxima fuerza posible en el menor tiempo posible.
- Esta fuerza se mantendrá durante algunos segundos
-\end_layout
-
-\begin_layout Subsubsection
-Análisis manual
-\end_layout
-
-\begin_layout Standard
-Haciendo clic en el botón de analizar 
-\begin_inset Graphics
-	filename images/ForceSensor/Analyze_button.png
-
-\end_inset
-
-entrará en el módo de anális general.
-\end_layout
-
-\begin_layout Standard
-Si no se tiene una serie cargada no será necesario cargar una mediante el
- botón de 
-\begin_inset Quotes eld
-\end_inset
-
-Cargar archivo
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/ForceSensor/Analysis-General_es.png
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Análisis general de un instante
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Mediante el deslizador A podrá analizar los valores instantáneos a lo largo
- del tiempo.
-\end_layout
-
-\begin_layout Standard
-En la parte inferior derecha se indicará el tiempo en milisegundos, la fuerza
- en Newtons y el RFD del instante analizado.
-\end_layout
-
-\begin_layout Standard
-Activando el deslizador B podrá analizar un intervalo de tiempo
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/ForceSensor/Analysis-General-A-B_es.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Análisis general de un intervalo de tiempo
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Con el deslizador B activado, además de los datos de un segundo instante
- se mostrará la diferencia, la media y el máximo de cada variable en el
- rango especificado.
- También se darán valores de impulso, variabilidad y, en el caso de tener
- el feedback activado, error medio.
-\end_layout
-
-\begin_layout Standard
-El deslizador 
-\begin_inset Quotes eld
-\end_inset
-
-A+B
-\begin_inset Quotes erd
-\end_inset
-
- le permite desplazar simultáneamente los deslizadores A y B.
-\end_layout
-
-\begin_layout Standard
-Además, una vez se ha activado el deslizador 
-\begin_inset Quotes eld
-\end_inset
-
-A+B
-\begin_inset Quotes erd
-\end_inset
-
-, aparecerá el botón de zoom 
-\begin_inset Graphics
-	filename images/ForceSensor/Zoom-Button.png
-	scale 50
-
-\end_inset
-
-.
- Una vez activado el zoom se mostrará en pantalla sólo el intervalo seleccionado.
-\end_layout
-
-\begin_layout Subsubsection
-Test de RFD automático
-\end_layout
-
-\begin_layout Standard
-Chronojump permite, mediante un sensor de fuerza hacer un test de fuerza
- máxima isométrica para medir distintos parámetros como
-\end_layout
-
-\begin_layout Itemize
-Fuerza instantánea
-\end_layout
-
-\begin_layout Itemize
-Fuerza máxima
-\end_layout
-
-\begin_layout Itemize
-RFD
-\end_layout
-
-\begin_layout Itemize
-Impulso
-\end_layout
-
-\begin_layout Standard
-Estas variables se pueden medir de:
-\end_layout
-
-\begin_layout Itemize
-Fuerza real registrada en la señal cruda (Negra).
-\end_layout
-
-\begin_layout Itemize
-Fuerza modelizada según una función monoexponencial inversa (Azul).
-\end_layout
-
-\begin_layout Standard
-El RFD se refiere a 
-\emph on
-Rate of Force Development
-\emph default
- o tasa de generación de fuerza.
- Esta variable se refiere a la derivada de la fuerza respecto al tiempo
- o a la pendiente de la función fuerza en función del tiempo.
-\end_layout
-
-\begin_layout Paragraph
-Configuración del test de fuerza máxima isométrica
-\end_layout
-
-\begin_layout Standard
-El inicio del test siempre se calcula automáticamente.
- La duración del test se puede especificar de manera automática o fija.
-\end_layout
-
-\begin_layout Itemize
-Automática: Se considerará que el test ha finalizado cuando la fuerza descienda
- un 5% respecto a la fuerza máxima
-\end_layout
-
-\begin_layout Itemize
-Fija: Se analizará un número de segundos fijo desde el inicio del test.
-\end_layout
-
-\begin_layout Standard
-En la pestaña de Análisis, el botón de configurar permite configurar hasta
- 4 valores de RFD y 1 de impulso.
-\end_layout
-
-\begin_layout Standard
-En la Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Configuración-Fuerza"
-
-\end_inset
-
- se muestra un ejemplo completo de configuración.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/ForceSensor/MIF_config.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Configuración-Fuerza"
-
-\end_inset
-
-Configuración del test de fuerza máxima isométrica
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Cada valor de RFD puede estar calculado usando dos tipos de señales:
-\end_layout
-
-\begin_layout Itemize
-La señal cruda muestra los valores de fuerza en Newtons que ha registrado
- el sensor durante el test.
- Todo lo referido a esta señal será de color negro.
-\end_layout
-
-\begin_layout Itemize
-La señal ajustada se refiere a la función monoexponencial inversa que mejor
- ajusta a los datos crudos.
- El ajuste se hace sobre los parámetreos Fmax (Fuerza máxima) y K (velocidad
- con la que se alcanza la Fmax) o 
-\begin_inset Formula $\tau$
-\end_inset
-
- (tau).
+Puede editar o crear tantos tipos de tests como desee mediante los botones
  
-\begin_inset Foot
-status open
+\begin_inset Graphics
+	filename images/ForceSensor/Edit-Test-Button.png
+	scale 50
 
-\begin_layout Plain Layout
-Algunas publicaciones expresan 
-\begin_inset Formula $k=\frac{1}{\tau}$
 \end_inset
 
-, donde 
-\begin_inset Formula $\tau$
-\end_inset
+ y 
+\begin_inset Graphics
+	filename images/ForceSensor/Create-Test-Button.png
+	scale 50
 
- se refiere al tiempo necesario para alcanzar el 63,2% de la Fmax.
- Otro modo de expresar K es como el RFD inicial normalizado por la Fmax
- (
-\begin_inset Formula $k=\frac{RFD0}{Fmax}$
-\end_inset
-
-) ya que 
-\begin_inset Formula $RFD0=k*Fmax$
 \end_inset
 
 .
 \end_layout
 
-\end_inset
-
-.
- Todo lo referido a esta señal será de color azul.
-\begin_inset Formula 
-\[
-F=Fmax\text{·}\left(1-e^{-k\text{·t}}\right)
-\]
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
-Además, el RFD se puede calcular de distintas formas:
-\end_layout
-
-\begin_layout Itemize
-Instantáneo.
- Se calcula el RFD en el instante que se especifique en milisegundos.
-\end_layout
-
-\begin_layout Itemize
-Promedio.
- Se calcula el RFD midiendo el incremento de fuerza entre dos instantes,
- especificados en milisegundos, dividido por el tiempo transcurrido.
-\end_layout
-
-\begin_layout Itemize
-% Fuerza máxima.
- Se calcula el RFD en el instante tal que la fuerza equivale a un porcentaje
- de la fuerza máxima.
-\end_layout
-
-\begin_layout Itemize
-RFDmax.
- Se calcula el RFD máximo de la señal.
-\end_layout
-
-\begin_layout Standard
-En todos casos el RFD se dibujará como una recta con una pendiente igual
- al valor de RFD y que pase por los puntos especificados.
-\end_layout
-
-\begin_layout Standard
-En el cuadro 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:Análisis-de-MIF"
-
-\end_inset
-
- se muestran unos cuantos ejemplos de análisis de un test de fuerza máxima
- isométrica
-\begin_inset Float table
-placement H
+\begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Tabular
-<lyxtabular version="3" rows="11" columns="2">
-<features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Cruda
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Ajustada
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
+\noindent
+\align center
 \begin_inset Graphics
-	filename images/ForceSensor/MIF-RAW-Instant.png
-	lyxscale 75
-	scale 30
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/ForceSensor/MIF-Fitted-Instant.png
-	lyxscale 75
-	scale 30
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-RFD instantáneo de la señal cruda
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-RFD instantáneo de la señal ajustada
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/ForceSensor/MIF-RAW-average.png
-	lyxscale 75
-	scale 33
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/ForceSensor/MIF-Fitted-Average.png
-	lyxscale 75
-	scale 33
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-RFD promedio (0-300)ms de la señal cruda
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-RFD promedio (0-300)ms de la señal ajustada
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/ForceSensor/MIF-RAW-percentFmax.png
-	lyxscale 75
-	scale 30
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/ForceSensor/MIF-RAW-Instant.png
-	lyxscale 75
-	scale 30
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-RFD en el 50% de la Fmax de la señal cruda
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-RFD en el 50% de la Fmax de la señal ajustada
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/ForceSensor/MIF-RAW-MaxRFD.png
-	lyxscale 75
-	scale 30
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/ForceSensor/MIF-Fitted-maxRFD.png
-	lyxscale 75
-	scale 30
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-RFD máximo de la señal cruda
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-RFD máximo de la señal ajustada
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/ForceSensor/MIF-Raw-Impulse.png
-	lyxscale 75
-	scale 30
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/ForceSensor/MIF-Fitted-Impulse.png
-	lyxscale 75
-	scale 30
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Impulso (0-300)ms de la señal cruda
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Impulso (0-300)ms de la señal ajustada
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
+	filename images/ForceSensor/Create-Exercise-01_es.png
+	scale 50
 
 \end_inset
 
@@ -10294,13 +9871,7 @@ Impulso (0-300)ms de la señal ajustada
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Análisis-de-MIF"
-
-\end_inset
-
-Distintos análisis de un mismo test de fuerza máxima isométrica
+Creación/Edición de un tipo test
 \end_layout
 
 \end_inset
@@ -10313,66 +9884,67 @@ Distintos análisis de un mismo test de fuerza máxima isométrica
 
 \end_layout
 
-\begin_layout Paragraph
-Ejecución del test de fuerza máxima Isométrica
+\begin_layout Subsection
+Edición de una serie
 \end_layout
 
 \begin_layout Standard
-Para la realización del test se recomienda que se haga una fuerza inicial
- mínima para evitar impactos que pueden desvirtuar los resultados.
+Todos los registros de Chronojump se pueden editar.
 \end_layout
 
 \begin_layout Standard
-Una vez el sujeto ya esté aplicando una mínima fuerza haga clic en botón
- de capturar 
+Para cambiar el sujeto o atleta o el comentario asociado a la serie pulse
+ sobre el botón de Cargar y en la ventana que apareceré presione en editar.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
 \begin_inset Graphics
-	filename images/capture_button.png
-	lyxscale 50
-	scale 25
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-El sujeto deberá empezar a hacer la máxima fuerza posible además de llegar
- en el mínimo tiempo posible.
- Se recomienda que se sostenga la máxima fuerza durante un mínimo de 3 segundos.
-\end_layout
-
-\begin_layout Standard
-Finalmente, presione el botón de finalizar 
-\begin_inset Graphics
-	filename images/ForceSensor/Finish-Button.png
+	filename images/ForceSensor/Edit-Set_es.png
 	scale 50
 
 \end_inset
 
-.
- Posteriormente haga clic en 
-\begin_inset Quotes eld
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Editar el atleta o comentario
+\end_layout
+
 \end_inset
 
-Analizar
-\begin_inset Quotes erd
-\end_inset
 
- y análisis 
-\begin_inset Quotes eld
-\end_inset
+\end_layout
 
-RFD automático
-\begin_inset Quotes erd
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Para recuperar un test realizado previamente haga presione el botón 
-\emph on
-Cargar archivo.
+Si desea cambiar el tipo de test de una serie, la lateralidad o el tipo
+ tratamiento de la señal, cargue primero la serie, cambie el parámetro deseado
+ y presione sobre Recalcular 
+\begin_inset Graphics
+	filename images/ForceSensor/Recalculate_es.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -12815,6 +12387,784 @@ Tabla de datos
 
 \end_layout
 
+\begin_layout Section
+Sensor de fuerza
+\end_layout
+
+\begin_layout Standard
+Hay dos tipos de análisis:
+\end_layout
+
+\begin_layout Itemize
+Análisis manual: Permite analizar milisegundo a milisegundo las distintas
+ variables.
+\end_layout
+
+\begin_layout Itemize
+Análisis de RFD automático: Realiza un análisis automático de un test de
+ fuerza isométrica en el que partiendo de una fuerza mínima o nula se intenta
+ llegar a la máxima fuerza posible en el menor tiempo posible.
+ Esta fuerza se mantendrá durante algunos segundos
+\end_layout
+
+\begin_layout Subsection
+Análisis manual
+\end_layout
+
+\begin_layout Standard
+Haciendo clic en el botón de analizar 
+\begin_inset Graphics
+	filename images/ForceSensor/Analyze_button_es.png
+	scale 50
+
+\end_inset
+
+entrará en el módo de anális general.
+\end_layout
+
+\begin_layout Standard
+Si no se tiene un ejercicio cargado no será necesario cargar uno mediante
+ el botón de 
+\begin_inset Quotes eld
+\end_inset
+
+Cargar archivo
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/ForceSensor/Analysis-General_es.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Análisis general de un instante
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Mediante el deslizador A podrá analizar los valores instantáneos a lo largo
+ del tiempo.
+\end_layout
+
+\begin_layout Standard
+En la parte inferior derecha se indicará el tiempo en milisegundos, la fuerza
+ en Newtons y el RFD del instante analizado.
+\end_layout
+
+\begin_layout Standard
+Activando el deslizador B podrá analizar un intervalo de tiempo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/ForceSensor/Analysis-General-A-B_es.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Análisis general de un intervalo de tiempo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con el deslizador B activado, además de los datos de un segundo instante,
+ se mostrará la diferencia, la media y el máximo de cada variable en el
+ rango especificado.
+ También se darán valores de impulso, variabilidad y, en el caso de tener
+ el feedback activado, error medio.
+\end_layout
+
+\begin_layout Standard
+El deslizador 
+\begin_inset Quotes eld
+\end_inset
+
+A+B
+\begin_inset Quotes erd
+\end_inset
+
+ le permite desplazar simultáneamente los deslizadores A y B.
+\end_layout
+
+\begin_layout Standard
+Además, una vez se ha activado el deslizador 
+\begin_inset Quotes eld
+\end_inset
+
+A+B
+\begin_inset Quotes erd
+\end_inset
+
+, aparecerá el botón de zoom 
+\begin_inset Graphics
+	filename images/ForceSensor/Zoom-Button.png
+	scale 50
+
+\end_inset
+
+.
+ Haciendo clic en el botón se mostrará en pantalla sólo el intervalo seleccionad
+o.
+\end_layout
+
+\begin_layout Subsection
+Test de RFD automático
+\end_layout
+
+\begin_layout Standard
+Chronojump permite, mediante un sensor de fuerza hacer un test de fuerza
+ máxima isométrica para medir distintos parámetros como
+\end_layout
+
+\begin_layout Itemize
+Fuerza instantánea
+\end_layout
+
+\begin_layout Itemize
+Fuerza máxima
+\end_layout
+
+\begin_layout Itemize
+RFD
+\end_layout
+
+\begin_layout Itemize
+Impulso
+\end_layout
+
+\begin_layout Standard
+Estas variables se pueden medir de:
+\end_layout
+
+\begin_layout Itemize
+Fuerza real registrada en la señal cruda (Negra).
+\end_layout
+
+\begin_layout Itemize
+Fuerza modelizada según una función monoexponencial inversa (Azul).
+\end_layout
+
+\begin_layout Standard
+El RFD se refiere a 
+\emph on
+Rate of Force Development
+\emph default
+ o tasa de generación de fuerza.
+ Esta variable se refiere a la derivada de la fuerza respecto al tiempo
+ o a la pendiente de la función fuerza en función del tiempo.
+\end_layout
+
+\begin_layout Subsubsection
+Configuración del test de fuerza máxima isométrica
+\end_layout
+
+\begin_layout Standard
+El inicio del test siempre se calcula automáticamente.
+ La duración del test se puede especificar de manera automática o fija.
+\end_layout
+
+\begin_layout Itemize
+Automática: Se considerará que el test ha finalizado cuando la fuerza descienda
+ un 5% respecto a la fuerza máxima
+\end_layout
+
+\begin_layout Itemize
+Fija: Se analizará un número de segundos fijo desde el inicio del test.
+\end_layout
+
+\begin_layout Standard
+En la pestaña de Análisis, el botón de configurar permite configurar hasta
+ 4 valores de RFD y 1 de impulso.
+\end_layout
+
+\begin_layout Standard
+En la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Configuración-Fuerza"
+
+\end_inset
+
+ se muestra un ejemplo completo de configuración.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/ForceSensor/MIF_config.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Configuración-Fuerza"
+
+\end_inset
+
+Configuración del test de fuerza máxima isométrica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cada valor de RFD puede estar calculado usando dos tipos de señales:
+\end_layout
+
+\begin_layout Itemize
+La señal cruda muestra los valores de fuerza en Newtons que ha registrado
+ el sensor durante el test.
+ Todo lo referido a esta señal será de color negro.
+\end_layout
+
+\begin_layout Itemize
+La señal ajustada se refiere a la función monoexponencial inversa que mejor
+ ajusta a los datos crudos.
+ El ajuste se hace sobre los parámetreos Fmax (Fuerza máxima) y K (velocidad
+ con la que se alcanza la Fmax) o 
+\begin_inset Formula $\tau$
+\end_inset
+
+ (tau).
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Algunas publicaciones expresan 
+\begin_inset Formula $k=\frac{1}{\tau}$
+\end_inset
+
+, donde 
+\begin_inset Formula $\tau$
+\end_inset
+
+ se refiere al tiempo necesario para alcanzar el 63,2% de la Fmax.
+ Otro modo de expresar K es como el RFD inicial normalizado por la Fmax
+ (
+\begin_inset Formula $k=\frac{RFD0}{Fmax}$
+\end_inset
+
+) ya que 
+\begin_inset Formula $RFD0=k*Fmax$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+ Todo lo referido a esta señal será de color azul.
+\begin_inset Formula 
+\[
+F=Fmax\text{·}\left(1-e^{-k\text{·t}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Además, el RFD se puede calcular de distintas formas:
+\end_layout
+
+\begin_layout Itemize
+Instantáneo.
+ Se calcula el RFD en el instante que se especifique en milisegundos.
+\end_layout
+
+\begin_layout Itemize
+Promedio.
+ Se calcula el RFD midiendo el incremento de fuerza entre dos instantes,
+ especificados en milisegundos, dividido por el tiempo transcurrido.
+\end_layout
+
+\begin_layout Itemize
+% Fuerza máxima.
+ Se calcula el RFD en el instante tal que la fuerza equivale a un porcentaje
+ de la fuerza máxima.
+\end_layout
+
+\begin_layout Itemize
+RFDmax.
+ Se calcula el RFD máximo de la señal.
+\end_layout
+
+\begin_layout Standard
+En todos casos el RFD se dibujará como una recta con una pendiente igual
+ al valor de RFD y que pase por los puntos especificados.
+\end_layout
+
+\begin_layout Standard
+En el cuadro 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Análisis-de-MIF"
+
+\end_inset
+
+ se muestran unos cuantos ejemplos de análisis de un test de fuerza máxima
+ isométrica
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cruda
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ajustada
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ForceSensor/MIF-RAW-Instant.png
+	lyxscale 75
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ForceSensor/MIF-Fitted-Instant.png
+	lyxscale 75
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RFD instantáneo de la señal cruda
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RFD instantáneo de la señal ajustada
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ForceSensor/MIF-RAW-average.png
+	lyxscale 75
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ForceSensor/MIF-Fitted-Average.png
+	lyxscale 75
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RFD promedio (0-300)ms de la señal cruda
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RFD promedio (0-300)ms de la señal ajustada
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ForceSensor/MIF-RAW-percentFmax.png
+	lyxscale 75
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ForceSensor/MIF-RAW-Instant.png
+	lyxscale 75
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RFD en el 50% de la Fmax de la señal cruda
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RFD en el 50% de la Fmax de la señal ajustada
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ForceSensor/MIF-RAW-MaxRFD.png
+	lyxscale 75
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ForceSensor/MIF-Fitted-maxRFD.png
+	lyxscale 75
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RFD máximo de la señal cruda
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RFD máximo de la señal ajustada
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ForceSensor/MIF-Raw-Impulse.png
+	lyxscale 75
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ForceSensor/MIF-Fitted-Impulse.png
+	lyxscale 75
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Impulso (0-300)ms de la señal cruda
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Impulso (0-300)ms de la señal ajustada
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Análisis-de-MIF"
+
+\end_inset
+
+Distintos análisis de un mismo test de fuerza máxima isométrica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Ejecución del test de fuerza máxima Isométrica
+\end_layout
+
+\begin_layout Standard
+Para la realización del test se recomienda que se haga una fuerza inicial
+ mínima para evitar impactos que pueden desvirtuar los resultados.
+\end_layout
+
+\begin_layout Standard
+Una vez el sujeto ya esté aplicando una mínima fuerza haga clic en botón
+ de capturar 
+\begin_inset Graphics
+	filename images/capture_button.png
+	lyxscale 50
+	scale 25
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+El sujeto deberá empezar a hacer la máxima fuerza posible además de llegar
+ en el mínimo tiempo posible.
+ Se recomienda que se sostenga la máxima fuerza durante un mínimo de 3 segundos.
+\end_layout
+
+\begin_layout Standard
+Finalmente, presione el botón de finalizar 
+\begin_inset Graphics
+	filename images/ForceSensor/Finish-Button.png
+	scale 50
+
+\end_inset
+
+.
+ Posteriormente haga clic en 
+\begin_inset Quotes eld
+\end_inset
+
+Analizar
+\begin_inset Quotes erd
+\end_inset
+
+ y análisis 
+\begin_inset Quotes eld
+\end_inset
+
+RFD automático
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para recuperar un test realizado previamente haga presione el botón 
+\emph on
+Cargar archivo.
+\end_layout
+
 \begin_layout Chapter
 Informes y exportaciones
 \end_layout
@@ -13656,6 +14006,73 @@ es, así como el suavizado utilizado en los cálculos.
 \begin_layout Standard
 Respecto a la predicción 1RM las opciones permiten seleccionar como se deben
  ponderar las repeticiones según la carga empleada.
+\end_layout
+
+\begin_layout Section
+Sensor de fuerza
+\end_layout
+
+\begin_layout Standard
+En este apartado podrá configurar la visualización de los datos en tiempo
+ real.
+\end_layout
+
+\begin_layout Standard
+Al iniciar el registro de datos, se mostrará un intervalo de tiempo definido
+ en las preferencias.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/ForceSensor/Preferences_es.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Preferencias dels sensor de fuerza
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una vez transcurrido ese intervalo, por defecto se disminuirá el zoom de
+ modo que siempre se verán todos los datos de ese registro.
+\end_layout
+
+\begin_layout Standard
+Si se selecciona la opción de 
+\begin_inset Quotes eld
+\end_inset
+
+Desplazamiento
+\begin_inset Quotes erd
+\end_inset
+
+, una vez transcurrido el periodo de tiempo a mostrar, este se desplazará
+ de modo que siempre se mostrarán los últimos segundos registrados.
 \end_layout
 
 \begin_layout Section

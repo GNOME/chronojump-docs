@@ -8712,7 +8712,7 @@ Configuring the force sensor device
 \end_layout
 
 \begin_layout Subsection
-Taring and calibrating the force sensor
+Tare and calibrating the force sensor
 \end_layout
 
 \begin_layout Standard
@@ -8720,8 +8720,8 @@ Due to the analog nature of the force sensor, it must be tared and calibrated.
 \end_layout
 
 \begin_layout Standard
-The taring process consists of indicating the state in which the sensor
- should register a force of 0 Newtons.
+The tare process consists of indicating the state in which the sensor should
+ register a force of 0 Newtons.
 \end_layout
 
 \begin_layout Standard
@@ -8789,7 +8789,7 @@ Force sensor adjusting
 \end_layout
 
 \begin_layout Subsubsection
-Taring (previous to calibration)
+Tare (previous to calibration)
 \end_layout
 
 \begin_layout Standard
@@ -8902,7 +8902,7 @@ The closer the weight is to the forces to be performed, the more accurate
 \end_layout
 
 \begin_layout Subsubsection
-Taring (aftercalibration)
+Tare (after calibration)
 \end_layout
 
 \begin_layout Standard
@@ -8969,11 +8969,19 @@ Each record will be associated with a subject, an exercise and a laterality.
 \end_layout
 
 \begin_layout Standard
-You can create as many exercises as you want using the button
-\end_layout
+Data recording will be done using the stopwatch button
+\lang spanish
 
-\begin_layout Standard
-Data recording will be done using the stopwatch button.
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/capture_button.png
+	lyxscale 50
+	scale 33
+
+\end_inset
+
+
+\lang british
+.
 \end_layout
 
 \begin_layout Standard
@@ -9040,6 +9048,163 @@ Cancel
  button will not save the data and consequently the capture will be lost.
 \end_layout
 
+\begin_layout Standard
+The data of the signal can be shown as standard data, absolute data or inverted
+ data
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang spanish
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mode
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Signal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Standard capture
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/Capture-Standard.png
+	lyxscale 33
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Absolute values
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/Capture-Absolute.png
+	lyxscale 33
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inverted values
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/Capture-Inverted.png
+	lyxscale 33
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Signal treatment
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+During the data aquisition it can be shown a fixed time range or a range
+ that will grow as the elapsed time is increased.
+ If you want to use the first option you can go to Menu -> Session -> Preference
+s -> Force sensor and select the option Scroll
+\end_layout
+
 \begin_layout Subsubsection
 Feedback
 \end_layout
@@ -9093,6 +9258,22 @@ This option allows to analyze the stability of the signal.
 \begin_layout Standard
 Subsequently, in the analysis you can analyze the average error between
  the real force and the specificity force in the Feedback
+\end_layout
+
+\begin_layout Subsection
+Creation and edition of the test types
+\end_layout
+
+\begin_layout Subsection
+Set edition
+\end_layout
+
+\begin_layout Standard
+All the Chronojump sets can be edited.
+\end_layout
+
+\begin_layout Standard
+If you want to change
 \end_layout
 
 \begin_layout Subsection
