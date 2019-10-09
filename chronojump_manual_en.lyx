@@ -9327,7 +9327,68 @@ All the Chronojump sets can be edited.
 \end_layout
 
 \begin_layout Standard
-If you want to change
+If you want to change the athlete or the comment associated to the set click
+ on the load button 
+\begin_inset Graphics
+	filename images/ForceSensor/Load-Set-Button.png
+	scale 50
+
+\end_inset
+
+ and in the dialog that will be appear click on Edit.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/ForceSensor/Edit-Set_en.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Edit the athlete or comment
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If you want to change the test type of a set, la laterality or the signal
+ treatment, load first the set, change the desired parameter and click on
+ recalculate 
+\begin_inset Graphics
+	filename images/ForceSensor/Recalculate_en.png
+	scale 50
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -9524,132 +9585,6 @@ Modeled force using an inverse monoexponential function (Blue).
 The RFD refers to Rate of Force Development.
  This variable is the derivative or the slope of the function force versus
  time.
-\end_layout
-
-\begin_layout Paragraph
-Taring and configuring the force sensor
-\end_layout
-
-\begin_layout Standard
-Due to the analog nature of the force sensor, this must be tared and calibrated.
-\end_layout
-
-\begin_layout Paragraph
-Taring
-\end_layout
-
-\begin_layout Standard
-The taring process consists in indicating at which state the sensor should
- register a force of zero Newtons.
-\end_layout
-
-\begin_layout Standard
-To perform this process put the sensor in a horizontal and stable surface
- and, without supporting any external force apart from the weight.
- Then press the button 
-\emph on
-Tare.
- 
-\emph default
-Chronojump will register for a few seconds and save the results.
-\end_layout
-
-\begin_layout Standard
-
-\lang spanish
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-
-\lang spanish
-\begin_inset Graphics
-	filename /home/xpadulles/chronojump-docs/images/ForceSensor/Tare.JPG
-	lyxscale 25
-	scale 10
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Taring the force sensor
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Paragraph
-Calibration
-\end_layout
-
-\begin_layout Standard
-The calibration consists in stablishing a lineal relationship between the
- electrical signal of the sensor and the real force.
- This relation could change in function of the sensor, temperature, humidity...
- For this reason it is recommended to calibrate once per session.
- By default Chronojump will use a generic calibration.
-\end_layout
-
-\begin_layout Standard
-To perform the calibration, in Chronojump enter the mass in kilograms of
- an object with a known weight.
- Tie this object to the force sensor and lift it making the sensor to hold
- all the weight.
-\lang spanish
-
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-
-\lang spanish
-\begin_inset Graphics
-	filename /home/xpadulles/chronojump-docs/images/ForceSensor/Calibrate.png
-	lyxscale 33
-	scale 12.5
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Force sensor calibration
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The closer the weight is to the force you are going to perform in your tests,
- the more precision you will have with this calibration.
- Once you have the load lifted and stable, click on the calibrate button.
 \end_layout
 
 \begin_layout Paragraph
@@ -11914,40 +11849,6 @@ Encoder analyze tab
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/encoder-manual-images/analyze.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Analyze tab
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 There are four modes of analysis:
 \end_layout
 
@@ -12542,6 +12443,40 @@ Neuromuscular profile
 The analysis starts when user click in “Analyse”.
  After a while, a graph and a table will appear, both can be saved using
  each save button in the lower right corner.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encoder-manual-images/analysis_table_en.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Data table
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter

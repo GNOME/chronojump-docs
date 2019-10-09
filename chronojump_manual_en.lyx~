@@ -9264,6 +9264,60 @@ Subsequently, in the analysis you can analyze the average error between
 Creation and edition of the test types
 \end_layout
 
+\begin_layout Standard
+You can edit or create as many tests as you want clicking on 
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/Edit-Test-Button.png
+	scale 50
+
+\end_inset
+
+and
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/ForceSensor/Create-Test-Button.png
+	scale 50
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/ForceSensor/Create-Exercise-01_en.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Creation/Edition of a test type
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Set edition
 \end_layout
