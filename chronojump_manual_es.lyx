@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass book
 \begin_preamble
 \usepackage{a4wide}
@@ -16,16 +18,18 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman ae
-\font_sans cmss
-\font_typewriter default
-\font_math auto
+\font_roman "ae" "default"
+\font_sans "cmss" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family sfdefault
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -66,6 +70,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \boxbgcolor #ffffff
 \index Índice
 \shortcut idx
@@ -75,7 +80,10 @@
 \tocdepth 3
 \paragraph_separation skip
 \defskip medskip
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -449,7 +457,7 @@ http://www.chronojump.org/documents_es.html
 \begin_layout Section
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Construcción-y-obtención-chronopic"
+name "subsec:Construcción-y-obtención-chronopic"
 
 \end_inset
 
@@ -521,7 +529,7 @@ Chronopic es el circuito integrado usado para que Chronojump pueda detectar
  La obtención de Chronopic se describe en el apartado 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "sub:Construcción-y-obtención-chronopic"
+reference "subsec:Construcción-y-obtención-chronopic"
 
 \end_inset
 
@@ -727,7 +735,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="6">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -1024,7 +1032,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="3">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -1159,7 +1167,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="4">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="5cm">
@@ -1547,7 +1555,7 @@ Los kernels de Linux aparecidos a partir del año 2009, detectan la placa
 \begin_layout Section
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Modificación-del-puerto"
+name "subsec:Modificación-del-puerto"
 
 \end_inset
 
@@ -1565,7 +1573,7 @@ Si el puerto asignado es COM5 o superior, puede dar problemas de detección
 Para asignar manualmente un puerto, repita los pasos descritos en 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "sub:Detección-del-puerto"
+reference "subsec:Detección-del-puerto"
 
 \end_inset
 
@@ -1615,7 +1623,7 @@ En este momento ya debería tener el puerto COM asignado para siempre a dicho
  directamente puede volver a realizar los pasos descritos en 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "sub:Detección-del-puerto"
+reference "subsec:Detección-del-puerto"
 
 \end_inset
 
@@ -1683,7 +1691,7 @@ Problema de puertos en Windows: Si la plataforma de contactos no da problemas,
  se indica en el apartado 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "sub:Detección-del-puerto"
+reference "subsec:Detección-del-puerto"
 
 \end_inset
 
@@ -1695,7 +1703,7 @@ reference "sub:Detección-del-puerto"
  se indica en el apartado 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "sub:Modificación-del-puerto"
+reference "subsec:Modificación-del-puerto"
 
 \end_inset
 
@@ -1730,6 +1738,13 @@ Ejecute el programa Chronojump_mini e introduzca el nombre del puerto cuando
  será cronometradas por chronojump_mini.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -3676,7 +3691,7 @@ Los saltos se encuentran asociados a los saltadores.
 
 \begin_layout Standard
 En cada salto se muestran una serie de valores, puede cambiar las opciones
- de visualización accediendo a al menú Sesión --> 
+ de visualización accediendo a al menú Sesión –> 
 \emph on
 Preferencias
 \emph default
@@ -3774,7 +3789,7 @@ d
  El borrado de saltos pedirá confirmación en caso de que la opción de confirmaci
 ón de borrado de tests esté activada en el menú de 
 \emph on
-Sesión --> Preferencias
+Sesión –> Preferencias
 \emph default
  (más información en el apartado 
 \begin_inset CommandInset ref
@@ -4016,7 +4031,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="6">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -4389,8 +4404,15 @@ Ejemplos de tipos de saltos creados por el usuario.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Carreras
+Carreras con fotocélulas
 \end_layout
 
 \begin_layout Standard
@@ -5537,7 +5559,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="9" columns="5">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -6003,8 +6025,249 @@ Ejemplos de tipos de carreras creados por el usuario.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Tests de encoder
+Carreras con encoder
+\end_layout
+
+\begin_layout Standard
+Chronojump RaceAnalyzer permite el análisis de la carrera tomando el tiempo
+ transcurrido cada 3cm.
+ Después de la adquisición de datos, el programa hará un análisis automático
+ de modo que se darán datos referentes a las velocidades reales medidas
+ y a la velocidad modelada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/RaceAnalyzer/Sprint-Graph.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Encoder-Sprint-Analysis"
+
+\end_inset
+
+Análisis de un sprint
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Capura de datos
+\end_layout
+
+\begin_layout Standard
+La primera vez que conecte el encoder de carreras en Chronojump se le pedirà
+ que identifique el dispositivo.
+ Utilize los botones con las flechas para identificar el dispositivo com
+ un encoder de carrera como se muestra en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:RaceAnalyzer-config"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/RaceAnalyzer/device-RaceAnalyzer.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:RaceAnalyzer-config"
+
+\end_inset
+
+Configuración del dispositivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Configuración de la Captura
+\end_layout
+
+\begin_layout Standard
+Antes de iniciar la captura, haga clic en el botón de configuración 
+\begin_inset Graphics
+	filename images/RaceAnalyzer/config-capture-button.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+ con el fin de seleccionar el tipo de ejercicio que se analizará.
+\end_layout
+
+\begin_layout Standard
+Seleccione el tipo de carrera o test que vaya a realizar.
+ Puede editar, añadir o borrar los tipos de tests haciendo clic en el correspond
+iente botón
+\begin_inset Graphics
+	filename images/RaceAnalyzer/manage-test-type-buttons.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Al editar o añadir un tipo de test, le aparecerá una ventana como la de
+ la figura en la que podrá especificar el nombre y una breve descripción
+ del test.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/RaceAnalyzer/Edit-type.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Propiedades-del-test"
+
+\end_inset
+
+Propiedades del test
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El parámetro de distancia se refiere a la distancia que se analizará una
+ vez se haya iniciado la carrera.
+ Este parámetro no limita la distancia que se puede medir durante la captura,
+ ya que Chronojump seguirá registrando mientras no se finalize la captura
+ manualmente.
+\end_layout
+
+\begin_layout Subsection
+Finalización del test
+\end_layout
+
+\begin_layout Standard
+Una vez el atleta ha completado el test, presione sobre el botón de finalizar
+ 
+\begin_inset Graphics
+	filename images/RaceAnalyzer/finish-Button.png
+	scale 50
+
+\end_inset
+
+.
+ Automáticamente se le presentará el análisis del sprint.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Tests de encoder lineal
 \end_layout
 
 \begin_layout Subsection
@@ -6130,7 +6393,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
@@ -6252,7 +6515,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="4">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -6625,6 +6888,10 @@ Configuración de la serie
 \begin_layout Standard
 En esta área se muestra la configuración de la serie (máquina utilizada,
  ejercicio, tipo de contracción, lateralidad y carga)
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6765,6 +7032,10 @@ aparecerá una nueva ventana con imágenes de las diferentes combinaciones
  Cada tipo de encoder tiene un conjunto diferente de configuraciones.
  Los botones de flecha le permitirá cambiar entre las diferentes opciones
  que ofrece cada tipo de encoder.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6904,7 +7175,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="3">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -7112,6 +7383,7 @@ En el siguiente enlace puede ver un vídeo del proceso de cálculo.
 LatexCommand href
 name "Calculing inertia momentum video"
 target "http://youtu.be/HK1ilOyg5Vs"
+literal "false"
 
 \end_inset
 
@@ -7774,6 +8046,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -7806,7 +8083,7 @@ es tienen un rango de movimiento muy inferior a la otra mitdad.
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
@@ -8151,6 +8428,7 @@ Para modificar la persona que ejecutó la serie haga clic con el botón derecho
 LatexCommand href
 name "Videotutorial: Edición de una serie"
 target "https://youtu.be/UiZJKbU4OSg"
+literal "false"
 
 \end_inset
 
@@ -8239,7 +8517,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
@@ -8634,7 +8912,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
@@ -8710,6 +8988,10 @@ Opción de sólo barras
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -8894,6 +9176,10 @@ Si lo que quiere es poder identificar ciertos instantes dentro de la ejecución
  del ejercicio, en el análisis instantáneo de la repetición verá unas líneas
  discontínuas verticales amarillas que indican el momento en que se ha recibido
  una señal de trigger.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -9091,6 +9377,13 @@ Ejemplo de uso del encoder
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -9598,7 +9891,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
@@ -10349,7 +10642,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="11" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
@@ -10731,6 +11024,13 @@ Para recuperar un test realizado previamente haga presione el botón
 Cargar archivo.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Otros tests
 \end_layout
@@ -10890,7 +11190,7 @@ El programa dispone de un botón que permite realizar una evaluación de la
 nopic descrito 
 \begin_inset CommandInset ref
 LatexCommand vref
-reference "sub:MultiChronopic"
+reference "subsec:MultiChronopic"
 
 \end_inset
 
@@ -10918,6 +11218,10 @@ Personalizado El sujeto deberá adaptarse a un tempo predefinido y se podrá
 \end_inset
 
 En cuanto a la definición del tempo, se facilitan dos métodos:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -11055,7 +11359,7 @@ reference "sec:Preferencias"
 \begin_layout Subsection
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:MultiChronopic"
+name "subsec:MultiChronopic"
 
 \end_inset
 
@@ -11514,6 +11818,13 @@ Análisis de carrera
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Estadísticas y gráficas
 \end_layout
@@ -11683,6 +11994,10 @@ Fuerza-velocidad
 \begin_layout Standard
 Estadístico de salto simple en que se muestra la relación de fuerza-velocidad
  según la fórmula 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -11707,6 +12022,10 @@ los saltos SJ con el 100% de carga extra respecto al peso corporal, y SJ
 \begin_layout Standard
 Estadístico de salto simple en que se muestra el índice de elasticidad a
  partir de la fórmula 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -11729,6 +12048,10 @@ entre los saltos SJ y CMJ.
 \begin_layout Standard
 Estadístico de salto simple en que se muestra el índice de utilización de
  brazos a partir de la fórmula
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -11750,6 +12073,10 @@ Diferencia entre tests
 
 \begin_layout Standard
 Estadístico que permite ver la diferencia relativa entre dos tests cualesquiera.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -11851,7 +12178,7 @@ aplicación
 \begin_layout Paragraph
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Índice-Dj"
+name "subsec:Índice-Dj"
 
 \end_inset
 
@@ -11861,6 +12188,10 @@ name "sub:Índice-Dj"
 \begin_layout Standard
 Estudio de la relación tiempo de vuelo / tiempo de contacto en un salto
  simple a partir de la fórmula
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -11875,7 +12206,7 @@ Estudio de la relación tiempo de vuelo / tiempo de contacto en un salto
 \begin_layout Paragraph
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Índice-Q"
+name "subsec:Índice-Q"
 
 \end_inset
 
@@ -11885,6 +12216,10 @@ name "sub:Índice-Q"
 \begin_layout Standard
 Estudio de la relación tiempo de vuelo / tiempo de contacto en un salto
  simple a partir de la fórmula
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -11939,7 +12274,7 @@ aplicación
 \begin_layout Paragraph
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Índice-medio"
+name "subsec:Índice-medio"
 
 \end_inset
 
@@ -11949,6 +12284,10 @@ name "sub:Índice-medio"
 \begin_layout Standard
 Estudio de la relación tiempo de vuelo / tiempo de contacto en un salto
  reactivo según la fórmula
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -11963,7 +12302,7 @@ Estudio de la relación tiempo de vuelo / tiempo de contacto en un salto
 \begin_layout Paragraph
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Potencia-(Bosco)"
+name "subsec:Potencia-(Bosco)"
 
 \end_inset
 
@@ -11973,6 +12312,10 @@ Potencia (Bosco)
 \begin_layout Standard
 Estudio de la relación tiempo de vuelo / tiempo de contacto en un salto
  reactivo según la fórmula
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -12018,6 +12361,10 @@ Promedio y Desviación estándar usando RjIndex
 
 \begin_layout Standard
 Estudio del índice
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -12040,6 +12387,10 @@ Promedio y Desviación estándar usando QIndex
 
 \begin_layout Standard
 Estudio del índice
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -12219,7 +12570,7 @@ En la primera columna de cada fila encontrará una pequeña caja de selección
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "sub:Creación-de-graficos"
+reference "subsec:Creación-de-graficos"
 
 \end_inset
 
@@ -12237,7 +12588,7 @@ reference "sec:Generación-de-Informes"
 Creación de gráficos
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Creación-de-graficos"
+name "subsec:Creación-de-graficos"
 
 \end_inset
 
@@ -12518,8 +12869,177 @@ La variable K indica como de rápido el sujeto alcanza su velocidad máxima
 La fuerza y la potencia son relativas al peso corporal.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Encoder
+Encoder de carrera
+\end_layout
+
+\begin_layout Standard
+Después del registro de un test con el encoder de carrera automáticamente
+ se analizará la misma mostrándose una gráfica como la de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Análisis-Encoder-Carrera"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/RaceAnalyzer/Sprint-Graph.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Análisis-Encoder-Carrera"
+
+\end_inset
+
+Análisis de un sprint
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Chronojump intentará ajustar los datos registrados a un modelo matemático
+ que permite un análisis mucho más sencillo que con los datos en crudo.
+ De este modo, los datos que se muestren pueden ser referidos a los datos
+ crudos o a los datos inferidos del modelo.
+\end_layout
+
+\begin_layout Standard
+Además, se mostrará el tiempo y la velocidad media cada 5 m en forma de
+ barras grises.
+ En el eje horizontal se muestran los tiempos parciales cada 5 m
+\end_layout
+
+\begin_layout Standard
+En la leyenda siempre se mostrarán las siguientes variables:
+\end_layout
+
+\begin_layout Itemize
+V max (raw): El pico de la velocidad cruda medida con el dispositivo.
+\end_layout
+
+\begin_layout Itemize
+V max (fitted): La velocidad máxima teórica que se alcanza con el modelo.
+\end_layout
+
+\begin_layout Itemize
+K: Este parámetro indica como de rápido la velocidad se acerca a su máximo
+ teórico.
+ También se puede interpretar como la pendiente máxima en una gráfica normalizad
+a por la velocidad máxima del modelo.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tau$
+\end_inset
+
+: Tau es la inversa del parámetro K y indica el tiempo que se tarda en llegar
+ a un 63,2% de la velocidad máxima.
+\end_layout
+
+\begin_layout Standard
+Además de las variables anteriores, se puede visualizar la aceleración,
+ la fuerza y la potencia tanto en crudo como modeladas.
+\end_layout
+
+\begin_layout Standard
+Para activar o desactivar estas varibles haga clic en el botón de opciones
+ 
+\begin_inset Graphics
+	filename images/RaceAnalyzer/Options-Button.png
+	scale 50
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/RaceAnalyzer/Options.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Opciones de visualización del análisis del sprint
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la leyenda se mostrarán el máximo de cada variable seleccionada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Encoder lineal
 \end_layout
 
 \begin_layout Standard
@@ -12573,6 +13093,10 @@ Grupal / Serie actual
 
 \begin_layout Standard
 Dentro de cada modo hay varios tipos de análisis
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -12671,7 +13195,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
@@ -12804,7 +13328,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
@@ -12923,7 +13447,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="2">
-<features rotate="0" tabularvalignment="top">
+<features tabularvalignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="0pt">
 <row>
@@ -13171,6 +13695,13 @@ Tabla de datos
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Informes y exportaciones
 \end_layout
@@ -13374,7 +13905,7 @@ Ejemplo de informe en página web (Fotocomposición).
 Exportación a hoja de cálculo
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Exportación-a-hoja"
+name "subsec:Exportación-a-hoja"
 
 \end_inset
 
@@ -13404,6 +13935,13 @@ punto y coma
  separar las distintas columnas de datos.
  Recuerde indicarlo en el momento en que importe el archivo CSV en su hoja
  de cálculo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
@@ -13899,7 +14437,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
@@ -14245,6 +14783,13 @@ Preferencias, pestaña de otros
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part
 Solución de problemas
 \end_layout
@@ -14282,6 +14827,7 @@ En Mac OSX es necesario instalar el programa R de manera independiente.
 LatexCommand href
 name "http://chronojump.org/en/software/#MacOSX"
 target "http://chronojump.org/en/software/#MacOSX"
+literal "false"
 
 \end_inset
 
@@ -14405,6 +14951,7 @@ Descargue el instalador de Chronojump desde
 LatexCommand href
 name "http://chronojump.org/es/software/"
 target "http://chronojump.org/es/software/"
+literal "false"
 
 \end_inset
 
@@ -15089,7 +15636,7 @@ En caso de problemas de funcionamiento, se recomienda conectar la alimentación
 \begin_layout Section
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Chronopic-puertos-serie-usb"
+name "subsec:Chronopic-puertos-serie-usb"
 
 \end_inset
 
@@ -15128,7 +15675,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="3">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="5cm">
