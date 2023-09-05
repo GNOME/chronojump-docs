@@ -341,13 +341,6 @@ Other tests
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Part
 Obtaining and configuring the software and the hardware
 \end_layout
@@ -604,7 +597,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/chronopic3.png
+	filename /homeantic/xpadulles/chronojump-docs/images/chronopic3.png
 	width 250pt
 	height 188pt
 
@@ -719,14 +712,14 @@ Multitest
 Chronopic will be connected to the contact platform or photocell barrier
  through the RCA connection
 \begin_inset Graphics
-	filename images/RCA_connector.png
+	filename /homeantic/xpadulles/chronojump-docs/images/RCA_connector.png
 	scale 3
 
 \end_inset
 
  , the terminal block 
 \begin_inset Graphics
-	filename images/screw_connector.png
+	filename /homeantic/xpadulles/chronojump-docs/images/screw_connector.png
 	scale 3
 
 \end_inset
@@ -1017,7 +1010,7 @@ Chronopic detect changes in the contact platform and sends it to the computer
  by USB cable, USB-serial or serials.
  You can also use the test button 
 \begin_inset Graphics
-	filename images/test_button.png
+	filename /homeantic/xpadulles/chronojump-docs/images/test_button.png
 	scale 3
 
 \end_inset
@@ -1532,7 +1525,7 @@ Power Problem: The red light will turn on when you connect the USB cable
  connected platform and someone stepping on it, or pushing the test button
  
 \begin_inset Graphics
-	filename images/test_button.png
+	filename /homeantic/xpadulles/chronojump-docs/images/test_button.png
 	scale 3
 
 \end_inset
@@ -1608,7 +1601,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/splash.png
+	filename /homeantic/xpadulles/chronojump-docs/images/splash.png
 	lyxscale 70
 	width 100col%
 
@@ -1759,7 +1752,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/chronojump_main_window_english.png
+	filename /homeantic/xpadulles/chronojump-docs/images/chronojump_main_window_english.png
 	lyxscale 70
 	width 100col%
 
@@ -1854,7 +1847,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/menu_session.png
+	filename /homeantic/xpadulles/chronojump-docs/images/menu_session.png
 	lyxscale 50
 	scale 60
 
@@ -1893,7 +1886,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/menu_mode.png
+	filename /homeantic/xpadulles/chronojump-docs/images/menu_mode.png
 
 \end_inset
 
@@ -1930,7 +1923,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/menu_help.png
+	filename /homeantic/xpadulles/chronojump-docs/images/menu_help.png
 	lyxscale 50
 	scale 60
 
@@ -2015,7 +2008,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/chronopic-connection.png
+	filename /homeantic/xpadulles/chronojump-docs/images/chronopic-connection.png
 	lyxscale 50
 	scale 60
 
@@ -2127,7 +2120,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/nueva_sesion_colegio.png
+	filename /homeantic/xpadulles/chronojump-docs/images/nueva_sesion_colegio.png
 	lyxscale 50
 	scale 60
 
@@ -2170,7 +2163,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/nueva_sesion_artistica_competicion.png
+	filename /homeantic/xpadulles/chronojump-docs/images/nueva_sesion_artistica_competicion.png
 	lyxscale 50
 	scale 60
 
@@ -2295,7 +2288,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/Captura-Nuevo saltador.png
+	filename /homeantic/xpadulles/chronojump-docs/images/Captura-Nuevo saltador.png
 	lyxscale 50
 	scale 60
 
@@ -2387,7 +2380,7 @@ In the first case you will need a coma separated value file (.csv) previously
  diferent fields.
  The format of the file can be specified with headers 
 \begin_inset Graphics
-	filename images/import_headers.png
+	filename /homeantic/xpadulles/chronojump-docs/images/import_headers.png
 	lyxscale 75
 	scale 75
 
@@ -2395,7 +2388,7 @@ In the first case you will need a coma separated value file (.csv) previously
 
  or without it 
 \begin_inset Graphics
-	filename images/import_no_headers.png
+	filename /homeantic/xpadulles/chronojump-docs/images/import_no_headers.png
 	lyxscale 75
 	scale 75
 
@@ -2405,7 +2398,7 @@ In the first case you will need a coma separated value file (.csv) previously
  Additionally you can have a file with a single column for the full name
  
 \begin_inset Graphics
-	filename images/import_1_field.png
+	filename /homeantic/xpadulles/chronojump-docs/images/import_1_field.png
 	lyxscale 75
 	scale 75
 
@@ -2413,7 +2406,7 @@ In the first case you will need a coma separated value file (.csv) previously
 
  or two columns for the name and surname 
 \begin_inset Graphics
-	filename images/import_2_fields.png
+	filename /homeantic/xpadulles/chronojump-docs/images/import_2_fields.png
 	lyxscale 75
 	scale 75
 
@@ -2451,7 +2444,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/Captura-Cargar atletas.png
+	filename /homeantic/xpadulles/chronojump-docs/images/Captura-Cargar atletas.png
 	lyxscale 50
 	scale 50
 
@@ -2538,7 +2531,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/Captura-Cargar atletas.png
+	filename /homeantic/xpadulles/chronojump-docs/images/Captura-Cargar atletas.png
 	lyxscale 50
 	scale 50
 
@@ -2581,7 +2574,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/Captura-Cargar_atletas_otra_sesion.png
+	filename /homeantic/xpadulles/chronojump-docs/images/Captura-Cargar_atletas_otra_sesion.png
 	lyxscale 50
 	scale 50
 
@@ -3042,7 +3035,7 @@ See order
 \emph default
  button
 \begin_inset Graphics
-	filename images/automatic_list.png
+	filename /homeantic/xpadulles/chronojump-docs/images/automatic_list.png
 
 \end_inset
 
@@ -3057,7 +3050,7 @@ Skip
 \emph default
  
 \begin_inset Graphics
-	filename images/automatic_skip.png
+	filename /homeantic/xpadulles/chronojump-docs/images/automatic_skip.png
 
 \end_inset
 
@@ -3071,7 +3064,7 @@ Remove
 \emph default
  button 
 \begin_inset Graphics
-	filename images/automatic_delete.png
+	filename /homeantic/xpadulles/chronojump-docs/images/automatic_delete.png
 
 \end_inset
 
@@ -3199,7 +3192,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/campanas_es.png
+	filename /homeantic/xpadulles/chronojump-docs/images/campanas_es.png
 	lyxscale 75
 	scale 60
 
@@ -3590,7 +3583,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/Captura-Crear un tipo de salto nuevo.png
+	filename /homeantic/xpadulles/chronojump-docs/images/Captura-Crear un tipo de salto nuevo.png
 	lyxscale 50
 	scale 60
 
@@ -4104,13 +4097,6 @@ Examples on jump types created by user.
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Races with photocells
 \end_layout
@@ -4125,7 +4111,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/races.png
+	filename /homeantic/xpadulles/chronojump-docs/images/races.png
 	lyxscale 50
 	width 60col%
 
@@ -4220,7 +4206,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/photocells-connections.png
+	filename /homeantic/xpadulles/chronojump-docs/images/photocells-connections.png
 	lyxscale 50
 	width 60col%
 
@@ -4346,7 +4332,7 @@ Measure reaction time
 
  
 \begin_inset Graphics
-	filename images/reactTime.png
+	filename /homeantic/xpadulles/chronojump-docs/images/reactTime.png
 	scale 66
 
 \end_inset
@@ -4380,7 +4366,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/races_Table.png
+	filename /homeantic/xpadulles/chronojump-docs/images/races_Table.png
 	lyxscale 66
 	scale 50
 
@@ -4445,7 +4431,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/preferences_double_contact.png
+	filename /homeantic/xpadulles/chronojump-docs/images/preferences_double_contact.png
 	lyxscale 50
 	scale 66
 
@@ -4506,7 +4492,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/races_double_contacts.png
+	filename /homeantic/xpadulles/chronojump-docs/images/races_double_contacts.png
 	lyxscale 66
 	scale 66
 
@@ -4600,7 +4586,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/chronojump-505.png
+	filename /homeantic/xpadulles/chronojump-docs/images/chronojump-505.png
 	lyxscale 50
 	scale 55
 
@@ -4812,7 +4798,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/race_graph.png
+	filename /homeantic/xpadulles/chronojump-docs/images/race_graph.png
 	lyxscale 75
 	scale 75
 
@@ -5059,7 +5045,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/run_type_add.png
+	filename /homeantic/xpadulles/chronojump-docs/images/run_type_add.png
 	scale 55
 
 \end_inset
@@ -5105,7 +5091,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/run_type_add-variable.png
+	filename /homeantic/xpadulles/chronojump-docs/images/run_type_add-variable.png
 	scale 55
 
 \end_inset
@@ -5737,9 +5723,6 @@ Examples on run types created by user.
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -5747,22 +5730,16 @@ Examples on run types created by user.
 \end_layout
 
 \begin_layout Section
-Races with encoder
+Races with RaceAnalyzer
 \end_layout
 
 \begin_layout Standard
-Chronojump RaceAnalyzer allows to analyze the race using taking the elapsed
- time each 3 cm.
- After the aquisition of data, the program will perform an automatic analysis
- so that data concerning the actual measured speeds and the modelled speed
- will be given.
+Chronojump RaceAnalyzer allows the analysis of the race by taking the time
+ elapsed every 3cm traveled
 \end_layout
 
 \begin_layout Standard
-
-\lang spanish
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -5772,119 +5749,68 @@ status open
 \align center
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/RaceAnalyzer/Sprint-Graph.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Analysis-Simple-Sprint"
+
+\end_inset
+
+Simple analysis of a sprint
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Data acquisition
+\end_layout
+
+\begin_layout Standard
+The first time you connect the RaceAnalyzer in Chronojump you will be asked
+ to select a device.
+ Select the RaceAnalyzer compatible device from the detected devices list.
+\end_layout
+
+\begin_layout Subsection
+Acquisition config
+\end_layout
+
+\begin_layout Standard
+Before starting the capture, select the type of race to be performed and,
+ if necessary, click the Exercise button 
+\begin_inset Graphics
+	filename /home/xpadulles/chronojump-docs/images/RaceAnalyzer/config-capture-button.png
+	lyxscale 60
 	scale 40
 
 \end_inset
 
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Encoder-Sprint-Analysis"
-
-\end_inset
-
-Sprint analysis
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Data capturing
+ in order to set up the race.
 \end_layout
 
 \begin_layout Standard
-The first time that the RaceAnalyzer is connected you will be asked to identify
- the device.
- Use the arrow buttons to identify the device as race encoder as shown in
- the figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:RaceAnalyzer-config"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
+You can edit, add or delete test types by clicking the corresponding button
+ 
 \begin_inset Graphics
-	filename /home/xpadulles/chronojump-docs/images/RaceAnalyzer/device-RaceAnalyzer.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:RaceAnalyzer-config"
-
-\end_inset
-
-Configuration of the device
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Capture configuration
-\end_layout
-
-\begin_layout Standard
-Before the capture is initiated, click on the configuration button 
-\begin_inset Graphics
-	filename /home/xpadulles/chronojump-docs/images/RaceAnalyzer/config-capture-button.png
-	lyxscale 50
-	scale 50
-
-\end_inset
-
- in order to select the type of exercise that will be analyzed.
-\end_layout
-
-\begin_layout Standard
-Select the type of race or test that it is about to be performed.
- You can edit, add or delete the type of tests clicking in the corresponding
- button 
-\begin_inset Graphics
-	filename /home/xpadulles/chronojump-docs/images/RaceAnalyzer/manage-test-type-buttons.png
-	lyxscale 50
-	scale 50
+	filename /home/xpadulles/chronojump-docs/images/RaceAnalyzer/EditAddDelete-Buttons.png
+	lyxscale 60
+	scale 40
 
 \end_inset
 
@@ -5892,23 +5818,22 @@ Select the type of race or test that it is about to be performed.
 \end_layout
 
 \begin_layout Standard
-While editing or adding a type of test, a windows as the one shown in the
- figure 
+When editing or adding a type of test, a window like the one in the figure
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Test-properties"
+reference "fig:Properties-RaceAnalyzer-Test"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
-
+ will appear.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -5923,20 +5848,27 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Test-properties"
+name "fig:Properties-RaceAnalyzer-Test"
 
 \end_inset
 
-Test properties
+Properties of the test
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -5946,27 +5878,51 @@ Test properties
 \end_layout
 
 \begin_layout Standard
-The distance parameter refers to the distance analyzed once the race is
- started.
- This parameter doesn't limit the distance that can be measured during the
- capture, as Chronojump will continue to record as long as the capture is
- not finished manually.
+The parameters are described below:
 \end_layout
 
-\begin_layout Subsection
-Test finishing
+\begin_layout Itemize
+Name: A short text to identify the test.
+\end_layout
+
+\begin_layout Itemize
+Description: A longer text with a brief explanation of the test.
+\end_layout
+
+\begin_layout Itemize
+Is it a sprint?: This parameter requires that the test be executed with
+ maximum acceleration and speed during the duration of the test.
+ When exporting multiple tests, those with this option will be analyzed
+ as such, giving all the parameters that can be extracted from the model
+\end_layout
+
+\begin_layout Itemize
+Fixed length segments: Segments that will have the length established in
+ the length field will be analyzed.
+ If this option is unchecked, an arbitrary number of segments and their
+ corresponding lengths can be set.
 \end_layout
 
 \begin_layout Standard
-Once the athlete has completed the test, press the end button 
-\begin_inset Graphics
-	filename /home/xpadulles/chronojump-docs/images/RaceAnalyzer/finish-Button.png
-	scale 50
+Once the type of race to be used has been established, the conditions of
+ the moment must be established.
+\end_layout
 
-\end_inset
+\begin_layout Itemize
+Distance: Specifies to what extent it will be analyzed.
+ It does not affect data recording since data continues to be recorded as
+ long as the end button is not pressed.
+\end_layout
 
-.
- You will automatically be presented with the sprint analysis.
+\begin_layout Itemize
+Angle: If the test is not performed on a horizontal surface (0 degrees),
+ the angle must be specified as positive if the test is uphill or negative
+ if it is downhill.
+\end_layout
+
+\begin_layout Itemize
+Temperature: The ambient temperature at the time of the test.
+ This temperature affects the strength and power calculations of the analysis.
 \end_layout
 
 \begin_layout Standard
@@ -5977,11 +5933,11 @@ Once the athlete has completed the test, press the end button
 \end_layout
 
 \begin_layout Section
-Linear encoder tests
+Encoder tests
 \end_layout
 
 \begin_layout Subsection
-Safety instructions for linear encoders
+Safety instruccions for linear encoders
 \end_layout
 
 \begin_layout Standard
@@ -6010,7 +5966,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/magnets.jpeg
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/magnets.jpeg
 
 \end_inset
 
@@ -6053,7 +6009,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/handle.jpeg
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/handle.jpeg
 	lyxscale 25
 	scale 25
 
@@ -6111,7 +6067,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/encoder-manual-images/attachedEncoder.JPG
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/attachedEncoder.JPG
 	lyxscale 50
 	scale 50
 
@@ -6127,7 +6083,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/encoder-manual-images/encoderOnPlates.JPG
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/encoderOnPlates.JPG
 	lyxscale 50
 	scale 50
 
@@ -6496,7 +6452,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/main.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/main.png
 	lyxscale 30
 	scale 50
 
@@ -6560,7 +6516,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/capture_area.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/capture_area.png
 	lyxscale 75
 	scale 50
 
@@ -6611,7 +6567,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/set_config_button.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/set_config_button.png
 	scale 75
 
 \end_inset
@@ -6651,7 +6607,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/set_config.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/set_config.png
 	scale 50
 
 \end_inset
@@ -6750,7 +6706,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/encoder_admin.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/encoder_admin.png
 	scale 50
 
 \end_inset
@@ -7125,7 +7081,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/Disk.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/Disk.png
 	lyxscale 12
 	scale 6
 
@@ -7160,7 +7116,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/select.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/select.png
 
 \end_inset
 
@@ -7206,7 +7162,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/inertial_conf.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/inertial_conf.png
 	lyxscale 50
 	scale 50
 
@@ -7249,7 +7205,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/calculus.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/calculus.png
 	lyxscale 75
 	scale 50
 
@@ -7292,7 +7248,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/oscilation.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/oscilation.png
 	lyxscale 66
 	scale 33
 
@@ -7338,7 +7294,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/capture_inertial.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/capture_inertial.png
 	lyxscale 66
 	scale 75
 
@@ -7545,14 +7501,14 @@ Selection of phase or phases analysed
 At the time of showing or analyzing you must select if the concentric phase
  (force in the same way that speed) 
 \begin_inset Graphics
-	filename images/encoder-manual-images/concentric.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/concentric.png
 	scale 50
 
 \end_inset
 
  or both (excentric and concentric) 
 \begin_inset Graphics
-	filename images/encoder-manual-images/eccentric_concentric.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/eccentric_concentric.png
 	scale 50
 
 \end_inset
@@ -7600,7 +7556,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/mass_config.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/mass_config.png
 	scale 75
 
 \end_inset
@@ -7667,7 +7623,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/inertia_config.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/inertia_config.png
 	scale 75
 
 \end_inset
@@ -7696,7 +7652,7 @@ Capture configuration
 \begin_layout Standard
 In the acquire area a new set can be captured 
 \begin_inset Graphics
-	filename images/capture_button.png
+	filename /homeantic/xpadulles/chronojump-docs/images/capture_button.png
 	lyxscale 50
 	scale 50
 
@@ -7704,7 +7660,7 @@ In the acquire area a new set can be captured
 
  or a previusly captured one can be loaded 
 \begin_inset Graphics
-	filename images/load_signal_button.png
+	filename /homeantic/xpadulles/chronojump-docs/images/load_signal_button.png
 	lyxscale 75
 	scale 75
 
@@ -7742,7 +7698,7 @@ Important!: Using inertial machines, after opening the software the first
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/inertial_calibration.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/inertial_calibration.png
 	scale 50
 
 \end_inset
@@ -7791,7 +7747,7 @@ Wrong execution
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/encoder-manual-images/inertial_right.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/inertial_right.png
 	lyxscale 50
 	scale 25
 
@@ -7807,7 +7763,7 @@ Wrong execution
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/encoder-manual-images/inertial_wrong.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/inertial_wrong.png
 	lyxscale 50
 	scale 25
 
@@ -7874,7 +7830,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/bells.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/bells.png
 	scale 50
 
 \end_inset
@@ -7939,7 +7895,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/rhythm.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/rhythm.png
 	scale 50
 
 \end_inset
@@ -7993,7 +7949,7 @@ Load
 \begin_layout Standard
 The load button 
 \begin_inset Graphics
-	filename images/load_signal_button.png
+	filename /homeantic/xpadulles/chronojump-docs/images/load_signal_button.png
 	lyxscale 75
 	scale 75
 
@@ -8028,7 +7984,7 @@ Recalculate can be used after capturing or loading.
  to perform calculations of the set again, user can change the selector
  and press “recalculate” 
 \begin_inset Graphics
-	filename images/recalculate.png
+	filename /homeantic/xpadulles/chronojump-docs/images/recalculate.png
 	lyxscale 75
 	scale 75
 
@@ -8114,7 +8070,7 @@ Chronopic configured
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/device_window.png
+	filename /homeantic/xpadulles/chronojump-docs/images/device_window.png
 	scale 50
 
 \end_inset
@@ -8129,7 +8085,7 @@ Chronopic configured
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/encoder-manual-images/device_window_encoder.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/device_window_encoder.png
 	scale 50
 
 \end_inset
@@ -8186,7 +8142,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/power_bars.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/power_bars.png
 	scale 50
 
 \end_inset
@@ -8244,7 +8200,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/save_curve.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/save_curve.png
 	scale 70
 
 \end_inset
@@ -8320,7 +8276,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/encoder_capture_preferences.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/encoder_capture_preferences.png
 	scale 50
 
 \end_inset
@@ -8431,7 +8387,7 @@ Only bars configuration
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/encoder-manual-images/no_only_bars.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/no_only_bars.png
 	lyxscale 50
 	scale 25
 
@@ -8447,7 +8403,7 @@ Only bars configuration
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/encoder-manual-images/only_bars.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/only_bars.png
 	lyxscale 50
 	scale 25
 
@@ -8591,7 +8547,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/PushButton.jpg
+	filename /homeantic/xpadulles/chronojump-docs/images/PushButton.jpg
 	lyxscale 25
 	scale 25
 
@@ -8835,7 +8791,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/encoder-manual-images/example.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/example.png
 	scale 50
 
 \end_inset
@@ -8855,13 +8811,6 @@ Example of encoder use
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -8956,43 +8905,7 @@ device
 .
  A window with a list of connected devices will be shown where you should
  identify the type of device.
- Click on the arrows until the force sensor image shows up.
-\end_layout
-
-\begin_layout Standard
-
-\lang spanish
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-
-\lang spanish
-\begin_inset Graphics
-	filename /home/xpadulles/chronojump-docs/images/ForceSensor/MIF-Device.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Configuring the force sensor device
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+ Click on the device compatible with the force sensor.
 \end_layout
 
 \begin_layout Subsection
@@ -9020,7 +8933,7 @@ To perform the tare and calibration process you must press the Adjust button
 \lang spanish
 
 \begin_inset Graphics
-	filename images/ForceSensor/Adjust-Button_en.png
+	filename /homeantic/xpadulles/chronojump-docs/images/ForceSensor/Adjust-Button_en.png
 	lyxscale 50
 	scale 50
 
@@ -9049,7 +8962,7 @@ status open
 
 \lang spanish
 \begin_inset Graphics
-	filename images/ForceSensor/Adjust_en.png
+	filename /homeantic/xpadulles/chronojump-docs/images/ForceSensor/Adjust_en.png
 	lyxscale 50
 	scale 50
 
@@ -9078,7 +8991,9 @@ Tare (previous to calibration)
 
 \begin_layout Standard
 To carry out this process place the sensor hanging from one end without
- supporting any external force apart from its own weight.
+ supporting any external force apart from the elements necessary to anchorage
+ the load that will be used later for the calibration (carabiners, ropes,
+ webbing, etc).
  Then press on the Tare button.
  Chronojump will record for a few seconds and save the result.
 \end_layout
@@ -9128,7 +9043,8 @@ Calibration
 Calibration consists in establishing a linear relationship between the electrica
 l signal of the sensor and the real force.
  This ratio may vary depending on the sensor, temperature, humidity ...
- Therefore it is recommended to do a calibration once per session.
+ Therefore it is recommended to do a calibration the first time you use
+ the sensor.
  By default Chronojump will use a generic calibration.
 \end_layout
 
@@ -9177,6 +9093,11 @@ Force sensor calibration
 \begin_layout Standard
 In case you want to measure compression forces, let the weight rest on the
  sensor having previously removed the eyebolts from it.
+\end_layout
+
+\begin_layout Standard
+Ii necessary, in the configuration of the capture you can invert the sign
+ of the signal.
 \end_layout
 
 \begin_layout Standard
@@ -9236,7 +9157,8 @@ Horizontal tare of the force sensor
 \end_layout
 
 \begin_layout Standard
-In this way the sensor will also register its own weight.
+In this way the sensor will also register its own weight and any element
+ you add (carabiners, ropes, webbing, etc).
 \end_layout
 
 \begin_layout Standard
@@ -9580,7 +9502,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/ForceSensor/Create-Exercise-01_en.png
+	filename /homeantic/xpadulles/chronojump-docs/images/ForceSensor/Create-Exercise-01_en.png
 	scale 50
 
 \end_inset
@@ -9614,7 +9536,7 @@ All the Chronojump sets can be edited.
 If you want to change the athlete or the comment associated to the set click
  on the load button 
 \begin_inset Graphics
-	filename images/ForceSensor/Load-Set-Button.png
+	filename /homeantic/xpadulles/chronojump-docs/images/ForceSensor/Load-Set-Button.png
 	scale 50
 
 \end_inset
@@ -9636,7 +9558,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/ForceSensor/Edit-Set_en.png
+	filename /homeantic/xpadulles/chronojump-docs/images/ForceSensor/Edit-Set_en.png
 	scale 50
 
 \end_inset
@@ -9667,7 +9589,7 @@ If you want to change the test type of a set, la laterality or the signal
  treatment, load first the set, change the desired parameter and click on
  recalculate 
 \begin_inset Graphics
-	filename images/ForceSensor/Recalculate_en.png
+	filename /homeantic/xpadulles/chronojump-docs/images/ForceSensor/Recalculate_en.png
 	scale 50
 
 \end_inset
@@ -9702,7 +9624,7 @@ Manual analysis
 \begin_layout Standard
 Clicking on the analyze button 
 \begin_inset Graphics
-	filename images/ForceSensor/Analyze_button_en.png
+	filename /homeantic/xpadulles/chronojump-docs/images/ForceSensor/Analyze_button_en.png
 	scale 50
 
 \end_inset
@@ -9729,7 +9651,7 @@ status open
 
 \lang spanish
 \begin_inset Graphics
-	filename images/ForceSensor/Analysis-General_en.png
+	filename /homeantic/xpadulles/chronojump-docs/images/ForceSensor/Analysis-General_en.png
 	scale 50
 
 \end_inset
@@ -9778,7 +9700,7 @@ status open
 
 \lang spanish
 \begin_inset Graphics
-	filename images/ForceSensor/Analysis-General-A-B_en.png
+	filename /homeantic/xpadulles/chronojump-docs/images/ForceSensor/Analysis-General-A-B_en.png
 	scale 50
 
 \end_inset
@@ -10430,13 +10352,6 @@ load
  button.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Other tests
 \end_layout
@@ -10821,7 +10736,7 @@ Some of these tests require a synchronization to intend that the various
  This sync can be selected from a check box and carried out by making contact
  with several devices at once, or by touching the Test button
 \begin_inset Graphics
-	filename images/test_button.png
+	filename /homeantic/xpadulles/chronojump-docs/images/test_button.png
 	scale 3
 
 \end_inset
@@ -10893,7 +10808,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/multiChronopic_mc.png
+	filename /homeantic/xpadulles/chronojump-docs/images/multiChronopic_mc.png
 	lyxscale 50
 	scale 60
 
@@ -11125,7 +11040,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/multiChronopic_ra.png
+	filename /homeantic/xpadulles/chronojump-docs/images/multiChronopic_ra.png
 	lyxscale 50
 	scale 60
 	rotateAngle 90
@@ -11153,13 +11068,6 @@ Multi Chronopic screenshot with Run Analysis results.
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -11196,7 +11104,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/chronojump_stats_window.png
+	filename /homeantic/xpadulles/chronojump-docs/images/chronojump_stats_window.png
 	lyxscale 50
 	width 100col%
 
@@ -11445,7 +11353,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/chronojump_estadisticas_saltos_simples.png
+	filename /homeantic/xpadulles/chronojump-docs/images/chronojump_estadisticas_saltos_simples.png
 	lyxscale 50
 	scale 70
 
@@ -11953,7 +11861,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/grafico_stats1.png
+	filename /homeantic/xpadulles/chronojump-docs/images/grafico_stats1.png
 	lyxscale 50
 	scale 60
 
@@ -11995,7 +11903,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/grafico_stats2.png
+	filename /homeantic/xpadulles/chronojump-docs/images/grafico_stats2.png
 	lyxscale 50
 	scale 60
 
@@ -12037,7 +11945,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/grafico_stats3.png
+	filename /homeantic/xpadulles/chronojump-docs/images/grafico_stats3.png
 	lyxscale 50
 	scale 60
 
@@ -12079,7 +11987,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/grafico_stats4.png
+	filename /homeantic/xpadulles/chronojump-docs/images/grafico_stats4.png
 	lyxscale 50
 	scale 60
 
@@ -12139,7 +12047,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/sprint.png
+	filename /homeantic/xpadulles/chronojump-docs/images/sprint.png
 	lyxscale 50
 	scale 33
 
@@ -12182,33 +12090,13 @@ The K variable indicates how fast the subject reaches his maximum velocity,
  Force and power are relative to the body weight.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
-Race encoder
+RaceAnalyzer
 \end_layout
 
 \begin_layout Standard
-After recording a test with the race encoder, it will automatically be analysed
- and a graph will be displayed as shown in the figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Race-Encoder-Analysis"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+In the analysis section, after registering a test or loading it, by clicking
+ on the “Analyze” button, a graph like the one in the figure will be displayed.
 \begin_inset Float figure
 placement H
 wide false
@@ -12219,8 +12107,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/xpadulles/chronojump-docs/images/RaceAnalyzer/Sprint-Graph.png
-	scale 40
+	filename /home/xpadulles/chronojump-docs/images/RaceAnalyzer/ModelAnalysis.png
+	lyxscale 25
+	scale 25
 
 \end_inset
 
@@ -12230,11 +12119,11 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Race-Encoder-Analysis"
+name "fig:RaceAnalyzer-Analysis"
 
 \end_inset
 
-Race encoder analysis
+RaceAnalyzer sprint analysis
 \end_layout
 
 \end_inset
@@ -12249,51 +12138,53 @@ Race encoder analysis
 
 \begin_layout Standard
 Chronojump will try to fit the recorded data to a mathematical model that
- allows a much easier analysis than with the raw data.
- In this way, the data displayed can be referred to either the raw data
- or the data inferred from the model.
+ allows a much simpler analysis than with raw data.
+ In this way, the data displayed can be referred to the raw data or the
+ data inferred from the model.
 \end_layout
 
 \begin_layout Standard
 In addition, the time and average speed will be displayed every 5 m in the
- form of grey bars.
- On the horizontal axis the partial times are shown every 5 m
+ form of gray bars.
+ On the horizontal axis the split times are shown every 5 m
 \end_layout
 
 \begin_layout Standard
-The following variables will always be shown in the legend:
+The following variables will always be displayed in the legend:
 \end_layout
 
-\begin_layout Itemize
-V max (raw): The peak of the raw speed measured with the device.
+\begin_layout Standard
+• V max (raw): The peak raw speed measured with the device.
 \end_layout
 
-\begin_layout Itemize
-V max (fitted): The theoretical maximum speed reached with the model.
+\begin_layout Standard
+• V max (fitted): The theoretical maximum speed that is achieved with the
+ model.
 \end_layout
 
-\begin_layout Itemize
-K: This parameter indicates how quickly the speed approaches its theoretical
+\begin_layout Standard
+• K: This parameter indicates how fast the speed approaches its theoretical
  maximum.
- It can also be interpreted as the maximum slope in a graph normalized by
+ It can also be interpreted as the maximum slope on a graph normalized by
  the maximum speed of the model.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
+• 
 \begin_inset Formula $\tau$
 \end_inset
 
-: Tau is the inverse of the parameter K and indicates the time it takes
+: Tau is the inverse of the K parameter and indicates the time it takes
  to reach 63.2% of the maximum speed.
 \end_layout
 
 \begin_layout Standard
-In addition to the previous variables, it is possible to visualize the accelerat
-ion, force and power as raw or fitted data.
+In addition to the previous variables, acceleration, force and power can
+ be displayed both raw and modeled.
 \end_layout
 
 \begin_layout Standard
-To activate or deactivate these variables click on the option button 
+To activate or deactivate these variables click the options button 
 \begin_inset Graphics
 	filename /home/xpadulles/chronojump-docs/images/RaceAnalyzer/Options-Button.png
 	scale 50
@@ -12325,7 +12216,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Sprint analysis options
+Visualization options of sprint analysis
 \end_layout
 
 \end_inset
@@ -12339,11 +12230,7 @@ Sprint analysis options
 \end_layout
 
 \begin_layout Standard
-The máximum of each selected variable will be shown in the legend.
-\begin_inset Newpage pagebreak
-\end_inset
-
-
+The maximum of each selected variable will be shown in the legend.
 \end_layout
 
 \begin_layout Standard
@@ -12354,7 +12241,7 @@ The máximum of each selected variable will be shown in the legend.
 \end_layout
 
 \begin_layout Section
-Linear encoder
+Encoder
 \end_layout
 
 \begin_layout Subsubsection
@@ -12368,7 +12255,7 @@ There are four modes of analysis:
 \begin_layout Itemize
 Individual / Current Set 
 \begin_inset Graphics
-	filename images/encoder-manual-images/analyze_individual_current_set.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/analyze_individual_current_set.png
 	scale 80
 
 \end_inset
@@ -12420,7 +12307,7 @@ Within each mode there's various types of analysis:
 \align left
 Power bars 
 \begin_inset Graphics
-	filename images/analyze_power_button.png
+	filename /homeantic/xpadulles/chronojump-docs/images/analyze_power_button.png
 	lyxscale 75
 	scale 75
 
@@ -12468,7 +12355,7 @@ Power bars graph
 \align left
 Cross variables 
 \begin_inset Graphics
-	filename images/analyze_cross_button.png
+	filename /homeantic/xpadulles/chronojump-docs/images/analyze_cross_button.png
 	lyxscale 75
 	scale 75
 
@@ -12509,7 +12396,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/encoder-manual-images/analysis_power_V-M.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_power_V-M.png
 	lyxscale 90
 	scale 30
 
@@ -12600,7 +12487,7 @@ Cross variables graphs
 \align left
 1RM 
 \begin_inset Graphics
-	filename images/1RM_button.png
+	filename /homeantic/xpadulles/chronojump-docs/images/1RM_button.png
 	lyxscale 75
 	scale 75
 
@@ -12731,7 +12618,7 @@ status open
 \align left
 Instantaneous analysis 
 \begin_inset Graphics
-	filename images/analyze_singlecurve_button.png
+	filename /homeantic/xpadulles/chronojump-docs/images/analyze_singlecurve_button.png
 	lyxscale 75
 	scale 75
 
@@ -12905,7 +12792,7 @@ Instantaneous analysis
 \align left
 Neuromuscular profile 
 \begin_inset Graphics
-	filename images/analyze_nmp.png
+	filename /homeantic/xpadulles/chronojump-docs/images/analyze_nmp.png
 	lyxscale 75
 	scale 75
 
@@ -12970,7 +12857,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/encoder-manual-images/analysis_table_en.png
+	filename /homeantic/xpadulles/chronojump-docs/images/encoder-manual-images/analysis_table_en.png
 	scale 25
 
 \end_inset
@@ -12987,13 +12874,6 @@ Data table
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -13044,7 +12924,7 @@ View report window
 \emph default
  
 \begin_inset Graphics
-	filename images/report_button.png
+	filename /homeantic/xpadulles/chronojump-docs/images/report_button.png
 	scale 75
 
 \end_inset
@@ -13065,7 +12945,7 @@ Add to report
 \emph default
  button 
 \begin_inset Graphics
-	filename images/report_add.png
+	filename /homeantic/xpadulles/chronojump-docs/images/report_add.png
 	lyxscale 75
 	scale 75
 
@@ -13087,7 +12967,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/grafico-informe.png
+	filename /homeantic/xpadulles/chronojump-docs/images/grafico-informe.png
 	lyxscale 50
 	scale 60
 
@@ -13138,7 +13018,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/report1.png
+	filename /homeantic/xpadulles/chronojump-docs/images/report1.png
 	lyxscale 50
 	scale 70
 
@@ -13211,13 +13091,6 @@ To export to CSV we chose the semicolon character (instead of comma character)
  Remember to indicate it when you import the CSV file in the spreadsheet.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Chapter
 Preferences of Chronojump
 \end_layout
@@ -13260,7 +13133,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/preferences_database.png
+	filename /homeantic/xpadulles/chronojump-docs/images/preferences_database.png
 	lyxscale 50
 	scale 60
 
@@ -13419,7 +13292,7 @@ status open
 
 \lang spanish
 \begin_inset Graphics
-	filename images/import.png
+	filename /homeantic/xpadulles/chronojump-docs/images/import.png
 	scale 66
 
 \end_inset
@@ -13514,7 +13387,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/preferences_jumps.png
+	filename /homeantic/xpadulles/chronojump-docs/images/preferences_jumps.png
 	lyxscale 50
 	scale 60
 
@@ -13566,7 +13439,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/preferences_runs.png
+	filename /homeantic/xpadulles/chronojump-docs/images/preferences_runs.png
 	lyxscale 50
 	scale 60
 
@@ -13638,7 +13511,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/preferences_encoder.png
+	filename /homeantic/xpadulles/chronojump-docs/images/preferences_encoder.png
 	lyxscale 50
 	scale 60
 
@@ -13705,7 +13578,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/preferences_camera.png
+	filename /homeantic/xpadulles/chronojump-docs/images/preferences_camera.png
 	lyxscale 50
 	scale 60
 
@@ -13757,7 +13630,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/preferences_language.png
+	filename /homeantic/xpadulles/chronojump-docs/images/preferences_language.png
 	lyxscale 50
 	scale 60
 
@@ -13808,7 +13681,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/preferences_other.png
+	filename /homeantic/xpadulles/chronojump-docs/images/preferences_other.png
 	lyxscale 50
 	scale 60
 
@@ -13858,13 +13731,6 @@ Other
 
 \begin_layout Part
 Troubleshooting
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Chapter
@@ -14846,7 +14712,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/chronopic_2_0_usb_front_mini.jpg
+	filename /homeantic/xpadulles/chronojump-docs/images/chronopic_2_0_usb_front_mini.jpg
 	width 250pt
 	height 159pt
 
@@ -14888,7 +14754,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/chronopic_2_0_serial_front_mini.jpg
+	filename /homeantic/xpadulles/chronojump-docs/images/chronopic_2_0_serial_front_mini.jpg
 	width 250pt
 	height 213pt
 
@@ -14931,7 +14797,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/chronopic_foto.jpg
+	filename /homeantic/xpadulles/chronojump-docs/images/chronopic_foto.jpg
 	width 250pt
 
 \end_inset
@@ -15338,7 +15204,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/chronopic_box_mount.png
+	filename /homeantic/xpadulles/chronojump-docs/images/chronopic_box_mount.png
 	lyxscale 50
 	scale 50
 

@@ -6033,14 +6033,14 @@ Ejemplos de tipos de carreras creados por el usuario.
 \end_layout
 
 \begin_layout Section
-Carreras con encoder
+Carreras con RaceAnalyzer
 \end_layout
 
 \begin_layout Standard
 Chronojump RaceAnalyzer permite el análisis de la carrera tomando el tiempo
  transcurrido cada 3cm.
- Después de la adquisición de datos, el programa hará un análisis simple
- de modo que se darán datos referentes a las velocidades reales medidas.
+ Después de la adquisición de datos, el programa hará un análisis simple.
+ After data acquisition, the program will do a simple analysis.
 \end_layout
 
 \begin_layout Standard
@@ -6093,8 +6093,9 @@ Capura de datos
 
 \begin_layout Standard
 La primera vez que conecte el encoder de carreras en Chronojump se le pedirà
- que identifique el dispositivo.
- Seleccione el dispositivo compatible con RaceAnalyzer.
+ que seleccione un dispositivo.
+ Seleccione el dispositivo compatible con RaceAnalyzer en la lista de dispositiv
+os compatibles.
 \end_layout
 
 \begin_layout Subsection
@@ -6206,7 +6207,18 @@ Es un sprint?: Este parámetro exige que el test se ejecute con la máxima
  aceleración y velocidad durante la duración del test.
  En la exportación de múltiples test, los que tengan esta opción serán analizado
 s como tal, dando todos los parámetros que se pueden extraer del modelo.
- 
+\end_layout
+
+\begin_layout Itemize
+Segmentos de longitud fija: Se analizarán segmentos dque tendrán la longitud
+ establecida en el campo longitud.
+ Si se desmarca esta opción se podrán introducir un número arbitrario de
+ segmentos y sus longitudesd correspondientes.
+\end_layout
+
+\begin_layout Standard
+Una vez establecido el tipo de carrera que se utilizará se requiere establecer
+ las condiciones del momento
 \end_layout
 
 \begin_layout Itemize
@@ -12825,7 +12837,7 @@ La fuerza y la potencia son relativas al peso corporal.
 \end_layout
 
 \begin_layout Section
-Encoder de carrera
+RaceAnalyzer
 \end_layout
 
 \begin_layout Standard
@@ -12986,6 +12998,87 @@ Opciones de visualización del análisis del sprint
 
 \begin_layout Standard
 En la leyenda se mostrarán el máximo de cada variable seleccionada.
+\end_layout
+
+\begin_layout Standard
+Si desea obtener una tabla con los resultados del análisis de mñultiples
+ carreras puede pulsar en los distintos botones para analizar la sesión
+ actual del individuo actual 
+\begin_inset Graphics
+	filename images/Individual-Current-Session-Button.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+, todas las sesiones del individuo actual 
+\begin_inset Graphics
+	filename images/Individual-All-Sessions-Button.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+ o la sesión actual del grupo actual 
+\begin_inset Graphics
+	filename images/Group-Current-Session-Button.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pulsando en el botón de Exportar, se generará una carpeta con los resultados
+ en forma de tabla y los gráficos y datos crudos en sendas subcarpetas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/RaceAnalyzer/Export-Table.png
+	lyxscale 50
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Tabla-Exportacion-RaceAnalyzer"
+
+\end_inset
+
+Tabla de exportación de RaceAnalyzer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
