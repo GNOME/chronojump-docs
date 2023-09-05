@@ -6039,9 +6039,8 @@ Carreras con encoder
 \begin_layout Standard
 Chronojump RaceAnalyzer permite el análisis de la carrera tomando el tiempo
  transcurrido cada 3cm.
- Después de la adquisición de datos, el programa hará un análisis automático
- de modo que se darán datos referentes a las velocidades reales medidas
- y a la velocidad modelada.
+ Después de la adquisición de datos, el programa hará un análisis simple
+ de modo que se darán datos referentes a las velocidades reales medidas.
 \end_layout
 
 \begin_layout Standard
@@ -6056,7 +6055,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/RaceAnalyzer/Sprint-Graph.png
-	scale 40
+	lyxscale 25
+	scale 25
 
 \end_inset
 
@@ -6094,64 +6094,7 @@ Capura de datos
 \begin_layout Standard
 La primera vez que conecte el encoder de carreras en Chronojump se le pedirà
  que identifique el dispositivo.
- Utilize los botones con las flechas para identificar el dispositivo com
- un encoder de carrera como se muestra en la figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:RaceAnalyzer-config"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/RaceAnalyzer/device-RaceAnalyzer.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:RaceAnalyzer-config"
-
-\end_inset
-
-Configuración del dispositivo
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+ Seleccione el dispositivo compatible con RaceAnalyzer.
 \end_layout
 
 \begin_layout Subsection
@@ -6159,7 +6102,8 @@ Configuración de la Captura
 \end_layout
 
 \begin_layout Standard
-Antes de iniciar la captura, haga clic en el botón de configuración 
+Antes de iniciar la captura, seleccione el tipo de carrera que se realizará
+ y, si es necesario, haga clic en el botón de ejercicio 
 \begin_inset Graphics
 	filename images/RaceAnalyzer/config-capture-button.png
 	lyxscale 50
@@ -6167,15 +6111,14 @@ Antes de iniciar la captura, haga clic en el botón de configuración
 
 \end_inset
 
- con el fin de seleccionar el tipo de ejercicio que se analizará.
+ con el fin de configurar la carrera.
 \end_layout
 
 \begin_layout Standard
-Seleccione el tipo de carrera o test que vaya a realizar.
- Puede editar, añadir o borrar los tipos de tests haciendo clic en el correspond
-iente botón
+Puede editar, añadir o borrar los tipos de tests haciendo clic en el correspondi
+ente botón 
 \begin_inset Graphics
-	filename images/RaceAnalyzer/manage-test-type-buttons.png
+	filename images/RaceAnalyzer/EditAddDelete-Buttons.png
 	lyxscale 50
 	scale 50
 
@@ -6186,8 +6129,17 @@ iente botón
 
 \begin_layout Standard
 Al editar o añadir un tipo de test, le aparecerá una ventana como la de
- la figura en la que podrá especificar el nombre y una breve descripción
- del test.
+ la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Propiedades-del-test"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6238,28 +6190,43 @@ Propiedades del test
 \end_layout
 
 \begin_layout Standard
-El parámetro de distancia se refiere a la distancia que se analizará una
- vez se haya iniciado la carrera.
- Este parámetro no limita la distancia que se puede medir durante la captura,
- ya que Chronojump seguirá registrando mientras no se finalize la captura
- manualmente.
+A continuación se describen los parámetros:
 \end_layout
 
-\begin_layout Subsection
-Finalización del test
+\begin_layout Itemize
+Nombre: Un texto corto para identificar el test.
+\end_layout
+
+\begin_layout Itemize
+Descripción: Un texto más extenso con una breve explicación del test.
+\end_layout
+
+\begin_layout Itemize
+Es un sprint?: Este parámetro exige que el test se ejecute con la máxima
+ aceleración y velocidad durante la duración del test.
+ En la exportación de múltiples test, los que tengan esta opción serán analizado
+s como tal, dando todos los parámetros que se pueden extraer del modelo.
+ 
+\end_layout
+
+\begin_layout Itemize
+Distancia: Especifica hasta qué punto se analizará.
+ No afecta al registro de datos ya que estos se siguen registrando mientras
+ no se presione el botón de finalizar.
+\end_layout
+
+\begin_layout Itemize
+Ángulo: Si el test no se realiza en una superficie horizontal (0 grados)
+ se debe especificar el ángulo en positivo el test es en subida o en negativo
+ si es en bajada.
+\end_layout
+
+\begin_layout Itemize
+Temperatura: La temperatura ambiente en el momento de hacer el test.
+ Esta temperatura afecta a los cálculos de fuerza y potencia del análisis.
 \end_layout
 
 \begin_layout Standard
-Una vez el atleta ha completado el test, presione sobre el botón de finalizar
- 
-\begin_inset Graphics
-	filename images/RaceAnalyzer/finish-Button.png
-	scale 50
-
-\end_inset
-
-.
- Automáticamente se le presentará el análisis del sprint.
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -9486,40 +9453,7 @@ dispositivo
 .
  Se abrirá una ventana con una lista de dispositivos conectados donde deberá
  identificar el tipo de dispositivo.
- Haga clic sobre las flechas hasta que aparezca la imagen del sensor de
- fuerza.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename images/ForceSensor/MIF-Device_es.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Configuración de dispositivo de adquisición de datos
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+ Haga click sobre el dispositivo compatible con el sensor de fuerza.
 \end_layout
 
 \begin_layout Subsection
@@ -9607,7 +9541,9 @@ Tara (previa a la calibración)
 
 \begin_layout Standard
 Para llevar a cabo este proceso coloque el sensor colgando de uno de los
- extremos sin soportar ningúna fuerza externa aparte del propio peso.
+ extremos sin soportar ningúna fuerza externa aparte del propio peso y los
+ elementos necesarios para anclar el peso de la calibración (mosquetones,
+ cuerdas, cinchas, etc).
  Seguidamente presione sobre el botón de 
 \emph on
 Tara
@@ -9665,7 +9601,7 @@ Calibración
 La calibración consiste en establecer una relación lineal entre la señal
  eléctrica del sensor y la fuerza real.
  Esta relación puede variar en función del sensor, temperatura, humedad...
- Por eso se recomienda hacer una calibración una vez por sesión.
+ Por eso es necesario hacer una calibración la primera que se use el sensor.
  Por defecto Chronojump utilizará una calibración genérica.
 \end_layout
 
@@ -9711,8 +9647,19 @@ Calibración del sensor de fuerza
 \end_layout
 
 \begin_layout Standard
-En el caso de que quiera medir fuerzas de compresión, deje descansar el
- peso sobre el sensor habiendo quitado previamente los cáncamos del mismo.
+Chronojump considerará fuerzas positivas las fuerzas que vayan en el mismo
+ sentido que las fuerzas soportadas durante la calibración.
+\end_layout
+
+\begin_layout Standard
+Durante la configuración de la captura podrá invertir el signo de la señal
+ si lo considera necesario.
+\end_layout
+
+\begin_layout Standard
+En el caso de que quiera medir fuerzas de compresión y quiera que estas
+ sean posivitas, deje descansar el peso sobre el sensor habiendo quitado
+ previamente los cáncamos del mismo.
 \end_layout
 
 \begin_layout Standard
@@ -9768,7 +9715,8 @@ Tara horizontal del sensor de fuerza
 \end_layout
 
 \begin_layout Standard
-De este modo el sensor también registrará el propio peso.
+De este modo el sensor también registrará el propio peso y el de los elementos
+ que añada (mosquetones, cuerdas, cinchas, etc).
 \end_layout
 
 \begin_layout Standard
@@ -12881,8 +12829,16 @@ Encoder de carrera
 \end_layout
 
 \begin_layout Standard
-Después del registro de un test con el encoder de carrera automáticamente
- se analizará la misma mostrándose una gráfica como la de la figura 
+En el apartado de análisis, después del registro de un test o la carga del
+ mismo pulsando en el botón de 
+\begin_inset Quotes eld
+\end_inset
+
+Analizar
+\begin_inset Quotes erd
+\end_inset
+
+ se mostrará una gráfica como la de la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Análisis-Encoder-Carrera"
@@ -12903,8 +12859,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename images/RaceAnalyzer/Sprint-Graph.png
-	scale 40
+	filename images/RaceAnalyzer/ModelAnalysis.png
+	lyxscale 25
+	scale 25
 
 \end_inset
 
@@ -12967,7 +12924,7 @@ a por la velocidad máxima del modelo.
 \begin_inset Formula $\tau$
 \end_inset
 
-: Tau es la inversa del parámetro K y indica el tiempo que se tarda en llegar
+: Tau es la inversa del parámetro K e indica el tiempo que se tarda en llegar
  a un 63,2% de la velocidad máxima.
 \end_layout
 
